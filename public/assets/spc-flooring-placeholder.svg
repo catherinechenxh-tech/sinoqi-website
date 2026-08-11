@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">SPC Flooring image pending verification</title>
+  <desc id="description">A neutral SINOQI placeholder that does not depict a product, factory, project, or certification.</desc>
+  <rect width="1200" height="900" fill="#eaf0ed"/>
+  <rect x="56" y="56" width="1088" height="788" rx="16" fill="#f8faf9" stroke="#1f5a47" stroke-width="4"/>
+  <path d="M56 214h1088" stroke="#e69a52" stroke-width="12"/>
+  <g fill="none" stroke="#b8c9c2" stroke-width="3" opacity=".8">
+    <path d="M118 310h964M118 398h964M118 486h964M118 574h964M118 662h964"/>
+    <path d="M286 268v438M504 268v438M722 268v438M940 268v438"/>
+  </g>
+  <text x="110" y="145" fill="#1f5a47" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="8">SINOQI</text>
+  <text x="600" y="410" text-anchor="middle" fill="#143b31" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">SPC FLOORING</text>
+  <text x="600" y="484" text-anchor="middle" fill="#557269" font-family="Arial, Helvetica, sans-serif" font-size="25" letter-spacing="3">VERIFIED PRODUCT IMAGE PENDING</text>
+  <circle cx="600" cy="607" r="28" fill="#e69a52"/>
+  <path d="m587 607 9 9 19-21" fill="none" stroke="#143b31" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
