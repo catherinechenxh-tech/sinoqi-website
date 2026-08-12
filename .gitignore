@@ -24,11 +24,6 @@
 .DS_Store
 *.pem
 
-# local source assets that require desensitization before public release
-/public/assets/factory-hero.jpg
-/public/assets/pvc-production.jpg
-/public/assets/spc-flooring.jpg
-
 # debug
 npm-debug.log*
 yarn-debug.log*
