@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     locale: clean(body.locale, 5),
   };
 
-  if (!inquiry.name || !inquiry.company || !inquiry.email || !inquiry.market || !inquiry.product || !inquiry.message || !/^\S+@\S+\.\S+$/.test(inquiry.email)) {
+  if (!inquiry.email || !inquiry.message || !/^\S+@\S+\.\S+$/.test(inquiry.email)) {
     return NextResponse.json({ error: "Missing or invalid fields" }, { status: 400 });
   }
 
@@ -51,11 +51,11 @@ export async function POST(request: Request) {
 
   const text = [
     "New SINOQI website inquiry",
-    `Name: ${inquiry.name}`,
-    `Company: ${inquiry.company}`,
+    `Name: ${inquiry.name || "Not provided"}`,
+    `Company: ${inquiry.company || "Not provided"}`,
     `Email: ${inquiry.email}`,
-    `Market: ${inquiry.market}`,
-    `Product: ${inquiry.product}`,
+    `Market: ${inquiry.market || "Not provided"}`,
+    `Product: ${inquiry.product || "Not provided"}`,
     `Estimated quantity: ${inquiry.quantity || "Not provided"}`,
     `Sample request / courier accepted: ${inquiry.sampleRequest === "yes" ? "Yes" : "No"}`,
     `Language: ${inquiry.locale || "Not provided"}`,
@@ -70,7 +70,7 @@ export async function POST(request: Request) {
       from,
       to: [company.email],
       reply_to: inquiry.email,
-      subject: `[Website Inquiry] ${inquiry.product} — ${inquiry.company}`,
+      subject: `[Website Inquiry] ${inquiry.product || "General inquiry"} — ${inquiry.company || inquiry.email}`,
       text,
     }),
   });

@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import type { Locale } from "@/content/site";
+import { trackLeadEvent } from "@/lib/analytics";
 
 const copy = {
   es: {
@@ -16,10 +17,12 @@ const copy = {
     unsure: "No estoy seguro / Necesito recomendación",
     messageHelp: "Incluya medidas, acabado, uso, embalaje o fecha objetivo si ya los conoce.",
     quantityHelp: "Introduzca solo una cantidad estimada; indique la unidad en el mensaje.",
-    attachmentHelp: "PDF, Word, Excel, JPG o PNG. En esta vista previa el archivo permanece en su dispositivo.",
-    preview: "Vista previa del formulario: los datos no se envían ni se cargan en este momento. Los datos de una consulta real se utilizarán únicamente para el seguimiento comercial y no se mostrarán públicamente.",
-    submit: "Revisar formulario (sin envío)",
-    result: "Formulario revisado localmente. No se enviaron datos ni archivos.",
+    attachmentHelp: "El archivo no se carga actualmente. Para enviar PDF, Word, Excel, JPG o PNG, responda al correo de seguimiento o escríbanos directamente.",
+    privacy: "Usaremos sus datos únicamente para responder a esta solicitud.",
+    submit: "Enviar solicitud",
+    sending: "Enviando…",
+    success: "Solicitud recibida. Le responderemos en un día laborable.",
+    error: "No se pudo enviar. Escríbanos directamente por correo o WhatsApp.",
   },
   en: {
     email: "Email",
@@ -33,26 +36,68 @@ const copy = {
     unsure: "Not sure / Need a recommendation",
     messageHelp: "Include size, finish, intended use, packing or target date if known.",
     quantityHelp: "Enter an estimated number only; state the unit in your message.",
-    attachmentHelp: "PDF, Word, Excel, JPG or PNG. In this preview, the file remains on your device.",
-    preview: "Form preview only: your details are not sent or uploaded at this stage. Details from a real inquiry will be used only for sales follow-up and will not be displayed publicly.",
-    submit: "Review form (not sent)",
-    result: "Form checked locally. No details or files were sent.",
+    attachmentHelp: "The file is not uploaded at present. To send a PDF, Word, Excel, JPG or PNG, reply to our follow-up email or contact us directly.",
+    privacy: "We will use your details only to respond to this inquiry.",
+    submit: "Send inquiry",
+    sending: "Sending…",
+    success: "Inquiry received. We will reply within one business day.",
+    error: "Unable to send. Please contact us directly by email or WhatsApp.",
   },
 };
 
 export function ContactInquiryForm({ locale }: { locale: Locale }) {
   const t = copy[locale];
-  const [previewComplete, setPreviewComplete] = useState(false);
+  const [state, setState] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  function submit(event: FormEvent<HTMLFormElement>) {
+  async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setPreviewComplete(true);
+    if (state === "sending") return;
+
+    setState("sending");
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      email: String(data.get("email") ?? ""),
+      product: String(data.get("product") ?? ""),
+      quantity: String(data.get("quantity") ?? ""),
+      message: String(data.get("message") ?? ""),
+      website: String(data.get("website") ?? ""),
+      locale,
+    };
+
+    trackLeadEvent("inquiry_submission_attempt", {
+      product: payload.product,
+      locale,
+      source: "contact",
+    });
+
+    try {
+      const response = await fetch("/api/inquiry/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!response.ok) throw new Error("Request failed");
+
+      trackLeadEvent("valid_inquiry_submitted", {
+        product: payload.product,
+        locale,
+        source: "contact",
+      });
+      form.reset();
+      setState("success");
+    } catch {
+      trackLeadEvent("inquiry_submission_failed", {
+        product: payload.product,
+        locale,
+        source: "contact",
+      });
+      setState("error");
+    }
   }
 
   return (
     <form className="inquiry-form contact-inquiry-form" onSubmit={submit}>
-      <p className="form-preview-note" id="inquiry-privacy">{t.preview}</p>
-
       <label>
         <span>{t.email} *</span>
         <input name="email" type="email" required autoComplete="email" />
@@ -91,9 +136,17 @@ export function ContactInquiryForm({ locale }: { locale: Locale }) {
         <small className="form-helper" id="attachment-help">{t.attachmentHelp}</small>
       </label>
 
-      <button className="button button--orange" type="submit">{t.submit}</button>
+      <label className="honeypot" aria-hidden="true">
+        Website
+        <input name="website" tabIndex={-1} autoComplete="off" />
+      </label>
+      <p className="form-privacy" id="inquiry-privacy">{t.privacy}</p>
+      <button className="button button--orange" type="submit" disabled={state === "sending"}>
+        {state === "sending" ? t.sending : t.submit}
+      </button>
       <div className="form-status" aria-live="polite">
-        {previewComplete && <p className="preview-message">{t.result}</p>}
+        {state === "success" && <p className="success-message">{t.success}</p>}
+        {state === "error" && <p className="error-message">{t.error}</p>}
       </div>
     </form>
   );
