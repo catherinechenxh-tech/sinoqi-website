@@ -49,6 +49,7 @@ const copy = {
     samplePolicy: "Política de muestras",
     resources: "Recursos",
     catalog: "Catálogo",
+    downloadCatalog: "Descargar catálogo",
     social: "Canales oficiales",
   },
   en: {
@@ -75,6 +76,7 @@ const copy = {
     samplePolicy: "Sample policy",
     resources: "Resources",
     catalog: "Catalog",
+    downloadCatalog: "Download Catalog",
     social: "Official channels",
   },
 };
@@ -357,6 +359,9 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
                 </Link>
               ),
             )}
+            <Link href={localizedPath("download", locale)} aria-current={isActive("download") ? "page" : undefined}>
+              {t.downloadCatalog}
+            </Link>
           </nav>
           <div className="nav-actions">
             <Link className="language-link" href={alternatePath} hrefLang={otherLocale}>
@@ -444,6 +449,9 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
                     {item.label}
                   </Link>
                 ))}
+                <Link href={localizedPath("download", locale)} aria-current={isActive("download") ? "page" : undefined}>
+                  {t.downloadCatalog}
+                </Link>
               </nav>
               <div className="mobile-drawer__actions">
                 <Link className="button button--orange" href={`${localizedPath("contact", locale)}#inquiry`}>

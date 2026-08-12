@@ -221,6 +221,11 @@ function HomePage({ locale }: { locale: Locale }) {
             body={es ? "Seleccione una categoría para revisar sus opciones iniciales y preparar una cotización basada en su demanda real." : "Choose a category to review the starting options and prepare a quotation around your actual demand."}
           />
           <ProductGrid locale={locale} />
+          <div className="hero__actions">
+            <Link className="button button--orange" href={localizedPath("download", locale)}>
+              {es ? "Descargar catálogo" : "Download Catalog"}
+            </Link>
+          </div>
         </div>
       </section>
       <section className="section section--dark">
@@ -281,7 +286,7 @@ function HomePage({ locale }: { locale: Locale }) {
       </section>
       <section className="section" id="inquiry">
         <div className="container contact-layout">
-          <div className="contact-panel"><p className="eyebrow">SINOQI</p><h2>{es ? "Prepare su próxima consulta" : "Prepare your next inquiry"}</h2><p>{es ? "Responderemos en un día laborable." : "We will reply within one business day."}</p><div className="contact-list"><a href={`mailto:${company.email}`}><span>Email</span><strong>{company.email}</strong></a><a href={`tel:${company.phoneHref}`}><span>{es ? "Teléfono / WhatsApp" : "Phone / WhatsApp"}</span><strong>{company.phone}</strong></a></div><div className="sample-note"><strong>{es ? "Política de muestras" : "Sample policy"}</strong><p>{es ? "Muestra gratuita; mensajería a cargo del comprador." : "Free sample; courier paid by the buyer."}</p></div></div>
+          <div className="contact-panel"><p className="eyebrow">SINOQI</p><h2>{es ? "Prepare su próxima consulta" : "Prepare your next inquiry"}</h2><p>{es ? "Responderemos en un día laborable." : "We will reply within one business day."}</p><div className="contact-list"><a href={`mailto:${company.email}`}><span>Email</span><strong>{company.email}</strong></a><a href={`tel:${company.phoneHref}`}><span>{es ? "Teléfono / WhatsApp" : "Phone / WhatsApp"}</span><strong>{company.phone}</strong></a></div><div className="sample-note"><strong>{es ? "Política de muestras" : "Sample policy"}</strong><p>{es ? "Muestra gratuita; mensajería a cargo del comprador." : "Free sample; courier paid by the buyer."}</p></div><div className="hero__actions"><Link className="button button--light" href={localizedPath("download", locale)}>{es ? "Descargar catálogo" : "Download Catalog"}</Link></div></div>
           <div><SectionTitle eyebrow={es ? "Formulario B2B" : "B2B inquiry form"} title={es ? "Cuéntenos qué necesita" : "Tell us what you need"} body={es ? "El producto, la cantidad y el mercado nos ayudan a preparar una respuesta útil." : "Product, quantity and market help us prepare a useful response."} /><InquiryForm locale={locale} /></div>
         </div>
       </section>
