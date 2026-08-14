@@ -402,28 +402,28 @@ type ProductConfig = {
 const productConfig: Record<Extract<PageKey, "pvc-ceiling-panel" | "wpc-wall-panel" | "uv-marble-sheet" | "spc-flooring">, ProductConfig> = {
   "pvc-ceiling-panel": {
     image: asset.pvc,
-    imageAlt: { es: "Paneles de techo PVC en producción", en: "PVC ceiling panels in production" },
+    imageAlt: { es: "Paneles de techo PVC en producción en la fábrica SINOQI", en: "PVC ceiling panels in SINOQI factory production" },
     production: asset.pvcProduction,
-    productionAlt: { es: "Línea de producción de paneles de techo PVC", en: "PVC ceiling panel production line" },
-    title: { es: "Fabricante de paneles de techo PVC para distribuidores", en: "PVC ceiling panel manufacturer for distributors" },
-    eyebrow: { es: "Panel de techo PVC", en: "PVC Ceiling Panel" },
-    intro: { es: "Prepare una línea de techos PVC adaptada a su mercado con anchos habituales, diseños evaluados y condiciones B2B transparentes.", en: "Build a PVC ceiling range for your market with regular widths, evaluated designs and clear B2B terms." },
-    overview: { es: "Los paneles de techo PVC son la línea prioritaria de SINOQI. La selección final de color, acabado, espesor y embalaje se confirma en la cotización según la necesidad del comprador.", en: "PVC ceiling panels are a priority line for SINOQI. Final color, finish, thickness and packing are confirmed in the quotation against the buyer’s requirement." },
+    productionAlt: { es: "Línea de producción de un fabricante de paneles de techo PVC en China", en: "China PVC ceiling panel manufacturer production line" },
+    title: { es: "Paneles de techo PVC para importadores y distribuidores", en: "PVC ceiling panels for importers and distributors" },
+    eyebrow: { es: "Fabricante y proveedor de paneles de techo PVC", en: "China PVC ceiling panel manufacturer and supplier" },
+    intro: { es: "Abastecimiento B2B de paneles PVC para techo con anchos habituales de 25 y 30 cm, MOQ claro y opciones de diseño, acabado y embalaje evaluadas para cada mercado.", en: "Source PVC panels for ceiling programs from an integrated China manufacturer and supplier, with 25 cm and 30 cm regular widths, a clear MOQ and order-specific finish and packing review." },
+    overview: { es: "SINOQI suministra paneles de techo PVC para programas mayoristas y pedidos de importadores y distribuidores de materiales de construcción. Cada cotización confirma el color, el acabado, la longitud requerida, el embalaje y la configuración del pedido sin atribuir prestaciones no documentadas.", en: "SINOQI supplies PVC ceiling panels for wholesale programs and orders from importers and building-material distributors. Each quotation confirms color, finish, required length, packing and order configuration without adding unsupported performance claims." },
     specs: {
-      es: [["Anchos habituales", "25 cm y 30 cm"], ["MOQ", "100 piezas por modelo y color"], ["Plazo habitual", "30 días desde la recepción del depósito"], ["Embalaje", "Caja de cartón o plástico retráctil"], ["Personalización", "Evaluada según la solicitud"]],
-      en: [["Regular widths", "25 cm and 30 cm"], ["MOQ", "100 pieces per design and color"], ["Regular lead time", "30 days from receipt of deposit"], ["Packing", "Carton or shrink wrap"], ["Customization", "Evaluated against the request"]],
+      es: [["Anchos habituales", "25 cm y 30 cm"], ["MOQ mayorista", "100 piezas por modelo y color"], ["Plazo habitual", "30 días desde la recepción del depósito"], ["Embalaje", "Caja de cartón o plástico retráctil"], ["OEM / marca privada", "Diseño, acabado y embalaje evaluados según la solicitud"], ["Carga de contenedor", "Planificada según mezcla de producto, embalaje y cantidad aprobados"]],
+      en: [["Regular widths", "25 cm and 30 cm"], ["Wholesale MOQ", "100 pieces per design and color"], ["Regular lead time", "30 days from receipt of deposit"], ["Packaging", "Carton or shrink wrap"], ["OEM / private label", "Design, finish and packing evaluated against the request"], ["Container loading", "Planned against the approved product mix, packing and quantity"]],
     },
     uses: { es: ["Techos residenciales", "Espacios comerciales", "Renovación interior"], en: ["Residential ceilings", "Commercial spaces", "Interior renovation"] },
     series: {
       es: [
-        ["Anchos habituales", "La oferta principal confirmada se organiza por ancho.", ["25 cm", "30 cm"]],
-        ["Acabados de catálogo", "El catálogo muestra rutas de acabado que deben vincularse al diseño elegido.", ["Impresión", "Estampado en caliente", "Laminado"]],
-        ["Configuración del pedido", "El diseño y el embalaje se acuerdan antes de producción.", ["Diseño y color", "Caja de cartón", "Plástico retráctil"]],
+        ["Anchos de panel de 25 y 30 cm", "La oferta habitual confirmada se organiza por ancho; la longitud requerida se valida en la cotización.", ["25 cm", "30 cm"]],
+        ["Acabados para paneles de techo PVC", "El catálogo muestra rutas de acabado que deben vincularse al diseño elegido.", ["Impresión", "Estampado en caliente", "Laminado"]],
+        ["Configuración OEM y de marca privada", "El diseño, el color y el embalaje se evalúan y acuerdan antes de la producción.", ["Diseño y color", "Caja de cartón", "Plástico retráctil"]],
       ],
       en: [
-        ["Regular widths", "The confirmed core offer is organized around regular panel widths.", ["25 cm", "30 cm"]],
-        ["Catalog finishes", "The catalog shows finish routes that must be matched to the selected design.", ["Printing", "Hot stamping", "Laminated"]],
-        ["Order configuration", "Design and packing are agreed before production.", ["Design and color", "Carton", "Shrink wrap"]],
+        ["25 cm and 30 cm panel widths", "The confirmed regular offer is organized by width; required length is validated in the quotation.", ["25 cm", "30 cm"]],
+        ["PVC ceiling panel finishes", "The catalog shows finish routes that must be matched to the selected design.", ["Printing", "Hot stamping", "Laminated"]],
+        ["OEM and private-label order setup", "Design, color and packaging are evaluated and agreed before production.", ["Design and color", "Carton", "Shrink wrap"]],
       ],
     },
     selection: {
@@ -529,7 +529,26 @@ const productConfig: Record<Extract<PageKey, "pvc-ceiling-panel" | "wpc-wall-pan
 function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof productConfig }) {
   const c = productConfig[page];
   const es = locale === "es";
-  const buyerFaqs = es
+  const isPvc = page === "pvc-ceiling-panel";
+  const buyerFaqs = isPvc
+    ? es
+      ? [
+          ["¿Cuál es el MOQ de los paneles de techo PVC?", "El MOQ confirmado es de 100 piezas por modelo y color. La configuración final se valida en la cotización."],
+          ["¿Pueden evaluar pedidos OEM o de marca privada?", "Sí. El diseño, el acabado y el embalaje se evalúan según la solicitud. Los parámetros aprobados se confirman antes de producción."],
+          ["¿Qué anchos habituales están disponibles?", "Los anchos habituales confirmados son 25 cm y 30 cm. La longitud requerida y los demás parámetros se confirman para cada pedido."],
+          ["¿Cómo se embalan y cargan los pedidos mayoristas?", "El embalaje confirmado puede ser caja de cartón o plástico retráctil. El plan de carga se define según la mezcla de producto, el embalaje y la cantidad aprobados."],
+          ["¿Cuándo empieza el plazo de producción?", "El plazo habitual confirmado es de 30 días desde la recepción del depósito, sujeto a la configuración y al plan de producción."],
+          ["¿La muestra es gratuita?", "Sí. Para compradores con una necesidad real, la muestra es gratuita y el comprador asume el coste de mensajería."],
+        ]
+      : [
+          ["What is the MOQ for PVC ceiling panels?", "The confirmed MOQ is 100 pieces per design and color. The final order configuration is validated in the quotation."],
+          ["Can you evaluate OEM or private-label orders?", "Yes. Design, finish and packaging are evaluated against the request. Approved parameters are confirmed before production."],
+          ["Which regular panel widths are available?", "The confirmed regular widths are 25 cm and 30 cm. Required length and other parameters are confirmed for each order."],
+          ["How are wholesale orders packed and loaded?", "Confirmed packaging options are cartons or shrink wrap. The loading plan is based on the approved product mix, packaging and quantity."],
+          ["When does the production lead time start?", "The confirmed regular lead time is 30 days from receipt of deposit, subject to configuration and production planning."],
+          ["Is the sample free?", "Yes. For buyers with a genuine requirement, the sample is free and the buyer covers the courier cost."],
+        ]
+    : es
     ? [
         ["¿La muestra es gratuita?", "Sí. Para compradores con una necesidad real, la muestra es gratuita y el comprador asume el coste de mensajería."],
         ["¿Cuál es el MOQ inicial?", "El punto de partida confirmado es de 100 piezas por modelo y color. La configuración final se valida en la cotización."],
@@ -548,7 +567,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
       <section className="section">
         <div className="container product-overview">
           <div>
-            <SectionTitle eyebrow={es ? "Descripción verificada" : "Verified overview"} title={es ? "Información útil, sin afirmaciones no documentadas" : "Useful information without unsupported claims"} body={tx(locale, c.overview)} />
+            <SectionTitle eyebrow={es ? "Descripción del producto" : "Product introduction"} title={isPvc ? (es ? "Paneles de techo PVC para programas mayoristas" : "PVC ceiling panels for wholesale programs") : (es ? "Información útil, sin afirmaciones no documentadas" : "Useful information without unsupported claims")} body={tx(locale, c.overview)} />
             <ul className="check-list">
               <li>{es ? "Selección de color y acabado según disponibilidad" : "Color and finish selection subject to availability"}</li>
               <li>{es ? "Condiciones finales confirmadas por cotización" : "Final terms confirmed by quotation"}</li>
@@ -556,7 +575,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
             </ul>
           </div>
           <div className="spec-card">
-            <h2>{es ? "Datos iniciales de compra" : "Initial buying details"}</h2>
+            <h2>{isPvc ? (es ? "Especificaciones y condiciones de compra" : "PVC ceiling panel specifications and buying terms") : (es ? "Datos iniciales de compra" : "Initial buying details")}</h2>
             <dl>{c.specs[locale].map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             <p className="spec-note">{es ? "Confirme todos los parámetros en la cotización y en la muestra aprobada." : "Confirm every parameter in the quotation and approved sample."}</p>
           </div>
@@ -566,7 +585,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
         <div className="container">
           <SectionTitle
             eyebrow={es ? "Series y opciones" : "Series and options"}
-            title={es ? "Organizado para comparar antes de cotizar" : "Organized for comparison before quotation"}
+            title={isPvc ? (es ? "Medidas, acabados y opciones OEM" : "PVC ceiling panel sizes, finishes and OEM options") : (es ? "Organizado para comparar antes de cotizar" : "Organized for comparison before quotation")}
             body={es ? "Estas agrupaciones proceden de la información confirmada y de las referencias visibles en catálogo. La disponibilidad final se valida por pedido." : "These groups come from confirmed information and catalog-visible references. Final availability is validated per order."}
           />
           <div className="product-series-grid">
@@ -584,7 +603,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
         <div className="container">
           <SectionTitle
             eyebrow={es ? "Guía de selección" : "Selection guide"}
-            title={es ? "Qué confirmar para elegir correctamente" : "What to confirm for the right selection"}
+            title={isPvc ? (es ? "Cómo especificar un pedido de paneles PVC para techo" : "How to specify PVC panels for ceiling orders") : (es ? "Qué confirmar para elegir correctamente" : "What to confirm for the right selection")}
             body={es ? "Las imágenes de aplicación son orientativas y no se presentan como proyectos de clientes." : "Application images are indicative and are not presented as customer projects."}
           />
           <div className="selection-grid">
@@ -597,8 +616,8 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
           <div className={`split-feature__media ${c.production === asset.spc ? "split-feature__media--placeholder" : ""}`}><Image src={c.production} alt={tx(locale, c.productionAlt)} fill sizes="(max-width: 900px) 100vw, 48vw" /></div>
           <div>
             <p className="eyebrow">{es ? "Preparado para compradores B2B" : "Built for B2B buyers"}</p>
-            <h2>{es ? "Una cotización basada en su mercado" : "A quotation built around your market"}</h2>
-            <p>{es ? "Comparta el uso previsto, el formato, el diseño, la cantidad y el destino. Nuestro equipo revisará la viabilidad y le devolverá una configuración comercial clara." : "Share the intended use, format, design, quantity and destination. Our team will review feasibility and return a clear commercial configuration."}</p>
+            <h2>{isPvc ? (es ? "Suministro de paneles de techo PVC desde China" : "China PVC ceiling panel supply for importers") : (es ? "Una cotización basada en su mercado" : "A quotation built around your market")}</h2>
+            <p>{isPvc ? (es ? "Importadores, mayoristas y distribuidores pueden compartir el uso, ancho, longitud, diseño, cantidad, embalaje y destino. Revisaremos la viabilidad y prepararemos una configuración comercial clara." : "Importers, wholesalers and building-material distributors can share the use, width, length, design, quantity, packaging and destination. We will review feasibility and prepare a clear commercial configuration.") : (es ? "Comparta el uso previsto, el formato, el diseño, la cantidad y el destino. Nuestro equipo revisará la viabilidad y le devolverá una configuración comercial clara." : "Share the intended use, format, design, quantity and destination. Our team will review feasibility and return a clear commercial configuration.")}</p>
             <Link className="button button--light" href={`${localizedPath("contact", locale)}#inquiry`}>{tx(locale, shared.quote)}</Link>
           </div>
         </div>
@@ -611,7 +630,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
           <div>
             <SectionTitle
               eyebrow={es ? "Preguntas de compra" : "Buyer questions"}
-              title={es ? `Antes de cotizar ${tx(locale, c.eyebrow)}` : `Before quoting ${tx(locale, c.eyebrow)}`}
+              title={isPvc ? (es ? "Preguntas frecuentes sobre paneles de techo PVC" : "PVC ceiling panel buyer FAQ") : (es ? `Antes de cotizar ${tx(locale, c.eyebrow)}` : `Before quoting ${tx(locale, c.eyebrow)}`)}
               body={es ? "Estas respuestas utilizan únicamente las condiciones comerciales confirmadas. Los parámetros finales dependen de la configuración aprobada." : "These answers use confirmed commercial terms only. Final parameters depend on the approved configuration."}
             />
             <div className="faq-list">
@@ -631,6 +650,19 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
           </aside>
         </div>
       </section>
+      {isPvc && (
+        <section className="section section--tint">
+          <div className="container">
+            <SectionTitle eyebrow={es ? "Recursos para compradores" : "Buyer resources"} title={es ? "Continúe la evaluación de su pedido" : "Continue your PVC ceiling panel evaluation"} body={es ? "Consulte aplicaciones, capacidad de fabricación y criterios de compra antes de solicitar una cotización." : "Review applications, manufacturing capability and buying criteria before requesting a quotation."} />
+            <div className="application-product-links" aria-label={es ? "Recursos relacionados con paneles de techo PVC" : "PVC ceiling panel related resources"}>
+              <Link href={localizedPath("applications", locale)}>{es ? "Aplicaciones de techos interiores" : "Interior ceiling applications"}<span aria-hidden="true">→</span></Link>
+              <Link href={localizedBlogPostPath("pvc-ceiling-panel-buying-guide", locale)}>{es ? "Guía de compra de paneles de techo PVC" : "PVC ceiling panel buying guide"}<span aria-hidden="true">→</span></Link>
+              <Link href={localizedPath("manufacturing", locale)}>{es ? "Fabricación y carga de contenedores" : "Manufacturing and container loading"}<span aria-hidden="true">→</span></Link>
+              <Link href={localizedPath("download", locale)}>{es ? "Solicitar catálogo PVC" : "Request the PVC catalog"}<span aria-hidden="true">→</span></Link>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="section">
         <div className="container">
           <SectionTitle eyebrow={es ? "Otras líneas principales" : "Other core product lines"} title={es ? "Complete su selección de materiales" : "Continue your material selection"} />
