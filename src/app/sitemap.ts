@@ -1,32 +1,32 @@
 import type { MetadataRoute } from "next";
 import { blogPosts, localizedBlogPostPath } from "@/content/blog";
 import { localizedPath, pageSlugs, type PageKey } from "@/content/site";
+import { SITE_ORIGIN } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.sinoqidecor.com";
   const keys: PageKey[] = ["home", ...pageSlugs];
   const pages = keys.flatMap((key) => (["es", "en"] as const).map((locale) => ({
-    url: new URL(localizedPath(key, locale), base).toString(),
+    url: new URL(localizedPath(key, locale), SITE_ORIGIN).toString(),
     lastModified: new Date(),
     changeFrequency: key === "home" ? "weekly" as const : "monthly" as const,
     priority: key === "home" ? 1 : key === "contact" ? 0.9 : 0.8,
     alternates: {
       languages: {
-        es: new URL(localizedPath(key, "es"), base).toString(),
-        en: new URL(localizedPath(key, "en"), base).toString(),
+        es: new URL(localizedPath(key, "es"), SITE_ORIGIN).toString(),
+        en: new URL(localizedPath(key, "en"), SITE_ORIGIN).toString(),
       },
     },
   })));
 
   const posts = blogPosts.flatMap((post) => (["es", "en"] as const).map((locale) => ({
-    url: new URL(localizedBlogPostPath(post.slug, locale), base).toString(),
+    url: new URL(localizedBlogPostPath(post.slug, locale), SITE_ORIGIN).toString(),
     lastModified: new Date(post.publishedAt),
     changeFrequency: "monthly" as const,
     priority: 0.7,
     alternates: {
       languages: {
-        es: new URL(localizedBlogPostPath(post.slug, "es"), base).toString(),
-        en: new URL(localizedBlogPostPath(post.slug, "en"), base).toString(),
+        es: new URL(localizedBlogPostPath(post.slug, "es"), SITE_ORIGIN).toString(),
+        en: new URL(localizedBlogPostPath(post.slug, "en"), SITE_ORIGIN).toString(),
       },
     },
   })));

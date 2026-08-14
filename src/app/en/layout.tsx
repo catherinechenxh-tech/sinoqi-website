@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { RootDocument } from "@/components/root-document";
 import { SiteShell } from "@/components/site-shell";
+import { SITE_ORIGIN } from "@/lib/site-url";
 import "../globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.sinoqidecor.com";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_ORIGIN),
   title: { default: "SINOQI", template: "%s" },
   description: "Decorative materials for B2B distributors and importers.",
   applicationName: "SINOQI",

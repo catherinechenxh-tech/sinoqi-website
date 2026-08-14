@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { company, type Locale } from "@/content/site";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.sinoqidecor.com";
+import { SITE_ORIGIN } from "@/lib/site-url";
 
 export function RootDocument({ locale, children }: { locale: Locale; children: ReactNode }) {
   const organization = {
@@ -9,7 +8,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
     "@type": "Organization",
     name: company.brand,
     legalName: company.legalName,
-    url: siteUrl,
+    url: SITE_ORIGIN,
     email: company.email,
     telephone: company.phone,
     address: {
