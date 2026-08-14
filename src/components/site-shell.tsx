@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { blogPosts, localizedBlogPostPath } from "@/content/blog";
 import {
   useCallback,
   useEffect,
@@ -106,6 +107,12 @@ function normalizePath(path: string) {
 
 function languagePath(pathname: string, targetLocale: Locale) {
   const normalized = normalizePath(pathname);
+  const currentLocale: Locale = normalized === "/en/" || normalized.startsWith("/en/") ? "en" : "es";
+  const currentPost = blogPosts.find(
+    (post) => normalizePath(localizedBlogPostPath(post.slug, currentLocale)) === normalized,
+  );
+  if (currentPost) return localizedBlogPostPath(currentPost.slug, targetLocale);
+
   const basePath = normalized === "/en/"
     ? "/"
     : normalized.startsWith("/en/")

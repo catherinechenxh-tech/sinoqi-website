@@ -1187,7 +1187,7 @@ function BlogPage({ locale }: { locale: Locale }) {
             {blogPosts.map((post, index) => (
               <article className="blog-card" key={post.slug}>
                 <Link className="blog-card__image" href={localizedBlogPostPath(post.slug, locale)}>
-                  <Image src={asset.pvc} alt={es ? "Paneles de techo PVC SINOQI" : "SINOQI PVC ceiling panels"} fill priority={index === 0} sizes="(max-width: 760px) 100vw, 48vw" />
+                  <Image src={post.cover ?? asset.pvc} alt={post.coverAlt?.[locale] ?? (es ? "Paneles de techo PVC SINOQI" : "SINOQI PVC ceiling panels")} fill priority={index === 0} sizes="(max-width: 760px) 100vw, 48vw" />
                 </Link>
                 <div className="blog-card__body">
                   <div className="blog-meta"><span>{post.category[locale]}</span><span>{post.readingTime[locale]}</span></div>

@@ -11,12 +11,17 @@ export type BlogSection = {
 
 export type BlogPost = {
   slug: string;
+  localizedSlug?: Partial<Record<Locale, string>>;
+  kind?: "pvc-ceiling-designs-finishes";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
+  seoTitle?: LocalizedText;
   description: LocalizedText;
   introduction: LocalizedText;
   readingTime: LocalizedText;
+  cover?: string;
+  coverAlt?: LocalizedText;
   sections: BlogSection[];
 };
 
@@ -109,11 +114,48 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "pvc-ceiling-panel-designs-finishes",
+    localizedSlug: { es: "disenos-acabados-paneles-techo-pvc" },
+    kind: "pvc-ceiling-designs-finishes",
+    publishedAt: "2026-08-14",
+    category: { es: "Guía de selección", en: "Selection guide" },
+    title: {
+      es: "Diseños y acabados de paneles de techo PVC para importadores y distribuidores",
+      en: "PVC Ceiling Panel Designs & Finishes for Importers and Distributors",
+    },
+    seoTitle: {
+      es: "Diseños y Acabados de Paneles de Techo PVC | SINOQI",
+      en: "PVC Ceiling Panel Designs & Finishes | SINOQI",
+    },
+    description: {
+      es: "Compare acabados y líneas de diseño de paneles de techo PVC y prepare una solicitud de muestras para su programa de importación o distribución.",
+      en: "Compare confirmed PVC ceiling finish routes and design directions, then prepare a sample request for your import or distribution program.",
+    },
+    introduction: {
+      es: "Compare los tipos de acabado confirmados y las líneas visuales disponibles antes de preparar una solicitud de muestras para su programa de importación, distribución o venta mayorista.",
+      en: "Compare confirmed finish routes and visual design directions before preparing samples for your import, wholesale or distribution program.",
+    },
+    readingTime: { es: "8 min de lectura", en: "8 min read" },
+    cover: "/assets/pvc-ceiling-design-samples.jpg",
+    coverAlt: {
+      es: "Muestras de paneles de techo PVC en blanco, efecto madera y diseños decorativos",
+      en: "PVC ceiling panel samples in white, wood-look and decorative designs",
+    },
+    sections: [],
+  },
 ];
 
-export const blogPostSlugs = blogPosts.map((post) => post.slug);
+export const blogPostSlugs = (locale: Locale) =>
+  blogPosts.map((post) => post.localizedSlug?.[locale] ?? post.slug);
 
-export const getBlogPost = (slug: string) => blogPosts.find((post) => post.slug === slug);
+export const getBlogPost = (slug: string, locale?: Locale) => blogPosts.find((post) => {
+  if (locale) return (post.localizedSlug?.[locale] ?? post.slug) === slug;
+  if (post.slug === slug) return true;
+  return Object.values(post.localizedSlug ?? {}).includes(slug);
+});
 
 export const localizedBlogPostPath = (slug: string, locale: Locale) =>
-  locale === "es" ? `/blog/${slug}/` : `/en/blog/${slug}/`;
+  locale === "es"
+    ? `/blog/${getBlogPost(slug)?.localizedSlug?.es ?? slug}/`
+    : `/en/blog/${getBlogPost(slug)?.localizedSlug?.en ?? slug}/`;
