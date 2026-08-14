@@ -8,7 +8,22 @@ export function generateStaticParams() { return pageSlugs.map((slug) => ({ slug 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   if (!isPageSlug(slug)) return {};
-  return { ...meta.es[slug], alternates: { canonical: localizedPath(slug, "es"), languages: { es: localizedPath(slug, "es"), en: localizedPath(slug, "en") } } };
+  const pageMeta = meta.es[slug];
+  return {
+    ...pageMeta,
+    alternates: { canonical: localizedPath(slug, "es"), languages: { es: localizedPath(slug, "es"), en: localizedPath(slug, "en") } },
+    ...(slug === "pvc-ceiling-panel" ? {
+      openGraph: {
+        title: pageMeta.title,
+        description: pageMeta.description,
+        url: localizedPath(slug, "es"),
+        siteName: "SINOQI",
+        locale: "es_419",
+        type: "website",
+        images: [{ url: "/assets/pvc-ceiling.jpg", alt: "Paneles de techo PVC en producción SINOQI" }],
+      },
+    } : {}),
+  };
 }
 
 export default async function SpanishPage({ params }: { params: Promise<{ slug: string }> }) {

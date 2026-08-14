@@ -10,12 +10,24 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   if (!isPageSlug(slug)) return {};
+  const pageMeta = meta.en[slug];
   return {
-    ...meta.en[slug],
+    ...pageMeta,
     alternates: {
       canonical: localizedPath(slug, "en"),
       languages: { es: localizedPath(slug, "es"), en: localizedPath(slug, "en") },
     },
+    ...(slug === "pvc-ceiling-panel" ? {
+      openGraph: {
+        title: pageMeta.title,
+        description: pageMeta.description,
+        url: localizedPath(slug, "en"),
+        siteName: "SINOQI",
+        locale: "en_US",
+        type: "website",
+        images: [{ url: "/assets/pvc-ceiling.jpg", alt: "PVC ceiling panels in SINOQI production" }],
+      },
+    } : {}),
   };
 }
 

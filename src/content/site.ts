@@ -177,8 +177,8 @@ export const meta: Record<Locale, Record<PageKey, { title: string; description: 
       description: "Explore las cuatro líneas principales de SINOQI: paneles de techo PVC, paneles de pared WPC, láminas de mármol UV y pisos SPC.",
     },
     "pvc-ceiling-panel": {
-      title: "Paneles de Techo PVC para Importadores | SINOQI",
-      description: "Paneles de techo PVC de fabricante en China para importadores y distribuidores. Anchos de 25/30 cm y MOQ de 100 piezas por modelo y color.",
+      title: "Fabricante de Paneles de Techo PVC en China | SINOQI",
+      description: "Paneles de techo PVC para importadores y distribuidores: anchos habituales de 25/30 cm, MOQ de 100 piezas por diseño y color, acabados y muestras.",
     },
     "wpc-wall-panel": {
       title: "Fabricante de paneles de pared WPC | SINOQI",
@@ -231,8 +231,8 @@ export const meta: Record<Locale, Record<PageKey, { title: string; description: 
       description: "Explore four core SINOQI product lines: PVC ceiling panels, WPC wall panels, UV marble sheets and SPC flooring.",
     },
     "pvc-ceiling-panel": {
-      title: "PVC Ceiling Panels Manufacturer & Supplier | SINOQI",
-      description: "Source PVC ceiling panels from a China manufacturer and supplier: 25/30 cm regular widths, 100-piece MOQ per design and color, and OEM review.",
+      title: "PVC Ceiling Panels Manufacturer in China | SINOQI",
+      description: "Source PVC ceiling panels for wholesale and distribution with 25/30 cm regular widths, 100-piece MOQ per design and color, finish options and sample support.",
     },
     "wpc-wall-panel": {
       title: "WPC Wall Panel Manufacturer | SINOQI",
