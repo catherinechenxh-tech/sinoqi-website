@@ -12,7 +12,9 @@ export async function generateMetadata({ params }: { params: Promise<{ postSlug:
   const post = getBlogPost(postSlug);
   if (!post) return {};
   return {
-    title: `${post.title.en} | SINOQI`,
+    title: post.slug === "pvc-ceiling-panel-buying-guide"
+      ? "PVC Ceiling Panel Buying Guide for Importers | SINOQI"
+      : `${post.title.en} | SINOQI`,
     description: post.description.en,
     alternates: {
       canonical: localizedBlogPostPath(post.slug, "en"),
