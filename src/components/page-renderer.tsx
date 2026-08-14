@@ -9,6 +9,7 @@ import {
   company,
   localizedPath,
   products,
+  productImageAlt,
   type Locale,
   type PageKey,
 } from "@/content/site";
@@ -669,7 +670,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
           <div className="related-product-grid">
             {products.filter((product) => product.key !== page).map((product) => (
               <Link href={localizedPath(product.key, locale)} key={product.key}>
-                <Image src={product.image} alt="" width={88} height={66} />
+                <Image src={product.image} alt={productImageAlt[locale][product.key]} width={88} height={66} />
                 <span><strong>{product[locale].name}</strong><small>{product[locale].summary}</small></span>
                 <span aria-hidden="true">→</span>
               </Link>

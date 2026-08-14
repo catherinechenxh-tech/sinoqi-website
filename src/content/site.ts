@@ -132,6 +132,21 @@ export const products: Array<{
   },
 ];
 
+export const productImageAlt: Record<Locale, Record<(typeof products)[number]["key"], string>> = {
+  es: {
+    "pvc-ceiling-panel": "Trabajadores manipulando paneles de techo PVC en una línea de producción",
+    "wpc-wall-panel": "Perfiles de panel de pared WPC en acabados de madera y tonos neutros",
+    "uv-marble-sheet": "Láminas de mármol UV con acabado blanco en una línea de producción",
+    "spc-flooring": "Imagen de piso SPC pendiente de verificación",
+  },
+  en: {
+    "pvc-ceiling-panel": "Workers handling PVC ceiling panels on a factory production line",
+    "wpc-wall-panel": "WPC wall panel profiles in wood-look and neutral finishes",
+    "uv-marble-sheet": "UV marble sheets with a white marble finish on a factory production line",
+    "spc-flooring": "SPC flooring image pending verification",
+  },
+};
+
 export const navigation: Record<Locale, Array<{ key: NavigationKey; label: string }>> = {
   es: [
     { key: "home", label: "Inicio" },

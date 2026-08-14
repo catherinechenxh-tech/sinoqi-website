@@ -17,6 +17,7 @@ import {
   localizedPath,
   navigation,
   products,
+  productImageAlt,
   type Locale,
   type NavigationKey,
   type PageKey,
@@ -322,7 +323,7 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
                             aria-current={isActive(product.key) ? "page" : undefined}
                           >
                             <Image
-                              alt=""
+                              alt={productImageAlt[locale][product.key]}
                               height={72}
                               sizes="96px"
                               src={product.image}
