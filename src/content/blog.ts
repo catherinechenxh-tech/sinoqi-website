@@ -12,7 +12,7 @@ export type BlogSection = {
 export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
-  kind?: "pvc-ceiling-designs-finishes";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -141,6 +141,36 @@ export const blogPosts: BlogPost[] = [
     coverAlt: {
       es: "Muestras de paneles de techo PVC en blanco, efecto madera y diseños decorativos",
       en: "PVC ceiling panel samples in white, wood-look and decorative designs",
+    },
+    sections: [],
+  },
+  {
+    slug: "pvc-ceiling-panels-for-bathrooms",
+    localizedSlug: { es: "paneles-techo-pvc-para-banos" },
+    kind: "pvc-ceiling-bathroom-guide",
+    publishedAt: "2026-08-16",
+    category: { es: "Guía de aplicaciones", en: "Application guide" },
+    title: {
+      es: "Paneles de techo PVC para baños dirigidos a importadores y distribuidores",
+      en: "Bathroom PVC Ceiling Panels for Importers and Distributors",
+    },
+    seoTitle: {
+      es: "Paneles de Techo PVC para Baños: Guía B2B | SINOQI",
+      en: "Bathroom PVC Ceiling Panels: B2B Buyer Guide | SINOQI",
+    },
+    description: {
+      es: "Evalúe paneles de techo PVC para baños: uso sobre la ducha, anchos confirmados, MOQ, muestras, embalaje, plazo y datos necesarios para cotizar.",
+      en: "Evaluate bathroom PVC ceiling panels for distribution, including shower-area use, confirmed widths, MOQ, samples, packaging, lead time and RFQ details.",
+    },
+    introduction: {
+      es: "Evalúe la aplicación, las opciones confirmadas y los datos que SINOQI necesita para revisar un programa B2B de paneles de techo PVC para baños.",
+      en: "Evaluate the application, confirmed options and information SINOQI needs to review a B2B bathroom PVC ceiling panel program.",
+    },
+    readingTime: { es: "10 min de lectura", en: "10 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Trabajadores manipulando paneles de techo PVC SINOQI en una línea de producción",
+      en: "Workers handling SINOQI PVC ceiling panels on a factory production line",
     },
     sections: [],
   },

@@ -3,10 +3,14 @@ import Link from "next/link";
 import type { BlogPost as BlogPostData } from "@/content/blog";
 import { asset, localizedPath, type Locale } from "@/content/site";
 import { PvcCeilingDesignsFinishes } from "@/components/pvc-ceiling-designs-finishes";
+import { PvcCeilingBathroomGuide } from "@/components/pvc-ceiling-bathroom-guide";
 
 export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData }) {
   if (post.kind === "pvc-ceiling-designs-finishes") {
     return <PvcCeilingDesignsFinishes locale={locale} post={post} />;
+  }
+  if (post.kind === "pvc-ceiling-bathroom-guide") {
+    return <PvcCeilingBathroomGuide locale={locale} post={post} />;
   }
 
   const es = locale === "es";

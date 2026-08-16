@@ -508,6 +508,52 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .design-guide__faq .faq-list { margin-top: 30px; }
 .design-guide__final-cta .cta-band__inner > div:first-child { max-width: 720px; }
 
+.bathroom-guide__hero { padding-bottom: 150px; }
+.bathroom-guide__hero-context { max-width: 820px !important; color: #a9c4ba !important; font-size: 15px !important; }
+.bathroom-guide__hero-actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 13px; }
+.bathroom-guide__rfq-prompt { max-width: 780px !important; margin-top: 18px !important; color: #a9c4ba !important; font-size: 13px !important; }
+.bathroom-guide__layout { padding-top: 82px; padding-bottom: 105px; display: grid; grid-template-columns: minmax(0, 790px) 300px; justify-content: space-between; gap: 72px; align-items: start; }
+.bathroom-guide__body { min-width: 0; }
+.bathroom-guide__body > section { padding: 66px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 120px; }
+.bathroom-guide__body > section:first-child { padding-top: 0; }
+.bathroom-guide__body > section:last-child { border-bottom: 0; padding-bottom: 0; }
+.bathroom-guide__body h2 { margin: 0 0 20px; color: var(--green-dark); font-size: clamp(31px, 4vw, 44px); line-height: 1.16; letter-spacing: -.02em; text-wrap: balance; }
+.bathroom-guide__body h3 { margin: 0 0 12px; color: var(--green-dark); font-size: 21px; line-height: 1.3; }
+.bathroom-guide__body p, .bathroom-guide__body li { font-size: 16px; line-height: 1.75; }
+.bathroom-guide__body > section > p { color: var(--muted); }
+.bathroom-guide__body ul, .bathroom-guide__body ol { padding-left: 24px; }
+.bathroom-guide__body li { margin: 7px 0; }
+.bathroom-guide__boundary { margin-top: 28px; padding: 24px 26px; background: #fff4e8; border-left: 4px solid var(--orange); }
+.bathroom-guide__boundary strong { color: var(--green-dark); }
+.bathroom-guide__boundary p { margin: 8px 0 0; color: var(--muted); }
+.bathroom-guide__comparison { margin: 30px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.bathroom-guide__comparison > div { padding: 28px; background: var(--white); border: 1px solid var(--line); }
+.bathroom-guide__comparison > div:first-child { border-top: 4px solid var(--green); }
+.bathroom-guide__comparison > div:last-child { border-top: 4px solid var(--orange); }
+.bathroom-guide__comparison ul { margin-bottom: 0; }
+.bathroom-guide__cards { margin: 30px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.bathroom-guide__cards article { padding: 26px; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--orange); }
+.bathroom-guide__cards p, .bathroom-guide__terms p { margin: 0; color: var(--muted); font-size: 14px; }
+.bathroom-guide__media { position: relative; min-height: 400px; margin: 34px 0 24px; overflow: hidden; background: var(--green-pale); }
+.bathroom-guide__media img { object-fit: cover; }
+.bathroom-guide__media--production { min-height: 440px; }
+.bathroom-guide__checklist { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.bathroom-guide__checklist article { position: relative; padding: 28px; background: var(--white); border: 1px solid var(--line); }
+.bathroom-guide__checklist article > span { color: var(--orange-deep); font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+.bathroom-guide__checklist h3 { margin-top: 10px; }
+.bathroom-guide__checklist ul { margin-bottom: 0; }
+.bathroom-guide__terms { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.bathroom-guide__terms article { padding: 28px; background: var(--green-pale); border: 1px solid var(--line); }
+.bathroom-guide__rfq-list { margin: 28px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
+.bathroom-guide__rfq-list > div { min-width: 0; display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px; }
+.bathroom-guide__rfq-list span { color: var(--orange-deep); font-weight: 900; }
+.bathroom-guide__rfq-list p { margin: 0; color: var(--ink) !important; font-size: 14px; }
+.bathroom-guide__inline-actions { margin-top: 30px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.bathroom-guide__faq .faq-list { margin-top: 30px; }
+.bathroom-guide__resources { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.bathroom-guide__resources a { min-height: 62px; padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; gap: 14px; background: var(--white); border: 1px solid var(--line); color: var(--green-deep); font-weight: 800; }
+.bathroom-guide__resources a:hover { border-color: var(--orange); color: var(--orange-deep); }
+
 @media (max-width: 1080px) {
   .nav-wrap { gap: 18px; }
   .desktop-nav { gap: 13px; }
@@ -624,6 +670,10 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .design-guide__sample-media { position: relative; top: auto; min-height: 500px; }
   .design-guide__catalog { gap: 42px; }
   .design-guide__catalog-image, .design-guide__white-panel { min-height: 440px; }
+  .bathroom-guide__layout { grid-template-columns: 1fr; padding-top: 60px; }
+  .bathroom-guide__aside { position: static; grid-row: 1; }
+  .bathroom-guide__aside .article-toc { display: none; }
+  .bathroom-guide__cards { grid-template-columns: 1fr; }
 }
 
 @keyframes mobile-drawer-in {
@@ -692,6 +742,15 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .design-guide__sample-media, .design-guide__catalog-image, .design-guide__white-panel { min-height: 340px; }
   .design-guide__inline-actions { display: grid; }
   .design-guide__inline-actions > * { width: 100%; }
+  .bathroom-guide__hero { padding-bottom: 112px; }
+  .bathroom-guide__hero-actions, .bathroom-guide__inline-actions { display: grid; }
+  .bathroom-guide__hero-actions > *, .bathroom-guide__inline-actions > * { width: 100%; }
+  .bathroom-guide__layout { padding-top: 48px; padding-bottom: 70px; }
+  .bathroom-guide__body > section { padding: 52px 0; }
+  .bathroom-guide__body h2 { font-size: 30px; }
+  .bathroom-guide__comparison, .bathroom-guide__checklist, .bathroom-guide__terms, .bathroom-guide__rfq-list, .bathroom-guide__resources { grid-template-columns: 1fr; }
+  .bathroom-guide__comparison > div, .bathroom-guide__cards article, .bathroom-guide__checklist article, .bathroom-guide__terms article { padding: 22px; }
+  .bathroom-guide__media, .bathroom-guide__media--production { min-height: 300px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
