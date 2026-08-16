@@ -768,6 +768,7 @@ function PvcCeilingProductPage({ locale }: { locale: Locale }) {
           <SectionTitle eyebrow={es ? "Siguiente paso" : "Next step"} title={es ? "Continúe su evaluación" : "Continue Your Evaluation"} body={es ? "Revise la guía de compra, solicite el catálogo o comparta su pedido para recibir una respuesta comercial." : "Review the buying guide, request the catalog or share your order for a commercial response."} />
           <div className="application-product-links" aria-label={es ? "Recursos para compradores" : "Buyer resources"}>
             <Link href={localizedBlogPostPath("pvc-ceiling-panel-buying-guide", locale)}>{es ? "Guía de compra de paneles de techo PVC" : "PVC Ceiling Buying Guide"}<span aria-hidden="true">→</span></Link>
+            <Link href={localizedBlogPostPath("pvc-ceiling-panel-sizes-specifications", locale)}>{es ? "Medidas y especificaciones" : "Sizes & Specifications"}<span aria-hidden="true">→</span></Link>
             <Link href={localizedPath("download", locale)}>{es ? "Descargar catálogo" : "Download Catalog"}<span aria-hidden="true">→</span></Link>
             <Link href={localizedPath("applications", locale)}>{es ? "Aplicaciones" : "Applications"}<span aria-hidden="true">→</span></Link>
             <Link href={localizedPath("manufacturing", locale)}>{es ? "Fabricación" : "Manufacturing"}<span aria-hidden="true">→</span></Link>

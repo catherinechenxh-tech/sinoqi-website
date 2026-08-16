@@ -12,7 +12,7 @@ export type BlogSection = {
 export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -171,6 +171,36 @@ export const blogPosts: BlogPost[] = [
     coverAlt: {
       es: "Trabajadores manipulando paneles de techo PVC SINOQI en una línea de producción",
       en: "Workers handling SINOQI PVC ceiling panels on a factory production line",
+    },
+    sections: [],
+  },
+  {
+    slug: "pvc-ceiling-panel-sizes-specifications",
+    localizedSlug: { es: "medidas-especificaciones-paneles-techo-pvc" },
+    kind: "pvc-ceiling-sizes-specifications",
+    publishedAt: "2026-08-16",
+    category: { es: "Guía de especificaciones", en: "Specification guide" },
+    title: {
+      es: "Medidas y Especificaciones de Paneles de Techo PVC para Importadores",
+      en: "PVC Ceiling Panel Sizes & Specifications for Importers",
+    },
+    seoTitle: {
+      es: "Medidas y Especificaciones de Paneles de Techo PVC | SINOQI",
+      en: "PVC Ceiling Panel Sizes & Specifications | SINOQI",
+    },
+    description: {
+      es: "Compare anchos, largos, espesores y perfiles confirmados de paneles de techo PVC y prepare una solicitud de cotización B2B precisa.",
+      en: "Compare confirmed PVC ceiling panel widths, lengths, thicknesses and profile options, then prepare an accurate B2B specification and quote request.",
+    },
+    introduction: {
+      es: "Esta guía ayuda a importadores, distribuidores y mayoristas a comparar las medidas confirmadas y a preparar una especificación clara antes de cotizar.",
+      en: "This guide helps importers, distributors and wholesalers compare confirmed dimensions and prepare a clear specification before requesting a quote.",
+    },
+    readingTime: { es: "9 min de lectura", en: "9 min read" },
+    cover: "/assets/sample-pvc.jpg",
+    coverAlt: {
+      es: "Muestras reales de paneles de techo PVC SINOQI para revisar perfiles y acabados",
+      en: "Real SINOQI PVC ceiling panel samples for reviewing profiles and finishes",
     },
     sections: [],
   },
