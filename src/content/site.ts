@@ -235,8 +235,8 @@ export const meta: Record<Locale, Record<PageKey, { title: string; description: 
       description: "Source PVC ceiling panels for wholesale and distribution with 25/30 cm regular widths, 100-piece MOQ per design and color, finish options and sample support.",
     },
     "wpc-wall-panel": {
-      title: "WPC Wall Panel Manufacturer | SINOQI",
-      description: "Decorative WPC wall panels for distribution and interior projects, with options evaluated for each request.",
+      title: "WPC Wall Panel Manufacturer in China | SINOQI",
+      description: "Source indoor WPC wall panels from SINOQI for import and distribution, with catalog-listed profiles, 100-piece MOQ per design and color, and sample support.",
     },
     "uv-marble-sheet": {
       title: "UV Marble Sheet Supplier | SINOQI",

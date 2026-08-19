@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: localizedPath(slug, "en"),
       languages: { es: localizedPath(slug, "es"), en: localizedPath(slug, "en") },
     },
-    ...(slug === "pvc-ceiling-panel" ? {
+    ...(["pvc-ceiling-panel", "wpc-wall-panel"].includes(slug) ? {
       openGraph: {
         title: pageMeta.title,
         description: pageMeta.description,
@@ -25,7 +25,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         siteName: "SINOQI",
         locale: "en_US",
         type: "website",
-        images: [{ url: "/assets/pvc-ceiling.jpg", alt: "PVC ceiling panels in SINOQI production" }],
+        images: [slug === "pvc-ceiling-panel"
+          ? { url: "/assets/pvc-ceiling.jpg", alt: "PVC ceiling panels in SINOQI production" }
+          : { url: "/assets/wpc-wall-panel.png", alt: "SINOQI WPC wall panel profiles and finishes" }],
       },
     } : {}),
   };

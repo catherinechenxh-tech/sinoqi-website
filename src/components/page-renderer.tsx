@@ -783,8 +783,224 @@ function PvcCeilingProductPage({ locale }: { locale: Locale }) {
   );
 }
 
+function WpcWallPanelPage() {
+  const quoteHref = `${localizedPath("contact", "en")}#inquiry`;
+  const canonicalUrl = new URL(localizedPath("wpc-wall-panel", "en"), SITE_ORIGIN).toString();
+  const buyerFaqs = [
+    ["What is the MOQ for WPC wall panels?", "The confirmed starting MOQ is 100 pieces per design and color. The final profile, finish, quantity and packing are confirmed in the quotation."],
+    ["Which WPC wall panel sizes are listed in the catalog?", "The available catalog shows 195×14, 195×25, 150×10 and 195×12 mm profile references. Confirm the selected profile before ordering."],
+    ["Can the finish and packing be customized?", "Customization is evaluated against the request. Share the profile, color or finish reference, quantity and packing requirement for feasibility review."],
+    ["Can I request a sample before placing an order?", "Yes. A free sample is available for buyers with a genuine requirement, and the buyer covers the courier cost."],
+    ["How is a WPC wall panel quotation prepared?", "The quotation is based on the selected profile, finish, quantity, packing, destination and other confirmed order requirements. No fixed public price is assumed."],
+    ["When does the regular production lead time begin?", "The confirmed regular lead time is 30 days from receipt of deposit, subject to the approved configuration and production plan."],
+  ];
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "WPC Wall Panel Manufacturer in China",
+      description: "Indoor WPC wall panels for importers, distributors, wholesalers and project buyers, with catalog-listed profiles and order-specific quotation support.",
+      url: canonicalUrl,
+      isPartOf: { "@type": "WebSite", name: company.brand, url: SITE_ORIGIN },
+      about: { "@type": "Product", name: "Indoor WPC Wall Panels", category: "Decorative wall panels" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: buyerFaqs.map(([question, answer]) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer },
+      })),
+    },
+  ];
+
+  return (
+    <>
+      {schemas.map((schema, index) => (
+        <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
+      <Hero
+        locale="en"
+        eyebrow="Indoor WPC wall panels · B2B supply from China"
+        title="WPC wall panel manufacturer for importers and distributors"
+        body="Source decorative indoor WPC wall panels from SINOQI. Compare catalog-listed profiles and finishes, then confirm quantity, packing and customization requirements for your market."
+        image={asset.wpc}
+        imageAlt="SINOQI indoor WPC wall panel profiles in wood-look and neutral finishes"
+        chips={["Import and distribution", "Interior feature walls", "Catalog-listed profiles"]}
+        secondaryHref={quoteHref}
+        secondaryLabel="Request a Free Sample"
+        actionNote="Free sample for genuine buyers; courier cost is paid by the buyer."
+      />
+
+      <section className="section">
+        <div className="container product-overview">
+          <div>
+            <SectionTitle
+              eyebrow="WPC wall panel supplier"
+              title="Indoor decorative wall panels prepared for B2B sourcing"
+              body="SINOQI supplies WPC wall panel profiles for importers, distributors, wholesalers and project buyers. The current catalog shows fluted profiles, wood-look references, neutral tones and solid-color directions for interior selection."
+            />
+            <ul className="check-list">
+              <li>Profile and finish selected from catalog references or an approved sample</li>
+              <li>MOQ, packing and production timing confirmed before order placement</li>
+              <li>Commercial response targeted within one business day</li>
+            </ul>
+            <p>Application images are selection references only and are not presented as completed customer projects.</p>
+          </div>
+          <div className="spec-card">
+            <h2>WPC wall panel specifications and buying terms</h2>
+            <dl>
+              <div><dt>Catalog-listed profiles</dt><dd>195×14, 195×25, 150×10 and 195×12 mm</dd></div>
+              <div><dt>Starting MOQ</dt><dd>100 pieces per design and color</dd></div>
+              <div><dt>Regular lead time</dt><dd>30 days from receipt of deposit</dd></div>
+              <div><dt>Packing</dt><dd>Carton or shrink wrap</dd></div>
+              <div><dt>Customization</dt><dd>Evaluated against the request</dd></div>
+              <div><dt>Sample policy</dt><dd>Free sample; courier paid by the buyer</dd></div>
+            </dl>
+            <p className="spec-note">Catalog dimensions are series references. Confirm the selected profile and all order parameters in the quotation and approved sample.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--tint" id="profiles">
+        <div className="container">
+          <SectionTitle
+            eyebrow="Profiles and finishes"
+            title="Compare WPC wall panel options before requesting a quote"
+            body="The page groups verified catalog information around the decisions a distributor or project buyer needs to make. Final availability is confirmed per order."
+          />
+          <div className="product-series-grid">
+            <article>
+              <h3>Catalog-listed profiles</h3>
+              <p>Use the available profile references as the starting point, then confirm the chosen section in the quotation.</p>
+              <ul><li>195×14 mm</li><li>195×25 mm</li><li>150×10 mm</li><li>195×12 mm</li></ul>
+            </article>
+            <article>
+              <h3>Decorative finish references</h3>
+              <p>Review the available catalog or sample rather than assuming a finish from a screen image.</p>
+              <ul><li>Wood look</li><li>Neutral tones</li><li>Solid color</li></ul>
+            </article>
+            <article>
+              <h3>Order configuration</h3>
+              <p>Combine the selected profile and finish with quantity and packing requirements for a commercial review.</p>
+              <ul><li>Profile</li><li>Finish</li><li>Quantity</li><li>Packing</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionTitle
+            eyebrow="Buyer selection guide"
+            title="What to confirm when sourcing WPC wall panels"
+            body="A clear first inquiry helps the supplier check product fit and prepare a useful quotation without guessing specifications."
+          />
+          <div className="selection-grid">
+            <article><span>01</span><h3>Profile</h3><p>Select a catalog-listed profile or attach a clear reference for evaluation.</p></article>
+            <article><span>02</span><h3>Interior use</h3><p>Identify the feature wall, reception, retail or other intended interior space.</p></article>
+            <article><span>03</span><h3>Finish</h3><p>Confirm the color and texture through the catalog or an approved sample.</p></article>
+            <article><span>04</span><h3>Quantity and packing</h3><p>Share estimated pieces, replenishment needs, destination and packing preference.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--dark">
+        <div className="container split-feature split-feature--reverse">
+          <div className="split-feature__media"><Image src={asset.wpcProduction} alt="WPC wall panel production at SINOQI" fill sizes="(max-width: 900px) 100vw, 48vw" /></div>
+          <div>
+            <p className="eyebrow">Manufacturing and trade in one team</p>
+            <h2>WPC wall panel supply coordinated from profile selection to container planning</h2>
+            <p>SINOQI coordinates manufacturing and export preparation from Hangzhou. The confirmed company figures—29,220 m², 110 employees and 300 × 40HQ per month—refer to capacity across the full product portfolio, not to WPC wall panels alone.</p>
+            <div className="hero__actions">
+              <Link className="button button--light" href={localizedPath("manufacturing", "en")}>View Manufacturing</Link>
+              <Link className="button button--outline-light" href={quoteHref}>Request a Custom Quote</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container product-overview">
+          <div>
+            <SectionTitle
+              eyebrow="WPC wall panel price and quotation"
+              title="A useful quote starts with the order configuration"
+              body="WPC wall panel price depends on the confirmed profile, finish, quantity, packing, destination and other order requirements. This page does not publish an unsupported fixed price."
+            />
+            <ul className="check-list">
+              <li>Specify the profile and finish reference</li>
+              <li>State the quantity per design and color</li>
+              <li>Share destination and packing requirements</li>
+              <li>Request a sample when visual confirmation is needed</li>
+            </ul>
+            <Link className="button button--orange" href={quoteHref}>Prepare Your WPC Wall Panel Inquiry</Link>
+          </div>
+          <div>
+            <SectionTitle
+              eyebrow="Related buyer resources"
+              title="Continue the evaluation"
+              body="Use the existing site resources to review application context, manufacturing capability and the available catalog."
+            />
+            <div className="application-product-links" aria-label="WPC wall panel buyer resources">
+              <Link href={localizedPath("applications", "en")}>Interior applications<span aria-hidden="true">→</span></Link>
+              <Link href={localizedPath("manufacturing", "en")}>Manufacturing capability<span aria-hidden="true">→</span></Link>
+              <Link href={localizedPath("download", "en")}>Request the PVC &amp; WPC catalog<span aria-hidden="true">→</span></Link>
+              <Link href={localizedPath("faq", "en")}>B2B buyer FAQ<span aria-hidden="true">→</span></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--tint">
+        <div className="container faq-layout">
+          <div>
+            <SectionTitle
+              eyebrow="WPC wall panel FAQ"
+              title="Questions importers and distributors ask before ordering"
+              body="The answers below use confirmed catalog and commercial information only."
+            />
+            <div className="faq-list">
+              {buyerFaqs.map(([question, answer], index) => (
+                <details key={question} open={index === 0}>
+                  <summary>{question}<span aria-hidden="true">+</span></summary>
+                  <p>{answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+          <aside className="contact-aside">
+            <p className="eyebrow">B2B inquiry</p>
+            <h2>Need a profile or finish confirmed?</h2>
+            <p>Send the catalog reference, quantity, destination and packing requirement. The target response time is one business day.</p>
+            <Link className="button button--orange" href={quoteHref}>Request a Custom Quote</Link>
+          </aside>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionTitle eyebrow="Other core product lines" title="Continue your material selection" />
+          <div className="related-product-grid">
+            {products.filter((product) => product.key !== "wpc-wall-panel").map((product) => (
+              <Link href={localizedPath(product.key, "en")} key={product.key}>
+                <Image src={product.image} alt={productImageAlt.en[product.key]} width={88} height={66} />
+                <span><strong>{product.en.name}</strong><small>{product.en.summary}</small></span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <CtaBand locale="en" title="Planning an indoor WPC wall panel order?" body="Share the profile, finish, quantity, destination and packing requirement for a commercial review." />
+    </>
+  );
+}
+
 function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof productConfig }) {
   if (page === "pvc-ceiling-panel") return <PvcCeilingProductPage locale={locale} />;
+  if (page === "wpc-wall-panel" && locale === "en") return <WpcWallPanelPage />;
   const c = productConfig[page];
   const es = locale === "es";
   const isPvc = false;
