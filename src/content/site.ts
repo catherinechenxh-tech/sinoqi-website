@@ -47,10 +47,11 @@ export const asset = {
   pvc: "/assets/pvc-ceiling.jpg",
   wpc: "/assets/wpc-wall-panel.png",
   uv: "/assets/uv-marble-sheet.jpg",
-  spc: "/assets/spc-flooring-placeholder.svg",
+  spc: "/assets/spc-flooring.jpg",
   pvcProduction: "/assets/pvc-ceiling.jpg",
   wpcProduction: "/assets/wpc-production.jpg",
   uvProduction: "/assets/uv-production.jpg",
+  spcProduction: "/assets/spc-production.jpg",
   loading: "/assets/container-loading.jpg",
   samplePvc: "/assets/sample-pvc.jpg",
   sampleUv: "/assets/sample-uv.jpg",
@@ -137,13 +138,13 @@ export const productImageAlt: Record<Locale, Record<(typeof products)[number]["k
     "pvc-ceiling-panel": "Trabajadores manipulando paneles de techo PVC en una línea de producción",
     "wpc-wall-panel": "Perfiles de panel de pared WPC en acabados de madera y tonos neutros",
     "uv-marble-sheet": "Láminas de mármol UV con acabado blanco en una línea de producción",
-    "spc-flooring": "Imagen de piso SPC pendiente de verificación",
+    "spc-flooring": "Muestra de piso SPC con acabado efecto madera",
   },
   en: {
     "pvc-ceiling-panel": "Workers handling PVC ceiling panels on a factory production line",
     "wpc-wall-panel": "WPC wall panel profiles in wood-look and neutral finishes",
     "uv-marble-sheet": "UV marble sheets with a white marble finish on a factory production line",
-    "spc-flooring": "SPC flooring image pending verification",
+    "spc-flooring": "SPC flooring sample with a wood-look finish",
   },
 };
 

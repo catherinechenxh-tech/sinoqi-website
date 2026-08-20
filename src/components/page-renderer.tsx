@@ -75,7 +75,7 @@ function Hero({ locale, eyebrow, title, body, image, imageAlt, chips, primaryHre
           {actionNote && <p className="hero__action-note">{actionNote}</p>}
           <p className="micro-proof"><span aria-hidden="true">✓</span> {tx(locale, shared.response)}</p>
         </div>
-        <div className={`hero__media ${image === asset.spc ? "hero__media--placeholder" : ""}`}>
+        <div className={`hero__media ${image.includes("placeholder") ? "hero__media--placeholder" : ""}`}>
           <Image src={image} alt={imageAlt} fill priority sizes="(max-width: 900px) 100vw, 48vw" />
           <div className="hero__media-card">
             <strong>1990</strong>
@@ -108,9 +108,7 @@ function ProductGrid({ locale }: { locale: Locale }) {
           <Link className="product-card__image" href={localizedPath(product.key, locale)}>
             <Image
               src={product.image}
-              alt={product.key === "spc-flooring"
-                ? (locale === "es" ? "Piso SPC: fotografía verificada pendiente" : "SPC Flooring: verified product photography pending")
-                : product[locale].name}
+              alt={productImageAlt[locale][product.key]}
               fill
               sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw"
             />
@@ -264,7 +262,7 @@ function HomePage({ locale }: { locale: Locale }) {
       <section className="section">
         <div className="container">
           <SectionTitle eyebrow={es ? "Aplicaciones" : "Applications"} title={es ? "Empiece por el espacio y encuentre la línea adecuada" : "Start with the space and find the right product line"} body={es ? "Estas imágenes muestran usos orientativos y no se presentan como casos de clientes." : "These images show indicative uses and are not presented as customer cases."} />
-          <div className="application-grid">{applications.map(([image, title, body]) => <article key={title}><div className="application-card__media"><Image src={image} alt={image === asset.spc ? (es ? "Fotografía verificada de piso SPC pendiente" : "Verified SPC flooring photography pending") : title} fill sizes="(max-width: 800px) 100vw, 24vw" /><span className="application-card__label">{image === asset.spc ? (es ? "Imagen verificada pendiente" : "Verified image pending") : (es ? "Referencia de selección" : "Selection reference")}</span></div><div><h2>{title}</h2><p>{body}</p><Link className="text-link" href={localizedPath("applications", locale)}>{es ? "Ver aplicaciones" : "View applications"} <span aria-hidden="true">→</span></Link></div></article>)}</div>
+          <div className="application-grid">{applications.map(([image, title, body]) => <article key={title}><div className="application-card__media"><Image src={image} alt={title} fill sizes="(max-width: 800px) 100vw, 24vw" /><span className="application-card__label">{es ? "Referencia de selección" : "Selection reference"}</span></div><div><h2>{title}</h2><p>{body}</p><Link className="text-link" href={localizedPath("applications", locale)}>{es ? "Ver aplicaciones" : "View applications"} <span aria-hidden="true">→</span></Link></div></article>)}</div>
         </div>
       </section>
       <section className="section section--tint">
@@ -499,9 +497,9 @@ const productConfig: Record<Extract<PageKey, "pvc-ceiling-panel" | "wpc-wall-pan
   },
   "spc-flooring": {
     image: asset.spc,
-    imageAlt: { es: "Piso SPC: fotografía verificada pendiente", en: "SPC Flooring: verified product photography pending" },
-    production: asset.spc,
-    productionAlt: { es: "Producción SPC: fotografía verificada pendiente", en: "SPC production: verified photography pending" },
+    imageAlt: { es: "Muestra de piso SPC con acabado efecto madera", en: "SPC flooring sample with a wood-look finish" },
+    production: asset.spcProduction,
+    productionAlt: { es: "Línea de producción de pisos SPC", en: "SPC flooring production line" },
     title: { es: "Proveedor de pisos SPC para distribución", en: "SPC flooring supplier for distribution" },
     eyebrow: { es: "Piso SPC", en: "SPC Flooring" },
     intro: { es: "Colecciones de pisos rígidos SPC para compradores B2B, con formatos visibles en catálogo y opciones sujetas a confirmación.", en: "SPC rigid flooring collections for B2B buyers, with catalog-listed formats and options subject to confirmation." },
@@ -1069,7 +1067,7 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
       </section>
       <section className="section section--dark">
         <div className="container split-feature split-feature--reverse">
-          <div className={`split-feature__media ${c.production === asset.spc ? "split-feature__media--placeholder" : ""}`}><Image src={c.production} alt={tx(locale, c.productionAlt)} fill sizes="(max-width: 900px) 100vw, 48vw" /></div>
+          <div className={`split-feature__media ${c.production.includes("placeholder") ? "split-feature__media--placeholder" : ""}`}><Image src={c.production} alt={tx(locale, c.productionAlt)} fill sizes="(max-width: 900px) 100vw, 48vw" /></div>
           <div>
             <p className="eyebrow">{es ? "Preparado para compradores B2B" : "Built for B2B buyers"}</p>
             <h2>{isPvc ? (es ? "Suministro de paneles de techo PVC desde China" : "China PVC ceiling panel supply for importers") : (es ? "Una cotización basada en su mercado" : "A quotation built around your market")}</h2>
@@ -1253,7 +1251,7 @@ function ApplicationsPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Hero locale={locale} eyebrow={es ? "Guía de aplicaciones" : "Application guide"} title={es ? "Elija materiales según el espacio y la tarea" : "Choose materials around the space and task"} body={es ? "Explore escenarios residenciales, comerciales y de renovación, y pase de cada necesidad a las líneas de producto relacionadas." : "Explore residential, commercial and renovation scenarios, then move from each requirement to the related product lines."} image={asset.sampleUv} imageAlt={es ? "Muestras de acabados decorativos para selección" : "Decorative finish samples for product selection"} chips={es ? ["Techos", "Paredes", "Pisos", "Renovación"] : ["Ceilings", "Walls", "Floors", "Renovation"]} />
-      <section className="section"><div className="container"><SectionTitle eyebrow={es ? "Elegir por espacio" : "Choose by space"} title={es ? "Cuatro rutas para preparar su consulta" : "Four routes to frame your inquiry"} body={es ? "Las imágenes son referencias de selección, no casos de clientes. Cada recomendación final depende de la superficie, el uso, el mercado y los requisitos reales." : "Images are selection references, not customer cases. Every final recommendation depends on the surface, use, market and actual requirements."} /><div className="application-grid">{items.map((item) => <article key={item.id}><div className="application-card__media"><Image src={item.image} alt={item.image === asset.spc ? (es ? "Fotografía verificada de piso SPC pendiente" : "Verified SPC flooring photography pending") : item.title} fill sizes="(max-width: 800px) 100vw, 50vw" /><span className="application-card__label">{item.image === asset.spc ? (es ? "Imagen verificada pendiente" : "Verified image pending") : (es ? "Referencia de selección" : "Selection reference")}</span></div><div><h2>{item.title}</h2><p>{item.body}</p><p className="application-card__note">{item.note}</p><div className="application-product-links" aria-label={es ? `Productos relacionados con ${item.title}` : `Products related to ${item.title}`}>{item.products.map((product) => <Link key={product.key} href={localizedPath(product.key, locale)}>{product.label}<span aria-hidden="true">→</span></Link>)}</div></div></article>)}</div></div></section>
+      <section className="section"><div className="container"><SectionTitle eyebrow={es ? "Elegir por espacio" : "Choose by space"} title={es ? "Cuatro rutas para preparar su consulta" : "Four routes to frame your inquiry"} body={es ? "Las imágenes son referencias de selección, no casos de clientes. Cada recomendación final depende de la superficie, el uso, el mercado y los requisitos reales." : "Images are selection references, not customer cases. Every final recommendation depends on the surface, use, market and actual requirements."} /><div className="application-grid">{items.map((item) => <article key={item.id}><div className="application-card__media"><Image src={item.image} alt={item.title} fill sizes="(max-width: 800px) 100vw, 50vw" /><span className="application-card__label">{es ? "Referencia de selección" : "Selection reference"}</span></div><div><h2>{item.title}</h2><p>{item.body}</p><p className="application-card__note">{item.note}</p><div className="application-product-links" aria-label={es ? `Productos relacionados con ${item.title}` : `Products related to ${item.title}`}>{item.products.map((product) => <Link key={product.key} href={localizedPath(product.key, locale)}>{product.label}<span aria-hidden="true">→</span></Link>)}</div></div></article>)}</div></div></section>
       <section className="section section--tint"><div className="container"><SectionTitle eyebrow={es ? "Antes de recomendar" : "Before we recommend"} title={es ? "Datos que necesitamos de su aplicación" : "Application details we need"} body={es ? "Comparta estos cuatro datos para que podamos relacionar su necesidad con una configuración de producto disponible, sin asumir prestaciones no confirmadas." : "Share these four details so we can relate your requirement to an available product configuration without assuming unverified performance."} align="center" /><div className="value-grid">{(es ? [["Espacio", "Tipo de edificio, zona interior y superficie existente."], ["Uso", "Techo, pared, revestimiento, piso o renovación."], ["Condiciones", "Humedad, intensidad de uso y requisitos del mercado."], ["Programa", "Cantidad inicial, reposición y fecha objetivo."]] : [["Space", "Building type, interior area and existing surface."], ["Use", "Ceiling, wall, cladding, flooring or renovation."], ["Conditions", "Moisture, use intensity and market requirements."], ["Program", "Initial quantity, replenishment and target date."]]).map(([title, body]) => <article key={title}><span className="value-dot" /><h3>{title}</h3><p>{body}</p></article>)}</div></div></section>
       <CtaBand locale={locale} title={es ? "¿No está seguro de qué producto encaja?" : "Not sure which product fits?"} body={es ? "Comparta el espacio, la superficie, el uso y la cantidad. Revisaremos las opciones disponibles y responderemos en un día laborable." : "Share the space, surface, use and quantity. We will review the available options and reply within one business day."} />
     </>
