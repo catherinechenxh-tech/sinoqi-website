@@ -951,6 +951,7 @@ function WpcWallPanelPage() {
               body="Use the existing site resources to review application context, manufacturing capability and the available catalog."
             />
             <div className="application-product-links" aria-label="WPC wall panel buyer resources">
+              <Link href={localizedBlogPostPath("wpc-wall-panel-designs-colors", "en")}>WPC wall panel designs and colors<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("applications", "en")}>Interior applications<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("manufacturing", "en")}>Manufacturing capability<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("download", "en")}>Request the PVC &amp; WPC catalog<span aria-hidden="true">→</span></Link>
@@ -1395,6 +1396,7 @@ function DownloadPage({ locale }: { locale: Locale }) {
 
 function BlogPage({ locale }: { locale: Locale }) {
   const es = locale === "es";
+  const visiblePosts = blogPosts.filter((post) => !post.locales || post.locales.includes(locale));
   return (
     <>
       <section className="page-hero">
@@ -1408,7 +1410,7 @@ function BlogPage({ locale }: { locale: Locale }) {
         <div className="container">
           <SectionTitle eyebrow={es ? "Última guía" : "Latest guide"} title={es ? "Información práctica antes de cotizar" : "Practical information before you request a quote"} body={es ? "La biblioteca crecerá a medida que las instrucciones técnicas y los datos de producto sean verificados." : "The library will grow as technical instructions and product data are verified."} />
           <div className="blog-grid">
-            {blogPosts.map((post, index) => (
+            {visiblePosts.map((post, index) => (
               <article className="blog-card" key={post.slug}>
                 <Link className="blog-card__image" href={localizedBlogPostPath(post.slug, locale)}>
                   <Image src={post.cover ?? asset.pvc} alt={post.coverAlt?.[locale] ?? (es ? "Paneles de techo PVC SINOQI" : "SINOQI PVC ceiling panels")} fill priority={index === 0} sizes="(max-width: 760px) 100vw, 48vw" />

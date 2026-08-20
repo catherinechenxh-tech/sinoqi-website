@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { blogPosts, localizedBlogPostPath } from "@/content/blog";
+import { blogPostLocales, blogPosts, localizedBlogPostPath } from "@/content/blog";
 import { localizedPath, pageSlugs, type PageKey } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
 
@@ -18,16 +18,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   })));
 
-  const posts = blogPosts.flatMap((post) => (["es", "en"] as const).map((locale) => ({
+  const posts = blogPosts.flatMap((post) => blogPostLocales(post).map((locale) => ({
     url: new URL(localizedBlogPostPath(post.slug, locale), SITE_ORIGIN).toString(),
     lastModified: new Date(post.publishedAt),
     changeFrequency: "monthly" as const,
     priority: 0.7,
     alternates: {
-      languages: {
-        es: new URL(localizedBlogPostPath(post.slug, "es"), SITE_ORIGIN).toString(),
-        en: new URL(localizedBlogPostPath(post.slug, "en"), SITE_ORIGIN).toString(),
-      },
+      languages: Object.fromEntries(blogPostLocales(post).map((availableLocale) => [
+        availableLocale,
+        new URL(localizedBlogPostPath(post.slug, availableLocale), SITE_ORIGIN).toString(),
+      ])),
     },
   })));
 

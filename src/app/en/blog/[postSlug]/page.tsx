@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogPost } from "@/components/blog-post";
-import { blogPostSlugs, getBlogPost, localizedBlogPostPath } from "@/content/blog";
+import { blogPostLocales, blogPostSlugs, getBlogPost, localizedBlogPostPath } from "@/content/blog";
 
 export function generateStaticParams() {
   return blogPostSlugs("en").map((postSlug) => ({ postSlug }));
@@ -15,12 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ postSlug:
     ? "PVC Ceiling Panel Buying Guide for Importers | SINOQI"
     : `${post.title.en} | SINOQI`);
   const url = localizedBlogPostPath(post.slug, "en");
+  const locales = blogPostLocales(post);
   return {
     title,
     description: post.description.en,
     alternates: {
       canonical: url,
-      languages: { es: localizedBlogPostPath(post.slug, "es"), en: localizedBlogPostPath(post.slug, "en") },
+      languages: Object.fromEntries(locales.map((locale) => [locale, localizedBlogPostPath(post.slug, locale)])),
     },
     openGraph: {
       type: "article",
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ postSlug:
       url,
       siteName: "SINOQI",
       locale: "en_US",
-      alternateLocale: ["es_419"],
+      ...(locales.includes("es") ? { alternateLocale: ["es_419"] } : {}),
       publishedTime: post.publishedAt,
       images: [{
         url: post.cover ?? "/assets/pvc-ceiling.jpg",

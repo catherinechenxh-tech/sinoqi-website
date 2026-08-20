@@ -454,6 +454,8 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .design-guide__cover-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(280px, .75fr); gap: 18px; }
 .design-guide__cover-main, .design-guide__cover-side { position: relative; min-height: 520px; overflow: hidden; border: 7px solid var(--white); box-shadow: var(--shadow); background: var(--green-pale); }
 .design-guide__cover-main img, .design-guide__cover-side img { object-fit: cover; }
+.wpc-design-guide__catalog-board { background: var(--white); }
+.wpc-design-guide__catalog-board img { object-fit: contain; }
 .design-guide__content { padding-top: 88px; padding-bottom: 105px; }
 .design-guide__content > section { padding: 76px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 120px; }
 .design-guide__content > section:first-child { padding-top: 0; }

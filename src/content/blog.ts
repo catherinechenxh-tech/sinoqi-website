@@ -12,7 +12,8 @@ export type BlogSection = {
 export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications";
+  locales?: Locale[];
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -204,16 +205,54 @@ export const blogPosts: BlogPost[] = [
     },
     sections: [],
   },
+  {
+    slug: "wpc-wall-panel-designs-colors",
+    localizedSlug: { es: "disenos-colores-paneles-pared-wpc" },
+    locales: ["es", "en"],
+    kind: "wpc-wall-panel-designs-colors",
+    publishedAt: "2026-08-20",
+    category: { es: "Guía de selección", en: "Selection guide" },
+    title: {
+      es: "Diseños y colores de paneles de pared WPC para importadores y distribuidores",
+      en: "WPC Wall Panel Designs and Colors for Importers and Distributors",
+    },
+    seoTitle: {
+      es: "Diseños y colores de paneles de pared WPC | SINOQI",
+      en: "WPC Wall Panel Designs & Colors for B2B Buyers | SINOQI",
+    },
+    description: {
+      es: "Compare diseños, colores efecto madera y neutros, perfiles y pasos para solicitar muestras de paneles de pared WPC para compradores B2B.",
+      en: "Compare WPC wall panel designs, wood-look and neutral colors, profile choices and sample steps for importers, distributors and project buyers.",
+    },
+    introduction: {
+      es: "Utilice referencias confirmadas del catálogo para organizar diseños, perfiles y colores de paneles WPC antes de solicitar muestras o una cotización.",
+      en: "Use confirmed catalog references to organize WPC wall panel designs, profiles and colors before requesting samples or a quotation.",
+    },
+    readingTime: { es: "9 min de lectura", en: "9 min read" },
+    cover: "/assets/wpc-wall-panel.png",
+    coverAlt: {
+      es: "Referencias de perfiles y colores de paneles de pared WPC SINOQI para selección B2B",
+      en: "SINOQI WPC wall panel profile and color references for B2B selection",
+    },
+    sections: [],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
-  blogPosts.map((post) => post.localizedSlug?.[locale] ?? post.slug);
+  blogPosts
+    .filter((post) => !post.locales || post.locales.includes(locale))
+    .map((post) => post.localizedSlug?.[locale] ?? post.slug);
 
 export const getBlogPost = (slug: string, locale?: Locale) => blogPosts.find((post) => {
-  if (locale) return (post.localizedSlug?.[locale] ?? post.slug) === slug;
+  if (locale) {
+    if (post.locales && !post.locales.includes(locale)) return false;
+    return (post.localizedSlug?.[locale] ?? post.slug) === slug;
+  }
   if (post.slug === slug) return true;
   return Object.values(post.localizedSlug ?? {}).includes(slug);
 });
+
+export const blogPostLocales = (post: BlogPost): Locale[] => post.locales ?? ["es", "en"];
 
 export const localizedBlogPostPath = (slug: string, locale: Locale) =>
   locale === "es"
