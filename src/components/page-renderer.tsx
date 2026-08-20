@@ -41,13 +41,14 @@ function SectionTitle({ eyebrow, title, body, align = "left" }: {
   );
 }
 
-function Hero({ locale, eyebrow, title, body, image, imageAlt, chips, primaryHref, primaryLabel, secondaryHref, secondaryLabel, actionNote }: {
+function Hero({ locale, eyebrow, title, body, image, imageAlt, video, chips, primaryHref, primaryLabel, secondaryHref, secondaryLabel, actionNote }: {
   locale: Locale;
   eyebrow: string;
   title: string;
   body: string;
   image: string;
   imageAlt: string;
+  video?: string;
   chips?: string[];
   primaryHref?: string;
   primaryLabel?: string;
@@ -75,8 +76,15 @@ function Hero({ locale, eyebrow, title, body, image, imageAlt, chips, primaryHre
           {actionNote && <p className="hero__action-note">{actionNote}</p>}
           <p className="micro-proof"><span aria-hidden="true">✓</span> {tx(locale, shared.response)}</p>
         </div>
-        <div className={`hero__media ${image.includes("placeholder") ? "hero__media--placeholder" : ""}`}>
-          <Image src={image} alt={imageAlt} fill priority sizes="(max-width: 900px) 100vw, 48vw" />
+        <div className={`hero__media ${video ? "hero__media--video" : ""} ${image.includes("placeholder") ? "hero__media--placeholder" : ""}`}>
+          {video ? (
+            <video aria-label={imageAlt} autoPlay controls loop muted playsInline poster={image} preload="metadata">
+              <source src={video} type="video/mp4" />
+              {locale === "es" ? "Su navegador no admite video HTML5." : "Your browser does not support HTML5 video."}
+            </video>
+          ) : (
+            <Image src={image} alt={imageAlt} fill priority sizes="(max-width: 900px) 100vw, 48vw" />
+          )}
           <div className="hero__media-card">
             <strong>1990</strong>
             <span>{locale === "es" ? "Año de fundación" : "Established"}</span>
@@ -209,7 +217,8 @@ function HomePage({ locale }: { locale: Locale }) {
         title={es ? "Materiales decorativos para distribuidores que compran con confianza" : "Decorative materials built for confident distribution"}
         body={es ? "Paneles de techo PVC, paneles de pared WPC, láminas de mármol UV y pisos SPC con fabricación, personalización y soporte comercial desde Hangzhou." : "PVC ceiling panels, WPC wall panels, UV marble sheets and SPC flooring with manufacturing, customization and commercial support from Hangzhou."}
         image={asset.factory}
-        imageAlt={es ? "Paneles de techo PVC en una línea de producción SINOQI" : "PVC ceiling panels on a SINOQI production line"}
+        imageAlt={es ? "Vista general del taller de producción de paneles de techo PVC de SINOQI" : "Overview of the SINOQI PVC ceiling panel production workshop"}
+        video={asset.factoryOverviewVideo}
         chips={es ? ["Distribución", "Importación", "Proyectos"] : ["Distribution", "Import", "Projects"]}
         secondaryHref={localizedPath("manufacturing", locale)}
         secondaryLabel={es ? "Conocer la fábrica" : "Explore our factory"}

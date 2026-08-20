@@ -52,6 +52,7 @@ export const asset = {
   wpcProduction: "/assets/wpc-production.jpg",
   uvProduction: "/assets/uv-production.jpg",
   spcProduction: "/assets/spc-production.jpg",
+  factoryOverviewVideo: "/assets/pvc-ceiling-factory-overview.mp4",
   loading: "/assets/container-loading.jpg",
   samplePvc: "/assets/sample-pvc.jpg",
   sampleUv: "/assets/sample-uv.jpg",
