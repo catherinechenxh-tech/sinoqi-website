@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { blogPosts, localizedBlogPostPath } from "@/content/blog";
+import { GoogleAnalyticsEvents } from "@/components/google-analytics-events";
 import {
   useCallback,
   useEffect,
@@ -267,6 +268,7 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
 
   return (
     <div lang={locale}>
+      <GoogleAnalyticsEvents language={locale} />
       <a className="skip-link" href="#main-content">
         {locale === "es" ? "Saltar al contenido" : "Skip to content"}
       </a>

@@ -1,8 +1,8 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import type { Locale } from "@/content/site";
-import { trackLeadEvent } from "@/lib/analytics";
+import { trackGa4BusinessEvent, trackLeadEvent } from "@/lib/analytics";
 
 const copy = {
   es: {
@@ -42,9 +42,13 @@ const copy = {
 export function InquiryForm({ locale, compact = false }: { locale: Locale; compact?: boolean }) {
   const t = copy[locale];
   const [state, setState] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const submittingRef = useRef(false);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submittingRef.current) return;
+
+    submittingRef.current = true;
     setState("sending");
     const form = event.currentTarget;
     const payload = Object.fromEntries(new FormData(form).entries());
@@ -60,7 +64,12 @@ export function InquiryForm({ locale, compact = false }: { locale: Locale; compa
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...payload, locale }),
       });
-      if (!response.ok) throw new Error("Request failed");
+      const result: { ok?: boolean } = await response.json();
+      if (!response.ok || result.ok !== true) throw new Error("Request failed");
+      trackGa4BusinessEvent("inquiry_submit", {
+        language: locale,
+        form_name: "inquiry",
+      });
       trackLeadEvent("valid_inquiry_submitted", {
         product: String(payload.product ?? ""),
         locale,
@@ -82,6 +91,8 @@ export function InquiryForm({ locale, compact = false }: { locale: Locale; compa
         sampleRequest: payload.sampleRequest === "yes",
       });
       setState("error");
+    } finally {
+      submittingRef.current = false;
     }
   }
 
