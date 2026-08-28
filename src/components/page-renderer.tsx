@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CatalogRequestForm } from "@/components/catalog-request-form";
 import { ContactInquiryForm } from "@/components/contact-inquiry-form";
 import { InquiryForm } from "@/components/inquiry-form";
+import { SpcFlooringPage } from "@/components/spc-flooring-page";
 import { blogPosts, localizedBlogPostPath } from "@/content/blog";
 import { SITE_ORIGIN } from "@/lib/site-url";
 import {
@@ -1034,6 +1035,7 @@ function WpcWallPanelPage() {
 function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof productConfig }) {
   if (page === "pvc-ceiling-panel") return <PvcCeilingProductPage locale={locale} />;
   if (page === "wpc-wall-panel" && locale === "en") return <WpcWallPanelPage />;
+  if (page === "spc-flooring" && locale === "en") return <SpcFlooringPage />;
   const c = productConfig[page];
   const es = locale === "es";
   const isPvc = false;

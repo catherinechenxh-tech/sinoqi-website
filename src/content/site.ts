@@ -253,8 +253,8 @@ export const meta: Record<Locale, Record<PageKey, { title: string; description: 
       description: "Marble-effect UV decorative sheets for walls and interior renovation, available for distribution programs.",
     },
     "spc-flooring": {
-      title: "SPC Flooring Supplier | SINOQI",
-      description: "SPC flooring collections for distributors with selected catalog sizes and quotation support.",
+      title: "SPC Flooring for Wholesale & Distribution | SINOQI",
+      description: "Source SPC flooring for distribution and wholesale programs. Review catalog-listed formats, MOQ, samples, packing and OEM options, then request a quote.",
     },
     manufacturing: {
       title: "China Decorative Materials Manufacturing | SINOQI",

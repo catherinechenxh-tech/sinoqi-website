@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: localizedPath(slug, "en"),
       languages: { es: localizedPath(slug, "es"), en: localizedPath(slug, "en") },
     },
-    ...(["pvc-ceiling-panel", "wpc-wall-panel"].includes(slug) ? {
+    ...(["pvc-ceiling-panel", "wpc-wall-panel", "spc-flooring"].includes(slug) ? {
       openGraph: {
         title: pageMeta.title,
         description: pageMeta.description,
@@ -27,7 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         type: "website",
         images: [slug === "pvc-ceiling-panel"
           ? { url: "/assets/pvc-ceiling.jpg", alt: "PVC ceiling panels in SINOQI production" }
-          : { url: "/assets/wpc-wall-panel.png", alt: "SINOQI WPC wall panel profiles and finishes" }],
+          : slug === "spc-flooring"
+            ? { url: "/assets/spc-flooring.jpg", alt: "SPC flooring sample with a wood-look design reference" }
+            : { url: "/assets/wpc-wall-panel.png", alt: "SINOQI WPC wall panel profiles and finishes" }],
       },
     } : {}),
   };
