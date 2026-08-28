@@ -18,6 +18,7 @@ import {
   company,
   localizedPath,
   navigation,
+  OUTDOOR_WPC_PATH,
   products,
   productImageAlt,
   type Locale,
@@ -108,6 +109,7 @@ function normalizePath(path: string) {
 
 function languagePath(pathname: string, targetLocale: Locale) {
   const normalized = normalizePath(pathname);
+  if (normalized === OUTDOOR_WPC_PATH && targetLocale === "es") return localizedPath("products", "es");
   const currentLocale: Locale = normalized === "/en/" || normalized.startsWith("/en/") ? "en" : "es";
   const currentPost = blogPosts.find(
     (post) => normalizePath(localizedBlogPostPath(post.slug, currentLocale)) === normalized,
@@ -140,7 +142,7 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
   const alternatePath = languagePath(pathname, otherLocale);
 
   const isActive = (key: PageKey) => currentPath === normalizePath(localizedPath(key, locale));
-  const productsActive = isActive("products") || products.some((product) => isActive(product.key));
+  const productsActive = isActive("products") || products.some((product) => isActive(product.key)) || currentPath === OUTDOOR_WPC_PATH;
   const directNavigation = navigation[locale].filter(
     (item): item is { key: DirectNavigationKey; label: string } => item.key !== "products",
   );

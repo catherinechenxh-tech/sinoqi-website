@@ -9,6 +9,7 @@ import {
   asset,
   company,
   localizedPath,
+  OUTDOOR_WPC_PATH,
   products,
   productImageAlt,
   type Locale,
@@ -232,6 +233,11 @@ function HomePage({ locale }: { locale: Locale }) {
             body={es ? "Seleccione una categoría para revisar sus opciones iniciales y preparar una cotización basada en su demanda real." : "Choose a category to review the starting options and prepare a quotation around your actual demand."}
           />
           <ProductGrid locale={locale} />
+          {!es && (
+            <div className="section-actions">
+              <Link className="button button--outline" href={OUTDOOR_WPC_PATH}>Explore Outdoor WPC Wall Panel</Link>
+            </div>
+          )}
           <div className="hero__actions">
             <Link className="button button--orange" href={localizedPath("download", locale)}>
               {es ? "Descargar catálogo" : "Download Catalog"}
@@ -951,6 +957,7 @@ function WpcWallPanelPage() {
               body="Use the existing site resources to review application context, manufacturing capability and the available catalog."
             />
             <div className="application-product-links" aria-label="WPC wall panel buyer resources">
+              <Link href={OUTDOOR_WPC_PATH}>Looking for outdoor WPC wall cladding?<span aria-hidden="true">→</span></Link>
               <Link href={localizedBlogPostPath("wpc-wall-panel-designs-colors", "en")}>WPC wall panel designs and colors<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("applications", "en")}>Interior applications<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("manufacturing", "en")}>Manufacturing capability<span aria-hidden="true">→</span></Link>

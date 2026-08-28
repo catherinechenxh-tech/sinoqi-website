@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPostLocales, blogPosts, localizedBlogPostPath } from "@/content/blog";
-import { localizedPath, pageSlugs, type PageKey } from "@/content/site";
+import { localizedPath, OUTDOOR_WPC_PATH, pageSlugs, type PageKey } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -31,5 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   })));
 
-  return [...pages, ...posts];
+  const outdoorWpcPage = {
+    url: new URL(OUTDOOR_WPC_PATH, SITE_ORIGIN).toString(),
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  };
+
+  return [...pages, outdoorWpcPage, ...posts];
 }

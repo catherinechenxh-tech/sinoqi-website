@@ -20,6 +20,9 @@
 # production
 /build
 
+# local SEO research and exports
+/SEO/
+
 # misc
 .DS_Store
 *.pem

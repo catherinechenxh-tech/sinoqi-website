@@ -283,6 +283,20 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .gallery-card::after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(4,25,18,.72)); }
 .gallery-card figcaption { position: absolute; z-index: 1; left: 24px; bottom: 18px; color: var(--white); font-weight: 800; }
 
+.outdoor-breadcrumb { margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 8px; color: #b8cec5; font-size: 13px; }
+.outdoor-breadcrumb a { color: var(--white); font-weight: 750; }
+.outdoor-breadcrumb a:hover { color: #f2b477; }
+.outdoor-whatsapp-link { width: fit-content; min-height: 44px; margin-top: 6px; display: inline-flex; align-items: center; gap: 7px; color: var(--white); font-size: 14px; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.outdoor-whatsapp-link:hover { color: #f2b477; }
+.outdoor-wpc-profile-media img { object-fit: contain; background: #e8ece7; }
+.outdoor-wpc-surface-gallery { grid-auto-rows: 390px; }
+.outdoor-packing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.outdoor-packing-grid figure { min-height: 250px; margin: 0; position: relative; overflow: hidden; background: var(--green-pale); }
+.outdoor-packing-grid img { object-fit: cover; }
+.outdoor-next-actions { margin-top: 24px; display: grid; gap: 10px; }
+.outdoor-next-actions .button { width: 100%; }
+.outdoor-next-actions .text-link { min-height: 44px; display: inline-flex; justify-content: center; align-items: center; }
+
 .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .value-grid article { padding: 32px 28px; background: var(--white); border: 1px solid #d4dfd9; border-radius: 4px; }
 .value-grid--dark article { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
@@ -745,6 +759,9 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .spec-card, .identity-card, .contact-panel, .inquiry-form, .catalog-request-panel { padding: 26px 22px; }
   .spec-card dl > div { grid-template-columns: 1fr; gap: 4px; }
   .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 270px; }
+  .outdoor-wpc-surface-gallery { grid-auto-rows: 300px; }
+  .outdoor-packing-grid { grid-template-columns: 1fr; }
+  .outdoor-packing-grid figure { min-height: 240px; }
   .gallery-card--wide { grid-column: auto; }
   .application-grid article { grid-template-columns: 1fr; }
   .page-hero { padding: 78px 0 70px; }

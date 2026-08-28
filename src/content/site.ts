@@ -41,6 +41,8 @@ export const localizedPath = (key: PageKey, locale: Locale) => {
   return path === "/" ? "/en/" : `/en${path}`;
 };
 
+export const OUTDOOR_WPC_PATH = "/en/outdoor-wpc-wall-panel/";
+
 export const asset = {
   logo: "/assets/logo.jpg",
   factory: "/assets/pvc-ceiling.jpg",
@@ -57,6 +59,12 @@ export const asset = {
   samplePvc: "/assets/sample-pvc.jpg",
   sampleUv: "/assets/sample-uv.jpg",
   catalogCover: "/assets/catalog-cover.jpg",
+  outdoorWpcHero: "/assets/outdoor-wpc-wall-panel-hero.jpg",
+  outdoorWpcProfile: "/assets/outdoor-wpc-wall-panel-profile.jpg",
+  outdoorWpcSurfaceOne: "/assets/outdoor-wpc-surface-brushed-1.jpg",
+  outdoorWpcSurfaceTwo: "/assets/outdoor-wpc-surface-brushed-2.jpg",
+  outdoorWpcPackingOne: "/assets/outdoor-wpc-packing-1.jpg",
+  outdoorWpcPackingTwo: "/assets/outdoor-wpc-packing-2.jpg",
 };
 
 export const company = {
