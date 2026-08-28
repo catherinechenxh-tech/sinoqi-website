@@ -109,7 +109,7 @@ function FactStrip({ locale }: { locale: Locale }) {
   );
 }
 
-function ProductGrid({ locale }: { locale: Locale }) {
+function ProductGrid({ locale, includeOutdoor = false }: { locale: Locale; includeOutdoor?: boolean }) {
   return (
     <div className="product-grid">
       {products.map((product, index) => (
@@ -130,6 +130,24 @@ function ProductGrid({ locale }: { locale: Locale }) {
           </div>
         </article>
       ))}
+      {includeOutdoor && locale === "en" && (
+        <article className="product-card">
+          <Link className="product-card__image" href={OUTDOOR_WPC_PATH}>
+            <Image
+              src={asset.outdoorWpcHero}
+              alt="Outdoor WPC wall panel profile with a wood-look surface"
+              fill
+              sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw"
+            />
+            <span>05</span>
+          </Link>
+          <div className="product-card__body">
+            <h3><Link href={OUTDOOR_WPC_PATH}>Outdoor WPC Wall Panel</Link></h3>
+            <p>Exterior wall cladding product line with profile, surface, packing and customization confirmed for each request.</p>
+            <Link className="text-link" href={OUTDOOR_WPC_PATH}>View details <span aria-hidden="true">→</span></Link>
+          </div>
+        </article>
+      )}
     </div>
   );
 }
@@ -360,7 +378,7 @@ function ProductsPage({ locale }: { locale: Locale }) {
             title={es ? "Elija una categoría para preparar su consulta" : "Choose a category to prepare your inquiry"}
             body={es ? "Las series, medidas y acabados se muestran dentro de cada categoría. No se han creado páginas de modelos sin datos completos." : "Series, sizes and finishes are organized inside each category. No model pages have been created without complete data."}
           />
-          <ProductGrid locale={locale} />
+          <ProductGrid locale={locale} includeOutdoor />
         </div>
       </section>
       <section className="section section--tint">
