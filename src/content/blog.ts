@@ -13,7 +13,7 @@ export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
   locales?: Locale[];
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "uv-marble-sheet-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -27,6 +27,36 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "uv-marble-sheet-designs-colors",
+    localizedSlug: { es: "disenos-colores-laminas-marmol-uv" },
+    kind: "uv-marble-sheet-designs-colors",
+    publishedAt: "2026-09-01",
+    category: { es: "Guía de selección", en: "Selection guide" },
+    title: {
+      es: "Diseños y colores de láminas de mármol UV para compradores B2B",
+      en: "UV Marble Sheet Designs and Colors for B2B Buyers",
+    },
+    seoTitle: {
+      es: "Diseños y colores de láminas de mármol UV | SINOQI",
+      en: "UV Marble Sheet Designs & Colors | SINOQI",
+    },
+    description: {
+      es: "Compare referencias visuales claras, oscuras, doradas, continuas y decorativas, y prepare una solicitud de muestras de láminas de mármol UV.",
+      en: "Compare light, dark, gold-accent, continuous and decorative UV marble sheet design references, then prepare a focused sample request.",
+    },
+    introduction: {
+      es: "Esta guía ayuda a importadores, distribuidores y compradores de proyectos a convertir referencias visuales reales en una selección que pueda confirmarse mediante muestra y cotización.",
+      en: "This guide helps importers, distributors and project buyers turn real visual references into a shortlist that can be confirmed through samples and quotation.",
+    },
+    readingTime: { es: "8 min de lectura", en: "8 min read" },
+    cover: "/assets/uv-marble-light-design-references.jpg",
+    coverAlt: {
+      es: "Referencias visuales claras de láminas de mármol UV para selección B2B",
+      en: "Light UV marble sheet visual references for B2B selection",
+    },
+    sections: [],
+  },
   {
     slug: "spc-vs-lvp-flooring",
     localizedSlug: { es: "piso-spc-vs-lvp" },

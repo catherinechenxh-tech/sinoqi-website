@@ -1171,6 +1171,20 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
           </div>
         </section>
       )}
+      {page === "uv-marble-sheet" && es && (
+        <section className="section section--tint">
+          <div className="container">
+            <SectionTitle
+              eyebrow="Guía para compradores"
+              title="Compare diseños y colores antes de solicitar muestras"
+              body="Utilice referencias visuales reales para preparar una selección controlada y confirmar la opción actual mediante muestra y cotización."
+            />
+            <div className="application-product-links" aria-label="Guía relacionada con láminas de mármol UV">
+              <Link href="/blog/disenos-colores-laminas-marmol-uv/">Diseños y colores de láminas de mármol UV<span aria-hidden="true">→</span></Link>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="section">
         <div className="container">
           <SectionTitle eyebrow={es ? "Otras líneas principales" : "Other core product lines"} title={es ? "Complete su selección de materiales" : "Continue your material selection"} />

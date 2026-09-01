@@ -320,6 +320,15 @@ export function UvMarbleSheetPage() {
         </div>
       </section>
 
+      <section className="section">
+        <div className="container">
+          <SectionTitle eyebrow="Buyer guide" title="Compare UV marble sheet designs and colors" body="Use real catalog references to shortlist visual directions before requesting a current sample or quotation." />
+          <div className="application-product-links">
+            <Link href="/en/blog/uv-marble-sheet-designs-colors/">UV Marble Sheet Designs &amp; Colors <span aria-hidden="true">→</span></Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section section--tint">
         <div className="container">
           <SectionTitle eyebrow="Related product routes" title="Continue the product selection" body="Review related decorative product lines or return to the complete product overview." />

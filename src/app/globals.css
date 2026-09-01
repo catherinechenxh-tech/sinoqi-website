@@ -556,6 +556,15 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .design-guide__cover-main img, .design-guide__cover-side img { object-fit: cover; }
 .wpc-design-guide__catalog-board { background: var(--white); }
 .wpc-design-guide__catalog-board img { object-fit: contain; }
+.uv-design-guide__reference-board { background: var(--white); }
+.uv-design-guide__reference-board img { object-fit: contain; }
+.uv-design-guide__visual-grid { margin-top: 34px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.uv-design-guide__visual-grid article { min-width: 0; padding: 18px 18px 26px; background: var(--white); border: 1px solid var(--line); }
+.uv-design-guide__visual-grid article:last-child { grid-column: 1 / -1; max-width: calc(50% - 12px); }
+.uv-design-guide__visual-grid article > div { position: relative; min-height: 370px; overflow: hidden; background: #f8f5ef; }
+.uv-design-guide__visual-grid article img { object-fit: contain; }
+.uv-design-guide__visual-grid h3 { margin: 22px 4px 10px; font-size: 23px; }
+.uv-design-guide__visual-grid p { margin: 0 4px; color: var(--muted); font-size: 14px; }
 .design-guide__content { padding-top: 88px; padding-bottom: 105px; }
 .design-guide__content > section { padding: 76px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 120px; }
 .design-guide__content > section:first-child { padding-top: 0; }
@@ -715,6 +724,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .design-guide__number-list { grid-template-columns: repeat(3, 1fr); }
   .design-guide__number-list li { border-bottom: 1px solid var(--line); }
   .design-guide__directions { grid-template-columns: 1fr 1fr; }
+  .uv-design-guide__visual-grid article > div { min-height: 300px; }
   .design-guide__directions article, .design-guide__directions article:nth-child(4), .design-guide__directions article:nth-child(5) { grid-column: auto; }
 }
 
@@ -813,6 +823,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .article-toc { display: none; }
   .spc-explainer__compare, .spc-explainer__number-grid { grid-template-columns: 1fr; }
   .design-guide__cover-grid, .design-guide__sample-section, .design-guide__catalog, .design-guide__request { grid-template-columns: 1fr; }
+  .uv-design-guide__visual-grid article:last-child { max-width: none; }
   .design-guide__cover-main, .design-guide__cover-side { min-height: 430px; }
   .design-guide__cover-side { display: none; }
   .design-guide__sample-media { position: relative; top: auto; min-height: 500px; }
@@ -900,6 +911,9 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .design-guide__content > section { padding: 56px 0; }
   .design-guide__content h2 { font-size: 31px; }
   .design-guide__number-list, .design-guide__directions, .design-guide__routes, .design-guide__catalog-lists, .design-guide__request-grid { grid-template-columns: 1fr; }
+  .uv-design-guide__visual-grid { grid-template-columns: 1fr; }
+  .uv-design-guide__visual-grid article:last-child { grid-column: auto; }
+  .uv-design-guide__visual-grid article > div { min-height: 245px; }
   .design-guide__number-list li { border-right: 0; }
   .design-guide__directions article, .design-guide__directions article:nth-child(4), .design-guide__directions article:nth-child(5) { grid-column: auto; }
   .design-guide__finish-section { padding-inline: 14px !important; }

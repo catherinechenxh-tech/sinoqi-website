@@ -11,6 +11,7 @@ import { SpcVsLvpGuide } from "@/components/spc-vs-lvp-guide";
 import { SpcVsLvpGuideEs } from "@/components/spc-vs-lvp-guide-es";
 import { WpcWallPanelDesignsColors } from "@/components/wpc-wall-panel-designs-colors";
 import { WpcWallPanelDesignsColorsEs } from "@/components/wpc-wall-panel-designs-colors-es";
+import { UvMarbleSheetDesignsColors } from "@/components/uv-marble-sheet-designs-colors";
 
 export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData }) {
   if (post.kind === "spc-vs-lvp-guide") {
@@ -30,6 +31,9 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
   }
   if (post.kind === "wpc-wall-panel-designs-colors") {
     return locale === "es" ? <WpcWallPanelDesignsColorsEs post={post} /> : <WpcWallPanelDesignsColors post={post} />;
+  }
+  if (post.kind === "uv-marble-sheet-designs-colors") {
+    return <UvMarbleSheetDesignsColors locale={locale} post={post} />;
   }
 
   const es = locale === "es";
