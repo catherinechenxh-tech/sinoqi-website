@@ -114,7 +114,12 @@ function languagePath(pathname: string, targetLocale: Locale) {
   const currentPost = blogPosts.find(
     (post) => normalizePath(localizedBlogPostPath(post.slug, currentLocale)) === normalized,
   );
-  if (currentPost) return localizedBlogPostPath(currentPost.slug, targetLocale);
+  if (currentPost) {
+    if (currentPost.locales && !currentPost.locales.includes(targetLocale)) {
+      return localizedPath("blog", targetLocale);
+    }
+    return localizedBlogPostPath(currentPost.slug, targetLocale);
+  }
 
   const basePath = normalized === "/en/"
     ? "/"

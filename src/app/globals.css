@@ -513,6 +513,30 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .article-cta > p:not(.eyebrow) { color: var(--muted); }
 .article-cta .button { width: 100%; margin: 8px 0 20px; }
 
+.spc-explainer__hero-actions, .spc-explainer__actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 13px; }
+.spc-explainer__cover img { object-position: center 63%; }
+.spc-explainer__body > section { scroll-margin-top: 130px; }
+.spc-explainer__body > section > .eyebrow { margin-bottom: 10px; color: var(--orange-deep); font-size: 12px; line-height: 1.4; }
+.spc-explainer__compare { margin: 28px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.spc-explainer__compare article { padding: 28px; background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--orange); }
+.spc-explainer__compare h3 { margin: 0 0 14px; color: var(--green-dark); font-size: 22px; }
+.spc-explainer__compare ul { margin-bottom: 0; }
+.spc-explainer__number-grid { margin: 30px 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.spc-explainer__number-grid article { min-width: 0; padding: 25px; background: var(--white); border: 1px solid var(--line); }
+.spc-explainer__number-grid span { display: block; margin-bottom: 20px; color: var(--orange-deep); font-size: 13px; font-weight: 900; letter-spacing: .08em; }
+.spc-explainer__number-grid h3 { margin: 0 0 9px; color: var(--green-dark); font-size: 21px; }
+.spc-explainer__number-grid p { margin: 0; color: var(--muted); font-size: 15px; }
+.spc-explainer__terms { margin: 28px 0 24px; display: grid; border-top: 1px solid var(--line); }
+.spc-explainer__terms div { padding: 18px 0; display: grid; grid-template-columns: minmax(150px, .65fr) minmax(0, 1.35fr); gap: 24px; border-bottom: 1px solid var(--line); }
+.spc-explainer__terms dt { color: var(--green-dark); font-weight: 850; }
+.spc-explainer__terms dd { margin: 0; color: var(--muted); }
+.spc-explainer__checklist { margin: 28px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 32px; list-style: none; padding: 0 !important; }
+.spc-explainer__checklist li { position: relative; margin: 0; padding: 14px 0 14px 28px; border-bottom: 1px solid var(--line); }
+.spc-explainer__checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--orange-deep); font-weight: 900; }
+.spc-explainer__sources { padding: 32px; background: var(--green-pale); border-left: 5px solid var(--orange); }
+.spc-explainer__sources ul { margin-bottom: 0; }
+.spc-explainer__sources a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+
 .design-guide__hero { padding-bottom: 150px; }
 .design-guide__hero-context { max-width: 820px !important; color: #a9c4ba !important; font-size: 15px !important; }
 .design-guide__actions { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 13px; }
@@ -779,6 +803,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .article-layout { grid-template-columns: 1fr; padding-top: 60px; }
   .article-aside { position: static; grid-row: 1; }
   .article-toc { display: none; }
+  .spc-explainer__compare, .spc-explainer__number-grid { grid-template-columns: 1fr; }
   .design-guide__cover-grid, .design-guide__sample-section, .design-guide__catalog, .design-guide__request { grid-template-columns: 1fr; }
   .design-guide__cover-main, .design-guide__cover-side { min-height: 430px; }
   .design-guide__cover-side { display: none; }
@@ -854,6 +879,11 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .article-layout { padding-top: 48px; padding-bottom: 70px; }
   .article-body h2 { font-size: 29px; }
   .article-body p, .article-body li { font-size: 16px; }
+  .spc-explainer__hero-actions, .spc-explainer__actions { display: grid; }
+  .spc-explainer__hero-actions > *, .spc-explainer__actions > * { width: 100%; }
+  .spc-explainer__checklist { grid-template-columns: 1fr; }
+  .spc-explainer__terms div { grid-template-columns: 1fr; gap: 7px; }
+  .spc-explainer__compare article, .spc-explainer__number-grid article, .spc-explainer__sources { padding: 22px; }
   .design-guide__hero { padding-bottom: 112px; }
   .design-guide__actions { display: grid; }
   .design-guide__actions > * { width: 100%; }

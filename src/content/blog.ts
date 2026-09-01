@@ -13,7 +13,7 @@ export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
   locales?: Locale[];
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "spc-flooring-explainer";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -27,6 +27,36 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "what-is-spc-flooring",
+    locales: ["en"],
+    kind: "spc-flooring-explainer",
+    publishedAt: "2026-09-01",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es el piso SPC? Guía práctica para compradores B2B",
+      en: "What Is SPC Flooring? A Practical Guide for B2B Buyers",
+    },
+    seoTitle: {
+      es: "¿Qué es el piso SPC? Guía para compradores B2B | SINOQI",
+      en: "What Is SPC Flooring? B2B Buyer Guide | SINOQI",
+    },
+    description: {
+      es: "Conozca qué significa SPC flooring, cómo revisar una construcción de núcleo rígido y qué deben confirmar los importadores antes de pedir muestras o cotización.",
+      en: "Learn what SPC flooring means, how rigid-core product details should be checked, and what importers need before requesting samples or a quotation.",
+    },
+    introduction: {
+      es: "Una explicación basada en referencias sectoriales y una lista de compra para separar la definición general de las especificaciones que deben confirmarse para cada producto.",
+      en: "This guide separates the general rigid-core flooring definition from the product-specific details that importers and distributors should confirm before sourcing.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/spc-flooring.jpg",
+    coverAlt: {
+      es: "Muestra real de piso SPC con referencia visual efecto madera",
+      en: "Real SPC flooring sample with a wood-look visual reference",
+    },
+    sections: [],
+  },
   {
     slug: "pvc-ceiling-panel-buying-guide",
     publishedAt: "2026-08-08",
