@@ -1156,6 +1156,21 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
           </div>
         </section>
       )}
+      {page === "spc-flooring" && es && (
+        <section className="section section--tint">
+          <div className="container">
+            <SectionTitle
+              eyebrow="Guías para compradores"
+              title="Verifique la categoría y prepare su comparación"
+              body="Consulte las definiciones sectoriales y los datos que debe confirmar antes de solicitar una muestra o cotización."
+            />
+            <div className="application-product-links" aria-label="Guías relacionadas con piso SPC">
+              <Link href="/blog/que-es-el-piso-spc/">¿Qué es el piso SPC?<span aria-hidden="true">→</span></Link>
+              <Link href="/blog/piso-spc-vs-lvp/">Comparación de piso SPC y LVP<span aria-hidden="true">→</span></Link>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="section">
         <div className="container">
           <SectionTitle eyebrow={es ? "Otras líneas principales" : "Other core product lines"} title={es ? "Complete su selección de materiales" : "Continue your material selection"} />

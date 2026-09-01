@@ -13,7 +13,7 @@ export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
   locales?: Locale[];
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "spc-flooring-explainer";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -28,8 +28,38 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "spc-vs-lvp-flooring",
+    localizedSlug: { es: "piso-spc-vs-lvp" },
+    kind: "spc-vs-lvp-guide",
+    publishedAt: "2026-09-01",
+    category: { es: "Guía comparativa", en: "Comparison guide" },
+    title: {
+      es: "Piso SPC vs LVP: qué deben comparar los compradores B2B",
+      en: "SPC Flooring vs LVP: What B2B Buyers Should Compare",
+    },
+    seoTitle: {
+      es: "Piso SPC vs LVP: guía comparativa B2B | SINOQI",
+      en: "SPC Flooring vs LVP: B2B Comparison Guide | SINOQI",
+    },
+    description: {
+      es: "Compare la terminología, las categorías de construcción y los datos de compra de SPC y LVP antes de solicitar muestras o cotizaciones.",
+      en: "Compare SPC flooring vs LVP terminology, construction categories and sourcing details before requesting samples or quotations.",
+    },
+    introduction: {
+      es: "Una comparación neutral para separar la categoría LVP de la construcción de núcleo rígido SPC y preparar una revisión de producto verificable.",
+      en: "A neutral comparison that separates the LVP product label from SPC rigid-core construction and turns the result into a verifiable sourcing checklist.",
+    },
+    readingTime: { es: "8 min de lectura", en: "8 min read" },
+    cover: "/assets/spc-flooring.jpg",
+    coverAlt: {
+      es: "Muestra real de piso SPC con referencia visual efecto madera",
+      en: "Real SPC flooring sample used for a B2B product comparison",
+    },
+    sections: [],
+  },
+  {
     slug: "what-is-spc-flooring",
-    locales: ["en"],
+    localizedSlug: { es: "que-es-el-piso-spc" },
     kind: "spc-flooring-explainer",
     publishedAt: "2026-09-01",
     category: { es: "Guía de producto", en: "Product guide" },

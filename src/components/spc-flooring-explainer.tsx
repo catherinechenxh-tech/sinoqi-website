@@ -272,6 +272,7 @@ export function SpcFlooringExplainer({ post }: { post: BlogPost }) {
               <p>Share the design, required format, quantity and destination.</p>
               <Link className="button button--orange" href={`${localizedPath("contact", "en")}#inquiry`}>Request Quote</Link>
               <Link className="text-link" href={localizedPath("spc-flooring", "en")}>View SPC Flooring <span aria-hidden="true">→</span></Link>
+              <Link className="text-link" href="/en/blog/spc-vs-lvp-flooring/">Compare SPC and LVP <span aria-hidden="true">→</span></Link>
             </div>
           </aside>
         </div>

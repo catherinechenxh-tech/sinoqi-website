@@ -333,6 +333,7 @@ export function SpcFlooringPage() {
             <Link href={localizedPath("products", "en")}>View All Products <span aria-hidden="true">→</span></Link>
             <Link href={localizedPath("applications", "en")}>View Applications <span aria-hidden="true">→</span></Link>
             <Link href={localizedPath("faq", "en")}>B2B Buyer FAQ <span aria-hidden="true">→</span></Link>
+            <Link href="/en/blog/spc-vs-lvp-flooring/">SPC vs LVP Buyer Guide <span aria-hidden="true">→</span></Link>
           </div>
         </div>
       </section>

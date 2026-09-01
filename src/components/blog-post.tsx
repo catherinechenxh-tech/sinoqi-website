@@ -6,12 +6,18 @@ import { PvcCeilingDesignsFinishes } from "@/components/pvc-ceiling-designs-fini
 import { PvcCeilingBathroomGuide } from "@/components/pvc-ceiling-bathroom-guide";
 import { PvcCeilingSizesSpecifications } from "@/components/pvc-ceiling-sizes-specifications";
 import { SpcFlooringExplainer } from "@/components/spc-flooring-explainer";
+import { SpcFlooringExplainerEs } from "@/components/spc-flooring-explainer-es";
+import { SpcVsLvpGuide } from "@/components/spc-vs-lvp-guide";
+import { SpcVsLvpGuideEs } from "@/components/spc-vs-lvp-guide-es";
 import { WpcWallPanelDesignsColors } from "@/components/wpc-wall-panel-designs-colors";
 import { WpcWallPanelDesignsColorsEs } from "@/components/wpc-wall-panel-designs-colors-es";
 
 export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData }) {
+  if (post.kind === "spc-vs-lvp-guide") {
+    return locale === "es" ? <SpcVsLvpGuideEs post={post} /> : <SpcVsLvpGuide post={post} />;
+  }
   if (post.kind === "spc-flooring-explainer") {
-    return <SpcFlooringExplainer post={post} />;
+    return locale === "es" ? <SpcFlooringExplainerEs post={post} /> : <SpcFlooringExplainer post={post} />;
   }
   if (post.kind === "pvc-ceiling-designs-finishes") {
     return <PvcCeilingDesignsFinishes locale={locale} post={post} />;
