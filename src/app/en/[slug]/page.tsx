@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: localizedPath(slug, "en"),
       languages: { es: localizedPath(slug, "es"), en: localizedPath(slug, "en") },
     },
-    ...(["pvc-ceiling-panel", "wpc-wall-panel", "spc-flooring"].includes(slug) ? {
+    ...(["pvc-ceiling-panel", "wpc-wall-panel", "uv-marble-sheet", "spc-flooring"].includes(slug) ? {
       openGraph: {
         title: pageMeta.title,
         description: pageMeta.description,
@@ -29,7 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           ? { url: "/assets/pvc-ceiling.jpg", alt: "PVC ceiling panels in SINOQI production" }
           : slug === "spc-flooring"
             ? { url: "/assets/spc-flooring.jpg", alt: "SPC flooring sample with a wood-look design reference" }
-            : { url: "/assets/wpc-wall-panel.png", alt: "SINOQI WPC wall panel profiles and finishes" }],
+            : slug === "uv-marble-sheet"
+              ? { url: "/assets/uv-marble-sheet-stack.jpg", alt: "UV marble sheets with a marble-effect surface ready for product selection" }
+              : { url: "/assets/wpc-wall-panel.png", alt: "SINOQI WPC wall panel profiles and finishes" }],
       },
     } : {}),
   };

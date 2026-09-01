@@ -49,6 +49,7 @@ export const asset = {
   pvc: "/assets/pvc-ceiling.jpg",
   wpc: "/assets/wpc-wall-panel.png",
   uv: "/assets/uv-marble-sheet.jpg",
+  uvFullSheet: "/assets/uv-marble-sheet-stack.jpg",
   spc: "/assets/spc-flooring.jpg",
   pvcProduction: "/assets/pvc-ceiling.jpg",
   wpcProduction: "/assets/wpc-production.jpg",
@@ -249,8 +250,8 @@ export const meta: Record<Locale, Record<PageKey, { title: string; description: 
       description: "Source indoor WPC wall panels from SINOQI for import and distribution, with catalog-listed profiles, 100-piece MOQ per design and color, and sample support.",
     },
     "uv-marble-sheet": {
-      title: "UV Marble Sheet Supplier | SINOQI",
-      description: "Marble-effect UV decorative sheets for walls and interior renovation, available for distribution programs.",
+      title: "UV Marble Sheet for B2B Sourcing | SINOQI",
+      description: "Source UV marble sheet for interior decorative wall and renovation programs. Review MOQ, samples, lead time, packing and quotation requirements with SINOQI.",
     },
     "spc-flooring": {
       title: "SPC Flooring for Wholesale & Distribution | SINOQI",
