@@ -125,7 +125,7 @@ export function WpcWallPanelDesignsColors({ post }: { post: BlogPost }) {
             <ol className="design-guide__number-list">
               {["Choose a design direction", "Compare profile references", "Shortlist colors", "Request the catalog or samples", "Confirm the quote configuration"].map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
             </ol>
-            <p className="design-guide__related-copy">For commercial terms and the core product overview, review the <Link href={localizedPath("wpc-wall-panel", "en")}>WPC wall panel product page</Link>. Application images throughout the site are selection references and are not presented as completed customer projects.</p>
+            <p className="design-guide__related-copy">For the category definition, read <Link href={localizedBlogPostPath("what-is-wpc-wall-panel", "en")}>what a WPC wall panel is</Link>. For commercial terms and the core product overview, review the <Link href={localizedPath("wpc-wall-panel", "en")}>WPC wall panel product page</Link>. Application images throughout the site are selection references and are not presented as completed customer projects.</p>
           </section>
 
           <section id="design-directions">

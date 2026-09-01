@@ -978,6 +978,7 @@ function WpcWallPanelPage() {
             />
             <div className="application-product-links" aria-label="WPC wall panel buyer resources">
               <Link href={OUTDOOR_WPC_PATH}>Looking for outdoor WPC wall cladding?<span aria-hidden="true">→</span></Link>
+              <Link href={localizedBlogPostPath("what-is-wpc-wall-panel", "en")}>What is a WPC wall panel?<span aria-hidden="true">→</span></Link>
               <Link href={localizedBlogPostPath("wpc-wall-panel-designs-colors", "en")}>WPC wall panel designs and colors<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("applications", "en")}>Interior applications<span aria-hidden="true">→</span></Link>
               <Link href={localizedPath("manufacturing", "en")}>Manufacturing capability<span aria-hidden="true">→</span></Link>
@@ -1167,6 +1168,21 @@ function ProductPage({ locale, page }: { locale: Locale; page: keyof typeof prod
             <div className="application-product-links" aria-label="Guías relacionadas con piso SPC">
               <Link href="/blog/que-es-el-piso-spc/">¿Qué es el piso SPC?<span aria-hidden="true">→</span></Link>
               <Link href="/blog/piso-spc-vs-lvp/">Comparación de piso SPC y LVP<span aria-hidden="true">→</span></Link>
+            </div>
+          </div>
+        </section>
+      )}
+      {page === "wpc-wall-panel" && es && (
+        <section className="section section--tint">
+          <div className="container">
+            <SectionTitle
+              eyebrow="Guías para compradores"
+              title="Comprenda la categoría y prepare su selección"
+              body="Separe la definición general del producto específico y compare perfiles, diseños y colores antes de solicitar una muestra."
+            />
+            <div className="application-product-links" aria-label="Guías relacionadas con paneles de pared WPC">
+              <Link href={localizedBlogPostPath("what-is-wpc-wall-panel", "es")}>¿Qué es un panel de pared WPC?<span aria-hidden="true">→</span></Link>
+              <Link href={localizedBlogPostPath("wpc-wall-panel-designs-colors", "es")}>Diseños y colores de paneles de pared WPC<span aria-hidden="true">→</span></Link>
             </div>
           </div>
         </section>

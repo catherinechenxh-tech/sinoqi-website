@@ -13,7 +13,7 @@ export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
   locales?: Locale[];
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "uv-marble-sheet-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "wpc-wall-panel-explainer" | "uv-marble-sheet-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -27,6 +27,36 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "what-is-wpc-wall-panel",
+    localizedSlug: { es: "que-es-un-panel-de-pared-wpc" },
+    kind: "wpc-wall-panel-explainer",
+    publishedAt: "2026-09-01",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es un panel de pared WPC? Guía para compradores B2B",
+      en: "What Is a WPC Wall Panel? A Guide for B2B Buyers",
+    },
+    seoTitle: {
+      es: "¿Qué es un panel de pared WPC? Guía B2B | SINOQI",
+      en: "What Is a WPC Wall Panel? B2B Buyer Guide | SINOQI",
+    },
+    description: {
+      es: "Conozca qué significa panel de pared WPC, qué no confirma esta categoría y qué deben verificar importadores y distribuidores antes de cotizar.",
+      en: "Learn what a WPC wall panel means, what the category does not confirm, and what importers and distributors should verify before requesting a quote.",
+    },
+    introduction: {
+      es: "Esta guía separa la definición general del compuesto madera-plástico de los datos específicos que deben confirmarse para cada perfil, muestra y pedido.",
+      en: "This guide separates the general wood-plastic composite definition from the product-specific details that must be confirmed for each profile, sample and order.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/wpc-wall-panel.png",
+    coverAlt: {
+      es: "Referencias reales de perfiles y acabados de paneles de pared WPC",
+      en: "Real WPC wall panel profile and finish references",
+    },
+    sections: [],
+  },
   {
     slug: "uv-marble-sheet-designs-colors",
     localizedSlug: { es: "disenos-colores-laminas-marmol-uv" },
