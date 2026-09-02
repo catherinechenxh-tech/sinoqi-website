@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { blogPosts, localizedBlogPostPath } from "@/content/blog";
 import { GoogleAnalyticsEvents } from "@/components/google-analytics-events";
+import { WhatsAppChatWidget } from "@/components/whatsapp-chat-widget";
 import {
   useCallback,
   useEffect,
@@ -532,6 +533,7 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
           </nav>
         </div>
       </footer>
+      <WhatsAppChatWidget />
     </div>
   );
 }

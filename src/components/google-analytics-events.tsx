@@ -36,6 +36,8 @@ export function GoogleAnalyticsEvents({ language }: { language: Locale }) {
         link_url: anchor.href,
         link_text: normalizedLinkText(anchor),
         language,
+        page_title: document.title,
+        ...(anchor.dataset.gaPlacement ? { placement: anchor.dataset.gaPlacement } : {}),
       });
     };
 
