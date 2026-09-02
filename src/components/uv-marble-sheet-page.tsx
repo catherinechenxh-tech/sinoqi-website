@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { asset, company, localizedPath, OUTDOOR_WPC_PATH, products, productImageAlt } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
+import { createQuoteBasedPageSchema } from "@/lib/structured-data";
 
 const quoteHref = `${localizedPath("contact", "en")}#inquiry`;
 
@@ -62,15 +63,13 @@ export function UvMarbleSheetPage() {
         { "@type": "ListItem", position: 3, name: "UV Marble Sheet", item: canonicalUrl },
       ],
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
+    createQuoteBasedPageSchema({
       name: "UV Marble Sheet",
       url: canonicalUrl,
       description: "UV marble sheet for B2B sourcing, interior decorative wall programs and renovation selection, with order-specific commercial confirmation.",
       image: new URL(asset.uvFullSheet, SITE_ORIGIN).toString(),
-      category: "UV marble sheet",
-    },
+      inLanguage: "en",
+    }),
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

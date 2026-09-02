@@ -4,6 +4,7 @@ import type { BlogPost } from "@/content/blog";
 import { localizedBlogPostPath } from "@/content/blog";
 import { asset, company, localizedPath, type Locale } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
+import { createStructuredDataTopic } from "@/lib/structured-data";
 
 const sourceLinks = [
   {
@@ -272,7 +273,7 @@ export function WpcWallPanelExplainer({ locale, post }: { locale: Locale; post: 
       mainEntityOfPage: canonicalUrl,
       author: { "@type": "Organization", name: company.brand, url: SITE_ORIGIN },
       publisher: { "@type": "Organization", name: company.brand, url: SITE_ORIGIN },
-      about: { "@type": "Product", name: es ? "Panel de pared WPC" : "WPC Wall Panel", url: productUrl },
+      about: createStructuredDataTopic(es ? "Panel de pared WPC" : "WPC Wall Panel", productUrl),
     },
     {
       "@context": "https://schema.org",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { BlogPost } from "@/content/blog";
 import { asset, company, localizedPath } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
+import { createStructuredDataTopic } from "@/lib/structured-data";
 
 const sourceLinks = [
   {
@@ -91,7 +92,7 @@ export function SpcFlooringExplainer({ post }: { post: BlogPost }) {
       mainEntityOfPage: canonicalUrl,
       author: { "@type": "Organization", name: company.brand, url: SITE_ORIGIN },
       publisher: { "@type": "Organization", name: company.brand, url: SITE_ORIGIN },
-      about: { "@type": "Product", name: "SPC Flooring", url: productUrl },
+      about: createStructuredDataTopic("SPC Flooring", productUrl),
     },
     {
       "@context": "https://schema.org",

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { asset, company, localizedPath, OUTDOOR_WPC_PATH, products, productImageAlt } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
+import { createQuoteBasedPageSchema } from "@/lib/structured-data";
 
 const quoteHref = `${localizedPath("contact", "en")}#inquiry`;
 
@@ -69,15 +70,13 @@ export function SpcFlooringPage() {
         { "@type": "ListItem", position: 3, name: "SPC Flooring", item: canonicalUrl },
       ],
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
+    createQuoteBasedPageSchema({
       name: "SPC Flooring",
       url: canonicalUrl,
       description: "SPC flooring for B2B wholesale and distribution sourcing, with catalog-listed reference formats and order-specific commercial confirmation.",
       image: new URL(asset.spc, SITE_ORIGIN).toString(),
-      category: "SPC flooring",
-    },
+      inLanguage: "en",
+    }),
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

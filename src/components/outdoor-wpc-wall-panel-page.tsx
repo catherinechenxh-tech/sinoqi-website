@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { asset, company, localizedPath, OUTDOOR_WPC_PATH } from "@/content/site";
 import { SITE_ORIGIN } from "@/lib/site-url";
+import { createQuoteBasedPageSchema } from "@/lib/structured-data";
 
 const quoteHref = `${localizedPath("contact", "en")}#inquiry`;
 
@@ -49,19 +50,26 @@ function SectionTitle({ eyebrow, title, body }: { eyebrow: string; title: string
 export function OutdoorWpcWallPanelPage() {
   const canonicalUrl = new URL(OUTDOOR_WPC_PATH, SITE_ORIGIN).toString();
   const schemas = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
+    createQuoteBasedPageSchema({
       name: "Outdoor WPC Wall Panel",
       alternateName: "WPC Exterior Wall Cladding",
+      topicName: "Outdoor WPC Wall Panel",
       description: "Outdoor WPC wall panels for B2B exterior wall cladding sourcing, with order-specific profile, surface, packing and customization confirmation.",
       url: canonicalUrl,
       image: [
         new URL(asset.outdoorWpcHero, SITE_ORIGIN).toString(),
         new URL(asset.outdoorWpcProfile, SITE_ORIGIN).toString(),
       ],
-      brand: { "@type": "Brand", name: company.brand },
-      category: "Exterior wall cladding",
+      inLanguage: "en",
+    }),
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: new URL(localizedPath("home", "en"), SITE_ORIGIN).toString() },
+        { "@type": "ListItem", position: 2, name: "Products", item: new URL(localizedPath("products", "en"), SITE_ORIGIN).toString() },
+        { "@type": "ListItem", position: 3, name: "Outdoor WPC Wall Panel", item: canonicalUrl },
+      ],
     },
     {
       "@context": "https://schema.org",

@@ -7,6 +7,7 @@ import { SpcFlooringPage } from "@/components/spc-flooring-page";
 import { UvMarbleSheetPage } from "@/components/uv-marble-sheet-page";
 import { blogPosts, localizedBlogPostPath } from "@/content/blog";
 import { SITE_ORIGIN } from "@/lib/site-url";
+import { createQuoteBasedPageSchema } from "@/lib/structured-data";
 import {
   asset,
   company,
@@ -585,25 +586,15 @@ function PvcCeilingProductPage({ locale }: { locale: Locale }) {
         ["When does the production lead time start?", "The regular lead time is 30 days from receipt of deposit, subject to configuration and production planning."],
         ["Is the sample free?", "Yes. The sample is free for buyers with a genuine requirement, and the buyer covers the courier cost."],
       ];
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
+  const pageSchema = createQuoteBasedPageSchema({
     name: es ? "Paneles de techo PVC" : "PVC Ceiling Panels",
     description: es
       ? "Paneles de techo PVC para importadores y distribuidores, con anchos habituales de 25 y 30 cm, condiciones mayoristas confirmadas y opciones evaluadas por pedido."
       : "PVC ceiling panels for importers and distributors, with 25 cm and 30 cm regular widths, confirmed wholesale terms and order-specific option review.",
     image: [absoluteUrl(asset.pvc), absoluteUrl("/assets/pvc-production.jpg")],
-    category: es ? "Paneles de techo para interiores" : "Interior ceiling panels",
-    brand: { "@type": "Brand", name: company.brand },
-    manufacturer: { "@type": "Organization", name: company.legalName, url: SITE_ORIGIN },
     url: canonicalUrl,
-    additionalProperty: [
-      { "@type": "PropertyValue", name: es ? "Anchos habituales" : "Regular widths", value: "25 cm; 30 cm" },
-      { "@type": "PropertyValue", name: "MOQ", value: es ? "100 piezas por diseño y color" : "100 pieces per design and color" },
-      { "@type": "PropertyValue", name: es ? "Rutas de acabado" : "Finish routes", value: es ? "Impresión; estampado en caliente; laminado" : "Printing; hot stamping; laminated" },
-      { "@type": "PropertyValue", name: es ? "Embalaje" : "Packaging", value: es ? "Caja de cartón o plástico retráctil" : "Carton or shrink wrap" },
-    ],
-  };
+    inLanguage: locale,
+  });
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -622,7 +613,7 @@ function PvcCeilingProductPage({ locale }: { locale: Locale }) {
       acceptedAnswer: { "@type": "Answer", text: answer },
     })),
   };
-  const schemas = [productSchema, breadcrumbSchema, faqSchema];
+  const schemas = [pageSchema, breadcrumbSchema, faqSchema];
   const options = es
     ? [
         ["Anchos habituales", "La oferta habitual confirmada incluye 25 cm y 30 cm. La longitud requerida se confirma en la cotización.", ["25 cm", "30 cm"]],
@@ -828,15 +819,14 @@ function WpcWallPanelPage() {
     ["When does the regular production lead time begin?", "The confirmed regular lead time is 30 days from receipt of deposit, subject to the approved configuration and production plan."],
   ];
   const schemas = [
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
+    createQuoteBasedPageSchema({
+      pageType: "CollectionPage",
       name: "WPC Wall Panel Manufacturer in China",
       description: "Indoor WPC wall panels for importers, distributors, wholesalers and project buyers, with catalog-listed profiles and order-specific quotation support.",
       url: canonicalUrl,
-      isPartOf: { "@type": "WebSite", name: company.brand, url: SITE_ORIGIN },
-      about: { "@type": "Product", name: "Indoor WPC Wall Panels", category: "Decorative wall panels" },
-    },
+      topicName: "Indoor WPC Wall Panels",
+      inLanguage: "en",
+    }),
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
