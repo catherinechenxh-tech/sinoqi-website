@@ -1,11 +1,19 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import type { CSSProperties } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { company, type Locale } from "@/content/site";
 
 const AUTO_OPEN_DELAY = 8_000;
 const MOBILE_VIEWPORT_QUERY = "(max-width: 767.98px)";
+const MOBILE_CTA_GAP = 12;
+const MOBILE_CTA_SELECTOR = [
+  "main a.button",
+  "main button.button",
+  "main a[href^='https://wa.me/']",
+  "main a[href^='https://api.whatsapp.com/']",
+].join(",");
 const SESSION_KEY = "sinoqi-whatsapp-greeting-shown";
 const CONTACT_PATHS = new Set([
   "/contact/",
@@ -75,9 +83,13 @@ export function WhatsAppChatWidget() {
   const [open, setOpen] = useState(false);
   const [isMobileViewport, setIsMobileViewport] = useState(false);
   const [mobileFormActive, setMobileFormActive] = useState(false);
+  const [mobileCtaOffset, setMobileCtaOffset] = useState(0);
+  const [mobilePositionedPath, setMobilePositionedPath] = useState("");
   const [whatsappHref, setWhatsAppHref] = useState(company.whatsappHref);
   const autoOpenHandledRef = useRef(false);
   const floatingButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileCtaOffsetRef = useRef(0);
+  const widgetRef = useRef<HTMLDivElement>(null);
 
   const markGreetingHandled = useCallback(() => {
     autoOpenHandledRef.current = true;
@@ -151,6 +163,82 @@ export function WhatsAppChatWidget() {
   }, [isMobileViewport, normalizedPath]);
 
   useEffect(() => {
+    if (!isMobileViewport) {
+      mobileCtaOffsetRef.current = 0;
+      const frame = window.requestAnimationFrame(() => {
+        setMobileCtaOffset(0);
+        setMobilePositionedPath("");
+      });
+      return () => window.cancelAnimationFrame(frame);
+    }
+
+    let frame = 0;
+    let active = true;
+    const updateMobileCtaOffset = () => {
+      const widget = widgetRef.current;
+      const floatingButton = floatingButtonRef.current;
+      if (!widget || !floatingButton) return;
+
+      const buttonRect = floatingButton.getBoundingClientRect();
+      const computedBottom = Number.parseFloat(window.getComputedStyle(widget).bottom) || 0;
+      const baseBottom = Math.max(0, computedBottom - mobileCtaOffsetRef.current);
+      const baseTop = window.innerHeight - baseBottom - buttonRect.height;
+      const buttonLeft = buttonRect.left;
+      const buttonRight = buttonRect.right;
+      const targetRects = Array.from(document.querySelectorAll<HTMLElement>(MOBILE_CTA_SELECTOR))
+        .filter((target) => !target.closest(".whatsapp-widget"))
+        .map((target) => target.getBoundingClientRect())
+        .filter((rect) => (
+          rect.bottom > 0
+          && rect.top < window.innerHeight
+          && rect.right > buttonLeft
+          && rect.left < buttonRight
+        ));
+
+      let safeTop = baseTop;
+      for (let index = 0; index <= targetRects.length; index += 1) {
+        const conflicts = targetRects.filter((rect) => (
+          rect.top < safeTop + buttonRect.height
+          && rect.bottom > safeTop
+        ));
+        if (conflicts.length === 0) break;
+        safeTop = Math.min(...conflicts.map((rect) => rect.top - MOBILE_CTA_GAP - buttonRect.height));
+      }
+
+      const nextOffset = Math.max(0, Math.round(baseTop - Math.max(MOBILE_CTA_GAP, safeTop)));
+      if (nextOffset !== mobileCtaOffsetRef.current) {
+        mobileCtaOffsetRef.current = nextOffset;
+        setMobileCtaOffset(nextOffset);
+      }
+      setMobilePositionedPath(normalizedPath);
+    };
+    const scheduleUpdate = () => {
+      if (!active) return;
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(updateMobileCtaOffset);
+    };
+
+    scheduleUpdate();
+    const settleTimers = [
+      window.setTimeout(scheduleUpdate, 150),
+      window.setTimeout(scheduleUpdate, 600),
+    ];
+    const resizeObserver = new ResizeObserver(scheduleUpdate);
+    resizeObserver.observe(document.documentElement);
+    void document.fonts.ready.then(scheduleUpdate);
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    return () => {
+      active = false;
+      window.cancelAnimationFrame(frame);
+      settleTimers.forEach((timer) => window.clearTimeout(timer));
+      resizeObserver.disconnect();
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+    };
+  }, [isMobileViewport, normalizedPath]);
+
+  useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
       const message = t.prefilled(document.title, window.location.href);
       setWhatsAppHref(`${company.whatsappHref}?text=${encodeURIComponent(message)}`);
@@ -213,7 +301,12 @@ export function WhatsAppChatWidget() {
   }
 
   return (
-    <div className="whatsapp-widget">
+    <div
+      className="whatsapp-widget"
+      data-mobile-position-ready={mobilePositionedPath === normalizedPath ? "true" : "false"}
+      ref={widgetRef}
+      style={{ "--whatsapp-mobile-cta-offset": `${mobileCtaOffset}px` } as CSSProperties}
+    >
       {open ? (
         <aside aria-label="WhatsApp" className="whatsapp-widget__card" id="whatsapp-chat-card">
           <div className="whatsapp-widget__header">

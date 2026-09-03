@@ -941,10 +941,17 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   to { transform: translateX(0); opacity: 1; }
 }
 
+@media (max-width: 767.98px) {
+  .whatsapp-widget[data-mobile-position-ready="false"] { visibility: hidden; }
+  .whatsapp-widget {
+    bottom: calc(max(20px, env(safe-area-inset-bottom)) + var(--whatsapp-mobile-cta-offset, 0px));
+  }
+}
+
 @media (max-width: 560px) {
   .whatsapp-widget {
     right: max(12px, env(safe-area-inset-right));
-    bottom: max(12px, env(safe-area-inset-bottom));
+    bottom: calc(max(12px, env(safe-area-inset-bottom)) + var(--whatsapp-mobile-cta-offset, 0px));
     gap: 10px;
   }
   .whatsapp-widget__card { width: min(344px, calc(100vw - 24px)); }
