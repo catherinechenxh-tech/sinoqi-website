@@ -5,6 +5,7 @@ import { asset, localizedPath, type Locale } from "@/content/site";
 import { PvcCeilingDesignsFinishes } from "@/components/pvc-ceiling-designs-finishes";
 import { PvcCeilingBathroomGuide } from "@/components/pvc-ceiling-bathroom-guide";
 import { PvcCeilingSizesSpecifications } from "@/components/pvc-ceiling-sizes-specifications";
+import { PvcCeilingColorGuide } from "@/components/pvc-ceiling-color-guide";
 import { SpcFlooringExplainer } from "@/components/spc-flooring-explainer";
 import { SpcFlooringExplainerEs } from "@/components/spc-flooring-explainer-es";
 import { SpcVsLvpGuide } from "@/components/spc-vs-lvp-guide";
@@ -29,6 +30,9 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
   }
   if (post.kind === "pvc-ceiling-sizes-specifications") {
     return <PvcCeilingSizesSpecifications locale={locale} post={post} />;
+  }
+  if (post.kind === "pvc-ceiling-color-guide") {
+    return <PvcCeilingColorGuide locale={locale} post={post} />;
   }
   if (post.kind === "wpc-wall-panel-designs-colors") {
     return locale === "es" ? <WpcWallPanelDesignsColorsEs post={post} /> : <WpcWallPanelDesignsColors post={post} />;

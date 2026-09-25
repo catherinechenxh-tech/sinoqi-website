@@ -13,7 +13,7 @@ export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
   locales?: Locale[];
-  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "wpc-wall-panel-designs-colors" | "wpc-wall-panel-explainer" | "uv-marble-sheet-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
+  kind?: "pvc-ceiling-designs-finishes" | "pvc-ceiling-bathroom-guide" | "pvc-ceiling-sizes-specifications" | "pvc-ceiling-color-guide" | "wpc-wall-panel-designs-colors" | "wpc-wall-panel-explainer" | "uv-marble-sheet-designs-colors" | "spc-flooring-explainer" | "spc-vs-lvp-guide";
   publishedAt: string;
   category: LocalizedText;
   title: LocalizedText;
@@ -27,6 +27,36 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "how-to-choose-pvc-ceiling-colors-first-container",
+    localizedSlug: { es: "como-elegir-colores-cielo-raso-pvc-primer-contenedor" },
+    kind: "pvc-ceiling-color-guide",
+    publishedAt: "2026-09-25",
+    category: { es: "PVC Ceiling", en: "PVC Ceiling" },
+    title: {
+      es: "Cómo elegir 8 colores de cielo raso de PVC para su primer contenedor",
+      en: "How to Choose 8 PVC Ceiling Colors for Your First Container",
+    },
+    seoTitle: {
+      es: "Cómo elegir 8 colores de cielo raso de PVC para su primer contenedor",
+      en: "How to Choose 8 PVC Ceiling Colors for Your First Container",
+    },
+    description: {
+      es: "Guía práctica para importadores que eligen colores blancos, tipo madera y decorativos para un primer contenedor 40HQ.",
+      en: "A practical guide for importers choosing white, wood look and decorative PVC ceiling colors for a first 40HQ container.",
+    },
+    introduction: {
+      es: "La selección de colores es una de las decisiones más importantes al importar paneles de cielo raso de PVC.",
+      en: "Choosing colors is one of the most important decisions when importing PVC ceiling panels.",
+    },
+    readingTime: { es: "6 min de lectura", en: "6 min read" },
+    cover: "/images/blog/pvc-ceiling-colors-l07-l08-l10.png",
+    coverAlt: {
+      es: "Muestras de cielo raso de PVC L07 L08 y L10",
+      en: "PVC ceiling color samples L07 L08 and L10",
+    },
+    sections: [],
+  },
   {
     slug: "what-is-wpc-wall-panel",
     localizedSlug: { es: "que-es-un-panel-de-pared-wpc" },

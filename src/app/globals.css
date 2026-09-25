@@ -798,6 +798,16 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .spec-guide__rfq p { margin: 0; color: var(--ink); font-size: 14px; }
 .spec-guide__actions--light { margin-top: 28px; }
 
+.color-guide__cover .article-cover__frame { background: var(--white); }
+.color-guide__cover .article-cover__frame img { object-fit: contain; }
+.color-guide__body > section:first-child { margin-bottom: 52px; }
+.color-guide__body > section:first-child p:first-child { margin-top: 0; color: var(--green-deep); font-size: 20px; }
+.color-guide__body ol { padding-left: 24px; }
+.color-guide__image { width: 100%; height: auto; margin: 26px 0 24px; border: 1px solid var(--line); background: var(--white); }
+.color-guide__image--portrait { max-height: 720px; object-fit: contain; }
+.color-guide__inquiry { margin-top: 28px; padding: 22px 24px; background: var(--green-pale); border-left: 4px solid var(--orange); }
+.color-guide__actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; }
+
 @media (max-width: 1080px) {
   .nav-wrap { gap: 18px; }
   .desktop-nav { gap: 13px; }
