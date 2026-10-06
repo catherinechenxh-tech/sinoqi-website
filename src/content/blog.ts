@@ -386,6 +386,280 @@ export const blogPosts: BlogPost[] = [
     },
     sections: [],
   },
+  {
+    slug: "what-is-pvc-ceiling-panel",
+    localizedSlug: { es: "que-es-un-panel-de-techo-pvc" },
+    publishedAt: "2026-10-06",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es un panel de techo PVC? Definición y guía para compradores B2B",
+      en: "What Is a PVC Ceiling Panel? Definition and Guide for B2B Buyers",
+    },
+    seoTitle: {
+      es: "¿Qué es un panel de techo PVC? Definición B2B | SINOQI",
+      en: "What Is a PVC Ceiling Panel? B2B Definition | SINOQI",
+    },
+    description: {
+      es: "Definición clara de panel de techo PVC: composición, usos, ventajas, limitaciones y datos que importadores y distribuidores deben confirmar antes de comprar.",
+      en: "A clear definition of PVC ceiling panel: composition, uses, advantages, limitations and the details importers and distributors should confirm before purchasing.",
+    },
+    introduction: {
+      es: "El panel de techo PVC es un material decorativo y funcional usado en techos interiores. Esta guía separa la definición general del producto de las especificaciones que deben confirmarse para cada pedido.",
+      en: "A PVC ceiling panel is a decorative and functional material used in interior ceilings. This guide separates the general product definition from the specifications that must be confirmed for each order.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Paneles de techo PVC en una línea de producción SINOQI",
+      en: "PVC ceiling panels on a SINOQI production line",
+    },
+    sections: [
+      {
+        id: "definition",
+        title: { es: "1. Definición: ¿qué es un panel de techo PVC?", en: "1. Definition: what is a PVC ceiling panel?" },
+        paragraphs: {
+          es: ["Un panel de techo PVC es una lámina extruida de cloruro de polivinilo diseñada para revestir techos interiores. El material es ligero, resistente a la humedad y se instala mediante un sistema de ranura y lengüeta que oculta los tornillos."],
+          en: ["A PVC ceiling panel is an extruded sheet of polyvinyl chloride designed to cover interior ceilings. The material is lightweight, moisture-resistant and installed using a tongue-and-groove system that conceals fasteners."],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "2. Composición y fabricación", en: "2. Composition and manufacturing" },
+        paragraphs: {
+          es: ["El panel de techo PVC se produce por extrusión a partir de compuesto de PVC con aditivos que proporcionan estabilidad UV, flexibilidad y resistencia al impacto. El acabado superficial puede ser liso, impreso, estampado en caliente o laminado."],
+          en: ["PVC ceiling panels are produced by extrusion from a PVC compound with additives that provide UV stability, flexibility and impact resistance. The surface finish can be smooth, printed, hot-stamped or laminated."],
+        },
+        bullets: {
+          es: ["Compuesto base: PVC rígido con aditivos estabilizadores", "Proceso: extrusión continua en perfiles huecos", "Acabados: impresión, estampado en caliente, laminado", "Formatos habituales: anchos de 25 cm y 30 cm"],
+          en: ["Base compound: rigid PVC with stabilizing additives", "Process: continuous extrusion into hollow profiles", "Finishes: printing, hot stamping, lamination", "Standard formats: 25 cm and 30 cm widths"],
+        },
+      },
+      {
+        id: "advantages",
+        title: { es: "3. Ventajas confirmadas", en: "3. Confirmed advantages" },
+        paragraphs: {
+          es: ["El panel de techo PVC ofrece un conjunto de ventajas prácticas para compradores B2B que abastecen mercados residenciales y comerciales."],
+          en: ["PVC ceiling panels offer a set of practical advantages for B2B buyers supplying residential and commercial markets."],
+        },
+        bullets: {
+          es: ["Ligero: reduce el coste de transporte por contenedor", "Resistente a la humedad: adecuado para baños y cocinas", "Instalación rápida: sistema de ranura y lengüeta", "Bajo mantenimiento: superficie limpiable con paño húmedo", "Personalizable: diseño, color y acabado evaluados por pedido"],
+          en: ["Lightweight: reduces container shipping cost", "Moisture-resistant: suitable for bathrooms and kitchens", "Fast installation: tongue-and-groove system", "Low maintenance: cleanable surface with a damp cloth", "Customizable: design, color and finish evaluated per order"],
+        },
+      },
+      {
+        id: "limitations",
+        title: { es: "4. Limitaciones a confirmar", en: "4. Limitations to confirm" },
+        paragraphs: {
+          es: ["El panel de techo PVC tiene limitaciones que deben comunicarse claramente al comprador final para evitar expectativas incorrectas."],
+          en: ["PVC ceiling panels have limitations that should be clearly communicated to the end buyer to prevent incorrect expectations."],
+        },
+        bullets: {
+          es: ["Uso interior: no diseñado para aplicación exterior", "Resistencia térmica: verificar rango de temperatura del mercado de destino", "Carga estructural: no soporta peso; es un material de revestimiento", "Compatibilidad de accesorios: confirmar perfiles de borde y esquina"],
+          en: ["Indoor use: not designed for exterior application", "Thermal resistance: verify temperature range for target market", "Structural load: does not bear weight; it is a cladding material", "Accessory compatibility: confirm edge and corner profiles"],
+        },
+      },
+      {
+        id: "buying-checklist",
+        title: { es: "5. Lista de compra para importadores", en: "5. Buying checklist for importers" },
+        paragraphs: {
+          es: ["Antes de solicitar una cotización de paneles de techo PVC, confirme los siguientes puntos para que la respuesta comercial sea concreta."],
+          en: ["Before requesting a PVC ceiling panel quotation, confirm the following points so the commercial response can be specific."],
+        },
+        bullets: {
+          es: ["Ancho requerido (25 cm o 30 cm)", "Color o referencia visual", "Cantidad por modelo y color (MOQ: 100 piezas)", "Embalaje preferido (cartón o plástico retráctil)", "País y puerto de destino", "Solicitud de muestra"],
+          en: ["Required width (25 cm or 30 cm)", "Color or visual reference", "Quantity per design and color (MOQ: 100 pieces)", "Preferred packing (carton or shrink wrap)", "Destination country and port", "Sample request"],
+        },
+      },
+    ],
+  },
+  {
+    slug: "what-is-uv-marble-sheet",
+    localizedSlug: { es: "que-es-una-lamina-de-marmol-uv" },
+    publishedAt: "2026-10-06",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es una lámina de mármol UV? Definición y guía B2B",
+      en: "What Is a UV Marble Sheet? Definition and B2B Guide",
+    },
+    seoTitle: {
+      es: "¿Qué es una lámina de mármol UV? Definición B2B | SINOQI",
+      en: "What Is a UV Marble Sheet? B2B Definition | SINOQI",
+    },
+    description: {
+      es: "Definición de lámina de mármol UV: composición, usos, diferencias con mármol natural y datos que distribuidores deben confirmar antes de importar.",
+      en: "Definition of UV marble sheet: composition, uses, differences from natural marble and details distributors should confirm before importing.",
+    },
+    introduction: {
+      es: "La lámina de mármol UV es un material decorativo que imita la apariencia del mármol natural mediante impresión UV sobre una base de plástico. Esta guía separa la definición general de las especificaciones que deben confirmarse para cada pedido.",
+      en: "A UV marble sheet is a decorative material that imitates the appearance of natural marble through UV printing on a plastic base. This guide separates the general definition from the specifications that must be confirmed for each order.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/uv-marble-sheet.jpg",
+    coverAlt: {
+      es: "Láminas de mármol UV con acabado blanco en producción SINOQI",
+      en: "UV marble sheets with white finish in SINOQI production",
+    },
+    sections: [
+      {
+        id: "definition",
+        title: { es: "1. Definición: ¿qué es una lámina de mármol UV?", en: "1. Definition: what is a UV marble sheet?" },
+        paragraphs: {
+          es: ["Una lámina de mármol UV es un panel decorativo producido mediante impresión UV de patrones de mármol sobre una lámina de PVC o compuesto. El resultado visual imita la apariencia del mármol natural con un peso y coste significativamente menores."],
+          en: ["A UV marble sheet is a decorative panel produced by UV-printing marble patterns onto a PVC or composite sheet. The visual result imitates the appearance of natural marble at a significantly lower weight and cost."],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "2. Composición y proceso de fabricación", en: "2. Composition and manufacturing process" },
+        paragraphs: {
+          es: ["La lámina de mármol UV se fabrica imprimiendo tintas curadas por UV sobre una lámina extruida. La base puede ser PVC, WPC o un compuesto híbrido. El curado UV proporciona resistencia al rayado y a la decoloración."],
+          en: ["UV marble sheets are manufactured by printing UV-cured inks onto an extruded sheet. The base can be PVC, WPC or a hybrid composite. UV curing provides scratch resistance and color fastness."],
+        },
+        bullets: {
+          es: ["Base: lámina de PVC o compuesto", "Impresión: tintas curadas por radiación UV", "Acabado: mate, brillante o texturizado", "Patrones: mármol blanco, crema, gris, dorado, negro"],
+          en: ["Base: PVC or composite sheet", "Printing: UV-cured inks", "Finish: matte, glossy or textured", "Patterns: white, cream, gray, gold, black marble"],
+        },
+      },
+      {
+        id: "vs-natural-marble",
+        title: { es: "3. Lámina UV vs mármol natural", en: "3. UV marble sheet vs natural marble" },
+        paragraphs: {
+          es: ["La lámina de mármol UV y el mármol natural sirven propósitos diferentes. Comprender las diferencias ayuda a posicionar el producto correctamente en el mercado de destino."],
+          en: ["UV marble sheets and natural marble serve different purposes. Understanding the differences helps position the product correctly in the target market."],
+        },
+        bullets: {
+          es: ["Peso: la lámina UV pesa una fracción del mármol natural", "Instalación: la lámina UV se instala con adhesivo; el mármol requiere anclaje mecánico", "Coste: la lámina UV tiene un coste por m² significativamente menor", "Mantenimiento: la lámina UV no requiere sellado periódico", "Resistencia: el mármol natural es más resistente al calor extremo"],
+          en: ["Weight: UV sheet weighs a fraction of natural marble", "Installation: UV sheet installs with adhesive; marble requires mechanical anchoring", "Cost: UV sheet has significantly lower cost per m²", "Maintenance: UV sheet does not require periodic sealing", "Resistance: natural marble is more resistant to extreme heat"],
+        },
+      },
+      {
+        id: "applications",
+        title: { es: "4. Aplicaciones confirmadas", en: "4. Confirmed applications" },
+        paragraphs: {
+          es: ["La lámina de mármol UV se usa en paredes y superficies interiores donde la estética del mármol es deseable pero el peso o el coste del mármol natural no son viables."],
+          en: ["UV marble sheets are used on interior walls and surfaces where the marble aesthetic is desirable but the weight or cost of natural marble is not viable."],
+        },
+        bullets: {
+          es: ["Paredes de baños y cocinas residenciales", "Recepciones y mostradores comerciales", "Renovación interior sobre azulejos existentes", "Columnas y zócalos decorativos"],
+          en: ["Residential bathroom and kitchen walls", "Commercial receptions and counters", "Interior renovation over existing tiles", "Decorative columns and skirting"],
+        },
+      },
+      {
+        id: "buying-checklist",
+        title: { es: "5. Lista de compra para distribuidores", en: "5. Buying checklist for distributors" },
+        paragraphs: {
+          es: ["Antes de solicitar una cotización de láminas de mármol UV, confirme los siguientes datos."],
+          en: ["Before requesting a UV marble sheet quotation, confirm the following details."],
+        },
+        bullets: {
+          es: ["Patrón y color de mármol deseado", "Espesor y dimensiones de la lámina", "Acabado superficial (mate, brillante o texturizado)", "Cantidad por diseño (MOQ: 100 piezas)", "Mercado de destino y normativa local", "Solicitud de muestra"],
+          en: ["Desired marble pattern and color", "Sheet thickness and dimensions", "Surface finish (matte, glossy or textured)", "Quantity per design (MOQ: 100 pieces)", "Target market and local regulations", "Sample request"],
+        },
+      },
+    ],
+  },
+  {
+    slug: "pvc-vs-wpc-vs-spc-comparison",
+    localizedSlug: { es: "comparacion-pvc-wpc-spc" },
+    publishedAt: "2026-10-06",
+    category: { es: "Guía comparativa", en: "Comparison guide" },
+    title: {
+      es: "PVC vs WPC vs SPC: comparación de materiales decorativos B2B",
+      en: "PVC vs WPC vs SPC: Decorative Material Comparison for B2B Buyers",
+    },
+    seoTitle: {
+      es: "PVC vs WPC vs SPC: comparación de materiales | SINOQI",
+      en: "PVC vs WPC vs SPC: Material Comparison | SINOQI",
+    },
+    description: {
+      es: "Comparación neutral de PVC, WPC y SPC: composición, usos, ventajas y datos de compra que importadores y distribuidores deben comparar antes de cotizar.",
+      en: "A neutral comparison of PVC, WPC and SPC: composition, uses, advantages and buying details that importers and distributors should compare before requesting a quote.",
+    },
+    introduction: {
+      es: "PVC, WPC y SPC son tres categorías de materiales decorativos que a veces se confunden. Esta guía compara sus definiciones, composiciones y aplicaciones para ayudar a compradores B2B a seleccionar la línea correcta.",
+      en: "PVC, WPC and SPC are three decorative material categories that are sometimes confused. This guide compares their definitions, compositions and applications to help B2B buyers select the correct product line.",
+    },
+    readingTime: { es: "9 min de lectura", en: "9 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Muestras de materiales PVC, WPC y SPC de SINOQI",
+      en: "PVC, WPC and SPC material samples from SINOQI",
+    },
+    sections: [
+      {
+        id: "definitions",
+        title: { es: "1. Definiciones básicas", en: "1. Basic definitions" },
+        paragraphs: {
+          es: ["Antes de comparar, es importante definir cada material con precisión. Los tres son compuestos usados en materiales decorativos para construcción, pero difieren en composición y aplicación."],
+          en: ["Before comparing, it is important to define each material precisely. All three are compounds used in decorative building materials, but they differ in composition and application."],
+        },
+        bullets: {
+          es: ["PVC (policloruro de vinilo): panel extruido de plástico rígido usado en techos interiores", "WPC (compuesto madera-plástico): mezcla de fibra de madera y plástico usada en paneles de pared", "SPC (piso de núcleo rígido): piso de piedra y plástico con núcleo rígido"],
+          en: ["PVC (polyvinyl chloride): extruded rigid plastic panel used in interior ceilings", "WPC (wood-plastic composite): blend of wood fiber and plastic used in wall panels", "SPC (stone-plastic composite): stone and plastic flooring with a rigid core"],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "2. Composición comparada", en: "2. Composition comparison" },
+        paragraphs: {
+          es: ["La composición determina las propiedades físicas de cada material. Comprender las diferencias ayuda a explicar el producto al comprador final."],
+          en: ["Composition determines the physical properties of each material. Understanding the differences helps explain the product to the end buyer."],
+        },
+        bullets: {
+          es: ["PVC: 100% plástico con aditivos estabilizadores; sin fibra natural", "WPC: mezcla de fibra de madera (30-60%) y plástico (PVC o PE)", "SPC: mezcla de polvo de piedra (60-80%) y PVC; núcleo rígido", "Los tres pueden imprimirse, laminarse y estamparse en caliente"],
+          en: ["PVC: 100% plastic with stabilizing additives; no natural fiber", "WPC: blend of wood fiber (30-60%) and plastic (PVC or PE)", "SPC: blend of stone powder (60-80%) and PVC; rigid core", "All three can be printed, laminated and hot-stamped"],
+        },
+      },
+      {
+        id: "applications",
+        title: { es: "3. Aplicaciones principales", en: "3. Primary applications" },
+        paragraphs: {
+          es: ["Cada material tiene una aplicación principal definida por su composición y propiedades mecánicas."],
+          en: ["Each material has a primary application defined by its composition and mechanical properties."],
+        },
+        bullets: {
+          es: ["PVC: techos interiores residenciales y comerciales", "WPC: paredes decorativas interiores y paneles de feature", "SPC: pisos interiores residenciales y comerciales", "Solapamiento limitado: cada material domina su categoría"],
+          en: ["PVC: residential and commercial interior ceilings", "WPC: decorative interior walls and feature panels", "SPC: residential and commercial interior flooring", "Limited overlap: each material dominates its category"],
+        },
+      },
+      {
+        id: "advantages",
+        title: { es: "4. Ventajas por material", en: "4. Advantages by material" },
+        paragraphs: {
+          es: ["Cada material ofrece ventajas distintas que deben comunicarse claramente al comprador."],
+          en: ["Each material offers distinct advantages that should be clearly communicated to the buyer."],
+        },
+        bullets: {
+          es: ["PVC: ligero, resistente a humedad, instalación rápida, coste bajo", "WPC: aspecto natural de madera, tacto cálido, aislamiento térmico", "SPC: alta resistencia al impacto, estabilidad dimensional, imitación de madera"],
+          en: ["PVC: lightweight, moisture-resistant, fast installation, low cost", "WPC: natural wood appearance, warm touch, thermal insulation", "SPC: high impact resistance, dimensional stability, wood imitation"],
+        },
+      },
+      {
+        id: "buying-decision",
+        title: { es: "5. Cómo elegir la línea correcta", en: "5. How to choose the right line" },
+        paragraphs: {
+          es: ["La elección entre PVC, WPC y SPC depende del espacio de aplicación, el presupuesto y las preferencias del mercado de destino. Un distribuidor puede trabajar con las tres líneas o especializarse en una."],
+          en: ["The choice between PVC, WPC and SPC depends on the application space, budget and target market preferences. A distributor can work with all three lines or specialize in one."],
+        },
+        bullets: {
+          es: ["Para programas de techos: PVC es la opción estándar", "Para programas de paredes decorativas: WPC ofrece el mejor valor estético", "Para programas de pisos: SPC ofrece rigidez y durabilidad", "Un contenedor 40HQ puede mezclar las tres líneas"],
+          en: ["For ceiling programs: PVC is the standard choice", "For decorative wall programs: WPC offers the best aesthetic value", "For flooring programs: SPC offers rigidity and durability", "A 40HQ container can mix all three lines"],
+        },
+      },
+      {
+        id: "checklist",
+        title: { es: "6. Lista de compra conjunta", en: "6. Combined buying checklist" },
+        paragraphs: {
+          es: ["Si considera importar más de una línea, prepare la siguiente información para que la cotización sea precisa."],
+          en: ["If you consider importing more than one line, prepare the following information for an accurate quotation."],
+        },
+        bullets: {
+          es: ["Líneas de producto (PVC, WPC, SPC o combinación)", "Cantidad por línea y por modelo (MOQ: 100 piezas por diseño y color)", "Mercado de destino y normativa local", "Plan de embalaje y carga mixta", "Solicitud de muestras por línea"],
+          en: ["Product lines (PVC, WPC, SPC or combination)", "Quantity per line and per design (MOQ: 100 pieces per design and color)", "Target market and local regulations", "Packing and mixed-load plan", "Sample request per line"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
