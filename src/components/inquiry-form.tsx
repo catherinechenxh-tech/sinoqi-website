@@ -20,6 +20,8 @@ const copy = {
     success: "Solicitud recibida. Le responderemos en un día laborable.",
     error: "No se pudo enviar. Escríbanos directamente por correo o WhatsApp.",
     select: "Seleccione un producto",
+    indoorWpc: "Panel de pared WPC interior",
+    outdoorWpc: "Panel de pared WPC exterior",
   },
   en: {
     name: "Name",
@@ -36,6 +38,8 @@ const copy = {
     success: "Inquiry received. We will reply within one business day.",
     error: "Unable to send. Please contact us directly by email or WhatsApp.",
     select: "Select a product",
+    indoorWpc: "Indoor WPC Wall Panel",
+    outdoorWpc: "Outdoor WPC Wall Panel",
   },
 };
 
@@ -120,7 +124,8 @@ export function InquiryForm({ locale, compact = false }: { locale: Locale; compa
           <select name="product" required defaultValue="">
             <option value="" disabled>{t.select}</option>
             <option>PVC Ceiling Panel</option>
-            <option>WPC Wall Panel</option>
+            <option value="indoor-wpc-wall-panel">{t.indoorWpc}</option>
+            <option value="outdoor-wpc-wall-panel">{t.outdoorWpc}</option>
             <option>UV Marble Sheet</option>
             <option>SPC Flooring</option>
             <option>Multiple products</option>

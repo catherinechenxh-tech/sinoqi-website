@@ -13,6 +13,8 @@ const copy = {
     attachment: "Archivo adjunto",
     optional: "Opcional",
     select: "Seleccione un producto",
+    indoorWpc: "Panel de pared WPC interior",
+    outdoorWpc: "Panel de pared WPC exterior",
     multiple: "Varios productos",
     unsure: "No estoy seguro / Necesito recomendación",
     messageHelp: "Incluya medidas, acabado, uso, embalaje o fecha objetivo si ya los conoce.",
@@ -32,6 +34,8 @@ const copy = {
     attachment: "Attachment",
     optional: "Optional",
     select: "Select a product",
+    indoorWpc: "Indoor WPC Wall Panel",
+    outdoorWpc: "Outdoor WPC Wall Panel",
     multiple: "Multiple products",
     unsure: "Not sure / Need a recommendation",
     messageHelp: "Include size, finish, intended use, packing or target date if known.",
@@ -118,7 +122,8 @@ export function ContactInquiryForm({ locale }: { locale: Locale }) {
           <select name="product" defaultValue="">
             <option value="">{t.select}</option>
             <option value="pvc-ceiling-panel">PVC Ceiling Panel</option>
-            <option value="wpc-wall-panel">WPC Wall Panel</option>
+            <option value="indoor-wpc-wall-panel">{t.indoorWpc}</option>
+            <option value="outdoor-wpc-wall-panel">{t.outdoorWpc}</option>
             <option value="uv-marble-sheet">UV Marble Sheet</option>
             <option value="spc-flooring">SPC Flooring</option>
             <option value="multiple-products">{t.multiple}</option>

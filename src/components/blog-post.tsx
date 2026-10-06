@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { BlogPost as BlogPostData } from "@/content/blog";
-import { asset, localizedPath, type Locale } from "@/content/site";
+import { asset, company, localizedPath, type Locale } from "@/content/site";
+import { SITE_ORIGIN } from "@/lib/site-url";
 import { PvcCeilingDesignsFinishes } from "@/components/pvc-ceiling-designs-finishes";
 import { PvcCeilingBathroomGuide } from "@/components/pvc-ceiling-bathroom-guide";
 import { PvcCeilingSizesSpecifications } from "@/components/pvc-ceiling-sizes-specifications";
@@ -52,8 +53,60 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
     timeZone: "UTC",
   }).format(new Date(`${post.publishedAt}T00:00:00Z`));
 
+  // Build canonical URL for this blog post
+  const blogPath = es
+    ? `/blog/${post.localizedSlug?.es ?? post.slug}/`
+    : `/en/blog/${post.localizedSlug?.en ?? post.slug}/`;
+  const canonicalUrl = `${SITE_ORIGIN}${blogPath}`;
+
+  // Article Schema
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title[locale],
+    description: post.description[locale],
+    image: [`${SITE_ORIGIN}${post.cover ?? asset.pvc}`],
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    inLanguage: es ? "es" : "en",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    author: {
+      "@type": "Organization",
+      name: company.brand,
+      url: SITE_ORIGIN,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: company.brand,
+      url: SITE_ORIGIN,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_ORIGIN}/assets/logo.jpg`,
+      },
+    },
+  };
+
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: es ? "Inicio" : "Home", item: `${SITE_ORIGIN}${localizedPath("home", locale)}` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}${localizedPath("blog", locale)}` },
+      { "@type": "ListItem", position: 3, name: post.title[locale], item: canonicalUrl },
+    ],
+  };
+
+  const schemas = [articleSchema, breadcrumbSchema];
+
   return (
     <>
+      {schemas.map((schema, index) => (
+        <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
+      ))}
       <article>
         <header className="article-hero">
           <div className="container article-hero__inner">
