@@ -660,6 +660,304 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "pvc-ceiling-panel-installation-guide",
+    localizedSlug: { es: "guia-instalacion-paneles-techo-pvc" },
+    publishedAt: "2026-10-08",
+    category: { es: "Guía de instalación", en: "Installation guide" },
+    title: {
+      es: "Guía de instalación de paneles de techo PVC para distribuidores",
+      en: "PVC Ceiling Panel Installation Guide for Distributors",
+    },
+    seoTitle: {
+      es: "Guía de Instalación de Paneles de Techo PVC | SINOQI",
+      en: "PVC Ceiling Panel Installation Guide | SINOQI",
+    },
+    description: {
+      es: "Guía de instalación de paneles de techo PVC: herramientas, pasos, tiempos y errores comunes que distribuidores deben conocer para capacitar a instaladores.",
+      en: "PVC ceiling panel installation guide: tools, steps, timing and common mistakes distributors should know to train installers.",
+    },
+    introduction: {
+      es: "La instalación de paneles de techo PVC es un proceso directo pero requiere preparación y las herramientas correctas. Esta guía ayuda a distribuidores a capacitar a sus instaladores y a establecer expectativas claras con el cliente final.",
+      en: "Installing PVC ceiling panels is a straightforward process but requires preparation and the right tools. This guide helps distributors train their installers and set clear expectations with the end customer.",
+    },
+    readingTime: { es: "8 min de lectura", en: "8 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Paneles de techo PVC listos para instalación",
+      en: "PVC ceiling panels ready for installation",
+    },
+    sections: [
+      {
+        id: "tools",
+        title: { es: "1. Herramientas necesarias", en: "1. Required tools" },
+        paragraphs: {
+          es: ["Antes de comenzar la instalación, el instalador debe tener todas las herramientas preparadas. La falta de herramientas adecuadas es la causa más común de instalacion deficiente."],
+          en: ["Before starting installation, the installer should have all tools ready. Missing proper tools is the most common cause of poor installation quality."],
+        },
+        bullets: {
+          es: ["Cinta métrica y lápiz de marcado", "Sierra de mano o sierra eléctrica con hoja fina", "Taladro con broca para plástico", "Nivel de burbuja o láser", "Pistola de tornillos o destornillador", "Tornillos con arandela (recomendados por el fabricante)", "Perfiles de borde y esquina (si aplica)", "Adhesivo de contacto (opcional para refuerzo)"],
+          en: ["Measuring tape and marking pencil", "Hand saw or power saw with fine-tooth blade", "Drill with plastic-rated bit", "Bubble or laser level", "Screw gun or screwdriver", "Screws with washers (manufacturer-recommended)", "Edge and corner profiles (if applicable)", "Contact adhesive (optional for reinforcement)"],
+        },
+      },
+      {
+        id: "preparation",
+        title: { es: "2. Preparación del techo", en: "2. Ceiling preparation" },
+        paragraphs: {
+          es: ["La superficie del techo debe estar limpia, seca y lo más plana posible. Si el techo tiene vigas o estructura irregular, instale primero una estructura de soporte (perfiles metálicos o de madera) a una distancia uniforme."],
+          en: ["The ceiling surface should be clean, dry and as flat as possible. If the ceiling has beams or an irregular structure, install a supporting frame (metal or wood profiles) at a uniform spacing first."],
+        },
+        bullets: {
+          es: ["Verificar que la superficie esté seca y libre de polvo", "Medir y marcar la posición de los perfiles de soporte", "Confirmar que la distancia entre perfiles no exceda 60 cm", "Revisar que no haya cableado o tuberías en la zona de tornillos"],
+          en: ["Verify the surface is dry and dust-free", "Measure and mark the position of support profiles", "Confirm the spacing between profiles does not exceed 60 cm", "Check for wiring or pipes in the screw zone"],
+        },
+      },
+      {
+        id: "installation-steps",
+        title: { es: "3. Pasos de instalación", en: "3. Installation steps" },
+        paragraphs: {
+          es: ["El sistema de ranura y lengüeta permite que cada panel se conecte con el anterior. Los tornillos se colocan en la ranura, de modo que el siguiente panel los oculta."],
+          en: ["The tongue-and-groove system allows each panel to connect with the previous one. Screws are placed in the groove, so the next panel conceals them."],
+        },
+        bullets: {
+          es: ["Paso 1: Fijar el primer panel en un extremo, atornillando por la ranura", "Paso 2: Insertar el siguiente panel deslizando la lengüeta en la ranura", "Paso 3: Atornillar el panel por la ranura oculta", "Paso 4: Repetir hasta completar la fila", "Paso 5: Cortar el último panel a la medida necesaria", "Paso 6: Instalar perfiles de borde y esquina"],
+          en: ["Step 1: Fix the first panel at one end, screwing through the groove", "Step 2: Insert the next panel by sliding the tongue into the groove", "Step 3: Screw the panel through the concealed groove", "Step 4: Repeat until the row is complete", "Step 5: Cut the last panel to the required size", "Step 6: Install edge and corner profiles"],
+        },
+      },
+      {
+        id: "timing",
+        title: { es: "4. Tiempo estimado por m²", en: "4. Estimated time per m²" },
+        paragraphs: {
+          es: ["El tiempo de instalación depende de la experiencia del instalador, la complejidad del techo y la preparación previa. Los siguientes son tiempos de referencia para distribuidores, no garantías para el cliente final."],
+          en: ["Installation time depends on installer experience, ceiling complexity and prior preparation. The following are reference times for distributors, not guarantees for the end customer."],
+        },
+        bullets: {
+          es: ["Instalador experimentado, techo plano: 5-8 min/m²", "Instalador intermedio, techo plano: 8-12 min/m²", "Techo con esquinas o obstaculos: +30-50% al tiempo base", "Primer proyecto de un instalador nuevo: prever 15-20 min/m²"],
+          en: ["Experienced installer, flat ceiling: 5-8 min/m²", "Intermediate installer, flat ceiling: 8-12 min/m²", "Ceiling with corners or obstacles: +30-50% base time", "First project for a new installer: allow 15-20 min/m²"],
+        },
+      },
+      {
+        id: "common-mistakes",
+        title: { es: "5. Errores comunes a evitar", en: "5. Common mistakes to avoid" },
+        paragraphs: {
+          es: ["Estos son los errores más frecuentes que los distribuidores deben comunicar a sus instaladores para reducir devoluciones y reclamaciones."],
+          en: ["These are the most frequent mistakes distributors should communicate to their installers to reduce returns and complaints."],
+        },
+        bullets: {
+          es: ["Atornillar fuera de la ranura: los tornillos quedan visibles", "No dejar dilatación: el panel puede deformarse con cambios de temperatura", "Usar tornillos sin arandela: el cabezal atraviesa el plástico", "Instalar sobre superficie húmeda: puede aparecer moho detrás del panel", "Cortar sin medir dos veces: desperdicio de material"],
+          en: ["Screwing outside the groove: screws become visible", "Not leaving expansion gap: panels may warp with temperature changes", "Using screws without washers: the head pierces through the plastic", "Installing on a damp surface: mold may appear behind the panel", "Cutting without measuring twice: material waste"],
+        },
+      },
+      {
+        id: "distributor-tips",
+        title: { es: "6. Consejo para distribuidores", en: "6. Tip for distributors" },
+        paragraphs: {
+          es: ["Un distribuidor que vende paneles de techo PVC debería ofrecer una guía de instalación简 en el idioma del mercado de destino. Esto reduce reclamaciones y diferencia al distribuidor de la competencia."],
+          en: ["A distributor selling PVC ceiling panels should offer a brief installation guide in the target market's language. This reduces complaints and differentiates the distributor from competitors."],
+        },
+        bullets: {
+          es: ["Incluir una guía impresa de 1-2 páginas en cada pedido", "Ofrecer capacitación básica para instaladores locales", "Proporcionar tornillos y accesorios junto con los paneles", "Mantener muestras físicas para que el instalador practique antes del proyecto real"],
+          en: ["Include a 1-2 page printed guide with each order", "Offer basic training for local installers", "Provide screws and accessories alongside panels", "Keep physical samples for installers to practice before the real project"],
+        },
+      },
+    ],
+  },
+  {
+    slug: "spc-vs-laminate-flooring",
+    localizedSlug: { es: "piso-spc-vs-laminado" },
+    publishedAt: "2026-10-08",
+    category: { es: "Guía comparativa", en: "Comparison guide" },
+    title: {
+      es: "SPC vs laminado: diferencias clave para compradores B2B",
+      en: "SPC vs Laminate Flooring: Key Differences for B2B Buyers",
+    },
+    seoTitle: {
+      es: "Piso SPC vs Laminado: Comparación B2B | SINOQI",
+      en: "SPC vs Laminate Flooring: B2B Comparison | SINOQI",
+    },
+    description: {
+      es: "Comparación de piso SPC y laminado: composición, resistencia al agua, instalación, durabilidad y datos de compra que distribuidores deben comparar antes de importar.",
+      en: "Comparison of SPC and laminate flooring: composition, water resistance, installation, durability and buying details distributors should compare before importing.",
+    },
+    introduction: {
+      es: "El piso SPC y el laminado son dos categorías de pisos que compiten en algunos mercados pero tienen composiciones y propiedades muy diferentes. Esta guía separa las definiciones de los datos de compra que deben confirmarse.",
+      en: "SPC flooring and laminate are two flooring categories that compete in some markets but have very different compositions and properties. This guide separates definitions from the buying details that must be confirmed.",
+    },
+    readingTime: { es: "8 min de lectura", en: "8 min read" },
+    cover: "/assets/spc-flooring.jpg",
+    coverAlt: {
+      es: "Muestra de piso SPC con acabado efecto madera",
+      en: "SPC flooring sample with wood-look finish",
+    },
+    sections: [
+      {
+        id: "definitions",
+        title: { es: "1. Definiciones", en: "1. Definitions" },
+        paragraphs: {
+          es: ["El piso SPC (stone-plastic composite) es un piso de núcleo rígido compuesto de polvo de piedra y PVC. El laminado es un piso compuesto de tableros de fibra de madera con una capa decorativa impresa y una capa de desgaste."],
+          en: ["SPC flooring (stone-plastic composite) is a rigid-core flooring made of stone powder and PVC. Laminate is a flooring made of wood-fiber boards with a printed decorative layer and a wear layer."],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "2. Composición comparada", en: "2. Composition comparison" },
+        paragraphs: {
+          es: ["La diferencia fundamental está en el núcleo del material. Esta diferencia determina todas las demás propiedades."],
+          en: ["The fundamental difference lies in the core of the material. This difference determines all other properties."],
+        },
+        bullets: {
+          es: ["SPC: núcleo de piedra + PVC (60-80% piedra), 100% resistente al agua", "Laminado: núcleo de tablero de fibra (HDF), susceptible al agua", "SPC: más pesado y rígido", "Laminado: más ligero y con tacto más similar a madera"],
+          en: ["SPC: stone + PVC core (60-80% stone), 100% waterproof", "Laminate: HDF board core, susceptible to water", "SPC: heavier and more rigid", "Laminate: lighter with a more wood-like feel"],
+        },
+      },
+      {
+        id: "water-resistance",
+        title: { es: "3. Resistencia al agua", en: "3. Water resistance" },
+        paragraphs: {
+          es: ["La resistencia al agua es la diferencia más importante para muchos mercados. El SPC es 100% resistente al agua en toda su superficie; el laminado solo lo es en la superficie, pero el núcleo se hincha si el agua penetra por las juntas."],
+          en: ["Water resistance is the most important difference for many markets. SPC is 100% waterproof across its entire surface; laminate is only water-resistant on the surface, but the core swells if water penetrates through the joints."],
+        },
+        bullets: {
+          es: ["SPC: puede sumergirse sin daño (verificar garantía del fabricante)", "Laminado: tolera derrames superficiales si se limpian rápido", "SPC: ideal para baños, cocinas y sótanos", "Laminado: no recomendado para zonas con agua permanente"],
+          en: ["SPC: can be submerged without damage (verify manufacturer warranty)", "Laminate: tolerates surface spills if cleaned quickly", "SPC: ideal for bathrooms, kitchens and basements", "Laminate: not recommended for areas with standing water"],
+        },
+      },
+      {
+        id: "installation",
+        title: { es: "4. Instalación", en: "4. Installation" },
+        paragraphs: {
+          es: ["Ambos sistemas usan instalación flotante con clic, pero las preparaciones del subsuelo son diferentes."],
+          en: ["Both systems use floating click installation, but subfloor preparations differ."],
+        },
+        bullets: {
+          es: ["SPC: requiere subsuelo más plano; usar subcapa recomendada por el fabricante", "Laminado: más tolerante con subsuelos irregulares; usar subcapa estándar", "SPC: más difícil de cortar (requiere sierra con hoja para plástico)", "Laminado: fácil de cortar con sierra estándar"],
+          en: ["SPC: requires a flatter subfloor; use manufacturer-recommended underlayment", "Laminate: more tolerant of uneven subfloors; use standard underlayment", "SPC: harder to cut (requires saw with plastic-rated blade)", "Laminate: easy to cut with a standard saw"],
+        },
+      },
+      {
+        id: "durability",
+        title: { es: "5. Durabilidad y desgaste", en: "5. Durability and wear" },
+        paragraphs: {
+          es: ["La durabilidad depende de la capa de desgaste (wear layer) en ambos casos, pero el SPC tiene mejor resistencia al impacto por su núcleo rígido."],
+          en: ["Durability depends on the wear layer in both cases, but SPC has better impact resistance due to its rigid core."],
+        },
+        bullets: {
+          es: ["SPC: alta resistencia al impacto (no se abolla con caídas de objetos)", "Laminado: puede abollarse con impactos fuertes", "SPC: clase de abrasión AC3-AC5 típica", "Laminado: disponible en AC1-AC5 según gama"],
+          en: ["SPC: high impact resistance (does not dent from falling objects)", "Laminate: can dent from strong impacts", "SPC: typically AC3-AC5 abrasion class", "Laminate: available in AC1-AC5 depending on grade"],
+        },
+      },
+      {
+        id: "buying-decision",
+        title: { es: "6. Cómo elegir para su mercado", en: "6. How to choose for your market" },
+        paragraphs: {
+          es: ["La elección entre SPC y laminado depende del clima del mercado de destino, el presupuesto del consumidor y los canales de distribución."],
+          en: ["The choice between SPC and laminate depends on the target market's climate, consumer budget and distribution channels."],
+        },
+        bullets: {
+          es: ["Mercados húmedos o tropicales: SPC es la opción preferida", "Mercados con presupuesto sensible: el laminado puede tener mejor relación precio-estética", "Proyectos comerciales: SPC por su resistencia al impacto", "Renovación residencial: ambos son válidos según la habitación"],
+          en: ["Humid or tropical markets: SPC is the preferred choice", "Budget-sensitive markets: laminate may have better price-to-aesthetics ratio", "Commercial projects: SPC for its impact resistance", "Residential renovation: both are valid depending on the room"],
+        },
+      },
+    ],
+  },
+  {
+    slug: "pvc-ceiling-panel-price-guide",
+    localizedSlug: { es: "guia-precios-paneles-techo-pvc" },
+    publishedAt: "2026-10-08",
+    category: { es: "Guía de precios", en: "Price guide" },
+    title: {
+      es: "Precio de paneles de techo PVC: factores que determinan el costo B2B",
+      en: "PVC Ceiling Panel Price: Factors That Determine B2B Cost",
+    },
+    seoTitle: {
+      es: "Precio de Paneles de Techo PVC: Guía B2B | SINOQI",
+      en: "PVC Ceiling Panel Price Guide for B2B | SINOQI",
+    },
+    description: {
+      es: "Guía de precios de paneles de techo PVC: factores que afectan el precio, rangos orientativos por tipo de acabado y cómo preparar una solicitud de cotización precisa.",
+      en: "PVC ceiling panel price guide: factors that affect price, indicative ranges by finish type and how to prepare an accurate quotation request.",
+    },
+    introduction: {
+      es: "El precio de los paneles de techo PVC depende de múltiples factores que varían por pedido. Esta guía explica los factores que determinan el costo y ayuda a compradores B2B a preparar una solicitud de cotización que reciba una respuesta precisa.",
+      en: "The price of PVC ceiling panels depends on multiple factors that vary per order. This guide explains the factors that determine cost and helps B2B buyers prepare a quotation request that receives an accurate response.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Paneles de techo PVC en producción para cotización B2B",
+      en: "PVC ceiling panels in production for B2B quotation",
+    },
+    sections: [
+      {
+        id: "no-fixed-price",
+        title: { es: "1. No existe un precio único publicado", en: "1. There is no single published price" },
+        paragraphs: {
+          es: ["SINOQI no publica un precio fijo por panel porque el costo depende de la configuración de cada pedido. Cualquier precio publicado en otros sitios sin contexto no refleja las condiciones reales de una orden B2B."],
+          en: ["SINOQI does not publish a fixed per-panel price because cost depends on the configuration of each order. Any price published elsewhere without context does not reflect the real conditions of a B2B order."],
+        },
+      },
+      {
+        id: "price-factors",
+        title: { es: "2. Factores que determinan el precio", en: "2. Factors that determine price" },
+        paragraphs: {
+          es: ["Los siguientes factores influyen directamente en el precio final por panel. Cuantos más factores defina el comprador, más precisa será la cotización."],
+          en: ["The following factors directly influence the final price per panel. The more factors the buyer defines, the more accurate the quotation will be."],
+        },
+        bullets: {
+          es: ["Ancho del panel: 25 cm y 30 cm son los anchos habituales confirmados", "Espesor: el espesor afecta al material y al peso de transporte", "Diseño y color: los diseños personalizados pueden tener coste de placa", "Acabado: impresión, estampado en caliente o laminado tienen costes distintos", "Cantidad: el MOQ confirmado es 100 piezas por modelo y color", "Embalaje: cartón o plástico retráctil, según la configuración aprobada", "Destino: el flete varía según país y puerto de destino"],
+          en: ["Panel width: 25 cm and 30 cm are the confirmed regular widths", "Thickness: thickness affects material and transport weight", "Design and color: custom designs may have plate cost", "Finish: printing, hot stamping or lamination have different costs", "Quantity: confirmed MOQ is 100 pieces per design and color", "Packing: carton or shrink wrap, based on approved configuration", "Destination: freight varies by destination country and port"],
+        },
+      },
+      {
+        id: "finish-ranges",
+        title: { es: "3. Rangos orientativos por tipo de acabado", en: "3. Indicative ranges by finish type" },
+        paragraphs: {
+          es: ["Los siguientes rangos son orientativos y no constituyen una oferta. El precio final se confirma en la cotización después de revisar la configuración del pedido."],
+          en: ["The following ranges are indicative and do not constitute an offer. The final price is confirmed in the quotation after reviewing the order configuration."],
+        },
+        bullets: {
+          es: ["Panel liso blanco (estándar): rango más bajo por pieza", "Panel impreso color (estándar de catálogo): rango medio-bajo", "Panel estampado en caliente (efecto madera/metal): rango medio", "Panel laminado de alta gama: rango más alto", "Diseño totalmente personalizado: requiere evaluación de coste de placa"],
+          en: ["Plain white panel (standard): lowest range per piece", "Printed color panel (catalog standard): low-medium range", "Hot-stamped panel (wood/metal effect): medium range", "Premium laminated panel: highest range", "Fully custom design: requires plate cost evaluation"],
+        },
+      },
+      {
+        id: "container-cost",
+        title: { es: "4. Coste por contenedor 40HQ", en: "4. Cost per 40HQ container" },
+        paragraphs: {
+          es: ["Muchos importadores calculan el coste por contenedor 40HQ en lugar de por pieza. La cantidad de paneles por contenedor depende del ancho, espesor y configuración de embalaje."],
+          en: ["Many importers calculate cost per 40HQ container rather than per piece. The number of panels per container depends on width, thickness and packing configuration."],
+        },
+        bullets: {
+          es: ["Un contenedor 40HQ puede mezclar diseños y colores", "La cantidad exacta se confirma con la configuración de embalaje", "El coste por m² puede reducirse con mayor volumen de pedido", "El flete internacional es un factor separado del precio del producto"],
+          en: ["A 40HQ container can mix designs and colors", "Exact quantity is confirmed with the packing configuration", "Cost per m² may decrease with larger order volume", "International freight is a separate factor from product price"],
+        },
+      },
+      {
+        id: "quotation-request",
+        title: { es: "5. Cómo solicitar una cotización precisa", en: "5. How to request an accurate quotation" },
+        paragraphs: {
+          es: ["Para recibir una cotización precisa en la primera respuesta, incluya toda la información posible. SINOQI tiene como objetivo responder en un día laborable."],
+          en: ["To receive an accurate quotation in the first response, include as much information as possible. SINOQI aims to reply within one business day."],
+        },
+        bullets: {
+          es: ["Ancho y espesor requeridos", "Color o referencia visual del diseño", "Tipo de acabado preferido", "Cantidad por modelo y color (MOQ: 100 piezas)", "Embalaje preferido", "País y puerto de destino", "Plan de compra inicial y de reposición (si aplica)"],
+          en: ["Required width and thickness", "Color or visual design reference", "Preferred finish type", "Quantity per design and color (MOQ: 100 pieces)", "Preferred packing", "Destination country and port", "Initial and replenishment purchase plan (if applicable)"],
+        },
+      },
+      {
+        id: "sample-first",
+        title: { es: "6. Por qué la muestra importa más que el precio", en: "6. Why the sample matters more than price" },
+        paragraphs: {
+          es: ["Antes de negociar el precio, confirme que el producto es correcto. La muestra gratuita permite verificar color, acabado y configuración antes de comprometer un pedido completo."],
+          en: ["Before negotiating price, confirm the product is correct. The free sample allows verifying color, finish and configuration before committing to a full order."],
+        },
+        bullets: {
+          es: ["SINOQI ofrece muestra gratuita a compradores con interés real", "El comprador asume el coste de mensajería de la muestra", "La muestra confirma el aspecto y la configuración antes del pedido", "Un pedido de contenedor sin muestra previa es un riesgo evitable"],
+          en: ["SINOQI offers a free sample to buyers with a genuine requirement", "The buyer covers the sample courier cost", "The sample confirms appearance and configuration before the order", "A container order without a prior sample is an avoidable risk"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
