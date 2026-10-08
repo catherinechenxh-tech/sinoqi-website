@@ -958,6 +958,104 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-is-wpc-flooring",
+    localizedSlug: { es: "que-es-suelo-wpc" },
+    publishedAt: "2026-10-08",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es el suelo WPC? Definición y guía para compradores B2B",
+      en: "What Is WPC Flooring? Definition and Guide for B2B Buyers",
+    },
+    seoTitle: {
+      es: "¿Qué es el suelo WPC? Definición B2B | SINOQI",
+      en: "What Is WPC Flooring? B2B Definition | SINOQI",
+    },
+    description: {
+      es: "Definición clara de suelo WPC: composición, tipos, ventajas, limitaciones y datos que importadores y distribuidores deben confirmar antes de comprar.",
+      en: "A clear definition of WPC flooring: composition, types, advantages, limitations and the details importers and distributors should confirm before purchasing.",
+    },
+    introduction: {
+      es: "El suelo WPC es un material compuesto de madera y plástico usado en aplicaciones interiores. Esta guía separa la definición general del producto de las especificaciones que deben confirmarse para cada pedido.",
+      en: "WPC flooring is a wood-plastic composite material used in interior applications. This guide separates the general product definition from the specifications that must be confirmed for each order.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/wpc-production.jpg",
+    coverAlt: {
+      es: "Línea de producción de suelo WPC en la fábrica SINOQI",
+      en: "WPC flooring production line at the SINOQI factory",
+    },
+    sections: [
+      {
+        id: "definition",
+        title: { es: "1. Definición: ¿qué es el suelo WPC?", en: "1. Definition: what is WPC flooring?" },
+        paragraphs: {
+          es: ["El suelo WPC (wood-plastic composite) es un material fabricado combinando fibra de madera con plástico, generalmente PVC o polietileno. El resultado es un producto más rígido que el vinilo tradicional y con mejor resistencia al agua que el laminado convencional.", "A diferencia del SPC, que contiene polvo de mineral en lugar de fibra de madera, el WPC mantiene un núcleo con contenido celulósico que le da un tacto más natural y reduce el peso por metro cuadrado."],
+          en: ["WPC flooring (wood-plastic composite) is a material made by combining wood fiber with plastic, typically PVC or polyethylene. The result is a product that is more rigid than traditional vinyl and has better water resistance than conventional laminate.", "Unlike SPC, which contains stone powder instead of wood fiber, WPC retains a core with cellulosic content that gives it a more natural feel and reduces the weight per square meter."],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "2. Composición y fabricación", en: "2. Composition and manufacturing" },
+        paragraphs: {
+          es: ["El suelo WPC se produce extruyendo una mezcla de fibra de madera y plástico con aditivos para estabilidad, resistencia UV y ignifugación. La proporción de fibra de madera varía entre 30% y 60% según el perfil y el fabricante.", "La capa de desgaste superficial protege el diseño impreso y determina la clasificación de durabilidad AC. El sistema de clic permite una instalación sin cola sobre la mayoría de los sustratos."],
+          en: ["WPC flooring is produced by extruding a blend of wood fiber and plastic with additives for stability, UV resistance and fire retardation. The wood fiber ratio ranges from 30% to 60% depending on the profile and manufacturer.", "The surface wear layer protects the printed design and determines the AC durability rating. The click-lock system allows glueless installation over most substrates."],
+        },
+        bullets: {
+          es: ["Fibra de madera: 30-60% del contenido del núcleo", "Plástico: PVC o polietileno (PE)", "Aditivos: estabilizantes UV, retardantes de llama, pigmentos", "Capa de desgaste: 0.3 mm a 0.5 mm según clasificación AC", "Sistema de instalación: clic sin cola"],
+          en: ["Wood fiber: 30-60% of core content", "Plastic: PVC or polyethylene (PE)", "Additives: UV stabilizers, fire retardants, pigments", "Wear layer: 0.3 mm to 0.5 mm depending on AC rating", "Installation system: glueless click-lock"],
+        },
+      },
+      {
+        id: "wpc-vs-spc-vs-lvt",
+        title: { es: "3. WPC vs SPC vs LVT: diferencias clave", en: "3. WPC vs SPC vs LVT: key differences" },
+        paragraphs: {
+          es: ["WPC, SPC y LVT son tres categorías de suelo rígido que se confunden con frecuencia. La diferencia principal está en el material del núcleo:", "El WPC tiene núcleo de madera-plástico, el SPC tiene núcleo de piedra-plástico, y el LVT es vinilo flexible sin núcleo rígido. Esta diferencia afecta peso, rigidez, aislamiento acústico y precio."],
+          en: ["WPC, SPC and LVT are three rigid flooring categories that are frequently confused. The main difference is in the core material:", "WPC has a wood-plastic core, SPC has a stone-plastic core, and LVT is flexible vinyl without a rigid core. This difference affects weight, rigidity, acoustic insulation and price."],
+        },
+        bullets: {
+          es: ["WPC: núcleo de madera-plástico → más ligero, mejor aislamiento acústico", "SPC: núcleo de piedra-plástico → más rígido, más denso, mejor para tráfico alto", "LVT: vinilo flexible → sin núcleo rígido, requiere subpiso más plano", "WPC y SPC usan sistema de clic; LVT puede ser clic o pegado"],
+          en: ["WPC: wood-plastic core → lighter, better acoustic insulation", "SPC: stone-plastic core → more rigid, denser, better for high traffic", "LVT: flexible vinyl → no rigid core, requires flatter subfloor", "WPC and SPC use click-lock; LVT can be click or glue-down"],
+        },
+      },
+      {
+        id: "advantages",
+        title: { es: "4. Ventajas confirmadas", en: "4. Confirmed advantages" },
+        paragraphs: {
+          es: ["El suelo WPC ofrece un conjunto de ventajas prácticas para compradores B2B que abastecen mercados residenciales y comerciales de tráfico medio."],
+          en: ["WPC flooring offers a set of practical advantages for B2B buyers supplying residential and medium-traffic commercial markets."],
+        },
+        bullets: {
+          es: ["Resistente al agua: adecuado para cocinas, baños y sótanos", "Instalación sin cola: sistema de clic flotante sobre subpiso existente", "Aislamiento acústico: el núcleo de madera reduce el ruido de impacto", "Tacto más cálido que el SPC por el contenido celulósico", "Desmontable: las placas se pueden reemplazar individualmente"],
+          en: ["Water-resistant: suitable for kitchens, bathrooms and basements", "Glueless installation: floating click-lock over existing subfloor", "Acoustic insulation: wood core reduces impact noise", "Warmer feel than SPC due to cellulosic content", "Removable: individual planks can be replaced"],
+        },
+      },
+      {
+        id: "limitations",
+        title: { es: "5. Limitaciones a confirmar", en: "5. Limitations to confirm" },
+        paragraphs: {
+          es: ["El suelo WPC tiene limitaciones que deben comunicarse claramente al comprador final para evitar expectativas incorrectas."],
+          en: ["WPC flooring has limitations that should be clearly communicated to the end buyer to prevent incorrect expectations."],
+        },
+        bullets: {
+          es: ["Uso interior: no diseñado para aplicación exterior", "Tráfico: clasificación AC3-AC4; no recomendado para comercial de alto tráfico", "Subpiso: requiere superficie razonablemente plana (tolerancia 3 mm en 2 m)", "Exposición solar: verificar resistencia UV según mercado de destino", "Temperatura: evitar instalación en zonas con variaciones extremas"],
+          en: ["Indoor use: not designed for exterior application", "Traffic: AC3-AC4 rating; not recommended for high-traffic commercial", "Subfloor: requires reasonably flat surface (3 mm tolerance over 2 m)", "Sun exposure: verify UV resistance for target market", "Temperature: avoid installation in areas with extreme variations"],
+        },
+      },
+      {
+        id: "buying-checklist",
+        title: { es: "6. Lista de compra para importadores", en: "6. Buying checklist for importers" },
+        paragraphs: {
+          es: ["Antes de solicitar una cotización de suelo WPC, confirme los siguientes puntos para que la respuesta comercial sea concreta y llegue dentro de un día laborable."],
+          en: ["Before requesting a WPC flooring quotation, confirm the following points so the commercial response can be specific and arrive within one business day."],
+        },
+        bullets: {
+          es: ["Grosor del núcleo y capa de desgaste (AC3 o AC4)", "Color o referencia visual del diseño", "Sistema de clic requerido (UNILIN o VALINGE)", "Cantidad por diseño y color (MOQ: 100 piezas)", "Embalaje preferido (caja o palet)", "País y puerto de destino", "Solicitud de muestra gratuita"],
+          en: ["Core thickness and wear layer (AC3 or AC4)", "Color or visual design reference", "Click system required (UNILIN or VALINGE)", "Quantity per design and color (MOQ: 100 pieces)", "Preferred packing (box or pallet)", "Destination country and port", "Free sample request"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
