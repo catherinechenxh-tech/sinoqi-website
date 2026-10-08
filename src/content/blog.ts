@@ -1056,6 +1056,104 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-is-pvc-wall-panel",
+    localizedSlug: { es: "que-es-panel-de-pared-pvc" },
+    publishedAt: "2026-10-08",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es un panel de pared PVC? Definición y guía para compradores B2B",
+      en: "What Is a PVC Wall Panel? Definition and Guide for B2B Buyers",
+    },
+    seoTitle: {
+      es: "¿Qué es un panel de pared PVC? Definición B2B | SINOQI",
+      en: "What Is a PVC Wall Panel? B2B Definition | SINOQI",
+    },
+    description: {
+      es: "Definición clara de panel de pared PVC: composición, usos, ventajas, limitaciones y datos que importadores y distribuidores deben confirmar antes de comprar.",
+      en: "A clear definition of PVC wall panel: composition, uses, advantages, limitations and the details importers and distributors should confirm before purchasing.",
+    },
+    introduction: {
+      es: "El panel de pared PVC es un material de revestimiento interior extruido de cloruro de polivinilo. Esta guía separa la definición general del producto de las especificaciones que deben confirmarse para cada pedido.",
+      en: "A PVC wall panel is an interior cladding material extruded from polyvinyl chloride. This guide separates the general product definition from the specifications that must be confirmed for each order.",
+    },
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Paneles de pared PVC en producción en la fábrica SINOQI",
+      en: "PVC wall panels in production at the SINOQI factory",
+    },
+    sections: [
+      {
+        id: "definition",
+        title: { es: "1. Definición: ¿qué es un panel de pared PVC?", en: "1. Definition: what is a PVC wall panel?" },
+        paragraphs: {
+          es: ["Un panel de pared PVC es una lámina extruida de cloruro de polivinilo diseñada para revestir paredes interiores. A diferencia del panel de techo PVC —que se instala en el cielo raso—, el panel de pared se aplica verticalmente sobre superficies murales.", "El material se fija mediante adhesivo, tornillos o rieles de montaje, y las juntas se sellan con perfiles de acabado. El resultado es una superficie lisa, impermeable y fácil de limpiar que reemplaza azulejos y pintura en cocinas, baños y zonas comerciales."],
+          en: ["A PVC wall panel is an extruded sheet of polyvinyl chloride designed to cover interior walls. Unlike the PVC ceiling panel —which is installed overhead—, the wall panel is applied vertically on wall surfaces.", "The material is fastened with adhesive, screws or mounting tracks, and joints are finished with trim profiles. The result is a smooth, waterproof, easy-to-clean surface that replaces tiles and paint in kitchens, bathrooms and commercial areas."],
+        },
+      },
+      {
+        id: "pvc-wall-vs-pvc-ceiling",
+        title: { es: "2. Panel de pared PVC vs panel de techo PVC", en: "2. PVC wall panel vs PVC ceiling panel" },
+        paragraphs: {
+          es: ["Aunque ambos productos se fabrican con el mismo compuesto de PVC rígido, existen diferencias funcionales que afectan la instalación y el rendimiento:", "El panel de techo se instala horizontalmente con sistema de ranura y lengüeta que oculta los tornillos. El panel de pared se instala verticalmente y puede usar adhesivo o rieles, dependiendo del perfil y del grosor."],
+          en: ["Although both products are made from the same rigid PVC compound, there are functional differences that affect installation and performance:", "The ceiling panel is installed horizontally with a tongue-and-groove system that conceals fasteners. The wall panel is installed vertically and may use adhesive or mounting tracks, depending on the profile and thickness."],
+        },
+        bullets: {
+          es: ["Orientación: techo = horizontal; pared = vertical", "Instalación: techo = tornillos ocultos; pared = adhesivo o rieles", "Grosor: el panel de pared suele ser más grueso para mayor rigidez", "Accesorios: ambos usan perfiles de borde y esquina, pero con dimensiones distintas"],
+          en: ["Orientation: ceiling = horizontal; wall = vertical", "Installation: ceiling = concealed screws; wall = adhesive or tracks", "Thickness: wall panel is typically thicker for greater rigidity", "Accessories: both use edge and corner profiles, but with different dimensions"],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "3. Composición y fabricación", en: "3. Composition and manufacturing" },
+        paragraphs: {
+          es: ["El panel de pared PVC se produce por extrusión a partir de compuesto de PVC con aditivos que proporcionan estabilidad UV, resistencia al impacto y retardancia de llama. El acabado superficial puede ser liso, impreso, laminado o con textura.", "Los paneles de pared de mayor grosor (hasta 10 mm) se usan en aplicaciones comerciales donde la durabilidad y la resistencia al impacto son prioritarias."],
+          en: ["PVC wall panels are produced by extrusion from a PVC compound with additives that provide UV stability, impact resistance and fire retardation. The surface finish can be smooth, printed, laminated or textured.", "Thicker wall panels (up to 10 mm) are used in commercial applications where durability and impact resistance are prioritized."],
+        },
+        bullets: {
+          es: ["Compuesto base: PVC rígido con aditivos estabilizadores", "Proceso: extrusión continua en perfiles planos", "Acabados: impresión, laminado, textura mate o brillante", "Grosor habitual: 5 mm a 10 mm", "Anchos: 20 cm a 60 cm según modelo"],
+          en: ["Base compound: rigid PVC with stabilizing additives", "Process: continuous extrusion into flat profiles", "Finishes: printing, lamination, matte or glossy texture", "Standard thickness: 5 mm to 10 mm", "Widths: 20 cm to 60 cm depending on model"],
+        },
+      },
+      {
+        id: "advantages",
+        title: { es: "4. Ventajas confirmadas", en: "4. Confirmed advantages" },
+        paragraphs: {
+          es: ["El panel de pared PVC ofrece ventajas prácticas para compradores B2B que abastecen proyectos residenciales y comerciales."],
+          en: ["PVC wall panels offer practical advantages for B2B buyers supplying residential and commercial projects."],
+        },
+        bullets: {
+          es: ["Impermeable: no absorbe agua; no desarrolla moho", "Instalación rápida: se instala sobre azulejos existentes sin demolición", "Higiénico: superficie no porosa apta para cocinas y baños", "Ligero: reduce coste de transporte y carga estructural", "Personalizable: color, diseño y acabado por pedido"],
+          en: ["Waterproof: does not absorb water; does not develop mold", "Fast installation: can be installed over existing tiles without demolition", "Hygienic: non-porous surface suitable for kitchens and bathrooms", "Lightweight: reduces shipping cost and structural load", "Customizable: color, design and finish per order"],
+        },
+      },
+      {
+        id: "limitations",
+        title: { es: "5. Limitaciones a confirmar", en: "5. Limitations to confirm" },
+        paragraphs: {
+          es: ["El panel de pared PVC tiene limitaciones que deben comunicarse al comprador final para evitar expectativas incorrectas."],
+          en: ["PVC wall panels have limitations that should be communicated to the end buyer to prevent incorrect expectations."],
+        },
+        bullets: {
+          es: ["Uso interior: no diseñado para aplicación exterior", "Resistencia al impacto: verificar grosor adecuado para el tráfico esperado", "Adhesivo: confirmar compatibilidad del adhesivo con el sustrato", "Temperatura: evitar zonas con exposición a calor extremo directo", "Superficie del sustrato: requiere pared razonablemente plana"],
+          en: ["Indoor use: not designed for exterior application", "Impact resistance: verify adequate thickness for expected traffic", "Adhesive: confirm adhesive compatibility with the substrate", "Temperature: avoid areas with direct extreme heat exposure", "Substrate surface: requires reasonably flat wall"],
+        },
+      },
+      {
+        id: "buying-checklist",
+        title: { es: "6. Lista de compra para importadores", en: "6. Buying checklist for importers" },
+        paragraphs: {
+          es: ["Antes de solicitar una cotización de paneles de pared PVC, confirme los siguientes puntos para que la respuesta comercial sea concreta."],
+          en: ["Before requesting a PVC wall panel quotation, confirm the following points so the commercial response can be specific."],
+        },
+        bullets: {
+          es: ["Grosor requerido (5 mm, 8 mm o 10 mm)", "Ancho y longitud por panel", "Color o referencia visual del diseño", "Tipo de acabado (mate, brillante, texturizado)", "Cantidad por modelo y color (MOQ: 100 piezas)", "Método de instalación preferido (adhesivo o rieles)", "País y puerto de destino", "Solicitud de muestra gratuita"],
+          en: ["Required thickness (5 mm, 8 mm or 10 mm)", "Width and length per panel", "Color or visual design reference", "Finish type (matte, glossy, textured)", "Quantity per design and color (MOQ: 100 pieces)", "Preferred installation method (adhesive or tracks)", "Destination country and port", "Free sample request"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
