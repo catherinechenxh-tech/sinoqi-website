@@ -1167,15 +1167,17 @@ export const blogPosts: BlogPost[] = [
       es: "¿Qué es el suelo laminado? Definición B2B | SINOQI",
       en: "What Is Laminate Flooring? B2B Definition | SINOQI",
     },
-    seoDescription: {
+    description: {
       es: "Definición técnica del suelo laminado: composición, diferencias con SPC y WPC, ventajas, limitaciones y lista de compra para importadores.",
       en: "Technical definition of laminate flooring: composition, differences vs SPC and WPC, advantages, limitations and buying checklist for importers.",
     },
-    excerpt: {
+    introduction: {
       es: "El suelo laminado es un producto multicapa con núcleo de HDF. Esta guía explica composición, diferencias con SPC y WPC, ventajas y limitaciones para compradores B2B.",
       en: "Laminate flooring is a multi-layer product with an HDF core. This guide covers composition, differences vs SPC and WPC, advantages and limitations for B2B buyers.",
     },
-    image: {
+    readingTime: { es: "7 min de lectura", en: "7 min read" },
+    cover: "/assets/spc-flooring.jpg",
+    coverAlt: {
       es: "Línea de producción de suelo laminado en la fábrica SINOQI",
       en: "Laminate flooring production line at the SINOQI factory",
     },
