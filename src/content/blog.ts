@@ -1154,6 +1154,102 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-is-laminate-flooring",
+    localizedSlug: { es: "que-es-suelo-laminado" },
+    publishedAt: "2026-10-10",
+    category: { es: "Guía de producto", en: "Product guide" },
+    title: {
+      es: "¿Qué es el suelo laminado? Definición y guía para compradores B2B",
+      en: "What Is Laminate Flooring? Definition and Guide for B2B Buyers",
+    },
+    seoTitle: {
+      es: "¿Qué es el suelo laminado? Definición B2B | SINOQI",
+      en: "What Is Laminate Flooring? B2B Definition | SINOQI",
+    },
+    seoDescription: {
+      es: "Definición técnica del suelo laminado: composición, diferencias con SPC y WPC, ventajas, limitaciones y lista de compra para importadores.",
+      en: "Technical definition of laminate flooring: composition, differences vs SPC and WPC, advantages, limitations and buying checklist for importers.",
+    },
+    excerpt: {
+      es: "El suelo laminado es un producto multicapa con núcleo de HDF. Esta guía explica composición, diferencias con SPC y WPC, ventajas y limitaciones para compradores B2B.",
+      en: "Laminate flooring is a multi-layer product with an HDF core. This guide covers composition, differences vs SPC and WPC, advantages and limitations for B2B buyers.",
+    },
+    image: {
+      es: "Línea de producción de suelo laminado en la fábrica SINOQI",
+      en: "Laminate flooring production line at the SINOQI factory",
+    },
+    sections: [
+      {
+        id: "definition",
+        title: { es: "1. Definición: ¿qué es el suelo laminado?", en: "1. Definition: what is laminate flooring?" },
+        paragraphs: {
+          es: ["El suelo laminado es un material multicapa fabricado a partir de tablero de fibra de madera de alta densidad (HDF) recubierto con una capa decorativa impresa y una capa protectora transparente (overlay). A diferencia del WPC o el SPC, que usan plástico como material base, el laminado utiliza madera real procesada como núcleo estructural.", "El resultado es un producto rígido con apariencia visual idéntica a la madera natural, pero con mayor resistencia al rayado y un coste de producción más bajo."],
+          en: ["Laminate flooring is a multi-layer product made from high-density fiberboard (HDF) covered with a printed decorative layer and a transparent protective overlay. Unlike WPC or SPC, which use plastic as the base material, laminate uses processed real wood as the structural core.", "The result is a rigid product with a visual appearance identical to natural wood, but with higher scratch resistance and lower production cost."],
+        },
+      },
+      {
+        id: "composition",
+        title: { es: "2. Composición y fabricación", en: "2. Composition and manufacturing" },
+        paragraphs: {
+          es: ["El suelo laminado se fabrica prensando fibras de madera con resina a alta temperatura y presión para formar el tablero HDF. Sobre este núcleo se imprime un diseño decorativo que puede imitar madera, piedra o cerámica. Finalmente se aplica una capa de desgaste transparente que determina la clasificación AC de durabilidad.", "El sistema de clic permite una instalación flotante sin cola. Las juntas tratadas con cera o sellador proporcionan cierta resistencia a la humedad en los bordes."],
+          en: ["Laminate flooring is manufactured by pressing wood fibers with resin at high temperature and pressure to form the HDF board. On top of this core, a decorative design is printed that can mimic wood, stone or ceramic. Finally, a transparent wear layer is applied that determines the AC durability rating.", "The click-lock system allows glueless floating installation. Joints treated with wax or sealant provide some moisture resistance at the edges."],
+        },
+        bullets: {
+          es: ["Núcleo: tablero HDF (alta densidad, 800-900 kg/m³)", "Capa decorativa: película impresa con diseño de madera, piedra o cerámica", "Capa de desgaste: overlay transparente (0.2 mm a 0.6 mm según clasificación AC)", "Contracara: capa de equilibrio para evitar deformación", "Sistema de instalación: clic sin cola"],
+          en: ["Core: HDF board (high density, 800-900 kg/m³)", "Decorative layer: printed film with wood, stone or ceramic design", "Wear layer: transparent overlay (0.2 mm to 0.6 mm depending on AC rating)", "Backing: balancing layer to prevent warping", "Installation system: glueless click-lock"],
+        },
+      },
+      {
+        id: "laminate-vs-spc-vs-wpc",
+        title: { es: "3. Laminate vs SPC vs WPC: diferencias clave", en: "3. Laminate vs SPC vs WPC: key differences" },
+        paragraphs: {
+          es: ["Laminate, SPC y WPC son tres categorías de suelo rígido que compiten en los mismos mercados. La diferencia principal está en el material del núcleo y la resistencia al agua:", "El laminado tiene núcleo de madera HDF, el SPC tiene núcleo de piedra-plástico, y el WPC tiene núcleo de madera-plástico. Solo el SPC y el WPC son totalmente impermeables; el laminado resistente al agua solo lo es en la superficie, no en el núcleo."],
+          en: ["Laminate, SPC and WPC are three rigid flooring categories that compete in the same markets. The main difference is in the core material and water resistance:", "Laminate has an HDF wood core, SPC has a stone-plastic core, and WPC has a wood-plastic core. Only SPC and WPC are fully waterproof; water-resistant laminate is only waterproof on the surface, not in the core."],
+        },
+        bullets: {
+          es: ["Laminate: núcleo HDF → mejor simulación visual de madera natural, menor precio, NO totalmente impermeable", "SPC: núcleo de piedra-plástico → totalmente impermeable, más rígido, mayor densidad", "WPC: núcleo de madera-plástico → totalmente impermeable, más ligero, mejor aislamiento acústico", "Laminate: clasificación AC3-AC5 → de residencial a comercial de alto tráfico", "SPC/WPC: más adecuados para zonas húmedas como baños y cocinas"],
+          en: ["Laminate: HDF core → best visual simulation of natural wood, lower price, NOT fully waterproof", "SPC: stone-plastic core → fully waterproof, more rigid, higher density", "WPC: wood-plastic core → fully waterproof, lighter, better acoustic insulation", "Laminate: AC3-AC5 rating → from residential to high-traffic commercial", "SPC/WPC: better suited for wet areas like bathrooms and kitchens"],
+        },
+      },
+      {
+        id: "advantages",
+        title: { es: "4. Ventajas confirmadas", en: "4. Confirmed advantages" },
+        paragraphs: {
+          es: ["El suelo laminado ofrece ventajas competitivas para compradores B2B que abastecen mercados donde la apariencia visual de madera natural y el precio son factores de decisión."],
+          en: ["Laminate flooring offers competitive advantages for B2B buyers supplying markets where the natural wood visual appearance and price are decision factors."],
+        },
+        bullets: {
+          es: ["Mejor relación precio-estética: el laminado AC3 con diseño de roble es más económico que el SPC equivalente", "Resistencia al rayado: clasificación AC4-AC5 superior a la del SPC/WPC para el mismo grosor", "Simulación visual: imitación de madera natural indistinguible a 1 metro de distancia", "Instalación sin cola: sistema de clic flotante sobre subpiso existente", "Hipoalergénico: no retiene polvo ni ácaros; superficie fácil de limpiar"],
+          en: ["Better price-to-aesthetics ratio: AC3 laminate with oak design is cheaper than equivalent SPC", "Scratch resistance: AC4-AC5 rating higher than SPC/WPC for the same thickness", "Visual simulation: natural wood imitation indistinguishable at 1 meter distance", "Glueless installation: floating click-lock over existing subfloor", "Hypoallergenic: does not retain dust or mites; easy-to-clean surface"],
+        },
+      },
+      {
+        id: "limitations",
+        title: { es: "5. Limitaciones a confirmar", en: "5. Limitations to confirm" },
+        paragraphs: {
+          es: ["El suelo laminado tiene limitaciones que deben comunicarse claramente al comprador final, especialmente en relación con la resistencia al agua."],
+          en: ["Laminate flooring has limitations that should be clearly communicated to the end buyer, especially regarding water resistance."],
+        },
+        bullets: {
+          es: ["No totalmente impermeable: el núcleo HDF absorbe agua si los sellos fallan; no recomendado para baños o lavanderías", "Reacción al agua: la exposición prolongada provoca hinchamiento irreversible en las juntas", "Reemplazo: si una placa se daña por agua, debe reemplazarse; no se puede reparar", "Subpiso: requiere superficie plana y membrana de vapor si se instala sobre concreto", "Sonido: sin subcapa acústica, el laminado produce eco metálico al caminar"],
+          en: ["Not fully waterproof: HDF core absorbs water if seals fail; not recommended for bathrooms or laundry rooms", "Water reaction: prolonged exposure causes irreversible swelling at the joints", "Replacement: if a plank is water-damaged, it must be replaced; cannot be repaired", "Subfloor: requires flat surface and vapor membrane if installed over concrete", "Sound: without acoustic underlayment, laminate produces a metallic echo when walked on"],
+        },
+      },
+      {
+        id: "buying-checklist",
+        title: { es: "6. Lista de compra para importadores", en: "6. Buying checklist for importers" },
+        paragraphs: {
+          es: ["Antes de solicitar una cotización de suelo laminado, confirme los siguientes puntos para que la respuesta comercial sea concreta y llegue dentro de un día laborable."],
+          en: ["Before requesting a laminate flooring quotation, confirm the following points so the commercial response can be specific and arrive within one business day."],
+        },
+        bullets: {
+          es: ["Grosor total (8 mm, 10 mm o 12 mm)", "Clasificación AC requerida (AC3 residencial, AC4 comercial, AC5 alto tráfico)", "Color o referencia visual del diseño (roble, nogal, gris...)", "Tipo de superficie (mate, brillante, texturizado, madera registrada)", "Sistema de clic requerido (UNILIN o VALINGE)", "Cantidad por diseño y color (MOQ: 100 piezas)", "Tratamiento de juntas resistente al agua: sí o no", "País y puerto de destino", "Solicitud de muestra gratuita"],
+          en: ["Total thickness (8 mm, 10 mm or 12 mm)", "AC rating required (AC3 residential, AC4 commercial, AC5 high traffic)", "Color or visual design reference (oak, walnut, grey...)", "Surface type (matte, glossy, textured, registered embossment)", "Click system required (UNILIN or VALINGE)", "Quantity per design and color (MOQ: 100 pieces)", "Water-resistant joint treatment: yes or no", "Destination country and port", "Free sample request"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
