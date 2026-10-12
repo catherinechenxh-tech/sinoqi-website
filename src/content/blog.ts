@@ -1252,6 +1252,104 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "pvc-vs-gypsum-ceiling",
+    localizedSlug: { es: "pvc-vs-cielo-raso-yeso" },
+    publishedAt: "2026-10-12",
+    category: { es: "Comparación de productos", en: "Product comparison" },
+    title: {
+      es: "PVC vs cielo raso de yeso: comparación para compradores B2B",
+      en: "PVC vs Gypsum Ceiling: A B2B Buyer's Comparison",
+    },
+    seoTitle: {
+      es: "PVC vs yeso: comparación de cielos rasos B2B | SINOQI",
+      en: "PVC vs Gypsum Ceiling Comparison for B2B | SINOQI",
+    },
+    description: {
+      es: "Comparación técnica entre paneles de techo PVC y cielo raso de yeso: peso, instalación, resistencia al agua, coste, mantenimiento y cuándo elegir cada uno.",
+      en: "Technical comparison between PVC ceiling panels and gypsum ceilings: weight, installation, water resistance, cost, maintenance and when to choose each.",
+    },
+    introduction: {
+      es: "Los paneles de techo PVC y los cielos rasos de yeso compiten en los mismos proyectos. Esta guía compara los dos materiales en factores que importan a importadores y contratistas B2B.",
+      en: "PVC ceiling panels and gypsum ceilings compete in the same projects. This guide compares the two materials on factors that matter to B2B importers and contractors.",
+    },
+    readingTime: { es: "8 min de lectura", en: "8 min read" },
+    cover: "/assets/pvc-ceiling.jpg",
+    coverAlt: {
+      es: "Paneles de techo PVC instalados en proyecto residencial",
+      en: "PVC ceiling panels installed in a residential project",
+    },
+    sections: [
+      {
+        id: "material-overview",
+        title: { es: "1. Descripción general de materiales", en: "1. Material overview" },
+        paragraphs: {
+          es: ["El PVC (policloruro de vinilo) es un termoplástico ligero, impermeable y fabricado en paneles extruidos con sistema de machihembrado. Se instala atornillado o con adhesivo sobre rieles o directamente sobre el sustrato.", "El yeso (placa de yeso o gypsum board) es un material a base de sulfato de calcio prensado entre dos capas de papel. Reiere estructura metálica de soporte, enmasillado de juntas, lijado y pintura final para completar la instalación."],
+          en: ["PVC (polyvinyl chloride) is a lightweight, waterproof thermoplastic manufactured in extruded panels with a tongue-and-groove system. It is installed by screwing or adhesive onto tracks or directly onto the substrate.", "Gypsum (gypsum board or drywall) is a calcium sulfate-based material pressed between two layers of paper. It requires a metal support frame, joint compound, sanding and final paint to complete the installation."],
+        },
+      },
+      {
+        id: "weight-and-structure",
+        title: { es: "2. Peso y estructura", en: "2. Weight and structure" },
+        paragraphs: {
+          es: ["La diferencia de peso es una de las más significativas para proyectos B2B con restricciones logísticas o estructurales."],
+          en: ["The weight difference is one of the most significant factors for B2B projects with logistical or structural constraints."],
+        },
+        bullets: {
+          es: ["PVC: 1.5-3.0 kg/m² según grosor (5-10 mm)", "Yeso: 6-9 kg/m² según grosor (9.5-12.5 mm)", "El PVC pesa hasta 4 veces menos por metro cuadrado", "El yeso requiere estructura metálica adicional (perfilería + canales)", "El PVC puede instalarse sobre estructura ligera de madera o rieles PVC"],
+          en: ["PVC: 1.5-3.0 kg/m² depending on thickness (5-10 mm)", "Gypsum: 6-9 kg/m² depending on thickness (9.5-12.5 mm)", "PVC weighs up to 4 times less per square meter", "Gypsum requires additional metal framing (profiles + channels)", "PVC can be installed on lightweight wood framing or PVC tracks"],
+        },
+      },
+      {
+        id: "water-resistance",
+        title: { es: "3. Resistencia al agua", en: "3. Water resistance" },
+        paragraphs: {
+          es: ["La resistencia al agua es donde el PVC tiene una ventaja decisiva sobre el yeso, especialmente en proyectos con humedad ambiental o riesgo de filtraciones."],
+          en: ["Water resistance is where PVC has a decisive advantage over gypsum, especially in projects with ambient humidity or leak risk."],
+        },
+        bullets: {
+          es: ["PVC: totalmente impermeable — no absorbe agua, no se deforma, no desarrolla moho", "Yeso: absorbe agua — se ablanda, se deforma y pierde integridad estructural", "PVC: apto para baños, cocinas, sótanos y zonas húmedas", "Yeso: requiere tratamientos especiales (placa verde) para áreas húmedas, con garantía limitada", "PVC: no necesita pintura protectora; el yeso sí"],
+          en: ["PVC: fully waterproof — does not absorb water, does not warp, does not develop mold", "Gypsum: absorbs water — softens, warps and loses structural integrity", "PVC: suitable for bathrooms, kitchens, basements and humid zones", "Gypsum: requires special treatments (green board) for wet areas, with limited warranty", "PVC: no protective paint needed; gypsum does"],
+        },
+      },
+      {
+        id: "installation-time",
+        title: { es: "4. Tiempo de instalación", en: "4. Installation time" },
+        paragraphs: {
+          es: ["El tiempo de instalación afecta directamente el coste laboral y la fecha de entrega del proyecto. El PVC se instala significativamente más rápido porque requiere menos pasos."],
+          en: ["Installation time directly affects labor cost and project delivery date. PVC installs significantly faster because it requires fewer steps."],
+        },
+        bullets: {
+          es: ["PVC: 3 pasos — instalar rieles → encajar paneles → sellar juntas (opcional)", "Yeso: 6 pasos — instalar estructura → atornillar placas → enmasillar juntas → lijar → imprimar → pintar", "PVC: una persona puede cubrir 40-60 m² por día", "Yeso: un equipo de 2-3 personas cubre 30-50 m² por día", "PVC: no requiere tiempo de secado; el yeso necesita 24-48h de secado entre capas"],
+          en: ["PVC: 3 steps — install tracks → clip panels → seal joints (optional)", "Gypsum: 6 steps — install frame → screw boards → compound joints → sand → prime → paint", "PVC: one person can cover 40-60 m² per day", "Gypsum: a 2-3 person team covers 30-50 m² per day", "PVC: no drying time needed; gypsum requires 24-48h drying between coats"],
+        },
+      },
+      {
+        id: "cost-comparison",
+        title: { es: "5. Comparación de coste", en: "5. Cost comparison" },
+        paragraphs: {
+          es: ["El coste total instalado incluye material, estructura, mano de obra y acabado. Aunque el yeso puede tener un precio de material más bajo, el coste total instalado puede ser similar o mayor que el PVC."],
+          en: ["Total installed cost includes material, framing, labor and finishing. While gypsum may have a lower material price, total installed cost can be similar to or higher than PVC."],
+        },
+        bullets: {
+          es: ["Material PVC: 2-5 USD/m² (según grosor y diseño)", "Material yeso: 1.5-3.5 USD/m² (placa estándar)", "Estructura PVC: rieles ligeros — incluidos o de bajo coste", "Estructura yeso: perfilería metálica completa — coste adicional significativo", "Acabado PVC: canto perimetral o perfil de unión — minimal", "Acabado yeso: masilla, lija, imprimación, pintura — coste mayor", "Mano de obra PVC: 1 persona, menos horas", "Mano de obra yeso: 2-3 personas, más horas, oficios múltiples"],
+          en: ["PVC material: 2-5 USD/m² (depending on thickness and design)", "Gypsum material: 1.5-3.5 USD/m² (standard board)", "PVC framing: lightweight tracks — included or low cost", "Gypsum framing: complete metal stud system — significant additional cost", "PVC finishing: perimeter bead or joining profile — minimal", "Gypsum finishing: compound, sandpaper, primer, paint — higher cost", "PVC labor: 1 person, fewer hours", "Gypsum labor: 2-3 people, more hours, multiple trades"],
+        },
+      },
+      {
+        id: "when-to-choose",
+        title: { es: "6. Cuándo elegir cada material", en: "6. When to choose each material" },
+        paragraphs: {
+          es: ["La elección entre PVC y yeso depende del tipo de proyecto, el entorno y las prioridades del comprador. Esta tabla de decisión resume los escenarios típicos:"],
+          en: ["The choice between PVC and gypsum depends on project type, environment and buyer priorities. This decision table summarizes typical scenarios:"],
+        },
+        bullets: {
+          es: ["Elige PVC si: el proyecto está en zona húmeda (baños, cocinas, lavanderías)", "Elige PVC si: el peso estructural es una limitación (reformascubiertas existentes, techos ligeros)", "Elige PVC si: el tiempo de instalación es crítico (entregas urgentes)", "Elige PVC si: el comprador quiere un mantenimiento mínimo (sin repintado)", "Elige yeso si: el proyecto requiere pintura personalizada o acabado mate plano", "Elige yeso si: se necesita aislamiento acústico superior (el yeso tiene mayor masa)", "Elige yeso si: la normativa local exige materiales con clasificación de fuego específica certificada"],
+          en: ["Choose PVC if: project is in a humid area (bathrooms, kitchens, laundry rooms)", "Choose PVC if: structural weight is a constraint (retrofits, lightweight ceilings)", "Choose PVC if: installation time is critical (urgent deliveries)", "Choose PVC if: buyer wants minimal maintenance (no repainting)", "Choose gypsum if: project requires custom paint or flat matte finish", "Choose gypsum if: superior acoustic insulation is needed (gypsum has more mass)", "Choose gypsum if: local regulations require certified fire-rated assemblies"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
