@@ -1350,6 +1350,104 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "uv-marble-vs-real-marble",
+    localizedSlug: { es: "uv-marble-vs-marmol-real" },
+    publishedAt: "2026-10-14",
+    category: { es: "Comparación de productos", en: "Product comparison" },
+    title: {
+      es: "Mármol UV vs mármol real: comparación para compradores B2B",
+      en: "UV Marble vs Real Marble: Comparison Guide for B2B Buyers",
+    },
+    description: {
+      es: "Comparación técnica entre planchas de mármol UV y mármol natural: peso, impermeabilidad, instalación, coste y cuándo elegir cada material.",
+      en: "Technical comparison between UV marble sheets and natural marble: weight, water resistance, installation, cost and when to choose each material.",
+    },
+    introduction: {
+      es: "El mármol UV y el mármol natural sirven al mismo mercado de acabados de pared, pero difieren radicalmente en composición, manejo y coste total. Esta guía compara ambos materiales en cinco factores clave para ayudar a importadores y distribuidores a decidir.",
+      en: "UV marble and natural marble serve the same wall cladding market, but differ radically in composition, handling and total cost. This guide compares both materials across five key factors to help importers and distributors decide.",
+    },
+    readingTime: { es: "6 min", en: "6 min" },
+    cover: "/assets/uv-marble-sheet-stack.jpg",
+    coverAlt: {
+      es: "Planchas de mármol UV apiladas en la fábrica SINOQI",
+      en: "UV marble sheets stacked at the SINOQI factory",
+    },
+    sections: [
+      {
+        id: "material-overview",
+        title: { es: "1. Descripción del material", en: "1. Material overview" },
+        paragraphs: {
+          es: ["El mármol UV es una plancha compuesta con una capa superficial impresa con tecnología UV que imita el veteado del mármol natural. El sustrato es PVC o panel compuesto, recubierto con una película de alta definición y un barniz UV protector.", "El mármol natural se extrae en bloques de cantera, se corta en losas de 1-3 cm de grosor y se pule en superficie. Cada losa tiene un veteado único e irrepetible."],
+          en: ["UV marble is a composite sheet with a UV-printed surface layer that replicates natural marble veining. The substrate is PVC or composite panel, coated with a high-definition film and a protective UV varnish.", "Natural marble is quarried in blocks, cut into slabs of 1-3 cm thickness and surface-polished. Each slab has unique, unrepeatable veining."],
+        },
+        bullets: {
+          es: ["Mármol UV: sustrato PVC/composite + película impresa + barniz UV", "Mármol natural: losa de roca caliza metamórfica cortada y pulida", "Mármol UV: disponible en 2.5-6 mm de grosor", "Mármol natural: disponible en 10-30 mm de grosor", "Mármol UV: patrón consistente entre lotes; el natural varía en cada losa"],
+          en: ["UV marble: PVC/composite substrate + printed film + UV varnish", "Natural marble: metamorphic limestone slab, cut and polished", "UV marble: available in 2.5-6 mm thickness", "Natural marble: available in 10-30 mm thickness", "UV marble: consistent pattern across batches; natural varies in every slab"],
+        },
+      },
+      {
+        id: "weight-handling",
+        title: { es: "2. Peso y manejo", en: "2. Weight and handling" },
+        paragraphs: {
+          es: ["La diferencia de peso es el factor que más afecta la logística y la instalación. El mármol UV pesa una fracción del natural."],
+          en: ["The weight difference is the factor that most affects logistics and installation. UV marble weighs a fraction of natural marble."],
+        },
+        bullets: {
+          es: ["Mármol UV: 3-7 kg/m² (según grosor)", "Mármol natural: 25-35 kg/m² (según grosor)", "Relación de peso: el natural es 5-10 veces más pesado", "Embarque: un contenedor 20FT carga ~3.000 m² de mármol UV vs ~500 m² de natural", "Instalación: el UV se maneja con 1-2 personas; el natural requiere equipo de elevación", "Seguridad: el UV no se rompe al caer; el natural se fractura"],
+          en: ["UV marble: 3-7 kg/m² (depending on thickness)", "Natural marble: 25-35 kg/m² (depending on thickness)", "Weight ratio: natural is 5-10 times heavier", "Shipping: a 20FT container loads ~3,000 m² of UV marble vs ~500 m² of natural", "Installation: UV is handled by 1-2 people; natural requires lifting equipment", "Safety: UV does not shatter if dropped; natural fractures on impact"],
+        },
+      },
+      {
+        id: "water-stain-resistance",
+        title: { es: "3. Resistencia al agua y manchas", en: "3. Water and stain resistance" },
+        paragraphs: {
+          es: ["El mármol natural es poroso y reacciona con líquidos ácidos. El mármol UV tiene una superficie sellada que no absorbe líquidos."],
+          en: ["Natural marble is porous and reacts with acidic liquids. UV marble has a sealed surface that does not absorb liquids."],
+        },
+        bullets: {
+          es: ["Mármol UV: superficie no porosa — no absorbe café, vino, aceite ni ácidos", "Mármol natural: poroso — absorbe líquidos, mancha permanentemente con vino, limón, café", "Mármol UV: no necesita sellado periódico", "Mármol natural: requiere sellador cada 6-12 meses", "Mármol UV: apto para cocinas, baños, lavanderías", "Mármol natural: no recomendado tras de fogones ni lavabos sin tratamiento intensivo"],
+          en: ["UV marble: non-porous surface — does not absorb coffee, wine, oil or acids", "Natural marble: porous — absorbs liquids, stains permanently with wine, lemon, coffee", "UV marble: no periodic sealing needed", "Natural marble: requires sealer every 6-12 months", "UV marble: suitable for kitchens, bathrooms, laundry rooms", "Natural marble: not recommended behind stoves or sinks without intensive treatment"],
+        },
+      },
+      {
+        id: "installation-cost",
+        title: { es: "4. Instalación y coste total", en: "4. Installation and total cost" },
+        paragraphs: {
+          es: ["El coste total instalado incluye material, transporte, mano de obra y mantenimiento. El mármol UV reduce cada uno de estos conceptos excepto el material base."],
+          en: ["Total installed cost includes material, transport, labor and maintenance. UV marble reduces each of these except the base material."],
+        },
+        bullets: {
+          es: ["Material UV: 4-8 USD/m²; material natural: 15-60 USD/m²", "Transporte UV: ligero — flete bajo; natural: pesado — flete alto", "Instalación UV: adhesivo + corte con cúter; natural: adhesivo especial + corte con amoladora", "Mano de obra UV: 1 persona, 30-40 m²/día; natural: 2-3 personas, 15-20 m²/día", "Mantenimiento UV: limpiar con paño; natural: sellado anual + limpieza profesional", "Coste total instalado UV: 8-15 USD/m²; natural: 30-80 USD/m²"],
+          en: ["UV material: 4-8 USD/m²; natural material: 15-60 USD/m²", "UV transport: lightweight — low freight; natural: heavy — high freight", "UV installation: adhesive + cut with utility knife; natural: special adhesive + cut with grinder", "UV labor: 1 person, 30-40 m²/day; natural: 2-3 people, 15-20 m²/day", "UV maintenance: wipe with cloth; natural: annual sealing + professional cleaning", "Total installed cost UV: 8-15 USD/m²; natural: 30-80 USD/m²"],
+        },
+      },
+      {
+        id: "durability-lifespan",
+        title: { es: "5. Durabilidad y vida útil", en: "5. Durability and lifespan" },
+        paragraphs: {
+          es: ["El mármol natural dura décadas e incluso siglos. El mármol UV tiene una vida útil menor pero suficiente para la mayoría de proyectos comerciales y residenciales."],
+          en: ["Natural marble lasts decades or even centuries. UV marble has a shorter lifespan but sufficient for most commercial and residential projects."],
+        },
+        bullets: {
+          es: ["Mármol UV: vida útil 10-20 años en interior (sin exposición solar directa)", "Mármol natural: vida útil 50+ años; puede pulirse para restaurar", "Mármol UV: la capa impresa no se puede repulir; se reemplaza la plancha", "Mármol natural: se pule y repule hasta 3-5 veces antes de descartar", "Mármol UV: resistente a rayadías superficiales (recubrimiento UV)", "Mármol natural: rayadías profundas requieren pulido profesional", "Mármol UV: no amarillea en interiores; en exteriores sí degrada"],
+          en: ["UV marble: lifespan 10-20 years indoors (no direct sun exposure)", "Natural marble: lifespan 50+ years; can be re-polished to restore", "UV marble: printed layer cannot be re-polished; sheet is replaced", "Natural marble: can be polished and re-polished 3-5 times before discarding", "UV marble: resistant to surface scratches (UV coating)", "Natural marble: deep scratches require professional polishing", "UV marble: does not yellow indoors; degrades outdoors"],
+        },
+      },
+      {
+        id: "buying-checklist",
+        title: { es: "6. Lista de compra para importadores", en: "6. Buying checklist for importers" },
+        paragraphs: {
+          es: ["Antes de solicitar una cotización de mármol UV, confirme los siguientes puntos para que la respuesta comercial sea específica y llegue en un día laborable."],
+          en: ["Before requesting a UV marble quotation, confirm the following points so the commercial response can be specific and arrive within one business day."],
+        },
+        bullets: {
+          es: ["Grosor (2.5 mm, 4 mm o 6 mm)", "Color y referencia visual del diseño (blanco carrara, gris ático, negro marquina...)", "Tamaño de plancha (1220×2440 mm estándar o personalizado)", "Tipo de superficie (mate, brillante, texturizado)", "Cantidad total por diseño y color (MOQ: 200 planchas)", "Uso previsto: pared, isla de cocina, baño, recepción", "País y puerto de destino", "Solicitud de muestra gratuita"],
+          en: ["Thickness (2.5 mm, 4 mm or 6 mm)", "Color and visual design reference (carrara white, attic grey, marquina black...)", "Sheet size (1220×2440 mm standard or custom)", "Surface type (matte, glossy, textured)", "Total quantity per design and color (MOQ: 200 sheets)", "Intended use: wall, kitchen island, bathroom, reception", "Destination country and port", "Free sample request"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
