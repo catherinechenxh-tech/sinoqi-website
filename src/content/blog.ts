@@ -1448,6 +1448,116 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "wpc-flooring-installation-guide",
+    localizedSlug: { es: "guia-instalacion-suelo-wpc" },
+    publishedAt: "2026-10-15",
+    category: { es: "Guía de instalación", en: "Installation guide" },
+    title: {
+      es: "Guía de instalación del suelo WPC: 7 pasos para un acabado profesional",
+      en: "WPC Flooring Installation Guide: 7 Steps to a Professional Finish",
+    },
+    description: {
+      es: "Guía paso a paso para instalar suelo WPC: preparación del subpiso, ac climatización, herramientas, colocación, remates y errores comunes a evitar.",
+      en: "Step-by-step guide to installing WPC flooring: subfloor prep, acclimatization, tools, laying, finishing and common mistakes to avoid.",
+    },
+    introduction: {
+      es: "El suelo WPC con sistema de clic sin cola es uno de los productos más rápidos de instalar en el sector de suelos. Pero un instalador que se salta la preparación del subpiso o la aclimatación obtendrá resultados defectuosos. Esta guía cubre los 7 pasos que separan una instalación amateur de una profesional.",
+      en: "WPC flooring with a glueless click system is one of the fastest floor products to install. But an installer who skips subfloor prep or acclimatization gets defective results. This guide covers the 7 steps that separate an amateur install from a professional one.",
+    },
+    readingTime: { es: "7 min", en: "7 min" },
+    cover: "/assets/wpc-production.jpg",
+    coverAlt: {
+      es: "Instalación de suelo WPC con sistema de clic en una vivienda",
+      en: "WPC flooring click-system installation in a residential setting",
+    },
+    sections: [
+      {
+        id: "subfloor-preparation",
+        title: { es: "1. Preparación del subpiso", en: "1. Subfloor preparation" },
+        paragraphs: {
+          es: ["El subpiso determina el resultado final. Si el subpiso no es plano, el suelo WPC producirá crujidos, rebotes y desgaste prematuro de los cierres."],
+          en: ["The subfloor determines the final result. If the subfloor is not flat, WPC flooring will produce creaking, bouncing and premature wear of the locking joints."],
+        },
+        bullets: {
+          es: ["Concreto: humedad máxima 2.5% — usar membrana de vapor si supera el límite", "Concreto: planicidad máxima 3 mm por 2 m (norma EN 1972)", "Cerámica existente: confirmar que no haya baldosas sueltas; rellenar juntas con nivelador", "Tableros de madera: clavos hundidos, lijar uniones, sustituir tableros blandos", "PVC/WPC existente: se puede instalar encima sin demolición si el subpiso está plano y seco", "Nunca instalar sobre moqueta — retirar siempre"],
+          en: ["Concrete: max moisture 2.5% — use vapor membrane if it exceeds the limit", "Concrete: max flatness deviation 3 mm per 2 m (EN 1972 standard)", "Existing tile: confirm no loose tiles; fill grout lines with self-leveling compound", "Wooden subfloor: countersink nails, sand joints, replace soft boards", "Existing PVC/WPC: can be installed over without demolition if subfloor is flat and dry", "Never install over carpet — always remove it"],
+        },
+      },
+      {
+        id: "acclimatization",
+        title: { es: "2. Aclimatación del material", en: "2. Material acclimatization" },
+        paragraphs: {
+          es: ["El WPC es estable dimensionalmente, pero todo material compuesto se expande y contrae con cambios de temperatura y humedad. La aclimatación evita que las juntas se abran después de la instalación."],
+          en: ["WPC is dimensionally stable, but every composite material expands and contracts with temperature and humidity changes. Acclimatization prevents joints from opening after installation."],
+        },
+        bullets: {
+          es: ["Tiempo mínimo: 48 horas en el espacio de instalación", "Temperatura objetivo: 18-24°C", "Humedad relativa objetivo: 35-65%", "Apilar las cajas planas, no de pie", "No abrir las cajas durante la aclimatación", "No almacenar cerca de ventanas con sol directo o conductos de calefacción"],
+          en: ["Minimum time: 48 hours in the installation space", "Target temperature: 18-24°C", "Target relative humidity: 35-65%", "Stack boxes flat, not upright", "Do not open boxes during acclimatization", "Do not store near windows with direct sun or heating ducts"],
+        },
+      },
+      {
+        id: "tools-required",
+        title: { es: "3. Herramientas necesarias", en: "3. Tools required" },
+        paragraphs: {
+          es: ["El WPC con sistema de clic no requiere herramientas especializadas. La mayoría de herramientas están disponibles en cualquier ferretería de obra."],
+          en: ["WPC with a click system requires no specialized tools. Most tools are available at any construction hardware store."],
+        },
+        bullets: {
+          es: ["Sierra de calar con hoja de dientes finos (para corte transversal)", "Cúter reforzado para cortes longitudinales en perfil", "Calzadores y cuñas de espaciado (mínimo 6 pares)", "Bloque de golpeo de plástico (nunca usar martillo directamente)", "Cinta métrica, regla metálica y escuadra", "Nivel láser o nivel de burbuja de 1.2 m", "Rodillo de 50 kg para asentar las juntas después de clicar"],
+          en: ["Jigsaw with fine-tooth blade (for cross cuts)", "Heavy-duty utility knife for longitudinal profile cuts", "Spacers and wedges (minimum 6 pairs)", "Plastic tapping block (never use a hammer directly)", "Measuring tape, metal ruler and square", "Laser level or 1.2 m spirit level", "50 kg roller to set joints after clicking"],
+        },
+      },
+      {
+        id: "laying-pattern",
+        title: { es: "4. Patrón de colocación", en: "4. Laying pattern" },
+        paragraphs: {
+          es: ["El patrón de colocación afecta tanto la estética como la estabilidad. La regla fundamental: las juntas transversales no deben alinearse en filas adyacentes."],
+          en: ["The laying pattern affects both aesthetics and stability. The fundamental rule: cross-joints must not align in adjacent rows."],
+        },
+        bullets: {
+          es: ["Dirección de las planchas: paralela a la fuente de luz principal (ventana)", "Juntas desplazadas: mínimo 30 cm entre planchas adyacentes (patrón aleatorio)", "Primera fila: marcar una línea recta con cuerda contra la pared más larga", "Juntas de dilatación perimetral: mínimo 8 mm en cada pared (usar cuñas)", "En instalaciones grandes (>8 m de largo): incluir junta de dilatación intermedia", "Cortar la última fila con la cara decorativa hacia abajo en la sierra"],
+          en: ["Plank direction: parallel to the main light source (window)", "Staggered joints: minimum 30 cm between adjacent planks (random pattern)", "First row: mark a straight line with string against the longest wall", "Perimeter expansion gap: minimum 8 mm at each wall (use spacers)", "In large installations (>8 m long): include an intermediate expansion joint", "Cut the last row with the decorative face down on the saw"],
+        },
+      },
+      {
+        id: "clicking-technique",
+        title: { es: "5. Técnica de clicado", en: "5. Clicking technique" },
+        paragraphs: {
+          es: ["El sistema de clic más común en WPC es el sistema de ángulo-bisel: la plancha se introduce a 20-30° y se baja al plano. Una técnica incorrecta provoca juntas visibles o daños en el perfil."],
+          en: ["The most common WPC click system is the angle-bevel system: the plank is inserted at 20-30° and pressed down to the plane. Incorrect technique causes visible gaps or profile damage."],
+        },
+        bullets: {
+          es: ["Clic lateral: insertar la lengüeta en el bisel a 20-30° y bajar suavemente", "Clic de cabecera: usar el bloque de golpeo para cerrar la junta transversal", "Nunca forzar con martillo directo — usar siempre el bloque de golpeo", "Si una junta no cierra: verificar que no haya suciedad en el perfil", "Pasar el rodillo de 50 kg por cada fila completa para asentar juntas", "Inspeccionar cada junta con la mano — no debe haber escalón"],
+          en: ["Side click: insert the tongue into the bevel at 20-30° and lower gently", "Head click: use the tapping block to close the cross-joint", "Never force with a direct hammer — always use the tapping block", "If a joint won't close: check for dirt in the profile", "Roll a 50 kg roller over each completed row to set joints", "Inspect each joint by hand — there should be no lip"],
+        },
+      },
+      {
+        id: "finishing-transitions",
+        title: { es: "6. Remates y perfiles de transición", en: "6. Finishing and transition profiles" },
+        paragraphs: {
+          es: ["Los remates son lo que diferencia una instalación terminada de una inacabada. Los perfiles de transición cubren las juntas de dilatación y cambian de material sin que se vean bordes crudos."],
+          en: ["Finishing is what separates a completed install from an unfinished one. Transition profiles cover expansion gaps and switch materials without showing raw edges."],
+        },
+        bullets: {
+          es: ["Zócalo: clavar o atornillar al muro, nunca al suelo (permite flotación)", "Perfil T: en juntas entre habitaciones o cambio de material", "Perfil reductor: en transiciones de altura (WPC a cerámica)", "Perfil de borde: en escalones o bordes expuestos", "Sellado perimetral: silicona neutra en zonas húmedas (baño, cocina)", "Retirar las cuñas de espaciado 24 horas después de terminar"],
+          en: ["Skirting board: nail or screw to the wall, never to the floor (allows floatation)", "T-profile: at joints between rooms or material changes", "Reducer profile: at height transitions (WPC to tile)", "Edge profile: on stairs or exposed edges", "Perimeter sealing: neutral silicone in wet areas (bathroom, kitchen)", "Remove spacers 24 hours after completing the installation"],
+        },
+      },
+      {
+        id: "common-mistakes",
+        title: { es: "7. Errores comunes a evitar", en: "7. Common mistakes to avoid" },
+        paragraphs: {
+          es: ["La mayoría de reclamaciones de garantía en suelo WPC provienen de errores de instalación, no de defectos de fabricación. Estos son los siete errores más frecuentes:"],
+          en: ["Most warranty claims on WPC flooring come from installation errors, not manufacturing defects. These are the seven most common mistakes:"],
+        },
+        bullets: {
+          es: ["No aclimatar el material — las juntas se abren en semanas", "No usar membrana de vapor sobre concreto — el suelo abomba", "Juntas alineadas en filas adyacentes — patrón no aleatorio", "No dejar junta de dilatación perimetral — el suelo se levanta en bordes", "Usar martillo directo sin bloque de golpeo — perfil dañado", "Instalar sobre moqueta — el suelo rebota y cruje", "No sellar el perímetro en baños — el agua penetra por los bordes"],
+          en: ["Not acclimatizing the material — joints open within weeks", "Not using a vapor membrane over concrete — flooring buckles", "Aligned joints in adjacent rows — non-random pattern", "Not leaving perimeter expansion gap — flooring lifts at edges", "Using a direct hammer without a tapping block — damaged profile", "Installing over carpet — flooring bounces and creaks", "Not sealing the perimeter in bathrooms — water penetrates through edges"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
