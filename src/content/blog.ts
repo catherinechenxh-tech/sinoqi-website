@@ -1558,6 +1558,116 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "wpc-flooring-price-guide",
+    localizedSlug: { es: "guia-precios-suelo-wpc" },
+    publishedAt: "2026-10-16",
+    category: { es: "Guía de precios", en: "Price guide" },
+    title: {
+      es: "Guía de precios del suelo WPC: qué afecta el coste FOB para importadores",
+      en: "WPC Flooring Price Guide: What Affects FOB Cost for Importers",
+    },
+    description: {
+      es: "Guía B2B de precios del suelo WPC: rangos FOB, grosor, capa de desgaste, sistema de clic, acabado, embalaje, MOQ y cómo comparar cotizaciones.",
+      en: "B2B WPC flooring price guide: FOB ranges, thickness, wear layer, click system, finish, packaging, MOQ and how to compare quotations.",
+    },
+    introduction: {
+      es: "El precio del suelo WPC no se define solo por el grosor. Para un importador, el coste real depende de la estructura del producto, la capa de desgaste, el sistema de clic, el acabado superficial, el embalaje y el volumen de pedido. Esta guía explica cómo leer una cotización FOB de WPC y qué datos pedir al proveedor antes de comparar precios.",
+      en: "WPC flooring price is not defined by thickness alone. For an importer, real cost depends on product structure, wear layer, click system, surface finish, packaging and order volume. This guide explains how to read a WPC FOB quotation and what data to request before comparing prices.",
+    },
+    readingTime: { es: "7 min", en: "7 min" },
+    cover: "/assets/wpc-production.jpg",
+    coverAlt: {
+      es: "Línea de producción y embalaje de suelo WPC para exportación",
+      en: "WPC flooring production and export packing line",
+    },
+    sections: [
+      {
+        id: "price-range",
+        title: { es: "1. Rango de precio FOB típico", en: "1. Typical FOB price range" },
+        paragraphs: {
+          es: ["El precio FOB de suelo WPC varía ampliamente según especificación y volumen. Para compradores B2B, un rango realista ayuda a filtrar cotizaciones demasiado bajas que esconden cambios de calidad."],
+          en: ["WPC flooring FOB price varies widely by specification and volume. For B2B buyers, a realistic range helps filter quotes that are too low and hide quality changes."],
+        },
+        bullets: {
+          es: ["WPC económico: 6-9 USD/m² (grosor básico, capa de desgaste fina, diseño estándar)", "WPC medio: 9-13 USD/m² (mejor núcleo, 0.3-0.5 mm wear layer, acabado estable)", "WPC premium: 13-18 USD/m² (mayor grosor, click patentado, IXPE/EVA opcional, diseño profundo)", "MOQ habitual: 100-300 m² por color, según proveedor", "Precio final depende de Incoterm: FOB Ningbo/Shanghai no incluye flete marítimo ni aranceles"],
+          en: ["Economy WPC: USD 6-9/m² (basic thickness, thin wear layer, standard design)", "Mid-range WPC: USD 9-13/m² (better core, 0.3-0.5 mm wear layer, stable finish)", "Premium WPC: USD 13-18/m² (higher thickness, patented click, optional IXPE/EVA, deep texture)", "Typical MOQ: 100-300 m² per color, depending on supplier", "Final landed cost depends on Incoterm: FOB Ningbo/Shanghai excludes ocean freight and duties"],
+        },
+      },
+      {
+        id: "thickness-core",
+        title: { es: "2. Grosor y estructura del núcleo", en: "2. Thickness and core structure" },
+        paragraphs: {
+          es: ["El grosor total influye en estabilidad, sensación al caminar y coste de material. Pero dos suelos de 8 mm pueden tener precios distintos si el núcleo cambia."],
+          en: ["Total thickness affects stability, walking feel and material cost. But two 8 mm floors can have different prices if the core changes."],
+        },
+        bullets: {
+          es: ["5-6 mm: opción económica para proyectos residenciales ligeros", "7-8 mm: rango más común para importadores, equilibrio entre coste y estabilidad", "9-12 mm: opción premium para mayor confort y sensación sólida", "Mayor densidad del núcleo = mejor estabilidad pero mayor coste", "Contenido de madera/PVC y fórmula de aditivos afectan rigidez, olor y durabilidad", "Pedir al proveedor: densidad del núcleo, peso por m² y tolerancia dimensional"],
+          en: ["5-6 mm: economy option for light residential projects", "7-8 mm: most common importer range, balancing cost and stability", "9-12 mm: premium option for better comfort and solid feel", "Higher core density = better stability but higher cost", "Wood/PVC content and additive formula affect rigidity, odor and durability", "Ask supplier for: core density, weight per m² and dimensional tolerance"],
+        },
+      },
+      {
+        id: "wear-layer",
+        title: { es: "3. Capa de desgaste y clasificación AC", en: "3. Wear layer and AC rating" },
+        paragraphs: {
+          es: ["La capa de desgaste protege el diseño decorativo. Es una de las razones más comunes por las que dos cotizaciones con el mismo grosor total tienen precios diferentes."],
+          en: ["The wear layer protects the decorative design. It is one of the most common reasons two quotes with the same total thickness have different prices."],
+        },
+        bullets: {
+          es: ["0.1-0.2 mm: tráfico residencial bajo, precio más bajo", "0.3 mm: uso residencial/comercial ligero, opción popular", "0.5 mm: comercial medio, mejor resistencia a rayado", "0.7 mm: comercial alto, coste notablemente mayor", "AC3/AC4/AC5 deben confirmarse con informe de prueba, no solo con etiqueta comercial", "Una wear layer más gruesa aumenta coste, pero reduce reclamaciones en mercados exigentes"],
+          en: ["0.1-0.2 mm: low residential traffic, lowest price", "0.3 mm: residential/light commercial use, popular option", "0.5 mm: medium commercial use, better scratch resistance", "0.7 mm: heavy commercial use, noticeably higher cost", "AC3/AC4/AC5 should be confirmed by test report, not only sales label", "A thicker wear layer increases cost but reduces claims in demanding markets"],
+        },
+      },
+      {
+        id: "click-underlayment",
+        title: { es: "4. Sistema de clic y base acústica", en: "4. Click system and acoustic underlayment" },
+        paragraphs: {
+          es: ["El sistema de clic determina la facilidad de instalación y la tasa de rotura en obra. La base acústica añade confort pero también cambia el precio por metro cuadrado."],
+          en: ["The click system determines installation speed and breakage rate on site. Acoustic underlayment adds comfort but also changes price per square meter."],
+        },
+        bullets: {
+          es: ["Click genérico: coste bajo, adecuado para proyectos económicos", "UNILIN/VALINGE: mejor estabilidad y reconocimiento de mercado, precio superior", "EVA base: opción económica para reducción básica de sonido", "IXPE base: mejor resiliencia, menor olor, precio más alto", "Base preadherida aumenta precio pero reduce tiempo de instalación", "Pedir muestra real del sistema de clic antes de confirmar pedido masivo"],
+          en: ["Generic click: low cost, suitable for economy projects", "UNILIN/VALINGE: better stability and market recognition, higher price", "EVA backing: economy option for basic sound reduction", "IXPE backing: better resilience, lower odor, higher price", "Pre-attached backing increases price but reduces installation time", "Request a real sample of the click system before confirming mass order"],
+        },
+      },
+      {
+        id: "finish-design-packaging",
+        title: { es: "5. Acabado, diseño y embalaje", en: "5. Finish, design and packaging" },
+        paragraphs: {
+          es: ["El comprador final juzga el producto por su apariencia y embalaje. Estas decisiones no siempre cambian la función, pero sí influyen en la percepción de valor y el coste."],
+          en: ["The end buyer judges the product by appearance and packaging. These decisions do not always change function, but they influence perceived value and cost."],
+        },
+        bullets: {
+          es: ["Superficie lisa: coste menor, apariencia simple", "Textura sincronizada/EIR: más realista, coste mayor", "Diseños estándar: menor MOQ y entrega más rápida", "Diseño personalizado: coste de película, mayor MOQ y plazo más largo", "Caja neutra: más económica", "Caja personalizada: coste de impresión + diseño + MOQ", "Pallet reforzado y cantoneras: incrementan coste pero reducen daños en tránsito"],
+          en: ["Smooth surface: lower cost, simple appearance", "Embossed-in-register/EIR texture: more realistic, higher cost", "Standard designs: lower MOQ and faster delivery", "Custom design: film cost, higher MOQ and longer lead time", "Neutral carton: more economical", "Custom carton: printing + design + MOQ cost", "Reinforced pallet and corner protectors: increase cost but reduce transit damage"],
+        },
+      },
+      {
+        id: "how-to-compare-quotes",
+        title: { es: "6. Cómo comparar cotizaciones correctamente", en: "6. How to compare quotations correctly" },
+        paragraphs: {
+          es: ["Comparar solo el precio por m² lleva a errores. Una cotización barata puede cambiar grosor, densidad, capa de desgaste, embalaje o garantía."],
+          en: ["Comparing only price per m² leads to mistakes. A cheap quote may change thickness, density, wear layer, packaging or warranty."],
+        },
+        bullets: {
+          es: ["Comparar la misma especificación: grosor total + wear layer + densidad + click + base", "Confirmar si el precio incluye embalaje de exportación", "Confirmar puerto FOB y validez de precio (PVC y aditivos fluctúan)", "Pedir peso por caja y m² por pallet para calcular flete", "Pedir informe de prueba: resistencia al desgaste, estabilidad dimensional, formaldehído/olor", "Pedir muestra antes del pedido: color, clic, olor y rigidez se verifican mejor físicamente", "Calcular landed cost: FOB + flete + seguro + arancel + despacho + transporte local"],
+          en: ["Compare the same specification: total thickness + wear layer + density + click + backing", "Confirm whether export packaging is included", "Confirm FOB port and price validity (PVC and additives fluctuate)", "Ask for carton weight and m² per pallet to calculate freight", "Ask for test report: abrasion resistance, dimensional stability, formaldehyde/odor", "Request sample before order: color, click, odor and rigidity are best checked physically", "Calculate landed cost: FOB + freight + insurance + duty + clearance + local transport"],
+        },
+      },
+      {
+        id: "quote-checklist",
+        title: { es: "7. Checklist para pedir precio WPC", en: "7. Checklist for requesting WPC price" },
+        paragraphs: {
+          es: ["Para recibir una cotización precisa en un día laborable, envíe al proveedor la siguiente información desde el primer mensaje."],
+          en: ["To receive an accurate quotation within one business day, send the supplier the following information in the first message."],
+        },
+        bullets: {
+          es: ["Grosor total requerido (5/6/7/8/10/12 mm)", "Capa de desgaste requerida (0.2/0.3/0.5/0.7 mm)", "Tipo de base: sin base, EVA o IXPE", "Sistema de clic: genérico, UNILIN o VALINGE", "Diseño/color objetivo (foto o código)", "Superficie: lisa, mate, texturizada, EIR", "Cantidad por color y total del pedido", "Embalaje: neutro o caja personalizada", "Puerto de destino y país", "Necesidad de muestra gratuita antes del pedido"],
+          en: ["Required total thickness (5/6/7/8/10/12 mm)", "Required wear layer (0.2/0.3/0.5/0.7 mm)", "Backing type: no backing, EVA or IXPE", "Click system: generic, UNILIN or VALINGE", "Target design/color (photo or code)", "Surface: smooth, matte, textured, EIR", "Quantity per color and total order", "Packaging: neutral or customized carton", "Destination port and country", "Need for free sample before order"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
