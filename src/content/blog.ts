@@ -1668,6 +1668,116 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "spc-flooring-price-guide",
+    localizedSlug: { es: "guia-precios-suelo-spc" },
+    publishedAt: "2026-10-19",
+    category: { es: "Guía de precios", en: "Price guide" },
+    title: {
+      es: "Guía de precios del suelo SPC: factores que cambian el coste FOB",
+      en: "SPC Flooring Price Guide: Factors That Change FOB Cost",
+    },
+    description: {
+      es: "Guía B2B de precios del suelo SPC: rangos FOB, núcleo rígido, capa de desgaste, sistema de clic, base IXPE/EVA, embalaje y checklist para cotizar.",
+      en: "B2B SPC flooring price guide: FOB ranges, rigid core, wear layer, click system, IXPE/EVA backing, packaging and quotation checklist.",
+    },
+    introduction: {
+      es: "El suelo SPC suele venderse como una opción impermeable y rígida, pero su precio no depende solo del grosor. Para importadores, el coste real se define por la densidad del núcleo, la proporción de carbonato cálcico, la capa de desgaste, el sistema de clic, la base acústica y el embalaje. Esta guía explica cómo evaluar una cotización FOB de SPC antes de confirmar un pedido.",
+      en: "SPC flooring is often sold as a waterproof rigid-core option, but its price is not determined by thickness alone. For importers, real cost is shaped by core density, calcium carbonate ratio, wear layer, click system, acoustic backing and packaging. This guide explains how to evaluate an SPC FOB quotation before confirming an order.",
+    },
+    readingTime: { es: "7 min", en: "7 min" },
+    cover: "/assets/spc-production.jpg",
+    coverAlt: {
+      es: "Producción de suelo SPC rígido para exportación",
+      en: "Rigid SPC flooring production for export",
+    },
+    sections: [
+      {
+        id: "price-range",
+        title: { es: "1. Rango de precio FOB típico", en: "1. Typical FOB price range" },
+        paragraphs: {
+          es: ["El precio FOB del suelo SPC cambia según grosor, densidad, capa de desgaste y accesorios. Un rango realista ayuda a detectar cotizaciones demasiado bajas que pueden esconder un núcleo más frágil o una capa de desgaste inferior."],
+          en: ["SPC flooring FOB price changes by thickness, density, wear layer and accessories. A realistic range helps identify quotes that are too low and may hide a weaker core or thinner wear layer."],
+        },
+        bullets: {
+          es: ["SPC económico: 4.5-7 USD/m² (4-5 mm, wear layer fina, diseño estándar)", "SPC medio: 7-10 USD/m² (5-6 mm, 0.3-0.5 mm wear layer, núcleo estable)", "SPC premium: 10-14 USD/m² (6-8 mm, IXPE/EVA, click patentado, EIR opcional)", "MOQ habitual: 100-300 m² por color", "FOB Ningbo/Shanghai no incluye flete marítimo, aranceles ni transporte local"],
+          en: ["Economy SPC: USD 4.5-7/m² (4-5 mm, thin wear layer, standard design)", "Mid-range SPC: USD 7-10/m² (5-6 mm, 0.3-0.5 mm wear layer, stable core)", "Premium SPC: USD 10-14/m² (6-8 mm, IXPE/EVA, patented click, optional EIR)", "Typical MOQ: 100-300 m² per color", "FOB Ningbo/Shanghai excludes ocean freight, duties and local transport"],
+        },
+      },
+      {
+        id: "core-density",
+        title: { es: "2. Núcleo rígido y densidad", en: "2. Rigid core and density" },
+        paragraphs: {
+          es: ["El núcleo SPC combina PVC, carbonato cálcico y estabilizantes. El equilibrio entre estos materiales determina rigidez, fragilidad, peso y estabilidad dimensional."],
+          en: ["SPC core combines PVC, calcium carbonate and stabilizers. The balance between these materials determines rigidity, brittleness, weight and dimensional stability."],
+        },
+        bullets: {
+          es: ["Mayor carbonato cálcico reduce coste pero puede aumentar fragilidad", "Mayor contenido de PVC mejora tenacidad, pero sube coste", "Peso típico: 7-11 kg/m² según grosor y densidad", "Una tabla demasiado ligera puede indicar núcleo de baja densidad", "Una tabla demasiado pesada puede ser rígida pero más frágil en el sistema de clic", "Pedir al proveedor: densidad del núcleo, peso por m² y prueba de estabilidad dimensional"],
+          en: ["Higher calcium carbonate ratio reduces cost but may increase brittleness", "Higher PVC content improves toughness but raises cost", "Typical weight: 7-11 kg/m² depending on thickness and density", "A plank that is too light may indicate low-density core", "A plank that is too heavy may be rigid but more brittle at the click joint", "Ask supplier for: core density, weight per m² and dimensional stability test"],
+        },
+      },
+      {
+        id: "thickness-wear-layer",
+        title: { es: "3. Grosor total y capa de desgaste", en: "3. Total thickness and wear layer" },
+        paragraphs: {
+          es: ["En SPC, el grosor total afecta la sensación de solidez, mientras que la capa de desgaste afecta la durabilidad superficial. Ambos deben compararse juntos."],
+          en: ["In SPC, total thickness affects the solid feel, while the wear layer affects surface durability. Both must be compared together."],
+        },
+        bullets: {
+          es: ["4 mm: opción económica para apartamentos y proyectos de bajo tráfico", "5 mm: rango popular para importadores por equilibrio coste/rendimiento", "6 mm: mejor sensación al caminar y mayor estabilidad", "0.2 mm wear layer: residencial ligero", "0.3 mm: residencial/comercial ligero", "0.5 mm: comercial medio; recomendado para distribuidores que buscan menos reclamaciones", "0.7 mm: alto tráfico, precio superior y MOQ más alto"],
+          en: ["4 mm: economy option for apartments and low-traffic projects", "5 mm: popular importer range balancing cost/performance", "6 mm: better walking feel and higher stability", "0.2 mm wear layer: light residential", "0.3 mm: residential/light commercial", "0.5 mm: medium commercial; recommended for distributors who want fewer claims", "0.7 mm: heavy traffic, higher price and higher MOQ"],
+        },
+      },
+      {
+        id: "click-backing",
+        title: { es: "4. Sistema de clic y base IXPE/EVA", en: "4. Click system and IXPE/EVA backing" },
+        paragraphs: {
+          es: ["SPC es rígido; por eso el sistema de clic debe soportar transporte, instalación y uso diario sin romperse. La base acústica añade valor al producto pero también cambia el coste."],
+          en: ["SPC is rigid; therefore the click system must survive transport, installation and daily use without breaking. Acoustic backing adds value but also changes cost."],
+        },
+        bullets: {
+          es: ["Click genérico: coste bajo, adecuado para proyectos económicos", "UNILIN/VALINGE: mejor aceptación de mercado y menor riesgo de rotura, precio superior", "Sin base: precio más bajo, requiere underlayment separado", "EVA: reducción básica de sonido, opción económica", "IXPE: mejor resiliencia, menor olor, mayor coste", "Base preadherida mejora instalación y aumenta precio por m²"],
+          en: ["Generic click: low cost, suitable for economy projects", "UNILIN/VALINGE: better market acceptance and lower breakage risk, higher price", "No backing: lowest price, requires separate underlayment", "EVA: basic sound reduction, economical option", "IXPE: better resilience, lower odor, higher cost", "Pre-attached backing improves installation and increases price per m²"],
+        },
+      },
+      {
+        id: "surface-design",
+        title: { es: "5. Diseño, superficie y acabado", en: "5. Design, surface and finish" },
+        paragraphs: {
+          es: ["Dos suelos SPC con la misma estructura pueden venderse a precios distintos si el diseño y el acabado superficial cambian. Esto afecta la percepción del comprador final."],
+          en: ["Two SPC floors with the same structure can sell at different prices if the design and surface finish change. This affects end-buyer perception."],
+        },
+        bullets: {
+          es: ["Diseños estándar: menor coste, entrega rápida y MOQ bajo", "Diseño personalizado: coste de película, MOQ mayor y plazo más largo", "Superficie lisa: económica, fácil de limpiar", "Textura de madera: mejor apariencia, coste moderado", "EIR/sincronizado: acabado premium, coste superior", "Bisel pintado o microbisel: mejora apariencia pero añade coste", "Acabado mate realista suele vender mejor en mercados premium"],
+          en: ["Standard designs: lower cost, faster delivery and lower MOQ", "Custom design: film cost, higher MOQ and longer lead time", "Smooth surface: economical, easy to clean", "Wood texture: better appearance, moderate cost", "EIR/synchronized texture: premium finish, higher cost", "Painted bevel or micro-bevel: improves appearance but adds cost", "Realistic matte finish usually sells better in premium markets"],
+        },
+      },
+      {
+        id: "packaging-logistics",
+        title: { es: "6. Embalaje y logística", en: "6. Packaging and logistics" },
+        paragraphs: {
+          es: ["SPC es pesado. El embalaje y la carga del contenedor influyen directamente en daños, coste de flete y reclamaciones posteriores."],
+          en: ["SPC is heavy. Packaging and container loading directly affect damage, freight cost and later claims."],
+        },
+        bullets: {
+          es: ["Caja neutra: menor coste, adecuada para distribuidores con etiqueta propia", "Caja personalizada: mejora marca, añade coste de impresión y MOQ", "Pallet reforzado: recomendado para exportación de larga distancia", "Cantoneras y film retráctil reducen daño en esquinas", "20FT carga más peso; 40HQ puede limitarse por peso antes de llenarse", "Pedir datos: m² por caja, kg por caja, m² por pallet, pallets por contenedor", "Un embalaje barato puede aumentar pérdidas por rotura en transporte"],
+          en: ["Neutral carton: lower cost, suitable for distributors with own label", "Customized carton: improves branding, adds printing cost and MOQ", "Reinforced pallet: recommended for long-distance export", "Corner protectors and shrink film reduce edge damage", "20FT carries more weight; 40HQ may hit weight limit before volume is full", "Ask for data: m² per carton, kg per carton, m² per pallet, pallets per container", "Cheap packaging can increase losses from transport damage"],
+        },
+      },
+      {
+        id: "quotation-checklist",
+        title: { es: "7. Checklist para pedir precio SPC", en: "7. Checklist for requesting SPC price" },
+        paragraphs: {
+          es: ["Para comparar precios correctamente, envíe una especificación completa al proveedor desde el primer mensaje. Esto evita cotizaciones incompletas y cambios posteriores."],
+          en: ["To compare prices correctly, send a complete specification to the supplier in the first message. This prevents incomplete quotes and later changes."],
+        },
+        bullets: {
+          es: ["Grosor total requerido (4/5/6/7/8 mm)", "Capa de desgaste requerida (0.2/0.3/0.5/0.7 mm)", "Tipo de base: sin base, EVA o IXPE", "Sistema de clic: genérico, UNILIN o VALINGE", "Diseño/color objetivo y acabado superficial", "Bisel: sin bisel, microbisel o bisel pintado", "Cantidad por color y total del pedido", "Embalaje: caja neutra o personalizada", "Puerto de destino y país", "Solicitud de muestra y test report antes del pedido"],
+          en: ["Required total thickness (4/5/6/7/8 mm)", "Required wear layer (0.2/0.3/0.5/0.7 mm)", "Backing type: no backing, EVA or IXPE", "Click system: generic, UNILIN or VALINGE", "Target design/color and surface finish", "Bevel: no bevel, micro-bevel or painted bevel", "Quantity per color and total order", "Packaging: neutral or customized carton", "Destination port and country", "Sample and test report request before order"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
