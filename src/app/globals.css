@@ -590,6 +590,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .article-cover { margin-top: -85px; }
 .article-cover__frame { position: relative; min-height: 520px; overflow: hidden; border: 8px solid var(--white); box-shadow: var(--shadow); }
 .article-cover__frame img { object-fit: cover; }
+.article-cover__caption { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .article-layout { padding-top: 80px; padding-bottom: 100px; display: grid; grid-template-columns: minmax(0, 760px) 300px; justify-content: space-between; gap: 72px; align-items: start; }
 .article-body { min-width: 0; }
 .article-intro { margin: 0 0 34px; color: var(--green-deep); font-size: 20px; line-height: 1.72; }
@@ -601,6 +602,12 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .article-body p, .article-body li { color: var(--ink); font-size: 17px; line-height: 1.76; }
 .article-body ul { padding-left: 24px; }
 .article-body li { margin: 8px 0; padding-left: 5px; }
+.article-inline-image { margin: 34px 0 0; }
+.article-inline-image__frame { position: relative; min-height: 430px; overflow: hidden; background: var(--green-pale); border: 1px solid var(--line); }
+.article-inline-image__frame img { object-fit: cover; }
+.article-inline-image figcaption { margin-top: 11px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.article-faq { padding-top: 8px; }
+.article-faq .faq-list { margin-top: 28px; }
 .article-aside { position: sticky; top: 130px; display: grid; gap: 22px; }
 .article-toc, .article-cta { padding: 28px; border: 1px solid var(--line); border-radius: 4px; }
 .article-toc { background: var(--paper); }
@@ -1022,6 +1029,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .article-layout { padding-top: 48px; padding-bottom: 70px; }
   .article-body h2 { font-size: 29px; }
   .article-body p, .article-body li { font-size: 16px; }
+  .article-inline-image__frame { min-height: 280px; }
   .spc-explainer__hero-actions, .spc-explainer__actions { display: grid; }
   .spc-explainer__hero-actions > *, .spc-explainer__actions > * { width: 100%; }
   .spc-explainer__checklist { grid-template-columns: 1fr; }

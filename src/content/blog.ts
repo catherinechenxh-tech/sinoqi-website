@@ -9,6 +9,24 @@ export type BlogSection = {
   bullets?: Record<Locale, string[]>;
 };
 
+type BlogImage = {
+  src: string;
+  alt: LocalizedText;
+  caption: LocalizedText;
+  afterSectionId: string;
+};
+
+type BlogFaq = {
+  question: LocalizedText;
+  answer: LocalizedText;
+};
+
+type BlogCta = {
+  eyebrow: LocalizedText;
+  title: LocalizedText;
+  body: LocalizedText;
+};
+
 export type BlogPost = {
   slug: string;
   localizedSlug?: Partial<Record<Locale, string>>;
@@ -23,6 +41,11 @@ export type BlogPost = {
   readingTime: LocalizedText;
   cover?: string;
   coverAlt?: LocalizedText;
+  coverCaption?: LocalizedText;
+  scopeNote?: LocalizedText;
+  images?: BlogImage[];
+  faqs?: BlogFaq[];
+  cta?: BlogCta;
   sections: BlogSection[];
 };
 
@@ -1674,106 +1697,231 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-19",
     category: { es: "Guía de precios", en: "Price guide" },
     title: {
-      es: "Guía de precios del suelo SPC: factores que cambian el coste FOB",
-      en: "SPC Flooring Price Guide: Factors That Change FOB Cost",
+      es: "Precio del piso SPC: cómo comparar cotizaciones FOB",
+      en: "SPC Flooring Price Guide: How to Compare FOB Quotations",
+    },
+    seoTitle: {
+      es: "Precio del piso SPC y cotización FOB | SINOQI",
+      en: "SPC Flooring Price & FOB Quotation Guide | SINOQI",
     },
     description: {
-      es: "Guía B2B de precios del suelo SPC: rangos FOB, núcleo rígido, capa de desgaste, sistema de clic, base IXPE/EVA, embalaje y checklist para cotizar.",
-      en: "B2B SPC flooring price guide: FOB ranges, rigid core, wear layer, click system, IXPE/EVA backing, packaging and quotation checklist.",
+      es: "Conozca qué cambia el precio FOB del piso SPC y qué debe especificar para recibir una cotización comparable, un plan de empaque y una estimación de carga.",
+      en: "Learn why SPC flooring FOB prices vary and what importers should specify for an accurate supplier quotation, packing plan and container estimate.",
     },
     introduction: {
-      es: "El suelo SPC suele venderse como una opción impermeable y rígida, pero su precio no depende solo del grosor. Para importadores, el coste real se define por la densidad del núcleo, la proporción de carbonato cálcico, la capa de desgaste, el sistema de clic, la base acústica y el embalaje. Esta guía explica cómo evaluar una cotización FOB de SPC antes de confirmar un pedido.",
-      en: "SPC flooring is often sold as a waterproof rigid-core option, but its price is not determined by thickness alone. For importers, real cost is shaped by core density, calcium carbonate ratio, wear layer, click system, acoustic backing and packaging. This guide explains how to evaluate an SPC FOB quotation before confirming an order.",
+      es: "Dos ofertas de piso SPC pueden indicar el mismo grosor y aun así representar productos, costos y riesgos de importación diferentes. La formulación del núcleo, la capa de desgaste, el recubrimiento UV, el sistema de encaje, la base acústica, las dimensiones, el empaque y las condiciones comerciales influyen en el precio final. Esta guía ayuda a importadores, distribuidores y compradores de proyectos a preparar una cotización de piso SPC que pueda compararse de manera responsable.",
+      en: "Two SPC flooring offers can show the same nominal thickness yet represent different products, costs and import risks. Core formulation, wear layer, UV coating, click system, acoustic backing, plank dimensions, packing and commercial terms all influence the final price. This guide helps importers, distributors and project buyers prepare an SPC flooring quotation that can be compared on a like-for-like basis.",
     },
-    readingTime: { es: "7 min", en: "7 min" },
-    cover: "/assets/spc-production.jpg",
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/linkedin-spc-price-01-stack.png",
     coverAlt: {
-      es: "Producción de suelo SPC rígido para exportación",
-      en: "Rigid SPC flooring production for export",
+      es: "Ilustración de una configuración de piso SPC para comparar cotizaciones",
+      en: "SPC flooring configuration illustration for quotation comparison",
     },
+    coverCaption: {
+      es: "Ilustración de una configuración de piso SPC para comparar cotizaciones; no representa una instalación o bodega real de SINOQI.",
+      en: "SPC flooring configuration illustration for quotation comparison; it does not depict an actual SINOQI facility or warehouse.",
+    },
+    scopeNote: {
+      es: "Los precios del SPC pueden cambiar con las materias primas, el tipo de cambio, la cantidad, la película decorativa, el recubrimiento UV, las dimensiones, el grosor total, la capa de desgaste, la base, la licencia del sistema de encaje, el empaque y las condiciones de pago. Solicite siempre una cotización formal vigente y apruebe la muestra antes del pedido.",
+      en: "SPC flooring prices can change with raw materials, exchange rates, order quantity, décor film, UV coating, plank dimensions, total thickness, wear layer, backing, click-system licensing, packing and payment terms. Always request a current formal quotation and approve the sample before ordering.",
+    },
+    images: [
+      {
+        src: "/assets/linkedin-spc-price-02-layers.png",
+        afterSectionId: "thickness-wear-layer",
+        alt: {
+          es: "Estructura ilustrativa de las capas de un piso SPC con base acústica",
+          en: "Illustrative SPC flooring layer structure with acoustic backing",
+        },
+        caption: {
+          es: "Estructura ilustrativa de capas SPC. La composición y el espesor de cada capa deben confirmarse en la ficha técnica y la muestra aprobada.",
+          en: "Illustrative SPC layer structure. Confirm the composition and thickness of each layer in the technical data sheet and approved sample.",
+        },
+      },
+      {
+        src: "/assets/linkedin-spc-price-04-packing.png",
+        afterSectionId: "packaging-logistics",
+        alt: {
+          es: "Ilustración de empaque en palés para planificar la exportación de piso SPC",
+          en: "Packaging illustration for SPC flooring export planning",
+        },
+        caption: {
+          es: "Ilustración de empaque para planificar la exportación; no representa una instalación, bodega ni empaque real de SINOQI.",
+          en: "Packaging illustration for export planning; it does not depict an actual SINOQI facility, warehouse or shipment.",
+        },
+      },
+    ],
+    cta: {
+      eyebrow: { es: "Cotización SPC", en: "SPC quotation" },
+      title: { es: "Solicite una cotización de piso SPC", en: "Request an SPC Flooring Quotation" },
+      body: {
+        es: "Envíenos las dimensiones, el grosor total, la capa de desgaste, la base, el sistema de encaje, la cantidad y el puerto de destino. Prepararemos la cotización según la especificación confirmada.",
+        en: "Send us the plank size, total thickness, wear layer, backing, click system, quantity and destination port. We will prepare a quotation based on your confirmed specification.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Por qué varían tanto las cotizaciones de piso SPC?", en: "Why do SPC flooring quotations vary so much?" },
+        answer: {
+          es: "Porque el grosor nominal es solo una parte de la especificación. La formulación y densidad del núcleo, la capa de desgaste, el recubrimiento UV, la película decorativa, el sistema de encaje, la base acústica, las dimensiones, el empaque, la cantidad, el tipo de cambio y las condiciones de pago pueden modificar el precio FOB del piso SPC.",
+          en: "Nominal thickness is only one part of the specification. Core formulation and density, wear layer, UV coating, décor film, click system, acoustic backing, plank dimensions, packing, quantity, exchange rates and payment terms can all change the SPC flooring FOB price.",
+        },
+      },
+      {
+        question: { es: "¿Qué información se necesita para una cotización precisa de piso SPC?", en: "What information is needed for an accurate SPC quotation?" },
+        answer: {
+          es: "Indique las dimensiones de la tabla, el grosor total, la capa de desgaste, el recubrimiento UV, la base y su espesor, el perfil de encaje y la licencia requerida, el acabado, el bisel, la cantidad por diseño, el empaque, el puerto de destino, los informes de ensayo requeridos y las condiciones comerciales esperadas.",
+          en: "Specify plank dimensions, total thickness, wear layer, UV coating, backing type and thickness, click profile and required licence, surface finish, bevel, quantity per décor, packing, destination port, required test reports and expected commercial terms.",
+        },
+      },
+      {
+        question: { es: "¿Una tabla SPC más gruesa siempre significa mejor calidad?", en: "Does a thicker SPC plank always mean better quality?" },
+        answer: {
+          es: "No. El grosor influye en la construcción y el costo, pero no confirma por sí solo la estabilidad, la resistencia del sistema de encaje ni la durabilidad superficial. Compare la formulación, la densidad, las tolerancias, la capa de desgaste, el recubrimiento UV y los informes de ensayo pertinentes.",
+          en: "No. Thickness influences construction and cost, but it does not by itself confirm dimensional stability, click-joint strength or surface durability. Compare core formulation, density, tolerances, wear layer, UV coating and the relevant test reports.",
+        },
+      },
+      {
+        question: { es: "¿Cómo deben comparar los importadores los sistemas de encaje y las bases?", en: "How should importers compare click systems and backing?" },
+        answer: {
+          es: "Deben confirmar el perfil de encaje, el estado y costo de la licencia cuando corresponda, las tolerancias de mecanizado y los resultados de ensayo solicitados. Para la base acústica, compare material, espesor, densidad, adhesión y compatibilidad con el contrapiso y las normas del mercado de destino.",
+          en: "Confirm the click profile, licence status and fee where applicable, machining tolerances and requested test results. For acoustic backing, compare material, thickness, density, adhesion and compatibility with the subfloor and destination-market requirements.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se calcula la carga de un contenedor de piso SPC?", en: "How is container loading calculated for SPC flooring?" },
+        answer: {
+          es: "La estimación parte de las piezas y metros cuadrados por caja, el peso bruto por caja, las cajas por palé y el peso del palé. Como el SPC suele alcanzar primero el límite de peso, la carga final debe comprobarse contra el payload del contenedor y las reglas de la naviera, el puerto y el país de destino.",
+          en: "The estimate starts with pieces and square metres per carton, gross weight per carton, cartons per pallet and pallet weight. Because SPC flooring often reaches the weight limit before the volume limit, the final plan must be checked against container payload and carrier, port and destination-country rules.",
+        },
+      },
+    ],
     sections: [
       {
         id: "price-range",
-        title: { es: "1. Rango de precio FOB típico", en: "1. Typical FOB price range" },
+        title: { es: "1. Por qué el precio del piso SPC no se compara solo por grosor", en: "1. Why SPC flooring prices cannot be compared by thickness alone" },
         paragraphs: {
-          es: ["El precio FOB del suelo SPC cambia según grosor, densidad, capa de desgaste y accesorios. Un rango realista ayuda a detectar cotizaciones demasiado bajas que pueden esconder un núcleo más frágil o una capa de desgaste inferior."],
-          en: ["SPC flooring FOB price changes by thickness, density, wear layer and accessories. A realistic range helps identify quotes that are too low and may hide a weaker core or thinner wear layer."],
+          es: [
+            "Una oferta que dice “5 mm SPC” no define por completo el producto. Dos proveedores de pisos SPC pueden cotizar el mismo grosor con distintas dimensiones, formulaciones del núcleo, capas de desgaste, recubrimientos UV, películas decorativas, perfiles de encaje y bases acústicas. También pueden usar diferentes tolerancias, empaques y condiciones de pago.",
+            "Por eso, el precio del piso SPC debe compararse con una especificación común. Antes de evaluar la cifra FOB, confirme qué incluye, la moneda, el puerto de embarque, la vigencia de la oferta y si el costo de una licencia de encaje, el palé o el empaque personalizado está incluido.",
+          ],
+          en: [
+            "An offer described only as “5 mm SPC” does not define the product. Two SPC flooring suppliers may quote the same nominal thickness with different plank dimensions, core formulations, wear layers, UV coatings, décor films, click profiles and acoustic backings. Their production tolerances, packing and payment terms may also differ.",
+            "Compare the SPC flooring price against one shared specification. Before evaluating the FOB figure, confirm what it includes, the currency, port of loading, quotation validity and whether click-licence fees, pallets or customized packing are included.",
+          ],
         },
         bullets: {
-          es: ["SPC económico: 4.5-7 USD/m² (4-5 mm, wear layer fina, diseño estándar)", "SPC medio: 7-10 USD/m² (5-6 mm, 0.3-0.5 mm wear layer, núcleo estable)", "SPC premium: 10-14 USD/m² (6-8 mm, IXPE/EVA, click patentado, EIR opcional)", "MOQ habitual: 100-300 m² por color", "FOB Ningbo/Shanghai no incluye flete marítimo, aranceles ni transporte local"],
-          en: ["Economy SPC: USD 4.5-7/m² (4-5 mm, thin wear layer, standard design)", "Mid-range SPC: USD 7-10/m² (5-6 mm, 0.3-0.5 mm wear layer, stable core)", "Premium SPC: USD 10-14/m² (6-8 mm, IXPE/EVA, patented click, optional EIR)", "Typical MOQ: 100-300 m² per color", "FOB Ningbo/Shanghai excludes ocean freight, duties and local transport"],
+          es: ["Materias primas y tipo de cambio en la fecha de cotización", "Cantidad total y cantidad por diseño", "Especificación completa del producto y tolerancias", "Empaque, condiciones de pago y vigencia de la cotización", "Alcance exacto del término FOB y puerto de embarque"],
+          en: ["Raw-material costs and exchange rate at the quotation date", "Total order quantity and quantity per décor", "Complete product specification and tolerances", "Packing, payment terms and quotation validity", "Exact FOB scope and port of loading"],
         },
       },
       {
         id: "core-density",
-        title: { es: "2. Núcleo rígido y densidad", en: "2. Rigid core and density" },
+        title: { es: "2. Formulación del núcleo, densidad y estabilidad dimensional", en: "2. Core formulation, density and dimensional stability" },
         paragraphs: {
-          es: ["El núcleo SPC combina PVC, carbonato cálcico y estabilizantes. El equilibrio entre estos materiales determina rigidez, fragilidad, peso y estabilidad dimensional."],
-          en: ["SPC core combines PVC, calcium carbonate and stabilizers. The balance between these materials determines rigidity, brittleness, weight and dimensional stability."],
+          es: [
+            "El núcleo rígido suele combinar resina de PVC, carbonato de calcio, estabilizantes y otros aditivos. La receta y el proceso influyen en la densidad, la tenacidad, el mecanizado del sistema de encaje y la estabilidad dimensional; el peso o el color del núcleo, observados por separado, no prueban su calidad.",
+            "Pida la densidad declarada, las tolerancias de grosor y dimensiones, y el informe de ensayo que exija su mercado o proyecto. Compare esos documentos con la muestra aprobada y con la especificación de la orden. Si una cotización cambia de forma importante, confirme que no se haya modificado la formulación o la tolerancia.",
+          ],
+          en: [
+            "A rigid SPC core commonly combines PVC resin, calcium carbonate, stabilizers and other additives. Formulation and processing influence density, toughness, click-profile machining and dimensional stability. Weight or core colour considered alone does not prove quality.",
+            "Ask for the declared density, thickness and dimensional tolerances, and the test report required by your market or project. Compare those documents with the approved sample and purchase specification. If a quotation changes materially, confirm that the formulation or tolerance has not also changed.",
+          ],
         },
         bullets: {
-          es: ["Mayor carbonato cálcico reduce coste pero puede aumentar fragilidad", "Mayor contenido de PVC mejora tenacidad, pero sube coste", "Peso típico: 7-11 kg/m² según grosor y densidad", "Una tabla demasiado ligera puede indicar núcleo de baja densidad", "Una tabla demasiado pesada puede ser rígida pero más frágil en el sistema de clic", "Pedir al proveedor: densidad del núcleo, peso por m² y prueba de estabilidad dimensional"],
-          en: ["Higher calcium carbonate ratio reduces cost but may increase brittleness", "Higher PVC content improves toughness but raises cost", "Typical weight: 7-11 kg/m² depending on thickness and density", "A plank that is too light may indicate low-density core", "A plank that is too heavy may be rigid but more brittle at the click joint", "Ask supplier for: core density, weight per m² and dimensional stability test"],
+          es: ["Densidad declarada y método de medición", "Tolerancias de grosor, ancho, largo y escuadra", "Estabilidad dimensional y otros ensayos exigidos por el destino", "Correspondencia entre ficha técnica, muestra aprobada y producción"],
+          en: ["Declared density and measurement method", "Thickness, width, length and squareness tolerances", "Dimensional stability and other destination-market tests", "Consistency between technical data, approved sample and production"],
         },
       },
       {
         id: "thickness-wear-layer",
-        title: { es: "3. Grosor total y capa de desgaste", en: "3. Total thickness and wear layer" },
+        title: { es: "3. Grosor total, capa de desgaste y recubrimiento UV", en: "3. Total thickness, wear layer and UV coating" },
         paragraphs: {
-          es: ["En SPC, el grosor total afecta la sensación de solidez, mientras que la capa de desgaste afecta la durabilidad superficial. Ambos deben compararse juntos."],
-          en: ["In SPC, total thickness affects the solid feel, while the wear layer affects surface durability. Both must be compared together."],
+          es: [
+            "El grosor total, la capa de desgaste y el recubrimiento UV cumplen funciones distintas. Una tabla más gruesa puede cambiar la rigidez, la altura instalada y el costo de material, pero no confirma por sí sola una mejor formulación, un encaje más resistente ni una superficie adecuada para cada uso.",
+            "Solicite el grosor nominal y su tolerancia, el espesor de la capa de desgaste y la especificación del recubrimiento UV. La selección debe basarse en los requisitos del proyecto, los informes de ensayo aplicables y la muestra aprobada, no en una clasificación genérica por grosor.",
+          ],
+          en: [
+            "Total thickness, wear layer and UV coating perform different functions. A thicker plank can change rigidity, installed height and material cost, but thickness alone does not confirm a better core formulation, a stronger click joint or a surface suitable for every application.",
+            "Request nominal thickness and tolerance, wear-layer thickness and the UV-coating specification. Selection should follow project requirements, applicable test reports and the approved sample rather than a generic use class based only on thickness.",
+          ],
         },
         bullets: {
-          es: ["4 mm: opción económica para apartamentos y proyectos de bajo tráfico", "5 mm: rango popular para importadores por equilibrio coste/rendimiento", "6 mm: mejor sensación al caminar y mayor estabilidad", "0.2 mm wear layer: residencial ligero", "0.3 mm: residencial/comercial ligero", "0.5 mm: comercial medio; recomendado para distribuidores que buscan menos reclamaciones", "0.7 mm: alto tráfico, precio superior y MOQ más alto"],
-          en: ["4 mm: economy option for apartments and low-traffic projects", "5 mm: popular importer range balancing cost/performance", "6 mm: better walking feel and higher stability", "0.2 mm wear layer: light residential", "0.3 mm: residential/light commercial", "0.5 mm: medium commercial; recommended for distributors who want fewer claims", "0.7 mm: heavy traffic, higher price and higher MOQ"],
+          es: ["Grosor total nominal y tolerancia", "Capa de desgaste medida por separado", "Especificación del recubrimiento UV", "Ensayos solicitados para el mercado de destino", "Muestra aprobada como referencia de color, textura y superficie"],
+          en: ["Nominal total thickness and tolerance", "Wear layer measured separately", "UV-coating specification", "Tests requested for the destination market", "Approved sample as the colour, texture and surface reference"],
         },
       },
       {
         id: "click-backing",
-        title: { es: "4. Sistema de clic y base IXPE/EVA", en: "4. Click system and IXPE/EVA backing" },
+        title: { es: "4. Sistema de encaje, licencia de patente y base acústica", en: "4. Click system, patent licensing and acoustic backing" },
         paragraphs: {
-          es: ["SPC es rígido; por eso el sistema de clic debe soportar transporte, instalación y uso diario sin romperse. La base acústica añade valor al producto pero también cambia el coste."],
-          en: ["SPC is rigid; therefore the click system must survive transport, installation and daily use without breaking. Acoustic backing adds value but also changes cost."],
+          es: [
+            "El nombre del sistema de encaje no sustituye una revisión técnica. Confirme el perfil, las tolerancias de mecanizado, el estado de la licencia y si la tarifa de patente está incluida. Cuando se especifique UNILIN o Välinge, la documentación y el alcance de la autorización deben comprobarse para el producto cotizado; la marca por sí sola no garantiza el desempeño de la tabla terminada.",
+            "Para una base IXPE o EVA, compare material, espesor, densidad, método de adhesión y requisitos acústicos del proyecto. También confirme si la base está incluida dentro del grosor total declarado y si es compatible con el contrapiso y las instrucciones de instalación previstas.",
+          ],
+          en: [
+            "A click-system name is not a substitute for technical review. Confirm the profile, machining tolerances, licence status and whether the patent fee is included. When UNILIN or Välinge is specified, verify the documentation and scope of authorization for the quoted product; the brand name alone does not guarantee finished-plank performance.",
+            "For IXPE or EVA backing, compare material, thickness, density, bonding method and the project’s acoustic requirements. Also confirm whether the backing is included in the stated total thickness and whether it is compatible with the intended subfloor and installation instructions.",
+          ],
         },
         bullets: {
-          es: ["Click genérico: coste bajo, adecuado para proyectos económicos", "UNILIN/VALINGE: mejor aceptación de mercado y menor riesgo de rotura, precio superior", "Sin base: precio más bajo, requiere underlayment separado", "EVA: reducción básica de sonido, opción económica", "IXPE: mejor resiliencia, menor olor, mayor coste", "Base preadherida mejora instalación y aumenta precio por m²"],
-          en: ["Generic click: low cost, suitable for economy projects", "UNILIN/VALINGE: better market acceptance and lower breakage risk, higher price", "No backing: lowest price, requires separate underlayment", "EVA: basic sound reduction, economical option", "IXPE: better resilience, lower odor, higher cost", "Pre-attached backing improves installation and increases price per m²"],
+          es: ["Perfil de encaje y tolerancias de mecanizado", "Titular, alcance y tarifa de la licencia, cuando corresponda", "Tipo y espesor de IXPE o EVA", "Densidad, adhesión y requisitos acústicos de la base", "Necesidad de contrapiso adicional según el sistema de instalación"],
+          en: ["Click profile and machining tolerances", "Licence holder, scope and fee where applicable", "IXPE or EVA type and thickness", "Backing density, adhesion and acoustic requirements", "Need for separate underlayment under the intended installation system"],
         },
       },
       {
         id: "surface-design",
-        title: { es: "5. Diseño, superficie y acabado", en: "5. Design, surface and finish" },
+        title: { es: "5. Dimensiones, película decorativa, textura y bisel", en: "5. Plank size, décor film, surface texture and bevel" },
         paragraphs: {
-          es: ["Dos suelos SPC con la misma estructura pueden venderse a precios distintos si el diseño y el acabado superficial cambian. Esto afecta la percepción del comprador final."],
-          en: ["Two SPC floors with the same structure can sell at different prices if the design and surface finish change. This affects end-buyer perception."],
+          es: [
+            "El ancho y el largo de la tabla afectan el rendimiento de corte, el empaque y la instalación. La película decorativa, la repetición del diseño, la textura, el acabado mate o brillante y el tipo de bisel también pueden cambiar el costo aunque la estructura básica parezca igual.",
+            "Un acabado sincronizado EIR requiere que el relieve coincida con la veta impresa. Antes de aprobarlo, revise paneles completos bajo una iluminación representativa, no solo una imagen digital. Confirme también la tolerancia dimensional, el bisel —recto, microbisel o pintado— y cualquier requisito de color por lote.",
+          ],
+          en: [
+            "Plank width and length affect cutting yield, packing and installation. Décor film, pattern repeat, surface texture, gloss level and bevel can also change cost even when the basic construction appears identical.",
+            "An EIR synchronized finish requires the embossing to align with the printed grain. Review full planks under representative lighting before approval rather than relying only on a digital image. Confirm dimensional tolerance, bevel type—square edge, micro-bevel or painted bevel—and any batch-colour requirements.",
+          ],
         },
         bullets: {
-          es: ["Diseños estándar: menor coste, entrega rápida y MOQ bajo", "Diseño personalizado: coste de película, MOQ mayor y plazo más largo", "Superficie lisa: económica, fácil de limpiar", "Textura de madera: mejor apariencia, coste moderado", "EIR/sincronizado: acabado premium, coste superior", "Bisel pintado o microbisel: mejora apariencia pero añade coste", "Acabado mate realista suele vender mejor en mercados premium"],
-          en: ["Standard designs: lower cost, faster delivery and lower MOQ", "Custom design: film cost, higher MOQ and longer lead time", "Smooth surface: economical, easy to clean", "Wood texture: better appearance, moderate cost", "EIR/synchronized texture: premium finish, higher cost", "Painted bevel or micro-bevel: improves appearance but adds cost", "Realistic matte finish usually sells better in premium markets"],
+          es: ["Largo, ancho y tolerancias de la tabla", "Proveedor y referencia de la película decorativa", "Repetición del diseño y variación visual", "Textura estándar o acabado sincronizado EIR", "Nivel de brillo y tipo de bisel"],
+          en: ["Plank length, width and tolerances", "Décor-film supplier and reference", "Pattern repeat and visual variation", "Standard texture or EIR synchronized finish", "Gloss level and bevel type"],
         },
       },
       {
         id: "packaging-logistics",
-        title: { es: "6. Embalaje y logística", en: "6. Packaging and logistics" },
+        title: { es: "6. Embalaje, carga del contenedor y logística", en: "6. Packaging, container loading and logistics" },
         paragraphs: {
-          es: ["SPC es pesado. El embalaje y la carga del contenedor influyen directamente en daños, coste de flete y reclamaciones posteriores."],
-          en: ["SPC is heavy. Packaging and container loading directly affect damage, freight cost and later claims."],
+          es: [
+            "El SPC suele alcanzar el límite de peso del contenedor antes que el límite de volumen. La carga estimada debe calcularse con las piezas y los metros cuadrados por caja, el peso bruto confirmado de cada caja, las cajas por palé y el peso del propio palé. Después se contrasta con el payload del contenedor y las reglas de la naviera, el puerto y el país de destino.",
+            "Defina si se usarán cajas neutras o personalizadas, cantoneras, flejes, película protectora y palés. Para palés o refuerzos de madera, confirme por separado el peso añadido, los requisitos IPPC o de fumigación, las reglas de embalaje de madera del país de destino y el método de manipulación con montacargas. La estimación final de carga solo debe cerrarse después de confirmar el peso bruto del empaque terminado.",
+          ],
+          en: [
+            "SPC flooring often reaches the container weight limit before the volume limit. Estimated loading should be calculated from pieces and square metres per carton, confirmed gross weight per carton, cartons per pallet and the pallet’s own weight. The result must then be checked against container payload and the rules of the carrier, port and destination country.",
+            "Define neutral or customized cartons, corner protection, strapping, protective film and pallets. For wooden pallets or bracing, separately confirm added weight, IPPC or fumigation requirements, destination-country wood-packaging rules and forklift handling. Final loading should only be fixed after the gross weight of the finished packing is confirmed.",
+          ],
         },
         bullets: {
-          es: ["Caja neutra: menor coste, adecuada para distribuidores con etiqueta propia", "Caja personalizada: mejora marca, añade coste de impresión y MOQ", "Pallet reforzado: recomendado para exportación de larga distancia", "Cantoneras y film retráctil reducen daño en esquinas", "20FT carga más peso; 40HQ puede limitarse por peso antes de llenarse", "Pedir datos: m² por caja, kg por caja, m² por pallet, pallets por contenedor", "Un embalaje barato puede aumentar pérdidas por rotura en transporte"],
-          en: ["Neutral carton: lower cost, suitable for distributors with own label", "Customized carton: improves branding, adds printing cost and MOQ", "Reinforced pallet: recommended for long-distance export", "Corner protectors and shrink film reduce edge damage", "20FT carries more weight; 40HQ may hit weight limit before volume is full", "Ask for data: m² per carton, kg per carton, m² per pallet, pallets per container", "Cheap packaging can increase losses from transport damage"],
+          es: ["Piezas y metros cuadrados por caja", "Peso neto y peso bruto por caja", "Cajas por palé y peso del palé", "Dimensiones exteriores del empaque", "Payload aplicable y límites de transporte en origen y destino", "Estimación de carga basada en el peso bruto confirmado"],
+          en: ["Pieces and square metres per carton", "Net and gross weight per carton", "Cartons per pallet and pallet weight", "External packing dimensions", "Applicable payload and origin/destination transport limits", "Loading estimate based on confirmed gross weight"],
         },
       },
       {
         id: "quotation-checklist",
-        title: { es: "7. Checklist para pedir precio SPC", en: "7. Checklist for requesting SPC price" },
+        title: { es: "7. Lista de verificación completa para cotizar piso SPC", en: "7. Complete SPC quotation checklist" },
         paragraphs: {
-          es: ["Para comparar precios correctamente, envíe una especificación completa al proveedor desde el primer mensaje. Esto evita cotizaciones incompletas y cambios posteriores."],
-          en: ["To compare prices correctly, send a complete specification to the supplier in the first message. This prevents incomplete quotes and later changes."],
+          es: [
+            "Una solicitud completa permite que cada proveedor de pisos SPC cotice la misma base y reduce las revisiones posteriores. Separe los requisitos obligatorios de las opciones abiertas y pida que cualquier excepción aparezca por escrito en la oferta.",
+            "Ejemplo de configuración para solicitar una cotización: tabla de 182 × 1220 mm, estructura de 4 mm SPC + 1 mm IXPE, capa de desgaste de 0.3 mm, sistema de encaje Välinge y 14 piezas por caja. Es únicamente un ejemplo para mostrar el formato de consulta; las especificaciones, el empaque, la carga, la situación de la licencia y el precio finales dependen de la cotización formal y de la muestra aprobada.",
+          ],
+          en: [
+            "A complete request allows each SPC flooring supplier to quote the same basis and reduces later revisions. Separate mandatory requirements from open options and ask suppliers to state every exception in writing.",
+            "Quotation example: 182 × 1220 mm plank, 4 mm SPC + 1 mm IXPE construction, 0.3 mm wear layer, Välinge click system and 14 pieces per carton. This is only an example of how to format an inquiry. Final specifications, packing, loading, licence status and price remain subject to the formal quotation and approved sample.",
+          ],
         },
         bullets: {
-          es: ["Grosor total requerido (4/5/6/7/8 mm)", "Capa de desgaste requerida (0.2/0.3/0.5/0.7 mm)", "Tipo de base: sin base, EVA o IXPE", "Sistema de clic: genérico, UNILIN o VALINGE", "Diseño/color objetivo y acabado superficial", "Bisel: sin bisel, microbisel o bisel pintado", "Cantidad por color y total del pedido", "Embalaje: caja neutra o personalizada", "Puerto de destino y país", "Solicitud de muestra y test report antes del pedido"],
-          en: ["Required total thickness (4/5/6/7/8 mm)", "Required wear layer (0.2/0.3/0.5/0.7 mm)", "Backing type: no backing, EVA or IXPE", "Click system: generic, UNILIN or VALINGE", "Target design/color and surface finish", "Bevel: no bevel, micro-bevel or painted bevel", "Quantity per color and total order", "Packaging: neutral or customized carton", "Destination port and country", "Sample and test report request before order"],
+          es: ["Dimensiones de la tabla y tolerancias de producción", "Grosor total, capa de desgaste y recubrimiento UV", "Película decorativa, textura, brillo y bisel", "Perfil del sistema de encaje, licencia y tarifa aplicable", "Tipo, espesor y densidad de IXPE/EVA", "Piezas y metros cuadrados por caja; peso bruto por caja", "Caja neutra o personalizada; palés y protección requerida", "Cantidad total y cantidad por diseño", "Condiciones de pago, moneda, puerto FOB y vigencia de la oferta", "Puerto y país de destino", "Informes de ensayo exigidos por el mercado de destino", "Aprobación de muestra antes de producción", "Estimación de carga basada en el peso bruto confirmado"],
+          en: ["Plank dimensions and production tolerances", "Total thickness, wear layer and UV coating", "Décor film, texture, gloss level and bevel", "Click profile, licence and applicable fee", "IXPE/EVA type, thickness and density", "Pieces and square metres per carton; gross weight per carton", "Neutral or customized cartons; pallets and protection required", "Total quantity and quantity per décor", "Payment terms, currency, FOB port and quotation validity", "Destination port and country", "Test reports required for the destination market", "Sample approval before production", "Container estimate based on confirmed gross weight"],
         },
       },
     ],
