@@ -1926,6 +1926,241 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "spc-flooring-installation-guide",
+    localizedSlug: { es: "guia-instalacion-piso-spc" },
+    publishedAt: "2026-10-22",
+    category: { es: "Guía de instalación", en: "Installation guide" },
+    title: {
+      es: "Guía de instalación de piso SPC: del contrapiso a la revisión final",
+      en: "SPC Flooring Installation Guide: From Subfloor to Final Check",
+    },
+    seoTitle: {
+      es: "Guía de instalación de piso SPC | SINOQI",
+      en: "SPC Flooring Installation Guide | SINOQI",
+    },
+    description: {
+      es: "Guía B2B para instalar piso SPC: contrapiso, humedad, almacenamiento, juntas, encaje, transiciones y revisión final antes de entregar la obra.",
+      en: "B2B SPC flooring installation guide covering subfloors, moisture, storage, click joints, transitions and final inspection before project handover.",
+    },
+    introduction: {
+      es: "Una buena instalación de piso SPC comienza antes de abrir la primera caja. El instalador debe confirmar el producto, revisar el contrapiso, planificar las juntas y seguir las instrucciones específicas del sistema de encaje. Esta guía ayuda a importadores, distribuidores y compradores de proyectos a preparar el trabajo, reducir errores evitables y definir qué debe verificarse antes de entregar la obra.",
+      en: "A reliable SPC flooring installation starts before the first carton is opened. The installer must confirm the product, inspect the subfloor, plan movement gaps and follow the instructions for the specific click system. This guide helps importers, distributors and project buyers prepare the work, reduce avoidable errors and define what should be checked before handover.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/spc-installation-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de la instalación flotante de piso SPC con separadores perimetrales",
+      en: "Illustration of floating SPC flooring installation with perimeter spacers",
+    },
+    coverCaption: {
+      es: "Ilustración de instalación de piso SPC. El método exacto debe seguir la ficha técnica y las instrucciones del producto suministrado.",
+      en: "SPC flooring installation illustration. The exact method must follow the technical data and instructions for the supplied product.",
+    },
+    scopeNote: {
+      es: "Esta guía ofrece una lista de verificación para compradores y equipos de obra. No sustituye el manual del fabricante, la evaluación del contrapiso, las normas locales ni los requisitos específicos del proyecto. Confirme siempre tolerancias, humedad, barrera de vapor, aclimatación y juntas con la documentación vigente del producto.",
+      en: "This guide is a checklist for buyers and site teams. It does not replace the manufacturer’s manual, subfloor assessment, local standards or project-specific requirements. Always confirm tolerances, moisture controls, vapour barrier, acclimation and movement gaps against the current product documentation.",
+    },
+    images: [
+      {
+        src: "/assets/spc-installation-02-subfloor.png",
+        afterSectionId: "subfloor-moisture",
+        alt: {
+          es: "Ilustración de revisión de planicidad y humedad del contrapiso antes de instalar piso SPC",
+          en: "Illustration of subfloor flatness and moisture checks before SPC flooring installation",
+        },
+        caption: {
+          es: "Revise la planicidad, la humedad y el estado del contrapiso con los métodos exigidos por el proyecto y el producto.",
+          en: "Check subfloor flatness, moisture and condition using the methods required by the project and product.",
+        },
+      },
+      {
+        src: "/assets/spc-installation-03-click-joint.png",
+        afterSectionId: "click-installation",
+        alt: {
+          es: "Ilustración del alineado de dos tablas de piso SPC con sistema de encaje",
+          en: "Illustration of aligning two SPC flooring planks with a click-lock joint",
+        },
+        caption: {
+          es: "Alinee el sistema de encaje sin forzarlo y utilice únicamente las herramientas permitidas por las instrucciones del producto.",
+          en: "Align the click joint without forcing it and use only the tools permitted by the product instructions.",
+        },
+      },
+    ],
+    cta: {
+      eyebrow: { es: "Proyecto SPC", en: "SPC project" },
+      title: { es: "Prepare su proyecto de piso SPC", en: "Prepare Your SPC Flooring Project" },
+      body: {
+        es: "Comparta las dimensiones, la estructura, la base, el sistema de encaje, la cantidad, el mercado de destino y los requisitos del proyecto. Confirmaremos la información disponible para la muestra y la cotización.",
+        en: "Share the plank dimensions, construction, backing, click system, quantity, destination market and project requirements. We will confirm the available information for sampling and quotation.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Se puede instalar piso SPC sobre un piso existente?", en: "Can SPC flooring be installed over an existing floor?" },
+        answer: {
+          es: "Depende del piso existente y de las instrucciones del producto. La superficie debe ser estable, limpia, seca y cumplir la tolerancia de planicidad requerida. Los revestimientos blandos, las piezas sueltas, las zonas dañadas y cualquier fuente de humedad deben resolverse antes de instalar.",
+          en: "It depends on the existing floor and the product instructions. The surface must be stable, clean, dry and within the required flatness tolerance. Soft coverings, loose sections, damaged areas and any moisture source must be resolved before installation.",
+        },
+      },
+      {
+        question: { es: "¿El piso SPC necesita barrera de vapor?", en: "Does SPC flooring require a vapour barrier?" },
+        answer: {
+          es: "La necesidad y el tipo de barrera dependen del contrapiso, la humedad medida, el sistema de piso y los requisitos locales. No asuma que una base IXPE o EVA sustituye automáticamente una barrera de vapor. Confirme la solución por escrito antes de instalar.",
+          en: "The need and type of vapour barrier depend on the subfloor, measured moisture, flooring system and local requirements. Do not assume that IXPE or EVA backing automatically replaces a vapour barrier. Confirm the required solution in writing before installation.",
+        },
+      },
+      {
+        question: { es: "¿Es necesario aclimatar el piso SPC antes de instalarlo?", en: "Does SPC flooring need acclimation before installation?" },
+        answer: {
+          es: "Los requisitos cambian según la formulación, el empaque, el transporte y el fabricante. Mantenga las cajas planas y protegidas, verifique las condiciones del sitio y siga el tiempo y el rango ambiental indicados en las instrucciones vigentes del producto.",
+          en: "Requirements vary by formulation, packing, transport conditions and manufacturer. Keep cartons flat and protected, verify site conditions and follow the time and environmental range stated in the current product instructions.",
+        },
+      },
+      {
+        question: { es: "¿Por qué se dañan o se abren las juntas del sistema de encaje?", en: "Why do SPC click joints become damaged or open?" },
+        answer: {
+          es: "Entre las causas posibles están un contrapiso fuera de tolerancia, residuos en el perfil, tablas forzadas, herramientas incorrectas, filas mal alineadas, juntas de movimiento insuficientes o cargas que impiden que el piso flotante se mueva. La causa debe evaluarse en el sitio antes de atribuirla al producto.",
+          en: "Possible causes include a subfloor outside tolerance, debris in the profile, forced planks, incorrect tools, misaligned rows, insufficient movement gaps or loads that prevent the floating floor from moving. The cause should be assessed on site before it is attributed to the product.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe incluir la entrega final de una instalación SPC?", en: "What should be included in an SPC installation handover?" },
+        answer: {
+          es: "Registre el producto y el lote, las condiciones del sitio, los controles del contrapiso, las instrucciones utilizadas, las áreas instaladas, las transiciones, cualquier excepción aprobada y las recomendaciones de limpieza y mantenimiento entregadas al cliente.",
+          en: "Record the product and batch, site conditions, subfloor checks, instructions used, installed areas, transitions, any approved exceptions and the cleaning and maintenance guidance provided to the customer.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "confirm-product-project",
+        title: { es: "1. Confirme el producto y el proyecto antes de instalar", en: "1. Confirm the product and project before installation" },
+        paragraphs: {
+          es: [
+            "Antes de abrir las cajas, compare la etiqueta, el código de diseño, el lote, las dimensiones, el grosor, la base y el sistema de encaje con la orden y la muestra aprobada. Mezclar referencias o instalar un producto diferente al especificado puede convertir una diferencia visible en un problema de toda la obra.",
+            "Revise también el uso previsto, el tipo de contrapiso, las condiciones ambientales, las áreas conectadas, las puertas, los muebles fijos y las transiciones. Si la documentación del producto y el plano del proyecto no coinciden, detenga el trabajo y solicite una aclaración por escrito.",
+          ],
+          en: [
+            "Before opening the cartons, compare the label, décor code, batch, dimensions, thickness, backing and click system with the order and approved sample. Mixing references or installing a product that differs from the specification can turn a visible variation into a project-wide problem.",
+            "Review the intended use, subfloor type, environmental conditions, connected areas, doors, fixed furniture and transitions. If the product documentation and project plan do not agree, stop and request written clarification before installation.",
+          ],
+        },
+        bullets: {
+          es: ["Producto, diseño y lote correctos", "Cantidad suficiente para el área y el patrón previsto", "Cajas sin daños visibles ni exposición a humedad", "Manual de instalación correspondiente al producto", "Plano de juntas, puertas y perfiles de transición", "Responsable autorizado para aprobar excepciones"],
+          en: ["Correct product, décor and batch", "Sufficient quantity for the area and planned layout", "Cartons without visible damage or moisture exposure", "Installation manual for the supplied product", "Plan for movement gaps, doors and transition profiles", "Authorized person for approving exceptions"],
+        },
+      },
+      {
+        id: "subfloor-moisture",
+        title: { es: "2. Revise el contrapiso, la planicidad y la humedad", en: "2. Inspect the subfloor, flatness and moisture" },
+        paragraphs: {
+          es: [
+            "El sistema de encaje distribuye las cargas entre las tablas, pero no corrige un contrapiso inestable o irregular. Retire residuos, repare zonas sueltas y confirme que la superficie cumpla la tolerancia indicada por el proveedor y la especificación del proyecto.",
+            "La apariencia impermeable de la tabla no elimina el riesgo de humedad proveniente del concreto, la losa, filtraciones o condensación. Utilice el método de medición aplicable y documente los resultados. La barrera de vapor o el sistema de control de humedad deben seleccionarse según el contrapiso, el producto y las normas locales.",
+          ],
+          en: [
+            "The click system distributes loads between planks, but it cannot correct an unstable or uneven subfloor. Remove debris, repair loose areas and confirm that the surface meets the tolerance stated by the supplier and project specification.",
+            "A water-resistant plank does not remove the risk of moisture coming from concrete, the slab, leaks or condensation. Use the applicable measurement method and record the results. The vapour barrier or moisture-control system must be selected for the subfloor, product and local requirements.",
+          ],
+        },
+        bullets: {
+          es: ["Superficie estable, limpia y seca", "Planicidad comprobada con la herramienta y tolerancia especificadas", "Grietas, juntas y piezas sueltas evaluadas", "Humedad medida y registrada", "Barrera de vapor confirmada cuando corresponda", "Calefacción radiante y condiciones especiales aprobadas antes de instalar"],
+          en: ["Stable, clean and dry surface", "Flatness checked with the specified tool and tolerance", "Cracks, joints and loose sections assessed", "Moisture measured and recorded", "Vapour barrier confirmed where required", "Radiant heating and special conditions approved before installation"],
+        },
+      },
+      {
+        id: "storage-acclimation",
+        title: { es: "3. Almacene y acondicione el material según sus instrucciones", en: "3. Store and condition the material as instructed" },
+        paragraphs: {
+          es: [
+            "Las cajas deben mantenerse planas, apoyadas de forma uniforme y protegidas de agua, sol directo y cambios extremos. No las coloque de pie ni sobre un soporte que pueda curvar las tablas.",
+            "No existe un único tiempo de aclimatación válido para todos los pisos SPC. La necesidad depende del producto, el transporte y las condiciones del sitio. Registre la temperatura y otras condiciones solicitadas, y siga el manual vigente en lugar de aplicar una regla genérica.",
+          ],
+          en: [
+            "Keep cartons flat, evenly supported and protected from water, direct sunlight and extreme changes. Do not store them upright or on supports that may bend the planks.",
+            "There is no single acclimation time that applies to every SPC floor. Requirements depend on the product, transport and site conditions. Record the temperature and any other requested conditions, and follow the current manual rather than applying a generic rule.",
+          ],
+        },
+        bullets: {
+          es: ["Cajas planas y correctamente soportadas", "Área interior limpia y protegida", "Condiciones del sitio registradas", "Tiempo de acondicionamiento confirmado en el manual", "Cajas abiertas solo cuando indique el procedimiento", "Producto inspeccionado antes de cortar o instalar"],
+          en: ["Cartons flat and properly supported", "Clean and protected indoor storage area", "Site conditions recorded", "Conditioning time confirmed in the manual", "Cartons opened only when the procedure allows", "Product inspected before cutting or installation"],
+        },
+      },
+      {
+        id: "layout-movement-gaps",
+        title: { es: "4. Planifique la colocación y las juntas de movimiento", en: "4. Plan the layout and movement gaps" },
+        paragraphs: {
+          es: [
+            "Mida el espacio antes de comenzar para evitar una última fila demasiado estrecha y para ubicar las juntas en zonas visualmente aceptables. Planifique la dirección de las tablas, el desplazamiento entre juntas de cabecera y la distribución de diseños antes de cortar.",
+            "Un piso flotante necesita espacio para moverse alrededor de paredes, columnas, marcos, tuberías y otros elementos fijos. El ancho de la junta y la necesidad de perfiles intermedios dependen del sistema, las dimensiones del área y las instrucciones del producto. Los zócalos y perfiles deben cubrir la junta sin bloquear el piso.",
+          ],
+          en: [
+            "Measure the room before starting so the final row is not impractically narrow and joints fall in visually acceptable positions. Plan plank direction, end-joint staggering and décor distribution before cutting.",
+            "A floating floor needs room to move around walls, columns, frames, pipes and other fixed elements. Gap width and the need for intermediate profiles depend on the system, area dimensions and product instructions. Skirting and profiles should cover the gap without locking the floor in place.",
+          ],
+        },
+        bullets: {
+          es: ["Ancho de primera y última fila calculado", "Dirección y patrón aprobados", "Juntas de cabecera distribuidas según el manual", "Junta perimetral mantenida en todos los elementos fijos", "Perfiles de transición previstos antes de colocar", "Piso flotante no atrapado por zócalos, marcos o muebles fijos"],
+          en: ["First- and final-row widths calculated", "Direction and pattern approved", "End joints staggered according to the manual", "Perimeter gap maintained at every fixed element", "Transition profiles planned before laying", "Floating floor not trapped by skirting, frames or fixed furniture"],
+        },
+      },
+      {
+        id: "click-installation",
+        title: { es: "5. Instale el sistema de encaje sin forzar las juntas", en: "5. Install the click system without forcing the joints" },
+        paragraphs: {
+          es: [
+            "El ángulo y la secuencia de montaje varían según el perfil. Mantenga el encaje limpio, alinee la tabla y siga el movimiento indicado por el proveedor. Si una junta no cierra, retírela y busque residuos, daños o desalineación; golpear con más fuerza puede ocultar el problema y dañar el perfil.",
+            "Utilice un bloque de golpeo, barra de tracción u otra herramienta solo cuando el manual lo permita. Nunca golpee directamente el borde decorativo o el sistema de encaje. Revise cada fila a medida que avanza para evitar que una desviación pequeña se acumule en toda la habitación.",
+          ],
+          en: [
+            "The assembly angle and sequence vary by click profile. Keep the joint clean, align the plank and follow the movement specified by the supplier. If a joint does not close, remove it and check for debris, damage or misalignment; additional force may hide the cause and damage the profile.",
+            "Use a tapping block, pull bar or other tool only when the manual permits it. Never strike the decorative edge or click profile directly. Inspect each row as work progresses so a small deviation does not accumulate across the room.",
+          ],
+        },
+        bullets: {
+          es: ["Perfil limpio antes de unir", "Tabla alineada antes de aplicar presión", "Herramienta compatible con el sistema", "Bordes y esquinas protegidos durante el corte", "Juntas cerradas sin escalones visibles", "Filas revisadas antes de continuar"],
+          en: ["Profile clean before joining", "Plank aligned before pressure is applied", "Tool compatible with the click system", "Edges and corners protected during cutting", "Joints closed without visible lipping", "Rows checked before work continues"],
+        },
+      },
+      {
+        id: "doors-transitions-fixed-elements",
+        title: { es: "6. Resuelva puertas, transiciones y elementos fijos", en: "6. Resolve doors, transitions and fixed elements" },
+        paragraphs: {
+          es: [
+            "Las puertas, los cambios de altura y las uniones con otros materiales deben planificarse antes de llegar a ellos. Confirme que exista espacio para el perfil, que la puerta conserve su funcionamiento y que el borde cortado quede protegido.",
+            "No inmovilice un piso flotante con tornillos, adhesivo, marcos apretados o muebles fijos apoyados de forma incompatible con el sistema. En zonas expuestas a agua, aplique únicamente el detalle perimetral aprobado por el proveedor; sellar un borde no corrige humedad del contrapiso ni convierte cualquier instalación en apta para zonas húmedas.",
+          ],
+          en: [
+            "Doorways, height changes and junctions with other materials should be planned before the installation reaches them. Confirm space for the profile, continued door operation and protection of cut edges.",
+            "Do not immobilize a floating floor with screws, adhesive, tight frames or fixed furniture arranged incompatibly with the system. In water-exposed areas, use only the perimeter detail approved by the supplier; sealing an edge does not correct subfloor moisture or make every installation suitable for wet areas.",
+          ],
+        },
+        bullets: {
+          es: ["Marcos y hojas de puerta comprobados", "Perfiles adecuados para cambios de altura", "Juntas cubiertas sin bloquear el movimiento", "Cortes limpios en tuberías y elementos verticales", "Muebles fijos coordinados con el sistema flotante", "Detalle perimetral para zonas húmedas confirmado por escrito"],
+          en: ["Door frames and leaves checked", "Correct profiles for height changes", "Gaps covered without blocking movement", "Clean cuts around pipes and vertical elements", "Fixed furniture coordinated with the floating system", "Wet-area perimeter detail confirmed in writing"],
+        },
+      },
+      {
+        id: "inspection-handover",
+        title: { es: "7. Inspeccione y documente la entrega", en: "7. Inspect and document the handover" },
+        paragraphs: {
+          es: [
+            "Antes de retirar la protección de obra, camine toda el área y revise juntas, bordes, transiciones, ruidos localizados y posibles daños. Corrija los problemas mientras todavía es posible identificar la fila o el detalle que los originó.",
+            "La entrega debe registrar qué producto y lote se instalaron, qué controles se realizaron, qué excepciones fueron aprobadas y qué instrucciones de limpieza y mantenimiento recibió el cliente. Esta documentación ayuda al distribuidor, al instalador y al comprador a separar un problema de instalación de una consulta sobre el producto.",
+          ],
+          en: [
+            "Before removing site protection, walk the full area and inspect joints, edges, transitions, localized noise and possible damage. Correct issues while the row or detail that caused them can still be identified.",
+            "The handover should record the product and batch installed, checks completed, approved exceptions and cleaning and maintenance instructions given to the customer. This documentation helps the distributor, installer and buyer distinguish an installation issue from a product question.",
+          ],
+        },
+        bullets: {
+          es: ["Superficie limpia y sin daños visibles", "Juntas y bordes revisados", "Movimiento de puertas confirmado", "Perfiles y zócalos terminados", "Fotos y controles del sitio archivados", "Producto de reserva, limpieza y mantenimiento entregados al cliente"],
+          en: ["Surface clean and free from visible damage", "Joints and edges inspected", "Door movement confirmed", "Profiles and skirting completed", "Site photographs and checks archived", "Spare product, cleaning and maintenance guidance handed over"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
