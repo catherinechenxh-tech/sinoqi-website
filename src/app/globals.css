@@ -590,6 +590,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .article-cover { margin-top: -85px; }
 .article-cover__frame { position: relative; min-height: 520px; overflow: hidden; border: 8px solid var(--white); box-shadow: var(--shadow); }
 .article-cover__frame img { object-fit: cover; }
+.article-cover__frame video { display: block; width: 100%; height: 100%; min-height: 520px; object-fit: cover; background: #111; }
 .article-cover__caption { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .article-layout { padding-top: 80px; padding-bottom: 100px; display: grid; grid-template-columns: minmax(0, 760px) 300px; justify-content: space-between; gap: 72px; align-items: start; }
 .article-body { min-width: 0; }
@@ -605,6 +606,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .article-inline-image { margin: 34px 0 0; }
 .article-inline-image__frame { position: relative; min-height: 430px; overflow: hidden; background: var(--green-pale); border: 1px solid var(--line); }
 .article-inline-image__frame img { object-fit: cover; }
+.article-inline-image__frame video { display: block; width: 100%; height: 100%; min-height: 430px; object-fit: contain; background: #111; }
 .article-inline-image figcaption { margin-top: 11px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .article-faq { padding-top: 8px; }
 .article-faq .faq-list { margin-top: 28px; }
@@ -933,6 +935,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .blog-card { grid-template-columns: 1fr; }
   .blog-card__image { min-height: 340px; }
   .article-cover__frame { min-height: 420px; }
+  .article-cover__frame video { min-height: 420px; }
   .article-layout { grid-template-columns: 1fr; padding-top: 60px; }
   .article-aside { position: static; grid-row: 1; }
   .article-toc { display: none; }
@@ -1026,10 +1029,12 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
   .article-hero h1 { font-size: 40px; }
   .article-cover { margin-top: -58px; }
   .article-cover__frame { min-height: 280px; border-width: 4px; }
+  .article-cover__frame video { min-height: 280px; }
   .article-layout { padding-top: 48px; padding-bottom: 70px; }
   .article-body h2 { font-size: 29px; }
   .article-body p, .article-body li { font-size: 16px; }
   .article-inline-image__frame { min-height: 280px; }
+  .article-inline-image__frame video { min-height: 280px; }
   .spc-explainer__hero-actions, .spc-explainer__actions { display: grid; }
   .spc-explainer__hero-actions > *, .spc-explainer__actions > * { width: 100%; }
   .spc-explainer__checklist { grid-template-columns: 1fr; }

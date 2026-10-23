@@ -16,6 +16,13 @@ type BlogImage = {
   afterSectionId: string;
 };
 
+type BlogVideo = {
+  src: string;
+  label: LocalizedText;
+  caption: LocalizedText;
+  afterSectionId?: string;
+};
+
 type BlogFaq = {
   question: LocalizedText;
   answer: LocalizedText;
@@ -42,8 +49,11 @@ export type BlogPost = {
   cover?: string;
   coverAlt?: LocalizedText;
   coverCaption?: LocalizedText;
+  coverVideo?: BlogVideo;
   scopeNote?: LocalizedText;
   images?: BlogImage[];
+  videos?: BlogVideo[];
+  faqTitle?: LocalizedText;
   faqs?: BlogFaq[];
   cta?: BlogCta;
   sections: BlogSection[];
@@ -2157,6 +2167,244 @@ export const blogPosts: BlogPost[] = [
         bullets: {
           es: ["Superficie limpia y sin daños visibles", "Juntas y bordes revisados", "Movimiento de puertas confirmado", "Perfiles y zócalos terminados", "Fotos y controles del sitio archivados", "Producto de reserva, limpieza y mantenimiento entregados al cliente"],
           en: ["Surface clean and free from visible damage", "Joints and edges inspected", "Door movement confirmed", "Profiles and skirting completed", "Site photographs and checks archived", "Spare product, cleaning and maintenance guidance handed over"],
+        },
+      },
+    ],
+  },
+  {
+    slug: "spc-flooring-packaging-container-loading-guide",
+    localizedSlug: { es: "guia-empaque-carga-contenedores-piso-spc" },
+    publishedAt: "2026-10-23",
+    category: { es: "Guía de importación", en: "Import guide" },
+    title: {
+      es: "Guía de empaque y carga de contenedores para piso SPC",
+      en: "SPC Flooring Packaging and Container Loading Guide",
+    },
+    seoTitle: {
+      es: "Empaque y carga de piso SPC | SINOQI",
+      en: "SPC Flooring Packaging & Container Loading | SINOQI",
+    },
+    description: {
+      es: "Aprenda a confirmar cajas, peso bruto, palés, payload y estimaciones de carga de piso SPC antes de aprobar un plan de empaque para exportación.",
+      en: "Learn how to confirm SPC flooring cartons, gross weight, pallets, container payload and loading estimates before approving an export packing plan.",
+    },
+    introduction: {
+      es: "Un plan de empaque para piso SPC no se define únicamente por cuántos metros cuadrados caben en una caja. El comprador también debe revisar el peso bruto, la resistencia del cartón, el uso de palés, la manipulación y los límites aplicables al contenedor. Esta guía ayuda a importadores, distribuidores y compradores de proyectos a solicitar datos comparables y a detectar supuestos que deben confirmarse antes del embarque.",
+      en: "An SPC flooring packing plan is not defined only by how many square metres fit in a carton. Buyers also need to review gross weight, carton construction, pallet use, handling and the limits that apply to the container. This guide helps importers, distributors and project buyers request comparable data and identify assumptions that must be confirmed before shipment.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/spc-packaging-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de tablas, cajas y palé para planificar el empaque de piso SPC",
+      en: "Illustration of SPC flooring planks, cartons and a pallet for packing-plan review",
+    },
+    coverCaption: {
+      es: "Línea de empaque automático para piso SPC. La configuración final debe confirmarse con la especificación, la muestra de caja y el peso bruto del pedido.",
+      en: "Automatic SPC flooring packaging line. The final configuration should be confirmed against the specification, carton sample and order gross weight.",
+    },
+    coverVideo: {
+      src: "/assets/spc-packaging-automatic-line.mp4",
+      label: {
+        es: "Video de una línea de empaque automático para piso SPC",
+        en: "Video of an automatic packaging line for SPC flooring",
+      },
+      caption: {
+        es: "Línea de empaque automático para piso SPC. El empaque exacto depende de la especificación confirmada para cada pedido.",
+        en: "Automatic packaging line for SPC flooring. Exact packing depends on the specification confirmed for each order.",
+      },
+    },
+    scopeNote: {
+      es: "Esta guía no establece una carga universal por contenedor. La cantidad final depende del producto, el empaque terminado, el payload del equipo, la naviera, la ruta, el transporte terrestre y las reglas del país de destino. Confirme estos datos antes de reservar el embarque.",
+      en: "This guide does not define a universal container quantity. Final loading depends on the product, finished packing, equipment payload, carrier, route, inland transport and destination-country rules. Confirm these details before booking the shipment.",
+    },
+    videos: [
+      {
+        src: "/assets/spc-packaging-stock.mp4",
+        afterSectionId: "carton-construction",
+        label: {
+          es: "Video de inventario de piso SPC empacado",
+          en: "Video of packed SPC flooring inventory",
+        },
+        caption: {
+          es: "Inventario de piso SPC empacado. Revise el estado de las cajas, la identificación y la protección antes de autorizar el embarque.",
+          en: "Packed SPC flooring inventory. Check carton condition, identification and protection before shipment is authorized.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre empaque y carga de piso SPC",
+      en: "SPC flooring packaging and loading FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Plan de empaque SPC", en: "SPC packing plan" },
+      title: { es: "Solicite una cotización de piso SPC con datos de empaque", en: "Request an SPC Flooring Quote with Packing Data" },
+      body: {
+        es: "Envíenos las dimensiones, la estructura, las piezas por caja, la cantidad por diseño, el tipo de empaque y el puerto de destino. Prepararemos la cotización y la estimación de carga con base en la especificación confirmada.",
+        en: "Send us the plank dimensions, construction, pieces per carton, quantity per décor, packing type and destination port. We will prepare the quotation and loading estimate from the confirmed specification.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Cuántos metros cuadrados de piso SPC caben en un contenedor?", en: "How many square metres of SPC flooring fit in a container?" },
+        answer: {
+          es: "No existe una cifra universal. Debe calcularse con las dimensiones y piezas por caja, el peso bruto confirmado, el uso de palés, el payload del contenedor y las restricciones de la naviera, la ruta, el puerto y el transporte terrestre.",
+          en: "There is no universal figure. It must be calculated from plank dimensions and pieces per carton, confirmed gross weight, pallet use, container payload and carrier, route, port and inland-transport restrictions.",
+        },
+      },
+      {
+        question: { es: "¿Por qué es importante el peso bruto por caja?", en: "Why is gross weight per carton important?" },
+        answer: {
+          es: "El peso bruto incluye el producto y el empaque. Se utiliza para estimar la carga, revisar la manipulación manual, calcular el peso del palé y comprobar que el plan no exceda los límites aplicables.",
+          en: "Gross weight includes the product and its packaging. It is used to estimate loading, review manual handling, calculate pallet weight and check that the plan does not exceed applicable limits.",
+        },
+      },
+      {
+        question: { es: "¿Es mejor enviar piso SPC con palés o sin palés?", en: "Is it better to ship SPC flooring with or without pallets?" },
+        answer: {
+          es: "Depende de la descarga, el almacenamiento, la mano de obra, el costo y el peso disponible. Los palés pueden facilitar la manipulación, pero añaden peso y ocupan espacio. El comprador debe confirmar también las reglas de embalaje de madera del destino.",
+          en: "It depends on unloading, storage, labour, cost and available payload. Pallets can simplify handling, but they add weight and occupy space. Buyers must also confirm destination rules for wood packaging.",
+        },
+      },
+      {
+        question: { es: "¿Qué datos deben aparecer en la etiqueta de una caja de piso SPC?", en: "What information should appear on an SPC flooring carton label?" },
+        answer: {
+          es: "La etiqueta debe acordarse para el pedido. Normalmente se revisan la referencia del producto, el diseño, el lote, las dimensiones, las piezas y metros cuadrados por caja, y cualquier marca regulatoria o comercial que corresponda. No imprima afirmaciones que no estén documentadas.",
+          en: "The label should be agreed for the order. Typical review fields include product reference, décor, batch, dimensions, pieces and square metres per carton, plus any applicable regulatory or commercial marks. Do not print claims that are not documented.",
+        },
+      },
+      {
+        question: { es: "¿Cuándo debe confirmarse la carga final del contenedor?", en: "When should final container loading be confirmed?" },
+        answer: {
+          es: "La estimación puede prepararse durante la cotización, pero la carga final debe revisarse después de confirmar la especificación, el empaque terminado, el peso bruto, el plan de palés y los límites de la reserva de transporte.",
+          en: "An estimate can be prepared during quotation, but final loading should be reviewed after the specification, finished packing, gross weight, pallet plan and booking limits are confirmed.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "carton-data",
+        title: { es: "1. Empiece por las piezas y los metros cuadrados por caja", en: "1. Start with pieces and square metres per carton" },
+        paragraphs: {
+          es: [
+            "El cálculo comienza con las dimensiones útiles de la tabla y el número de piezas. Esos datos determinan los metros cuadrados por caja y deben coincidir en la cotización, la lista de empaque, la etiqueta y los documentos comerciales.",
+            "No compare dos ofertas solo por cajas o por metros cuadrados. Una diferencia en el largo, ancho o piezas por caja cambia el peso, la altura del paquete, la manipulación y la distribución dentro del contenedor. Solicite una ficha de empaque para cada estructura cotizada.",
+          ],
+          en: [
+            "The calculation starts with usable plank dimensions and the number of pieces. These determine square metres per carton and should match across the quotation, packing list, carton label and commercial documents.",
+            "Do not compare offers by carton count or square metres alone. A change in plank length, width or pieces per carton changes weight, pack height, handling and container distribution. Request a packing specification for every quoted construction.",
+          ],
+        },
+        bullets: {
+          es: ["Largo y ancho nominales de la tabla", "Piezas por caja", "Metros cuadrados por caja", "Peso neto y bruto por caja", "Dimensiones exteriores de la caja", "Correspondencia entre etiqueta, cotización y lista de empaque"],
+          en: ["Nominal plank length and width", "Pieces per carton", "Square metres per carton", "Net and gross weight per carton", "External carton dimensions", "Consistency between label, quotation and packing list"],
+        },
+      },
+      {
+        id: "carton-construction",
+        title: { es: "2. Defina la caja, la protección y el etiquetado", en: "2. Define the carton, protection and labelling" },
+        paragraphs: {
+          es: [
+            "Una caja neutra y una caja personalizada no tienen el mismo proceso, costo ni tiempo de preparación. Si se requiere impresión, confirme el diseño, los idiomas, los códigos, las marcas permitidas y quién aprueba el archivo antes de producir.",
+            "La protección debe responder al producto y a la ruta. Revise el cartón, las protecciones de borde, la bolsa o película, los flejes y la forma de apilar. La muestra de caja aprobada debe mostrar cómo queda el producto terminado, no solo el diseño gráfico.",
+          ],
+          en: [
+            "Neutral and customized cartons do not have the same process, cost or preparation time. If printing is required, confirm artwork, languages, codes, permitted marks and the person responsible for approving the file before production.",
+            "Protection should reflect the product and route. Review carton construction, edge protection, bag or film, strapping and stacking method. The approved carton sample should show the finished pack, not only the graphic design.",
+          ],
+        },
+        bullets: {
+          es: ["Caja neutra o personalizada", "Archivo de impresión y aprobación", "Protección de bordes y esquinas", "Bolsa, película y flejes", "Código de diseño, lote y datos de la caja", "Afirmaciones y marcas respaldadas por documentación"],
+          en: ["Neutral or customized carton", "Print artwork and approval", "Edge and corner protection", "Bag, film and straps", "Décor code, batch and carton data", "Claims and marks supported by documentation"],
+        },
+      },
+      {
+        id: "pallets-wood-packaging",
+        title: { es: "3. Confirme palés, madera y método de descarga", en: "3. Confirm pallets, wood packaging and unloading method" },
+        paragraphs: {
+          es: [
+            "El uso de palés debe decidirse según la descarga y el almacenamiento del comprador. Un palé puede facilitar el uso de montacargas y separar la mercancía del piso, pero añade peso, altura y costo, y puede reducir la cantidad transportable.",
+            "Cuando se utilice madera, confirme las reglas del país de destino, incluida la necesidad de material conforme con IPPC, tratamiento o documentación aplicable. También revise las dimensiones, el peso del palé, la entrada para horquillas y la capacidad del equipo que realizará la descarga.",
+          ],
+          en: [
+            "Pallet use should be decided around the buyer’s unloading and storage process. A pallet can support forklift handling and keep goods off the floor, but it adds weight, height and cost and may reduce the quantity that can be transported.",
+            "When wood is used, confirm destination-country rules, including any applicable IPPC-compliant material, treatment or documentation. Also review pallet dimensions, pallet weight, fork entry and the capacity of the equipment that will unload the goods.",
+          ],
+        },
+        bullets: {
+          es: ["Carga con o sin palé", "Material, dimensiones y peso del palé", "Requisitos IPPC o de tratamiento", "Cajas por palé y patrón de apilado", "Protección, flejes y película exterior", "Montacargas y condiciones de descarga en destino"],
+          en: ["Palletized or floor-loaded cargo", "Pallet material, dimensions and weight", "IPPC or treatment requirements", "Cartons per pallet and stacking pattern", "Protection, straps and outer film", "Forklift and destination unloading conditions"],
+        },
+      },
+      {
+        id: "gross-weight",
+        title: { es: "4. Utilice el peso bruto confirmado, no una estimación genérica", en: "4. Use confirmed gross weight, not a generic estimate" },
+        paragraphs: {
+          es: [
+            "El peso teórico del núcleo no basta para cerrar una carga. El peso bruto incorpora las tablas, la base IXPE o EVA cuando corresponda, la caja, las protecciones y otros materiales. Si hay palés o refuerzos, su peso debe añadirse por separado.",
+            "Durante la cotización puede utilizarse una estimación claramente identificada, pero debe actualizarse cuando se aprueban la muestra, las piezas por caja y el empaque. Una pequeña diferencia repetida en muchas cajas puede alterar el peso total y la distribución de la carga.",
+          ],
+          en: [
+            "Theoretical core weight is not enough to finalize loading. Gross weight includes the planks, IXPE or EVA backing where applicable, carton, protection and other packing materials. Pallets or timber bracing must be added separately.",
+            "A clearly identified estimate can be used during quotation, but it should be updated after the sample, pieces per carton and packing are approved. A small difference repeated across many cartons can change total weight and load distribution.",
+          ],
+        },
+        bullets: {
+          es: ["Peso neto del producto", "Peso bruto de la caja terminada", "Peso de cada palé y protección adicional", "Número de cajas y palés", "Peso total calculado", "Verificación antes de reservar y antes de cargar"],
+          en: ["Product net weight", "Finished-carton gross weight", "Weight of each pallet and additional protection", "Number of cartons and pallets", "Calculated total weight", "Verification before booking and before loading"],
+        },
+      },
+      {
+        id: "payload-loading",
+        title: { es: "5. Compare el peso total con el payload y la ruta", en: "5. Compare total weight with payload and route limits" },
+        paragraphs: {
+          es: [
+            "El piso SPC suele estar limitado por peso antes que por volumen, pero eso no significa que un tipo de contenedor admita una cantidad fija. El payload indicado para el equipo es solo una parte de la revisión; también pueden aplicar límites de la naviera, carreteras, puertos, terminales y países de tránsito o destino.",
+            "El plan debe mantener el peso dentro de los límites aplicables y distribuirlo de forma adecuada. Confirme con el transitario o la naviera el equipo reservado y cualquier requisito de peso verificado antes de autorizar la carga.",
+          ],
+          en: [
+            "SPC flooring often reaches a weight limit before a volume limit, but this does not mean that one container type carries a fixed quantity. The equipment payload is only one part of the review; carrier, road, port, terminal and transit- or destination-country limits may also apply.",
+            "The plan must stay within applicable limits and distribute weight appropriately. Confirm the booked equipment and any verified-weight requirements with the forwarder or carrier before loading is authorized.",
+          ],
+        },
+        bullets: {
+          es: ["Tipo y payload del contenedor reservado", "Tara y peso bruto máximo aplicables", "Límites de la naviera y la ruta", "Restricciones de carretera y puerto", "Distribución de peso y aseguramiento de la carga", "Requisito de peso verificado para el embarque"],
+          en: ["Booked container type and payload", "Applicable tare and maximum gross weight", "Carrier and route limits", "Road and port restrictions", "Weight distribution and cargo securing", "Verified-weight requirement for shipment"],
+        },
+      },
+      {
+        id: "loading-handling",
+        title: { es: "6. Revise la secuencia de carga y la manipulación", en: "6. Review loading sequence and handling" },
+        paragraphs: {
+          es: [
+            "Una cifra total no explica cómo se colocarán las cajas o los palés. Solicite un plano o una secuencia cuando la mezcla incluya varios diseños, lotes o especificaciones. Así se puede coordinar la descarga y evitar que la mercancía prioritaria quede inaccesible.",
+            "El contenedor debe inspeccionarse antes de cargar para detectar daños visibles, humedad, olores o contaminación. La mercancía debe protegerse contra movimiento y puntos de presión con métodos compatibles con el producto y las reglas de transporte.",
+          ],
+          en: [
+            "A total quantity does not explain how cartons or pallets will be positioned. Request a plan or sequence when the load contains multiple décors, batches or specifications. This supports unloading and avoids placing priority goods where they cannot be accessed.",
+            "The container should be inspected before loading for visible damage, moisture, odour or contamination. Goods should be protected against movement and pressure points using methods compatible with the product and transport rules.",
+          ],
+        },
+        bullets: {
+          es: ["Inspección previa del contenedor", "Secuencia por diseño, lote o referencia", "Orientación y patrón de apilado", "Protección contra desplazamiento y presión", "Acceso para la descarga", "Registro fotográfico acordado"],
+          en: ["Pre-loading container inspection", "Sequence by décor, batch or reference", "Orientation and stacking pattern", "Protection against movement and pressure", "Access for unloading", "Agreed photographic record"],
+        },
+      },
+      {
+        id: "packing-document-checklist",
+        title: { es: "7. Lista de verificación para aprobar el empaque y la carga", en: "7. Packing and loading approval checklist" },
+        paragraphs: {
+          es: [
+            "Antes de aprobar el pedido, reúna la especificación del producto, la ficha de empaque y las condiciones logísticas en una sola revisión. Pida que cualquier dato provisional aparezca como estimación y que se actualice cuando el peso real esté disponible.",
+            "La lista de empaque, la factura y las etiquetas deben utilizar referencias coherentes. Confirme también el puerto de destino, el consignatario, las marcas de embarque, los documentos requeridos y quién autoriza cambios después de la aprobación.",
+          ],
+          en: [
+            "Before approving the order, bring the product specification, packing data and logistics conditions into one review. Ask suppliers to identify provisional figures as estimates and update them when actual weight becomes available.",
+            "The packing list, invoice and labels should use consistent references. Also confirm destination port, consignee, shipping marks, required documents and the person authorized to approve changes after sign-off.",
+          ],
+        },
+        bullets: {
+          es: ["Dimensiones y estructura del piso SPC", "Piezas y metros cuadrados por caja", "Peso neto y bruto confirmado", "Caja, etiqueta y protección aprobadas", "Palés, madera y requisitos IPPC", "Cantidad por diseño y lote", "Tipo de contenedor y payload aplicable", "Estimación de carga y distribución", "Puerto de destino y método de descarga", "Lista de empaque, factura y marcas de embarque", "Responsable de aprobación y control de cambios"],
+          en: ["SPC flooring dimensions and construction", "Pieces and square metres per carton", "Confirmed net and gross weight", "Approved carton, label and protection", "Pallets, timber and IPPC requirements", "Quantity by décor and batch", "Container type and applicable payload", "Loading estimate and distribution", "Destination port and unloading method", "Packing list, invoice and shipping marks", "Approval owner and change control"],
         },
       },
     ],

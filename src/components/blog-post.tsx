@@ -59,6 +59,7 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
     : `/en/blog/${post.localizedSlug?.en ?? post.slug}/`;
   const canonicalUrl = `${SITE_ORIGIN}${blogPath}`;
   const cover = post.cover ?? asset.pvc;
+  const postVideos = [post.coverVideo, ...(post.videos ?? [])].filter((video): video is NonNullable<typeof video> => Boolean(video));
 
   // Article Schema
   const articleSchema = {
@@ -67,6 +68,15 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
     headline: post.title[locale],
     description: post.description[locale],
     image: [cover, ...(post.images?.map((image) => image.src) ?? [])].map((src) => `${SITE_ORIGIN}${src}`),
+    ...(postVideos.length > 0 ? {
+      video: postVideos.map((video) => ({
+        "@type": "VideoObject",
+        name: video.label[locale],
+        description: video.caption[locale],
+        uploadDate: post.publishedAt,
+        contentUrl: `${SITE_ORIGIN}${video.src}`,
+      })),
+    } : {}),
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     inLanguage: es ? "es" : "en",
@@ -140,9 +150,16 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
         </header>
         <div className="article-cover">
           <div className="container article-cover__frame">
-            <Image src={cover} alt={post.coverAlt?.[locale] ?? (es ? "Selección de paneles decorativos" : "Decorative panel selection")} fill priority sizes="(max-width: 900px) 100vw, 1200px" />
+            {post.coverVideo ? (
+              <video controls playsInline preload="metadata" aria-label={post.coverVideo.label[locale]}>
+                <source src={post.coverVideo.src} type="video/mp4" />
+                {es ? "Su navegador no admite video HTML5." : "Your browser does not support HTML5 video."}
+              </video>
+            ) : (
+              <Image src={cover} alt={post.coverAlt?.[locale] ?? (es ? "Selección de paneles decorativos" : "Decorative panel selection")} fill priority sizes="(max-width: 900px) 100vw, 1200px" />
+            )}
           </div>
-          {post.coverCaption && <p className="container article-cover__caption">{post.coverCaption[locale]}</p>}
+          {(post.coverVideo?.caption ?? post.coverCaption) && <p className="container article-cover__caption">{(post.coverVideo?.caption ?? post.coverCaption)?.[locale]}</p>}
         </div>
         <div className="container article-layout">
           <div className="article-body">
@@ -153,6 +170,7 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
             </div>
             {post.sections.map((section) => {
               const sectionImage = post.images?.find((image) => image.afterSectionId === section.id);
+              const sectionVideo = post.videos?.find((video) => video.afterSectionId === section.id);
               return (
                 <section id={section.id} key={section.id}>
                   <h2>{section.title[locale]}</h2>
@@ -168,12 +186,23 @@ export function BlogPost({ locale, post }: { locale: Locale; post: BlogPostData 
                       <figcaption>{sectionImage.caption[locale]}</figcaption>
                     </figure>
                   )}
+                  {sectionVideo && (
+                    <figure className="article-inline-image">
+                      <div className="article-inline-image__frame">
+                        <video controls playsInline preload="metadata" aria-label={sectionVideo.label[locale]}>
+                          <source src={sectionVideo.src} type="video/mp4" />
+                          {es ? "Su navegador no admite video HTML5." : "Your browser does not support HTML5 video."}
+                        </video>
+                      </div>
+                      <figcaption>{sectionVideo.caption[locale]}</figcaption>
+                    </figure>
+                  )}
                 </section>
               );
             })}
             {post.faqs && (
               <section className="article-faq" id="faq">
-                <h2>{es ? "Preguntas frecuentes sobre el precio del piso SPC" : "SPC flooring price FAQ"}</h2>
+                <h2>{post.faqTitle?.[locale] ?? (es ? "Preguntas frecuentes" : "Frequently asked questions")}</h2>
                 <div className="faq-list">
                   {post.faqs.map((faq, index) => (
                     <details key={faq.question[locale]} open={index === 0}>
