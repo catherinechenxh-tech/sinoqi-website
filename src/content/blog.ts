@@ -2409,6 +2409,484 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "spc-flooring-quality-inspection-checklist",
+    localizedSlug: { es: "lista-inspeccion-calidad-piso-spc" },
+    publishedAt: "2026-10-26",
+    category: { es: "Control de calidad", en: "Quality control" },
+    title: {
+      es: "Lista de inspección de calidad del piso SPC antes del embarque",
+      en: "SPC Flooring Quality Inspection Checklist Before Shipment",
+    },
+    seoTitle: {
+      es: "Inspección de calidad del piso SPC | SINOQI",
+      en: "SPC Flooring Quality Inspection Checklist | SINOQI",
+    },
+    description: {
+      es: "Revise muestras, dimensiones, superficie, encaje, base, empaque y registros antes de autorizar el embarque de un pedido de piso SPC.",
+      en: "Check samples, dimensions, surface, click joints, backing, packing and records before authorizing an SPC flooring order for shipment.",
+    },
+    introduction: {
+      es: "Una inspección de piso SPC debe comparar el pedido terminado con criterios acordados, no con una impresión general de que el producto “se ve bien”. Para importadores, distribuidores y compradores de proyectos, el objetivo es confirmar la identidad del producto, registrar resultados verificables y resolver cualquier desviación antes de autorizar el embarque.",
+      en: "An SPC flooring inspection should compare the finished order against agreed criteria, not against a general impression that the product “looks good.” For importers, distributors and project buyers, the objective is to confirm product identity, record verifiable results and resolve any deviation before shipment is authorized.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/spc-inspection-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de una inspección de piso SPC con tablas, calibre, regla y lista de verificación",
+      en: "Illustration of an SPC flooring inspection with planks, caliper, straightedge and checklist",
+    },
+    coverCaption: {
+      es: "Ilustración de inspección de piso SPC. Los métodos, tolerancias y criterios de aceptación deben acordarse para cada pedido.",
+      en: "SPC flooring inspection illustration. Methods, tolerances and acceptance criteria should be agreed for each order.",
+    },
+    scopeNote: {
+      es: "Esta guía no sustituye una especificación técnica, un plan de muestreo acordado ni los requisitos del mercado de destino. Defina por escrito los métodos, tolerancias, documentos y responsables antes de la producción. Cuando se requieran ensayos de laboratorio, utilice el método y el laboratorio aceptados para el proyecto.",
+      en: "This guide does not replace a technical specification, an agreed sampling plan or destination-market requirements. Define methods, tolerances, documents and responsibilities in writing before production. Where laboratory testing is required, use the method and laboratory accepted for the project.",
+    },
+    images: [
+      {
+        src: "/assets/spc-inspection-02-dimensions.png",
+        afterSectionId: "dimensions-tolerances",
+        alt: {
+          es: "Ilustración de medición del grosor de una tabla de piso SPC con un calibre digital",
+          en: "Illustration of measuring an SPC flooring plank with a digital caliper",
+        },
+        caption: {
+          es: "Registre el método, el punto de medición y el resultado; no compare cifras obtenidas con procedimientos diferentes.",
+          en: "Record the method, measurement point and result; do not compare figures obtained with different procedures.",
+        },
+      },
+      {
+        src: "/assets/spc-inspection-03-click-packing.png",
+        afterSectionId: "click-backing-assembly",
+        alt: {
+          es: "Ilustración de revisión del sistema de encaje, la base y las cajas de piso SPC",
+          en: "Illustration of SPC flooring click-system, backing and carton inspection",
+        },
+        caption: {
+          es: "Revise el encaje, la base y el empaque contra la muestra y la especificación aprobadas para el pedido.",
+          en: "Check the click profile, backing and packing against the sample and specification approved for the order.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre la inspección de piso SPC",
+      en: "SPC flooring inspection FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Pedido de piso SPC", en: "SPC flooring order" },
+      title: { es: "Prepare una especificación verificable antes de cotizar", en: "Prepare a Verifiable Specification Before Quotation" },
+      body: {
+        es: "Envíenos las dimensiones, la estructura, la capa de desgaste, la base, el sistema de encaje, el empaque, los informes requeridos y el mercado de destino. Confirmaremos qué datos pueden incluirse en la muestra, la cotización y la documentación del pedido.",
+        en: "Send us the dimensions, construction, wear layer, backing, click system, packing, required reports and destination market. We will confirm which details can be included in the sample, quotation and order documentation.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Cuándo debe inspeccionarse un pedido de piso SPC?", en: "When should an SPC flooring order be inspected?" },
+        answer: {
+          es: "Los puntos de control dependen del pedido. La muestra y la especificación deben aprobarse antes de la producción, mientras que la inspección previa al embarque debe realizarse cuando haya suficiente producto terminado y empacado para evaluar el lote según el plan acordado.",
+          en: "Control points depend on the order. The sample and specification should be approved before production, while the pre-shipment inspection should take place when enough finished and packed goods are available to assess the lot under the agreed plan.",
+        },
+      },
+      {
+        question: { es: "¿Una muestra aprobada es suficiente para controlar la calidad?", en: "Is an approved sample enough to control quality?" },
+        answer: {
+          es: "No por sí sola. La muestra es una referencia visual y física, pero debe acompañarse de una especificación escrita, tolerancias, métodos de medición, requisitos de empaque y documentos aplicables. También debe identificarse y conservarse correctamente.",
+          en: "Not by itself. A sample is a visual and physical reference, but it should be supported by a written specification, tolerances, measurement methods, packing requirements and applicable documents. It must also be correctly identified and retained.",
+        },
+      },
+      {
+        question: { es: "¿Qué dimensiones deben comprobarse en el piso SPC?", en: "Which SPC flooring dimensions should be checked?" },
+        answer: {
+          es: "Según la especificación, pueden revisarse largo, ancho, grosor total, escuadra, rectitud, bisel y otros elementos definidos. La capa de desgaste y la base requieren métodos de verificación apropiados y no deben inferirse únicamente del grosor total.",
+          en: "Depending on the specification, checks may include length, width, total thickness, squareness, straightness, bevel and other defined features. Wear layer and backing require appropriate verification methods and should not be inferred from total thickness alone.",
+        },
+      },
+      {
+        question: { es: "¿Cómo debe evaluarse la variación de color o diseño?", en: "How should colour or décor variation be evaluated?" },
+        answer: {
+          es: "Compare tablas completas bajo una iluminación acordada con la muestra aprobada y con piezas tomadas de diferentes cajas. Distinga la variación prevista del diseño de manchas, diferencias de lote u otros defectos no aceptados.",
+          en: "Compare full planks under agreed lighting with the approved sample and with pieces taken from different cartons. Separate intended design variation from staining, batch differences or other unaccepted defects.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe ocurrir si la inspección encuentra una desviación?", en: "What should happen if an inspection finds a deviation?" },
+        answer: {
+          es: "Registre el hallazgo, la cantidad afectada, las referencias y la evidencia. El comprador y el proveedor deben acordar por escrito la clasificación, el retrabajo, la reposición, una nueva inspección u otra disposición antes de autorizar el embarque.",
+          en: "Record the finding, affected quantity, references and evidence. Buyer and supplier should agree in writing on classification, rework, replacement, reinspection or another disposition before shipment is authorized.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "inspection-basis",
+        title: { es: "1. Defina la base de la inspección antes de producir", en: "1. Define the inspection basis before production" },
+        paragraphs: {
+          es: [
+            "Una inspección solo es útil cuando el inspector sabe contra qué debe comparar el producto. Reúna la orden de compra, la especificación confirmada, la muestra aprobada, el arte de la caja y cualquier informe o requisito del mercado de destino que forme parte del acuerdo.",
+            "Defina también quién toma la decisión final. El inspector debe registrar hechos y resultados, pero la aceptación de una desviación comercial o técnica corresponde a la parte autorizada. Evite resolver diferencias importantes únicamente por mensajes informales.",
+          ],
+          en: [
+            "An inspection is useful only when the inspector knows what the product must be compared against. Assemble the purchase order, confirmed specification, approved sample, carton artwork and any report or destination-market requirement included in the agreement.",
+            "Also define who makes the final decision. The inspector should record facts and results, but acceptance of a commercial or technical deviation belongs to the authorized party. Avoid resolving material differences only through informal messages.",
+          ],
+        },
+        bullets: {
+          es: ["Orden y especificación vigentes", "Muestra aprobada identificada", "Criterios visuales y dimensionales", "Métodos de medición", "Requisitos de empaque y etiquetado", "Responsable autorizado para aceptar desviaciones"],
+          en: ["Current order and specification", "Identified approved sample", "Visual and dimensional criteria", "Measurement methods", "Packing and labelling requirements", "Authorized owner for deviation decisions"],
+        },
+      },
+      {
+        id: "sampling-traceability",
+        title: { es: "2. Acorde el muestreo y mantenga la trazabilidad", en: "2. Agree sampling and maintain traceability" },
+        paragraphs: {
+          es: [
+            "No existe un tamaño de muestra único para todos los pedidos. El plan debe considerar el tamaño del lote, los diseños, los lotes de producción, la criticidad de cada característica y el nivel de riesgo aceptado por el comprador. Si se utiliza un estándar de muestreo, indique la versión, el nivel y los criterios acordados.",
+            "Seleccione cajas de diferentes posiciones y registre el lote, el diseño y la ubicación. Una muestra concentrada en una sola caja o palé puede ocultar diferencias entre turnos, lotes o etapas de empaque.",
+          ],
+          en: [
+            "There is no single sample size for every order. The plan should consider lot size, décors, production batches, the criticality of each characteristic and the buyer’s accepted risk. If a sampling standard is used, state the version, level and agreed criteria.",
+            "Select cartons from different positions and record batch, décor and location. A sample concentrated in one carton or pallet may miss differences between shifts, batches or packing stages.",
+          ],
+        },
+        bullets: {
+          es: ["Tamaño y composición del lote", "Cantidad por diseño y lote", "Plan y momento de muestreo", "Cajas tomadas de distintas posiciones", "Identificación de cada muestra", "Registro de fotos y resultados por referencia"],
+          en: ["Lot size and composition", "Quantity by décor and batch", "Sampling plan and timing", "Cartons selected from different positions", "Identification of every sample", "Photographs and results recorded by reference"],
+        },
+      },
+      {
+        id: "dimensions-tolerances",
+        title: { es: "3. Compruebe dimensiones, tolerancias y construcción", en: "3. Check dimensions, tolerances and construction" },
+        paragraphs: {
+          es: [
+            "Confirme el largo, ancho y grosor total con herramientas adecuadas y en los puntos indicados por el método acordado. Cuando corresponda, revise también escuadra, rectitud, bisel y cualquier tolerancia funcional que pueda afectar el montaje.",
+            "No deduzca la capa de desgaste, la base acústica o la formulación del núcleo únicamente a partir del grosor total o del peso. Estas características requieren documentación o métodos específicos. Registre el equipo utilizado y evite comparar resultados obtenidos con procedimientos diferentes.",
+          ],
+          en: [
+            "Confirm length, width and total thickness with suitable tools and at the points required by the agreed method. Where applicable, also check squareness, straightness, bevel and any functional tolerance that can affect assembly.",
+            "Do not infer wear layer, acoustic backing or core formulation from total thickness or weight alone. These characteristics require documentation or specific methods. Record the equipment used and avoid comparing results obtained through different procedures.",
+          ],
+        },
+        bullets: {
+          es: ["Largo, ancho y grosor total", "Método y puntos de medición", "Escuadra y rectitud cuando se especifiquen", "Geometría y consistencia del bisel", "Estructura y base correctas", "Resultados comparados con tolerancias acordadas"],
+          en: ["Length, width and total thickness", "Measurement method and points", "Squareness and straightness where specified", "Bevel geometry and consistency", "Correct construction and backing", "Results compared with agreed tolerances"],
+        },
+      },
+      {
+        id: "surface-decor",
+        title: { es: "4. Revise superficie, diseño, color y acabado", en: "4. Review surface, décor, colour and finish" },
+        paragraphs: {
+          es: [
+            "Examine tablas completas bajo una iluminación representativa. Compare el color, el diseño, la textura, el brillo y el bisel con la muestra aprobada, tomando piezas de varias cajas para observar la consistencia del lote y la variación prevista del diseño.",
+            "Registre rayas, manchas, contaminación, impresión incompleta, daños de borde u otros hallazgos según las categorías acordadas. Una fotografía aislada puede distorsionar el color; incluya referencias, iluminación y vistas generales cuando documente una diferencia visual.",
+          ],
+          en: [
+            "Examine full planks under representative lighting. Compare colour, décor, texture, gloss and bevel with the approved sample, taking pieces from several cartons to observe batch consistency and intended design variation.",
+            "Record scratches, stains, contamination, incomplete printing, edge damage or other findings under the agreed categories. A single photograph can distort colour; include references, lighting information and wider views when documenting a visual difference.",
+          ],
+        },
+        bullets: {
+          es: ["Código de diseño y lote", "Color bajo iluminación acordada", "Textura y nivel de brillo", "Repetición y variación visual", "Bisel y acabado de bordes", "Rayas, manchas, impresión y contaminación"],
+          en: ["Décor code and batch", "Colour under agreed lighting", "Texture and gloss level", "Pattern repeat and visual variation", "Bevel and edge finish", "Scratches, stains, printing and contamination"],
+        },
+      },
+      {
+        id: "click-backing-assembly",
+        title: { es: "5. Inspeccione el encaje, la base y el montaje", en: "5. Inspect click profiles, backing and assembly" },
+        paragraphs: {
+          es: [
+            "Revise visualmente el perfil de encaje para detectar rebabas, roturas, residuos o mecanizado irregular. Arme varias tablas siguiendo la secuencia indicada para el perfil y observe la alineación, el cierre de las juntas y cualquier escalón visible sin forzar las piezas.",
+            "Cuando el producto incluya IXPE o EVA, confirme el material y el espesor especificados mediante el método acordado, además de la cobertura, la adhesión y el estado de los bordes. El nombre de una licencia o sistema de encaje no sustituye la inspección del producto terminado.",
+          ],
+          en: [
+            "Visually inspect the click profile for burrs, breakage, debris or irregular machining. Assemble several planks using the sequence specified for the profile and observe alignment, joint closure and visible lipping without forcing the pieces.",
+            "Where IXPE or EVA is included, confirm the specified material and thickness through the agreed method, together with coverage, bonding and edge condition. A licence or click-system name does not replace inspection of the finished product.",
+          ],
+        },
+        bullets: {
+          es: ["Perfil correcto y limpio", "Sin rebabas ni roturas visibles", "Secuencia de montaje correspondiente", "Juntas alineadas y cerradas", "Base correcta, uniforme y adherida", "Muestras conservadas si aparece una desviación"],
+          en: ["Correct and clean profile", "No visible burrs or breakage", "Correct assembly sequence", "Aligned and closed joints", "Correct, even and bonded backing", "Samples retained when a deviation appears"],
+        },
+      },
+      {
+        id: "packing-label-weight",
+        title: { es: "6. Verifique empaque, etiquetas y peso", en: "6. Verify packing, labels and weight" },
+        paragraphs: {
+          es: [
+            "Compruebe las piezas y los metros cuadrados por caja, el estado del cartón, la protección interior, la etiqueta, las marcas de embarque y la configuración del palé. Las referencias deben coincidir con la cotización, la orden, la lista de empaque y la factura.",
+            "Pese cajas terminadas de acuerdo con el plan acordado y registre los resultados. La estimación de carga debe actualizarse con el peso bruto confirmado, incluyendo palés y protección adicional, antes de cerrar la reserva del contenedor.",
+          ],
+          en: [
+            "Check pieces and square metres per carton, carton condition, internal protection, label, shipping marks and pallet configuration. References should match the quotation, order, packing list and invoice.",
+            "Weigh finished cartons under the agreed plan and record the results. The loading estimate should be updated with confirmed gross weight, including pallets and additional protection, before the container booking is finalized.",
+          ],
+        },
+        bullets: {
+          es: ["Piezas y metros cuadrados por caja", "Caja, bolsa, protección y flejes", "Etiqueta, lote y código de diseño", "Peso neto y bruto comprobados", "Cajas por palé y estado del palé", "Datos coherentes en todos los documentos"],
+          en: ["Pieces and square metres per carton", "Carton, bag, protection and straps", "Label, batch and décor code", "Checked net and gross weight", "Cartons per pallet and pallet condition", "Consistent data across all documents"],
+        },
+      },
+      {
+        id: "records-release",
+        title: { es: "7. Documente hallazgos y controle la liberación", en: "7. Document findings and control release" },
+        paragraphs: {
+          es: [
+            "El informe debe permitir que una persona que no estuvo presente entienda qué se revisó, cómo se midió y qué se encontró. Incluya identificación del pedido, fecha, ubicación, estado de producción, muestras, herramientas, resultados, fotografías y desviaciones abiertas.",
+            "No convierta automáticamente un informe de inspección en autorización de embarque. Las desviaciones deben clasificarse y resolverse por escrito. Si se realiza retrabajo o reposición, defina el alcance de la nueva revisión antes de liberar el pedido.",
+          ],
+          en: [
+            "The report should allow someone who was not present to understand what was checked, how it was measured and what was found. Include order identity, date, location, production status, samples, tools, results, photographs and open deviations.",
+            "Do not automatically treat an inspection report as shipment authorization. Deviations should be classified and resolved in writing. If rework or replacement takes place, define the scope of reinspection before releasing the order.",
+          ],
+        },
+        bullets: {
+          es: ["Identificación del pedido y del lote", "Estado del producto al inspeccionar", "Muestras, herramientas y métodos", "Resultados y evidencia fotográfica", "Desviaciones y cantidad afectada", "Acción correctiva y nueva inspección", "Autorización escrita antes del embarque"],
+          en: ["Order and lot identification", "Product status at inspection", "Samples, tools and methods", "Results and photographic evidence", "Deviations and affected quantity", "Corrective action and reinspection", "Written authorization before shipment"],
+        },
+      },
+    ],
+  },
+  {
+    slug: "wpc-wall-panel-price-guide",
+    localizedSlug: { es: "guia-precios-panel-pared-wpc" },
+    publishedAt: "2026-10-29",
+    category: { es: "Guía de precios", en: "Price guide" },
+    title: {
+      es: "Precio del panel de pared WPC: cómo comparar cotizaciones FOB",
+      en: "WPC Wall Panel Price Guide: How to Compare FOB Quotations",
+    },
+    seoTitle: {
+      es: "Precio de panel de pared WPC y cotización | SINOQI",
+      en: "WPC Wall Panel Price & FOB Quote Guide | SINOQI",
+    },
+    description: {
+      es: "Conozca qué cambia el precio FOB de los paneles de pared WPC y qué debe especificar para comparar perfiles, acabados, empaque y cotizaciones.",
+      en: "Learn what changes WPC wall panel FOB prices and what importers should specify to compare profiles, finishes, packing and supplier quotations.",
+    },
+    introduction: {
+      es: "Dos paneles de pared WPC con una apariencia similar pueden utilizar perfiles, estructuras, superficies y empaques diferentes. Por eso, comparar solamente el precio por pieza o por metro cuadrado puede ocultar diferencias importantes. Esta guía ayuda a importadores, distribuidores y compradores de proyectos a preparar una solicitud comparable y a entender qué debe confirmarse antes de evaluar una cotización FOB.",
+      en: "Two WPC wall panels with a similar appearance can use different profiles, structures, surfaces and packing. Comparing only the price per piece or square metre can therefore hide material differences. This guide helps importers, distributors and project buyers prepare a comparable inquiry and understand what must be confirmed before evaluating an FOB quotation.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/wpc-wall-price-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de perfiles y acabados de paneles de pared WPC para comparar cotizaciones",
+      en: "Illustration of WPC wall panel profiles and finishes for quotation comparison",
+    },
+    coverCaption: {
+      es: "Ilustración de configuraciones de paneles de pared WPC. El perfil, el acabado, el empaque y el precio finales dependen de la cotización y la muestra aprobada.",
+      en: "WPC wall panel configuration illustration. Final profile, finish, packing and price depend on the quotation and approved sample.",
+    },
+    scopeNote: {
+      es: "Esta guía corresponde a paneles decorativos WPC para paredes interiores. Los productos para revestimiento exterior deben cotizarse y evaluarse por separado. Los precios pueden cambiar con materias primas, tipo de cambio, especificación, mezcla de diseños, cantidad, empaque y condiciones comerciales; solicite siempre una cotización formal vigente.",
+      en: "This guide covers indoor decorative WPC wall panels. Exterior cladding products should be quoted and evaluated separately. Prices can change with raw materials, exchange rates, specification, décor mix, quantity, packing and commercial terms; always request a current formal quotation.",
+    },
+    images: [
+      {
+        src: "/assets/wpc-wall-price-02-profiles.png",
+        afterSectionId: "profile-dimensions",
+        alt: {
+          es: "Ilustración comparativa de secciones y relieves de perfiles de panel de pared WPC",
+          en: "Illustration comparing WPC wall panel profile sections and relief depths",
+        },
+        caption: {
+          es: "Compare ancho, grosor, estructura hueca, relieve y cobertura útil usando la ficha del perfil cotizado.",
+          en: "Compare width, thickness, hollow structure, relief and usable coverage using the quoted profile specification.",
+        },
+      },
+      {
+        src: "/assets/wpc-wall-price-03-packing.png",
+        afterSectionId: "packing-logistics",
+        alt: {
+          es: "Ilustración de empaque de exportación para paneles de pared WPC largos",
+          en: "Illustration of export packing for long WPC wall panels",
+        },
+        caption: {
+          es: "Confirme piezas por caja, dimensiones, peso bruto, protección y método de descarga antes de cerrar el plan logístico.",
+          en: "Confirm pieces per carton, dimensions, gross weight, protection and unloading method before finalizing the logistics plan.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre el precio de paneles de pared WPC",
+      en: "WPC wall panel price FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Cotización WPC", en: "WPC quotation" },
+      title: { es: "Solicite una cotización comparable de paneles WPC", en: "Request a Comparable WPC Wall Panel Quotation" },
+      body: {
+        es: "Comparta el perfil o referencia, el diseño, la longitud, la cantidad por color, el empaque, la personalización y el destino. Prepararemos la cotización según la configuración confirmada.",
+        en: "Share the profile or reference, décor, length, quantity per colour, packing, customization and destination. We will prepare the quotation from the confirmed configuration.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Por qué varía tanto el precio de los paneles de pared WPC?", en: "Why do WPC wall panel prices vary so much?" },
+        answer: {
+          es: "El nombre WPC no define una configuración única. El perfil, las dimensiones, la estructura, la formulación, el peso, el acabado, el diseño, la longitud, el empaque, la cantidad y las condiciones comerciales pueden cambiar el precio. Compare cotizaciones basadas en la misma especificación.",
+          en: "The WPC name does not define one configuration. Profile, dimensions, structure, formulation, weight, finish, décor, length, packing, quantity and commercial terms can all change the price. Compare quotations based on the same specification.",
+        },
+      },
+      {
+        question: { es: "¿Qué información se necesita para cotizar paneles de pared WPC?", en: "What information is needed for a WPC wall panel quotation?" },
+        answer: {
+          es: "Indique el perfil o referencia de catálogo, dimensiones, longitud, diseño y color, cantidad por combinación, uso interior previsto, empaque, personalización, destino y condiciones comerciales solicitadas. Una imagen de aplicación por sí sola no identifica el producto.",
+          en: "Provide the profile or catalog reference, dimensions, length, décor and colour, quantity per combination, intended indoor use, packing, customization, destination and requested commercial terms. An application image alone does not identify the product.",
+        },
+      },
+      {
+        question: { es: "¿Un panel WPC más ancho siempre ofrece un menor costo instalado?", en: "Does a wider WPC wall panel always reduce installed cost?" },
+        answer: {
+          es: "No necesariamente. La cobertura útil, el perfil, el relieve, los recortes, los accesorios, la estructura de soporte y la mano de obra influyen en el costo instalado. Compare el sistema completo y las condiciones reales del proyecto.",
+          en: "Not necessarily. Usable coverage, profile, relief, cutting waste, accessories, support structure and labour influence installed cost. Compare the complete system and actual project conditions.",
+        },
+      },
+      {
+        question: { es: "¿El acabado tipo madera cambia el precio?", en: "Does a wood-look finish change the price?" },
+        answer: {
+          es: "Puede hacerlo, según el material de superficie, el diseño, el proceso, el volumen por referencia y los requisitos de aprobación. Confirme el acabado mediante una muestra física y pida que la referencia cotizada aparezca por escrito.",
+          en: "It can, depending on the surface material, décor, process, volume per reference and approval requirements. Confirm the finish through a physical sample and ask for the quoted reference to be stated in writing.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se estima la carga de un contenedor de paneles WPC?", en: "How is container loading estimated for WPC wall panels?" },
+        answer: {
+          es: "La estimación utiliza la longitud, piezas por caja, dimensiones y peso bruto de la caja, protección, palés cuando correspondan y límites del contenedor y la ruta. Debe actualizarse después de confirmar el empaque terminado.",
+          en: "The estimate uses panel length, pieces per carton, carton dimensions and gross weight, protection, pallets where applicable and container and route limits. It should be updated after finished packing is confirmed.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "compare-shared-specification",
+        title: { es: "1. Compare precios sobre una especificación común", en: "1. Compare prices against one shared specification" },
+        paragraphs: {
+          es: [
+            "Una oferta descrita solamente como “panel WPC” no permite una comparación precisa. Dos proveedores pueden utilizar perfiles, coberturas útiles, estructuras huecas, formulaciones, acabados y cantidades por caja diferentes, aunque las fotografías parezcan similares.",
+            "Antes de revisar el precio FOB, confirme la moneda, el puerto de embarque, la vigencia, las condiciones de pago y qué incluye la oferta. Pida que cualquier excepción a su solicitud aparezca claramente por escrito.",
+          ],
+          en: [
+            "An offer described only as a “WPC panel” does not support an accurate comparison. Two suppliers can use different profiles, usable coverage, hollow structures, formulations, finishes and pieces per carton even when their photographs look similar.",
+            "Before reviewing the FOB price, confirm currency, port of loading, validity, payment terms and what the offer includes. Ask suppliers to state every exception to your request clearly in writing.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia exacta del perfil", "Dimensiones y longitud", "Diseño, color y acabado", "Cantidad por combinación", "Empaque incluido", "Moneda, puerto FOB, pago y vigencia"],
+          en: ["Exact profile reference", "Dimensions and length", "Décor, colour and finish", "Quantity per combination", "Included packing", "Currency, FOB port, payment and validity"],
+        },
+      },
+      {
+        id: "profile-dimensions",
+        title: { es: "2. Perfil, dimensiones y consumo de material", en: "2. Profile, dimensions and material use" },
+        paragraphs: {
+          es: [
+            "El ancho nominal no describe por sí solo el panel. La geometría del perfil, el grosor, la profundidad del relieve, la distribución de cavidades y la cobertura útil influyen en el consumo de material, el peso, la rigidez y el aspecto instalado.",
+            "Compare dibujos o muestras de sección, no solo dimensiones escritas. Confirme cómo se unen las piezas y qué parte queda visible después del montaje. Un precio por pieza puede parecer menor y aun así ofrecer una cobertura útil distinta.",
+          ],
+          en: [
+            "Nominal width alone does not describe the panel. Profile geometry, thickness, relief depth, cavity layout and usable coverage influence material use, weight, rigidity and installed appearance.",
+            "Compare section drawings or samples, not only written dimensions. Confirm how pieces join and what remains visible after installation. A lower price per piece can still represent different usable coverage.",
+          ],
+        },
+        bullets: {
+          es: ["Ancho, grosor y longitud nominales", "Cobertura útil después del montaje", "Sección y distribución de cavidades", "Relieve, separación y ritmo visual", "Peso declarado por pieza o metro", "Tolerancias dimensionales acordadas"],
+          en: ["Nominal width, thickness and length", "Usable coverage after assembly", "Section and cavity layout", "Relief, spacing and visual rhythm", "Declared weight per piece or metre", "Agreed dimensional tolerances"],
+        },
+      },
+      {
+        id: "surface-finish",
+        title: { es: "3. Diseño, color y acabado de superficie", en: "3. Décor, colour and surface finish" },
+        paragraphs: {
+          es: [
+            "Los acabados efecto madera, neutros, grises y colores uniformes pueden utilizar materiales y procesos de superficie diferentes. El costo también puede cambiar con la referencia del diseño, la cantidad por color, la repetición visual y los requisitos de brillo o textura.",
+            "Seleccione referencias del catálogo vigente y confirme cada combinación mediante una muestra física. Las imágenes digitales ayudan a crear una lista corta, pero no sustituyen la aprobación de color, textura, unión y aspecto bajo la iluminación del mercado o proyecto.",
+          ],
+          en: [
+            "Wood-look, neutral, grey and uniform finishes can use different surface materials and processes. Cost may also change with décor reference, quantity per colour, visual repeat and gloss or texture requirements.",
+            "Select references from the current catalog and confirm each combination through a physical sample. Digital images help build a shortlist but do not replace approval of colour, texture, joints and appearance under representative lighting.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia de diseño o color", "Material y proceso de superficie", "Textura y nivel de brillo", "Repetición y variación visual", "Cantidad requerida por referencia", "Muestra aprobada para el pedido"],
+          en: ["Décor or colour reference", "Surface material and process", "Texture and gloss level", "Visual repeat and variation", "Required quantity per reference", "Approved order sample"],
+        },
+      },
+      {
+        id: "formulation-quality",
+        title: { es: "4. Formulación, peso, tolerancias y control", en: "4. Formulation, weight, tolerances and control" },
+        paragraphs: {
+          es: [
+            "WPC es una categoría amplia que combina material derivado de madera con una matriz polimérica. El nombre no confirma una receta universal. La formulación y el proceso pueden influir en el peso, el mecanizado, la estabilidad y la apariencia, por lo que estos puntos deben revisarse para el perfil seleccionado.",
+            "No utilice únicamente el color del núcleo o una cifra de peso como prueba de calidad. Pida la información técnica disponible, las tolerancias acordadas y cualquier informe que exija su mercado o proyecto. Compare la producción con la muestra aprobada.",
+          ],
+          en: [
+            "WPC is a broad category combining wood-derived material with a polymer matrix. The name does not confirm one universal recipe. Formulation and processing can influence weight, machining, stability and appearance, so these points should be reviewed for the selected profile.",
+            "Do not use core colour or one weight figure alone as proof of quality. Request available technical information, agreed tolerances and any report required by the market or project. Compare production against the approved sample.",
+          ],
+        },
+        bullets: {
+          es: ["Categoría y uso interior confirmados", "Peso y método de medición", "Tolerancias de dimensiones y superficie", "Unión y mecanizado del perfil", "Informes requeridos por destino", "Consistencia con la muestra aprobada"],
+          en: ["Confirmed category and indoor use", "Weight and measurement method", "Dimensional and surface tolerances", "Profile joint and machining", "Destination-required reports", "Consistency with approved sample"],
+        },
+      },
+      {
+        id: "quantity-customization",
+        title: { es: "5. Cantidad, mezcla de diseños y personalización", en: "5. Quantity, décor mix and customization" },
+        paragraphs: {
+          es: [
+            "La cantidad total no cuenta toda la historia. Un pedido dividido entre muchos perfiles, diseños y colores puede requerir más cambios, materiales de superficie y empaques que el mismo volumen concentrado en pocas referencias.",
+            "Separe la cantidad por combinación y confirme la cantidad mínima vigente en la cotización. Si solicita marca privada, caja impresa, etiqueta especial, película exclusiva o una longitud no estándar, detalle quién prepara los archivos, los costos aplicables y el proceso de aprobación.",
+          ],
+          en: [
+            "Total quantity does not tell the complete story. An order divided among many profiles, décors and colours can require more changeovers, surface materials and packing than the same volume concentrated in fewer references.",
+            "Separate quantity by combination and confirm the current minimum in the quotation. For private label, printed cartons, special labels, exclusive film or non-standard length, define who prepares artwork, applicable costs and the approval process.",
+          ],
+        },
+        bullets: {
+          es: ["Cantidad total y por referencia", "Número de perfiles, diseños y colores", "Cantidad mínima vigente por combinación", "Longitud estándar o personalizada", "Marca privada, etiqueta y caja impresa", "Muestra y archivo aprobados antes de producir"],
+          en: ["Total quantity and quantity per reference", "Number of profiles, décors and colours", "Current minimum per combination", "Standard or customized length", "Private label, label and printed carton", "Approved sample and artwork before production"],
+        },
+      },
+      {
+        id: "packing-logistics",
+        title: { es: "6. Empaque, manipulación y logística", en: "6. Packing, handling and logistics" },
+        paragraphs: {
+          es: [
+            "Los paneles largos requieren una protección adecuada en bordes y extremos. Confirme piezas por caja, dimensiones exteriores, peso bruto, cantoneras, flejes, película, palés y método de apilado. Una caja más resistente o personalizada puede cambiar el costo y la carga estimada.",
+            "Calcule el contenedor con los datos del empaque terminado, no con una cifra genérica. Revise límites de volumen y peso, método de carga, descarga con montacargas o manual, requisitos de madera y reglas del puerto y país de destino.",
+          ],
+          en: [
+            "Long panels need suitable edge and end protection. Confirm pieces per carton, external dimensions, gross weight, corner protection, straps, film, pallets and stacking method. Stronger or customized cartons can change both cost and estimated loading.",
+            "Calculate the container from finished packing data, not a generic figure. Review volume and weight limits, loading method, forklift or manual unloading, wood-packaging requirements and destination port and country rules.",
+          ],
+        },
+        bullets: {
+          es: ["Piezas y cobertura por caja", "Dimensiones y peso bruto de la caja", "Protección de bordes y extremos", "Caja neutra o personalizada", "Palés y requisitos de madera", "Estimación de carga y método de descarga"],
+          en: ["Pieces and coverage per carton", "Carton dimensions and gross weight", "Edge and end protection", "Neutral or customized carton", "Pallets and wood requirements", "Loading estimate and unloading method"],
+        },
+      },
+      {
+        id: "quotation-checklist",
+        title: { es: "7. Lista completa para solicitar una cotización WPC", en: "7. Complete WPC wall panel quotation checklist" },
+        paragraphs: {
+          es: [
+            "Una solicitud completa permite que varios proveedores coticen la misma base. Distinga requisitos obligatorios de opciones abiertas y pida que la oferta identifique sustituciones, exclusiones y datos todavía pendientes de confirmación.",
+            "Antes de comparar el precio final, revise la muestra, la ficha del perfil, el empaque y las condiciones comerciales en conjunto. El pedido debe seguir la especificación confirmada y no una fotografía o descripción genérica enviada al inicio.",
+          ],
+          en: [
+            "A complete request allows several suppliers to quote the same basis. Separate mandatory requirements from open options and ask the offer to identify substitutions, exclusions and data still awaiting confirmation.",
+            "Before comparing the final price, review the sample, profile specification, packing and commercial terms together. The order should follow the confirmed specification rather than a generic photograph or description sent at the beginning.",
+          ],
+        },
+        bullets: {
+          es: ["Perfil, dimensiones, longitud y cobertura útil", "Diseño, color, textura y acabado", "Cantidad total y cantidad por combinación", "Peso y tolerancias requeridas", "Uso interior y mercado de destino", "Caja, etiqueta, protección y palé", "Personalización y marca privada", "Muestra e informes requeridos", "Puerto FOB, destino y estimación de carga", "Moneda, pago, plazo y vigencia de la oferta"],
+          en: ["Profile, dimensions, length and usable coverage", "Décor, colour, texture and finish", "Total quantity and quantity per combination", "Required weight and tolerances", "Indoor use and destination market", "Carton, label, protection and pallet", "Customization and private label", "Required sample and reports", "FOB port, destination and loading estimate", "Currency, payment, lead time and quotation validity"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
