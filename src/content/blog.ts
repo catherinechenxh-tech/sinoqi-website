@@ -2887,6 +2887,245 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "wpc-wall-panel-installation-guide",
+    localizedSlug: { es: "guia-instalacion-paneles-pared-wpc" },
+    publishedAt: "2026-10-29",
+    category: { es: "Guía de instalación", en: "Installation guide" },
+    title: {
+      es: "Guía de instalación de paneles de pared WPC para interiores",
+      en: "WPC Wall Panel Installation Guide for Interior Projects",
+    },
+    seoTitle: {
+      es: "Guía de instalación de paneles WPC | SINOQI",
+      en: "WPC Wall Panel Installation Guide | SINOQI",
+    },
+    description: {
+      es: "Aprenda a revisar la pared, planificar el trazado, instalar paneles WPC y controlar remates, juntas y entrega en proyectos interiores.",
+      en: "Learn how to inspect the wall, plan the layout, install WPC panels, and check joints, trims and handover for interior projects.",
+    },
+    introduction: {
+      es: "Una instalación ordenada empieza antes de fijar el primer panel. El perfil suministrado, el estado de la pared, el trazado, los accesorios y el método de fijación deben revisarse como un solo sistema. Esta guía ayuda a importadores, distribuidores, instaladores y compradores de proyectos a preparar la obra, coordinar responsabilidades y reducir correcciones evitables.",
+      en: "A reliable installation starts before the first panel is fixed. The supplied profile, wall condition, layout, accessories and fixing method must be reviewed as one system. This guide helps importers, distributors, installers and project buyers prepare the site, coordinate responsibilities and reduce avoidable rework.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/wpc-wall-installation-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de instalación de paneles acanalados WPC en una pared interior",
+      en: "Illustration of fluted WPC wall panel installation on an interior wall",
+    },
+    coverCaption: {
+      es: "Ilustración de instalación interior. El sistema de fijación debe corresponder al perfil, al sustrato y a las instrucciones confirmadas para el proyecto.",
+      en: "Interior installation illustration. The fixing system must match the profile, substrate and instructions confirmed for the project.",
+    },
+    scopeNote: {
+      es: "Esta guía se refiere a paneles decorativos WPC para paredes interiores, no a revestimientos exteriores. No sustituye las instrucciones del producto, la evaluación del sustrato, la especificación del proyecto ni los códigos locales. Confirme siempre el perfil, los accesorios y el método de fijación con el proveedor antes de instalar.",
+      en: "This guide covers decorative WPC panels for interior walls, not exterior cladding. It does not replace product instructions, substrate assessment, the project specification or local codes. Always confirm the profile, accessories and fixing method with the supplier before installation.",
+    },
+    images: [
+      {
+        src: "/assets/wpc-wall-installation-02-preparation.png",
+        afterSectionId: "inspect-wall",
+        alt: {
+          es: "Ilustración de revisión y trazado de una pared antes de instalar paneles WPC",
+          en: "Illustration of wall inspection and layout marking before WPC panel installation",
+        },
+        caption: {
+          es: "Revise planeidad, solidez, humedad visible, dimensiones y líneas de referencia antes de cortar o fijar paneles.",
+          en: "Check flatness, soundness, visible moisture, dimensions and reference lines before cutting or fixing panels.",
+        },
+      },
+      {
+        src: "/assets/wpc-wall-installation-03-finished.png",
+        afterSectionId: "finish-details",
+        alt: {
+          es: "Ilustración de una pared interior terminada con paneles acanalados WPC y remates",
+          en: "Illustration of a finished interior fluted WPC panel wall with edge trims",
+        },
+        caption: {
+          es: "El control final debe incluir alineación, juntas, esquinas, transiciones, recortes y limpieza de la superficie.",
+          en: "Final inspection should include alignment, joints, corners, transitions, cut-outs and surface cleaning.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre la instalación de paneles WPC",
+      en: "WPC wall panel installation FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Proyecto de paneles WPC", en: "WPC wall panel project" },
+      title: { es: "Prepare su solicitud de paneles WPC", en: "Prepare Your WPC Wall Panel Inquiry" },
+      body: {
+        es: "Envíenos el perfil o referencia, dimensiones de la pared, tipo de sustrato, trazado, accesorios, cantidad y destino. Revisaremos la configuración y prepararemos una cotización según los datos confirmados.",
+        en: "Send us the profile or reference, wall dimensions, substrate type, layout, accessories, quantity and destination. We will review the configuration and prepare a quotation from the confirmed information.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Se pueden instalar paneles WPC directamente sobre una pared existente?", en: "Can WPC wall panels be installed directly over an existing wall?" },
+        answer: {
+          es: "Depende del perfil, del sistema de fijación y del estado de la superficie. La pared debe evaluarse para confirmar que esté firme, suficientemente plana, limpia y adecuada para el método previsto. Pintura suelta, humedad activa, irregularidades o un sustrato débil deben resolverse antes de instalar.",
+          en: "It depends on the profile, fixing system and condition of the surface. The wall must be assessed to confirm it is sound, sufficiently flat, clean and suitable for the intended method. Loose paint, active moisture, irregularities or a weak substrate must be addressed before installation.",
+        },
+      },
+      {
+        question: { es: "¿Es mejor usar adhesivo o una estructura con grapas o tornillos?", en: "Is adhesive better than battens, clips or screws?" },
+        answer: {
+          es: "No existe un método universal. La elección depende del diseño del perfil, el sustrato, la necesidad de nivelación, los accesorios y las instrucciones del sistema. Confirme la compatibilidad del adhesivo o de los fijadores y prepare un detalle aprobado antes de comenzar la obra.",
+          en: "There is no universal method. The choice depends on profile design, substrate, levelling needs, accessories and system instructions. Confirm adhesive or fastener compatibility and approve an installation detail before site work begins.",
+        },
+      },
+      {
+        question: { es: "¿Cómo deben resolverse las esquinas, los enchufes y los bordes?", en: "How should corners, outlets and exposed edges be handled?" },
+        answer: {
+          es: "Defina estos puntos durante el trazado. Confirme perfiles de remate, holguras, secuencia de montaje y acceso a cajas eléctricas con el responsable técnico. Los cortes deben medirse en obra y quedar protegidos o terminados según el detalle aprobado.",
+          en: "Define these points during layout planning. Confirm trims, clearances, installation sequence and access to electrical boxes with the responsible technical party. Cut-outs should be measured on site and protected or finished according to the approved detail.",
+        },
+      },
+      {
+        question: { es: "¿Los paneles WPC para interiores pueden usarse en zonas húmedas?", en: "Can indoor WPC wall panels be used in wet areas?" },
+        answer: {
+          es: "No debe asumirse solo por el nombre WPC. Confirme el uso previsto del producto, la exposición real al agua, la ventilación, el sustrato, el sellado y los requisitos locales. Las áreas con contacto directo o continuo con agua requieren una evaluación específica del sistema completo.",
+          en: "This should not be assumed from the WPC name alone. Confirm the product's intended use, actual water exposure, ventilation, substrate, sealing and local requirements. Areas with direct or continuous water contact require a specific assessment of the complete system.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe incluir la entrega de una instalación de paneles WPC?", en: "What should be included in the handover of a WPC panel installation?" },
+        answer: {
+          es: "Revise alineación, juntas, remates, esquinas, recortes, fijación visible cuando corresponda, limpieza y daños. Registre las referencias instaladas, conserve material de reposición acordado y entregue las indicaciones de limpieza y mantenimiento disponibles para el producto.",
+          en: "Review alignment, joints, trims, corners, cut-outs, visible fixing where applicable, cleanliness and damage. Record installed references, retain any agreed spare material and provide the available cleaning and maintenance guidance for the product.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "confirm-system",
+        title: { es: "1. Confirme el panel y el sistema de instalación", en: "1. Confirm the panel and installation system" },
+        paragraphs: {
+          es: [
+            "Antes de movilizar al instalador, identifique la referencia exacta del panel, sus dimensiones, la cobertura útil, la dirección de montaje y la forma en que se unen las piezas. Perfiles visualmente similares pueden utilizar bordes, cavidades y accesorios diferentes.",
+            "Revise la muestra aprobada, el dibujo del perfil, los remates y las instrucciones disponibles como un conjunto. No seleccione adhesivos, grapas, tornillos o rastreles por costumbre: su compatibilidad depende del perfil, del sustrato y de la especificación del proyecto.",
+          ],
+          en: [
+            "Before mobilizing installers, identify the exact panel reference, dimensions, usable coverage, installation direction and the way pieces join. Profiles that look similar can use different edges, cavities and accessories.",
+            "Review the approved sample, profile drawing, trims and available instructions as one package. Do not select adhesive, clips, screws or battens by habit: compatibility depends on the profile, substrate and project specification.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia y lote del panel", "Dimensiones y cobertura útil", "Dirección y secuencia de montaje", "Sistema de unión del perfil", "Remates y accesorios compatibles", "Método de fijación confirmado"],
+          en: ["Panel reference and batch", "Dimensions and usable coverage", "Installation direction and sequence", "Profile joint system", "Compatible trims and accessories", "Confirmed fixing method"],
+        },
+      },
+      {
+        id: "inspect-wall",
+        title: { es: "2. Revise la pared y las condiciones de la obra", en: "2. Inspect the wall and site conditions" },
+        paragraphs: {
+          es: [
+            "El acabado final seguirá las condiciones de la base. Compruebe que la pared o estructura esté firme, suficientemente plana y limpia para el sistema previsto. Identifique pintura suelta, polvo, salientes, huecos, filtraciones, humedad activa y servicios ocultos antes de perforar o aplicar adhesivo.",
+            "Registre las dimensiones reales y compare el sitio con planos, muebles, puertas, zócalos, cielos rasos e instalaciones eléctricas. Si se requiere una subestructura para corregir la base o crear una cámara, su material, alineación y fijación deben definirse por la parte técnica responsable.",
+          ],
+          en: [
+            "The finished surface will follow the condition of its base. Check that the wall or supporting structure is sound, sufficiently flat and clean for the intended system. Identify loose paint, dust, high spots, voids, leaks, active moisture and concealed services before drilling or applying adhesive.",
+            "Record actual dimensions and compare the site with drawings, furniture, doors, skirtings, ceilings and electrical services. If a substructure is needed to correct the base or create a cavity, its material, alignment and fixing must be defined by the responsible technical party.",
+          ],
+        },
+        bullets: {
+          es: ["Solidez y planeidad del sustrato", "Superficie limpia y compatible", "Humedad o filtraciones resueltas", "Servicios ocultos identificados", "Dimensiones verificadas en obra", "Condiciones ambientales adecuadas para el sistema"],
+          en: ["Substrate soundness and flatness", "Clean and compatible surface", "Moisture or leaks resolved", "Concealed services identified", "Site dimensions verified", "Environmental conditions suitable for the system"],
+        },
+      },
+      {
+        id: "plan-layout",
+        title: { es: "3. Planifique el trazado antes de cortar", en: "3. Plan the layout before cutting" },
+        paragraphs: {
+          es: [
+            "Marque una línea inicial nivelada o aplomada y haga un trazado en seco. Calcule la distribución con la cobertura útil, no solo con el ancho nominal. Así podrá evitar una franja final incómoda y coordinar simetría, esquinas, puertas, enchufes y cambios de material.",
+            "Defina dónde comenzarán y terminarán los paneles, cómo se orientará el diseño y dónde quedarán las uniones. Si el proyecto mezcla referencias o lotes, establezca el orden y revise el aspecto bajo la iluminación real antes de fijar una superficie extensa.",
+          ],
+          en: [
+            "Mark a level or plumb starting line and prepare a dry layout. Calculate the arrangement from usable coverage, not only nominal width. This helps avoid an awkward final strip and coordinates symmetry, corners, doors, outlets and material transitions.",
+            "Define where panels start and finish, how the design will run and where joints will fall. If the project mixes references or batches, set the sequence and review the appearance under representative lighting before fixing a large area.",
+          ],
+        },
+        bullets: {
+          es: ["Línea inicial de referencia", "Cobertura útil y modulación", "Balance de primera y última pieza", "Posición de esquinas y transiciones", "Recortes para enchufes y servicios", "Secuencia por diseño, color y lote"],
+          en: ["Starting reference line", "Usable coverage and module", "Balance of first and last pieces", "Corner and transition positions", "Cut-outs for outlets and services", "Sequence by décor, colour and batch"],
+        },
+      },
+      {
+        id: "prepare-materials",
+        title: { es: "4. Prepare materiales, herramientas y una zona de prueba", en: "4. Prepare materials, tools and a trial area" },
+        paragraphs: {
+          es: [
+            "Almacene los paneles protegidos, sobre un apoyo adecuado y según las indicaciones del producto. Inspeccione perfiles, superficies, bordes, color y accesorios antes de cortar. Separe piezas dañadas o no conformes para evitar que entren en la pared terminada.",
+            "Prepare herramientas de medición y corte apropiadas para el perfil, además del equipo de protección requerido. Haga una zona de prueba que incluya una unión y un remate. Esta prueba permite verificar el corte, la apariencia, la compatibilidad de la fijación y la secuencia antes de continuar.",
+          ],
+          en: [
+            "Store panels protected, on suitable support and according to the product guidance. Inspect profiles, surfaces, edges, colour and accessories before cutting. Segregate damaged or non-conforming pieces so they do not enter the finished wall.",
+            "Prepare measuring and cutting tools suitable for the profile, together with the required protective equipment. Build a trial area that includes a joint and a trim. The trial helps verify cutting, appearance, fixing compatibility and sequence before work continues.",
+          ],
+        },
+        bullets: {
+          es: ["Paneles protegidos y revisados", "Accesorios y fijadores disponibles", "Herramientas adecuadas al perfil", "Equipo de protección para corte e instalación", "Zona de prueba aprobada", "Piezas no conformes separadas"],
+          en: ["Panels protected and inspected", "Accessories and fixings available", "Tools suitable for the profile", "Protective equipment for cutting and installation", "Approved trial area", "Non-conforming pieces segregated"],
+        },
+      },
+      {
+        id: "install-align",
+        title: { es: "5. Instale y controle la alineación progresivamente", en: "5. Install and check alignment progressively" },
+        paragraphs: {
+          es: [
+            "Coloque la primera pieza con especial cuidado, porque establece la referencia para las siguientes. Use el método confirmado y respete la secuencia del sistema. No fuerce las uniones ni utilice fijaciones que deformen el perfil o queden visibles fuera del detalle previsto.",
+            "Compruebe aplome, nivel, contacto, juntas y ritmo visual mientras avanza. Corrija una desviación cuando todavía afecta pocas piezas; esperar hasta el final puede convertir un ajuste sencillo en un desmontaje amplio. Mantenga la superficie protegida frente a polvo, golpes y trabajos simultáneos.",
+          ],
+          en: [
+            "Position the first piece with particular care because it sets the reference for those that follow. Use the confirmed method and follow the system sequence. Do not force joints or use fixings that distort the profile or remain visible outside the intended detail.",
+            "Check plumb, level, contact, joints and visual rhythm as work progresses. Correct drift while it still affects only a few pieces; waiting until the end can turn a simple adjustment into extensive removal. Protect the surface from dust, impact and simultaneous trades.",
+          ],
+        },
+        bullets: {
+          es: ["Primera pieza nivelada o aplomada", "Uniones cerradas sin forzar", "Fijación según el detalle aprobado", "Alineación revisada durante el avance", "Superficie protegida de daños", "Desviaciones corregidas de inmediato"],
+          en: ["First piece level or plumb", "Joints closed without forcing", "Fixing according to the approved detail", "Alignment checked during progress", "Surface protected from damage", "Deviations corrected promptly"],
+        },
+      },
+      {
+        id: "finish-details",
+        title: { es: "6. Resuelva esquinas, bordes, recortes y transiciones", en: "6. Finish corners, edges, cut-outs and transitions" },
+        paragraphs: {
+          es: [
+            "Los detalles determinan si la pared se percibe como un sistema terminado. Corte y presente en seco los remates de esquinas, encuentros con techo o zócalo, marcos de puertas y transiciones a otros materiales. Proteja los bordes expuestos según la solución aprobada.",
+            "Mida los recortes para enchufes, interruptores y servicios directamente en obra. Coordine el aislamiento eléctrico y el acceso futuro con personal autorizado. No cubra puntos que deban permanecer registrables ni confíe en el panel para corregir una caja o abertura mal posicionada.",
+          ],
+          en: [
+            "Details determine whether the wall reads as a finished system. Cut and dry-fit trims at corners, ceiling or skirting junctions, door frames and transitions to other materials. Protect exposed edges according to the approved solution.",
+            "Measure cut-outs for outlets, switches and services directly on site. Coordinate electrical isolation and future access with authorized personnel. Do not conceal points that must remain accessible or rely on the panel to correct a poorly positioned box or opening.",
+          ],
+        },
+        bullets: {
+          es: ["Esquinas internas y externas", "Bordes iniciales y finales", "Encuentros con techo y zócalo", "Marcos y transiciones", "Recortes medidos en obra", "Acceso a servicios conservado"],
+          en: ["Internal and external corners", "Starting and finishing edges", "Ceiling and skirting junctions", "Frames and transitions", "Cut-outs measured on site", "Service access maintained"],
+        },
+      },
+      {
+        id: "inspect-handover",
+        title: { es: "7. Inspeccione, limpie y documente la entrega", en: "7. Inspect, clean and document the handover" },
+        paragraphs: {
+          es: [
+            "Revise la pared desde cerca y desde la distancia prevista de uso. Compruebe alineación, continuidad visual, juntas, remates, recortes, daños y residuos. Limpie con el método indicado para la superficie; productos abrasivos o solventes no confirmados pueden afectar el acabado.",
+            "Documente las referencias y áreas instaladas, observaciones aceptadas y material de reposición. Entregue las instrucciones disponibles de limpieza y mantenimiento, y acuerde quién debe atender cualquier ajuste pendiente. Una entrega registrada facilita el servicio posterior para distribuidor, instalador y cliente.",
+          ],
+          en: [
+            "Inspect the wall both close up and from its intended viewing distance. Check alignment, visual continuity, joints, trims, cut-outs, damage and residue. Clean using the method specified for the surface; unconfirmed abrasives or solvents can affect the finish.",
+            "Record installed references and areas, accepted observations and spare material. Provide available cleaning and maintenance guidance and agree who will address any remaining adjustment. A documented handover makes after-sales service clearer for the distributor, installer and customer.",
+          ],
+        },
+        bullets: {
+          es: ["Alineación y ritmo visual", "Juntas y remates completos", "Recortes limpios y servicios accesibles", "Superficie sin daño ni residuos", "Referencias y áreas registradas", "Limpieza, mantenimiento y pendientes entregados"],
+          en: ["Alignment and visual rhythm", "Complete joints and trims", "Clean cut-outs and accessible services", "Surface free of damage and residue", "References and areas recorded", "Cleaning, maintenance and outstanding items handed over"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
