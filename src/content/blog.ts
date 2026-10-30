@@ -3126,6 +3126,245 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "wpc-wall-panel-packaging-container-loading-guide",
+    localizedSlug: { es: "guia-empaque-carga-contenedor-paneles-wpc" },
+    publishedAt: "2026-10-30",
+    category: { es: "Guía de empaque", en: "Packing guide" },
+    title: {
+      es: "Guía de empaque y carga de contenedor para paneles WPC",
+      en: "WPC Wall Panel Packaging and Container Loading Guide",
+    },
+    seoTitle: {
+      es: "Empaque y carga de paneles WPC | SINOQI",
+      en: "WPC Wall Panel Packaging & Container Loading | SINOQI",
+    },
+    description: {
+      es: "Aprenda a confirmar cajas, peso bruto, protección, palés y carga estimada antes de aprobar el empaque de exportación de paneles WPC.",
+      en: "Learn how to confirm cartons, gross weight, protection, pallets and loading estimates before approving WPC wall panel export packing.",
+    },
+    introduction: {
+      es: "Los paneles de pared WPC son largos, tienen superficies decorativas y pueden incluir perfiles o remates con formas diferentes. Por eso, un plan de empaque no debe limitarse a indicar piezas por caja. Importadores y distribuidores también necesitan confirmar protección, dimensiones, peso bruto, manipulación y las restricciones de la ruta antes de aprobar una estimación de carga.",
+      en: "WPC wall panels are long, have decorative surfaces and may be shipped with profiles or trims of different shapes. A packing plan therefore needs more than a pieces-per-carton figure. Importers and distributors must also confirm protection, dimensions, gross weight, handling and route restrictions before approving a loading estimate.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/wpc-wall-packing-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de paneles WPC largos, cajas protectoras, palé y contenedor para planificar el empaque",
+      en: "Illustration of long WPC wall panels, protective cartons, pallet and container for packing planning",
+    },
+    coverCaption: {
+      es: "Ilustración de planificación de empaque. La configuración final debe confirmarse con el perfil, la muestra de caja y el peso bruto del pedido.",
+      en: "Packing-planning illustration. The final configuration must be confirmed against the profile, carton sample and order gross weight.",
+    },
+    scopeNote: {
+      es: "Esta guía no establece una cantidad universal por contenedor. La carga final depende del perfil, la longitud, el empaque terminado, los palés, el payload del equipo, el transportista, la ruta, el transporte terrestre y las normas del destino. Confirme los datos antes de reservar.",
+      en: "This guide does not define a universal container quantity. Final loading depends on profile, length, finished packing, pallets, equipment payload, carrier, route, inland transport and destination rules. Confirm the data before booking.",
+    },
+    images: [
+      {
+        src: "/assets/wpc-wall-packing-02-protection.png",
+        afterSectionId: "carton-protection",
+        alt: {
+          es: "Ilustración de protección de extremos, separadores y película para paneles de pared WPC dentro de una caja",
+          en: "Illustration of end protection, dividers and film for WPC wall panels inside a carton",
+        },
+        caption: {
+          es: "La protección debe corresponder al perfil, al acabado, a la longitud y al método de manipulación acordado.",
+          en: "Protection should match the profile, finish, length and agreed handling method.",
+        },
+      },
+      {
+        src: "/assets/wpc-wall-packing-03-loading.png",
+        afterSectionId: "loading-plan",
+        alt: {
+          es: "Ilustración de cajas largas de paneles WPC organizadas para cargar un contenedor",
+          en: "Illustration of long WPC wall panel cartons arranged for container loading",
+        },
+        caption: {
+          es: "La orientación, el apoyo y el acceso de descarga deben planificarse con las dimensiones y el peso del empaque terminado.",
+          en: "Orientation, support and unloading access should be planned from finished packing dimensions and weight.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre empaque y carga de paneles WPC",
+      en: "WPC wall panel packing and loading FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Plan de empaque WPC", en: "WPC packing plan" },
+      title: { es: "Solicite un plan de empaque para paneles WPC", en: "Request a WPC Wall Panel Packing Plan" },
+      body: {
+        es: "Envíenos el perfil, la longitud, la cantidad por referencia, el empaque solicitado y el puerto de destino. Prepararemos la cotización y la estimación de carga con los datos confirmados.",
+        en: "Send us the profile, length, quantity per reference, requested packing and destination port. We will prepare the quotation and loading estimate from the confirmed data.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Cuántas piezas de panel WPC deben empacarse por caja?", en: "How many WPC wall panels should be packed per carton?" },
+        answer: {
+          es: "No existe una cantidad universal. Depende del perfil, las dimensiones, el peso, la resistencia de la caja y la forma de manipulación. Confirme piezas, cobertura, dimensiones y peso bruto mediante una muestra de empaque o datos de producción terminada.",
+          en: "There is no universal quantity. It depends on profile, dimensions, weight, carton strength and handling method. Confirm pieces, coverage, dimensions and gross weight through a packing sample or finished-production data.",
+        },
+      },
+      {
+        question: { es: "¿Qué protección necesitan los paneles WPC largos?", en: "What protection do long WPC wall panels need?" },
+        answer: {
+          es: "La solución puede incluir protección de extremos y bordes, separadores, película, caja resistente y apoyo continuo. Debe adaptarse al perfil y acabado cotizados y verificarse para apilado, carga, tránsito y descarga.",
+          en: "The solution may include end and edge protection, dividers, film, a suitable carton and continuous support. It should match the quoted profile and finish and be checked for stacking, loading, transit and unloading.",
+        },
+      },
+      {
+        question: { es: "¿Los paneles WPC deben enviarse con palés?", en: "Should WPC wall panels be shipped on pallets?" },
+        answer: {
+          es: "Depende de la longitud, el método de carga, la descarga, el almacenamiento y los requisitos del comprador. Si se utilizan palés o madera, confirme peso, dimensiones, acceso de montacargas y requisitos IPPC o de tratamiento aplicables al destino.",
+          en: "It depends on length, loading method, unloading, storage and buyer requirements. If pallets or wood are used, confirm weight, dimensions, forklift access and any IPPC or treatment requirements applicable at destination.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se calcula la carga de un contenedor de paneles WPC?", en: "How is WPC wall panel container loading calculated?" },
+        answer: {
+          es: "La estimación utiliza dimensiones y peso bruto del empaque terminado, orientación, apoyos, palés, espacio operativo y payload permitido. También deben revisarse las restricciones del transportista, la ruta, el transporte terrestre y el destino.",
+          en: "The estimate uses finished packing dimensions and gross weight, orientation, supports, pallets, operating clearance and permitted payload. Carrier, route, inland transport and destination restrictions must also be reviewed.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe aprobar el comprador antes del embarque?", en: "What should the buyer approve before shipment?" },
+        answer: {
+          es: "Revise la referencia del producto, piezas y cobertura por caja, dimensiones, peso bruto, etiquetas, protección, palés, secuencia de carga y estimación total. Las fotografías, registros y lista de empaque deben corresponder al pedido terminado.",
+          en: "Review product reference, pieces and coverage per carton, dimensions, gross weight, labels, protection, pallets, loading sequence and total estimate. Photographs, records and the packing list should correspond to the finished order.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "confirm-order-data",
+        title: { es: "1. Confirme el perfil, la longitud y la mezcla del pedido", en: "1. Confirm profile, length and order mix" },
+        paragraphs: {
+          es: [
+            "El plan comienza con la referencia exacta del perfil. Ancho, grosor, sección hueca, relieve y longitud influyen en la cantidad por caja, el apoyo necesario y las dimensiones exteriores. Los remates no siempre comparten la misma sección o empaque que los paneles principales.",
+            "Prepare una lista por perfil, longitud, diseño y color. Un pedido con muchas referencias puede necesitar cajas separadas, etiquetas adicionales y una secuencia de carga que facilite la recepción. No calcule todo como si fuera una sola caja estándar.",
+          ],
+          en: [
+            "The plan starts with the exact profile reference. Width, thickness, hollow section, relief and length influence pieces per carton, required support and external dimensions. Trims do not always share the same section or packing as the main panels.",
+            "Prepare a list by profile, length, décor and colour. An order with many references may need separate cartons, additional labels and a loading sequence that supports receiving. Do not calculate everything as one standard carton.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia y sección del perfil", "Longitud de paneles y remates", "Cantidad por diseño y color", "Cobertura útil por referencia", "Accesorios incluidos", "Secuencia solicitada para recepción"],
+          en: ["Profile reference and section", "Panel and trim length", "Quantity by décor and colour", "Usable coverage by reference", "Included accessories", "Requested receiving sequence"],
+        },
+      },
+      {
+        id: "carton-protection",
+        title: { es: "2. Diseñe la caja y la protección del producto", en: "2. Define carton construction and product protection" },
+        paragraphs: {
+          es: [
+            "Los extremos, bordes y superficies decorativas son puntos críticos. La protección puede combinar película, separadores, cantoneras, tapas de extremo, relleno y una caja adecuada. La solución debe evitar contacto abrasivo y limitar el movimiento sin deformar el perfil.",
+            "Revise una muestra de empaque con el producto real. Observe qué sucede al levantar, girar, apilar y abrir la caja. Una presentación limpia es importante, pero la prioridad es que la protección funcione durante las manipulaciones previstas.",
+          ],
+          en: [
+            "Ends, edges and decorative surfaces are critical points. Protection can combine film, dividers, corner guards, end caps, cushioning and a suitable carton. The solution should prevent abrasive contact and limit movement without distorting the profile.",
+            "Review a packing sample with the actual product. Observe what happens when the carton is lifted, turned, stacked and opened. Clean presentation matters, but the priority is protection through the intended handling steps.",
+          ],
+        },
+        bullets: {
+          es: ["Protección de extremos y bordes", "Separación entre superficies", "Apoyo a lo largo de la caja", "Resistencia y cierre de la caja", "Flejes sin marcar el producto", "Prueba práctica de manipulación"],
+          en: ["End and edge protection", "Separation between surfaces", "Support along carton length", "Carton strength and closure", "Straps that do not mark the product", "Practical handling check"],
+        },
+      },
+      {
+        id: "carton-data",
+        title: { es: "3. Verifique los datos de cada caja terminada", en: "3. Verify finished-carton data" },
+        paragraphs: {
+          es: [
+            "Piezas por caja solo es uno de los datos. Registre también cobertura, dimensiones exteriores, peso neto y peso bruto. El peso debe incluir paneles, protección, caja y accesorios que viajen dentro. Utilice datos del empaque terminado para actualizar documentos y cálculos.",
+            "La etiqueta debe permitir identificar producto, diseño, color, longitud, cantidad y pedido sin depender de abrir la caja. Asegure que códigos, marcas y etiquetas requeridas coincidan con la aprobación del comprador y las reglas del destino.",
+          ],
+          en: [
+            "Pieces per carton is only one data point. Record coverage, external dimensions, net weight and gross weight as well. Gross weight should include panels, protection, carton and any accessories packed inside. Use finished packing data to update documents and calculations.",
+            "The label should identify product, décor, colour, length, quantity and order without requiring the carton to be opened. Ensure codes, marks and required labels match buyer approval and destination rules.",
+          ],
+        },
+        bullets: {
+          es: ["Piezas y cobertura por caja", "Dimensiones exteriores verificadas", "Peso neto y bruto medidos", "Referencia, diseño y color", "Número de pedido o lote", "Etiqueta y código aprobados"],
+          en: ["Pieces and coverage per carton", "Verified external dimensions", "Measured net and gross weight", "Reference, décor and colour", "Order or batch number", "Approved label and code"],
+        },
+      },
+      {
+        id: "pallets-wood",
+        title: { es: "4. Confirme palés, madera y método de manipulación", en: "4. Confirm pallets, wood and handling method" },
+        paragraphs: {
+          es: [
+            "Los palés pueden facilitar el movimiento y la recepción, pero añaden peso, volumen y requisitos de acceso. Confirme si el largo puede manipularse con el equipo disponible, dónde apoyan las horquillas y cómo se evita la flexión o el voladizo durante el movimiento.",
+            "Si el empaque utiliza madera, revise las reglas del país de destino y cualquier requisito IPPC, tratamiento o marcado. El peso y las dimensiones del palé deben incluirse en el peso bruto y en el plan de carga, no tratarse como un dato separado al final.",
+          ],
+          en: [
+            "Pallets can support movement and receiving, but add weight, volume and access requirements. Confirm whether the length can be handled by available equipment, where forks support the load and how bending or overhang will be avoided during movement.",
+            "If packing uses wood, review destination-country rules and any IPPC, treatment or marking requirement. Pallet weight and dimensions must be included in gross weight and the loading plan, not added as an afterthought.",
+          ],
+        },
+        bullets: {
+          es: ["Palé requerido o carga sin palé", "Peso y dimensiones del palé", "Puntos de apoyo de montacargas", "Límite de apilado confirmado", "Requisitos IPPC o de tratamiento", "Método de descarga en destino"],
+          en: ["Palletized or floor-loaded plan", "Pallet weight and dimensions", "Forklift support points", "Confirmed stacking limit", "IPPC or treatment requirements", "Destination unloading method"],
+        },
+      },
+      {
+        id: "loading-plan",
+        title: { es: "5. Calcule la carga con datos confirmados", en: "5. Calculate loading from confirmed data" },
+        paragraphs: {
+          es: [
+            "Una estimación responsable comprueba espacio y peso al mismo tiempo. Utilice dimensiones exteriores, peso bruto y orientación de las cajas o palés. Incluya apoyos, protección, espacio para manipular y cualquier separación necesaria; el volumen interno teórico no equivale automáticamente a carga utilizable.",
+            "Compare el peso calculado con el payload permitido del contenedor y con los límites de la ruta. Naviera, equipo, transporte terrestre y destino pueden imponer restricciones distintas. Por eso, la estimación debe identificarse como tal hasta confirmar el empaque y la reserva.",
+          ],
+          en: [
+            "A responsible estimate checks space and weight together. Use external dimensions, gross weight and carton or pallet orientation. Include supports, protection, handling clearance and any required separation; theoretical internal volume does not automatically equal usable loading space.",
+            "Compare calculated weight with permitted container payload and route limits. Carrier, equipment, inland transport and destination may impose different restrictions. The figure should remain an estimate until packing and booking are confirmed.",
+          ],
+        },
+        bullets: {
+          es: ["Dimensiones y orientación del empaque", "Peso bruto total calculado", "Espacio para apoyos y manipulación", "Payload permitido del equipo", "Restricciones de naviera y ruta", "Estimación revisada después del empaque"],
+          en: ["Packing dimensions and orientation", "Calculated total gross weight", "Space for supports and handling", "Permitted equipment payload", "Carrier and route restrictions", "Estimate updated after packing"],
+        },
+      },
+      {
+        id: "handling-destination",
+        title: { es: "6. Planifique carga, tránsito y descarga", en: "6. Plan loading, transit and unloading" },
+        paragraphs: {
+          es: [
+            "Defina quién mueve las cajas, con qué equipo y en qué orden. Las piezas largas necesitan apoyo suficiente y no deben levantarse desde un solo punto si eso puede flexionar o dañar el empaque. La secuencia debe proteger referencias delicadas y facilitar una descarga segura.",
+            "Comparta con el comprador las dimensiones y pesos antes de la llegada. Confirme acceso de montacargas, longitud de horquillas, espacio de maniobra, descarga manual cuando corresponda y condiciones de almacenamiento. Un plan que funciona en origen puede fallar si el destino no puede recibir el mismo formato.",
+          ],
+          en: [
+            "Define who moves cartons, which equipment is used and in what sequence. Long pieces need sufficient support and should not be lifted from one point if that can bend or damage the packing. The sequence should protect sensitive references and support safe unloading.",
+            "Share dimensions and weights with the buyer before arrival. Confirm forklift access, fork length, maneuvering space, manual unloading where applicable and storage conditions. A plan that works at origin can fail if the destination cannot receive the same format.",
+          ],
+        },
+        bullets: {
+          es: ["Responsables y secuencia de carga", "Apoyo continuo para piezas largas", "Protección contra movimiento y contacto", "Equipo disponible en destino", "Acceso y espacio de descarga", "Almacenamiento protegido después de recibir"],
+          en: ["Loading responsibility and sequence", "Continuous support for long pieces", "Protection from movement and contact", "Equipment available at destination", "Unloading access and space", "Protected storage after receipt"],
+        },
+      },
+      {
+        id: "approval-checklist",
+        title: { es: "7. Lista de verificación antes de aprobar el empaque", en: "7. Packing approval checklist" },
+        paragraphs: {
+          es: [
+            "Alinee cotización, muestra, etiqueta, caja y lista de empaque antes del embarque. Cualquier cambio en piezas por caja, palé, longitud o mezcla puede modificar dimensiones, peso y carga estimada. Registre la versión aprobada y actualice los documentos.",
+            "Solicite evidencia del pedido terminado que permita revisar identificación, protección, estado de cajas y organización de la carga. Una lista completa ayuda a resolver diferencias antes de que el contenedor salga, cuando todavía existen opciones prácticas de corrección.",
+          ],
+          en: [
+            "Align the quotation, sample, label, carton and packing list before shipment. Any change in pieces per carton, pallet, length or mix can change dimensions, weight and estimated loading. Record the approved version and update the documents.",
+            "Request finished-order evidence that allows product identification, protection, carton condition and loading organization to be reviewed. A complete checklist helps resolve differences before the container departs, while practical correction is still possible.",
+          ],
+        },
+        bullets: {
+          es: ["Perfil, diseño, color y longitud correctos", "Piezas y cobertura por caja", "Dimensiones y peso bruto terminados", "Protección y caja aprobadas", "Etiquetas y marcas correctas", "Palés y madera conformes", "Carga estimada dentro de límites", "Fotos y lista de empaque coincidentes", "Método de descarga confirmado", "Cambios documentados antes de embarcar"],
+          en: ["Correct profile, décor, colour and length", "Pieces and coverage per carton", "Finished dimensions and gross weight", "Approved protection and carton", "Correct labels and marks", "Compliant pallets and wood", "Loading estimate within limits", "Matching photographs and packing list", "Confirmed unloading method", "Changes documented before shipment"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
