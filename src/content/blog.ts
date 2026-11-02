@@ -3365,6 +3365,245 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "wpc-wall-panel-quality-inspection-checklist",
+    localizedSlug: { es: "lista-inspeccion-calidad-paneles-pared-wpc" },
+    publishedAt: "2026-11-02",
+    category: { es: "Control de calidad", en: "Quality control" },
+    title: {
+      es: "Lista de inspección de calidad para paneles de pared WPC",
+      en: "WPC Wall Panel Quality Inspection Checklist Before Shipment",
+    },
+    seoTitle: {
+      es: "Inspección de calidad de paneles WPC | SINOQI",
+      en: "WPC Wall Panel Quality Inspection Checklist | SINOQI",
+    },
+    description: {
+      es: "Revise muestras, perfil, dimensiones, superficie, uniones, color, empaque y registros antes de autorizar el embarque de paneles WPC.",
+      en: "Check samples, profiles, dimensions, surfaces, joints, colour, packing and records before authorizing WPC wall panels for shipment.",
+    },
+    introduction: {
+      es: "Una inspección útil compara el pedido terminado con criterios acordados, no con una impresión general de que los paneles “se ven bien”. Para importadores, distribuidores y compradores de proyectos, el objetivo es confirmar la identidad del producto, registrar resultados verificables y resolver cualquier desviación antes de autorizar el embarque.",
+      en: "A useful inspection compares the finished order with agreed criteria, not with a general impression that the panels “look good.” For importers, distributors and project buyers, the objective is to confirm product identity, record verifiable results and resolve any deviation before shipment is authorized.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/wpc-wall-inspection-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de inspección de paneles WPC con calibrador, regla, muestras de color y lista de control",
+      en: "Illustration of WPC wall panel inspection with caliper, ruler, colour samples and checklist",
+    },
+    coverCaption: {
+      es: "Ilustración de inspección de paneles WPC. Los métodos, tolerancias y criterios de aceptación deben acordarse para cada pedido.",
+      en: "WPC wall panel inspection illustration. Methods, tolerances and acceptance criteria should be agreed for each order.",
+    },
+    scopeNote: {
+      es: "Esta guía no sustituye una especificación técnica, un plan de muestreo acordado ni los requisitos del mercado de destino. Defina por escrito métodos, tolerancias, documentos y responsabilidades antes de producir. Cuando se requieran ensayos de laboratorio, utilice el método y laboratorio aceptados para el proyecto.",
+      en: "This guide does not replace a technical specification, an agreed sampling plan or destination-market requirements. Define methods, tolerances, documents and responsibilities in writing before production. Where laboratory testing is required, use the method and laboratory accepted for the project.",
+    },
+    images: [
+      {
+        src: "/assets/wpc-wall-inspection-02-dimensions.png",
+        afterSectionId: "dimensions-profile",
+        alt: {
+          es: "Ilustración de revisión dimensional y superficial de perfiles acanalados WPC",
+          en: "Illustration of dimensional and surface inspection for fluted WPC wall panel profiles",
+        },
+        caption: {
+          es: "Use instrumentos adecuados, puntos de medición definidos y tolerancias aprobadas para el perfil cotizado.",
+          en: "Use suitable instruments, defined measurement points and approved tolerances for the quoted profile.",
+        },
+      },
+      {
+        src: "/assets/wpc-wall-inspection-03-joints.png",
+        afterSectionId: "joint-fit",
+        alt: {
+          es: "Ilustración de montaje de prueba para revisar uniones, alineación y consistencia de color en paneles WPC",
+          en: "Illustration of trial assembly to inspect WPC wall panel joints, alignment and colour consistency",
+        },
+        caption: {
+          es: "Un montaje de prueba permite revisar ajuste, ritmo visual y consistencia con la muestra aprobada.",
+          en: "A trial assembly helps review fit, visual rhythm and consistency with the approved sample.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre la inspección de paneles WPC",
+      en: "WPC wall panel inspection FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Especificación WPC", en: "WPC specification" },
+      title: { es: "Prepare una especificación verificable para paneles WPC", en: "Prepare a Verifiable WPC Wall Panel Specification" },
+      body: {
+        es: "Envíenos el perfil, dimensiones, acabado, cantidad, empaque, informes requeridos y criterios de inspección. Prepararemos la cotización según los requisitos confirmados.",
+        en: "Send us the profile, dimensions, finish, quantity, packing, required reports and inspection criteria. We will prepare the quotation from the confirmed requirements.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Qué documentos se necesitan antes de inspeccionar paneles WPC?", en: "What documents are needed before inspecting WPC wall panels?" },
+        answer: {
+          es: "Prepare la orden, especificación, dibujo del perfil, muestra aprobada, referencias de color, requisitos de empaque y criterios de aceptación. El inspector también debe conocer el método de muestreo y qué hacer si encuentra una desviación.",
+          en: "Prepare the order, specification, profile drawing, approved sample, colour references, packing requirements and acceptance criteria. The inspector should also know the sampling method and what to do when a deviation is found.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se comprueban las dimensiones de un panel WPC?", en: "How should WPC wall panel dimensions be checked?" },
+        answer: {
+          es: "Utilice instrumentos adecuados y puntos de medición definidos para ancho, grosor, longitud y geometría relevante. Registre valores reales y compárelos con las tolerancias escritas del perfil; no dependa solo de una medición aislada.",
+          en: "Use suitable instruments and defined measurement points for width, thickness, length and relevant geometry. Record actual values and compare them with the written profile tolerances rather than relying on one isolated reading.",
+        },
+      },
+      {
+        question: { es: "¿Una muestra aprobada es suficiente para aceptar todo el pedido?", en: "Is an approved sample enough to accept the complete order?" },
+        answer: {
+          es: "No. La muestra establece una referencia, pero la producción debe revisarse con un plan de muestreo acordado. También deben comprobarse identificación, dimensiones, superficie, unión, color, empaque y cualquier requisito documentado.",
+          en: "No. The sample establishes a reference, but production should be reviewed under an agreed sampling plan. Identity, dimensions, surface, joint fit, colour, packing and other documented requirements must also be checked.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se revisan el color y el acabado de los paneles WPC?", en: "How should WPC wall panel colour and finish be inspected?" },
+        answer: {
+          es: "Compare piezas seleccionadas con la muestra aprobada bajo iluminación definida y revise variación, textura, brillo, repetición y daños visibles. Registre las condiciones de revisión y fotografías para que la comparación pueda repetirse.",
+          en: "Compare selected pieces with the approved sample under defined lighting and review variation, texture, gloss, repeat and visible damage. Record the viewing conditions and photographs so the comparison can be repeated.",
+        },
+      },
+      {
+        question: { es: "¿Qué ocurre si la inspección encuentra una desviación?", en: "What happens when an inspection finds a deviation?" },
+        answer: {
+          es: "Identifique el lote y la cantidad afectada, documente el resultado y suspenda la decisión sobre ese punto. Proveedor y comprador deben acordar clasificación, corrección, reposición, reinspección o aceptación formal antes de autorizar el embarque.",
+          en: "Identify the affected batch and quantity, document the result and hold the decision on that point. Supplier and buyer should agree sorting, correction, replacement, reinspection or formal acceptance before shipment is authorized.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "inspection-basis",
+        title: { es: "1. Defina la base de inspección antes de producir", en: "1. Define the inspection basis before production" },
+        paragraphs: {
+          es: [
+            "Una inspección no puede decidir por sí sola qué significa “buena calidad”. La orden, la especificación, el dibujo del perfil, la muestra aprobada y los requisitos del mercado deben establecer qué se comprobará y qué variación se acepta.",
+            "Separe requisitos obligatorios de referencias visuales. Indique método, instrumento, punto de medición, tolerancia, tamaño de muestra y responsable de la decisión. Si un criterio no se acordó antes de producir, documente la situación en lugar de inventar un límite durante la inspección.",
+          ],
+          en: [
+            "An inspection cannot decide by itself what “good quality” means. The order, specification, profile drawing, approved sample and market requirements must establish what will be checked and what variation is acceptable.",
+            "Separate mandatory requirements from visual references. Define method, instrument, measurement point, tolerance, sample size and decision owner. If a criterion was not agreed before production, document the gap instead of inventing a limit during inspection.",
+          ],
+        },
+        bullets: {
+          es: ["Orden y especificación vigentes", "Dibujo del perfil cotizado", "Muestra física aprobada", "Referencias de color y acabado", "Plan de muestreo acordado", "Criterios y autoridad de liberación"],
+          en: ["Current order and specification", "Quoted profile drawing", "Approved physical sample", "Colour and finish references", "Agreed sampling plan", "Criteria and release authority"],
+        },
+      },
+      {
+        id: "identity-sampling",
+        title: { es: "2. Confirme identidad, cantidad y selección de muestras", en: "2. Confirm identity, quantity and sample selection" },
+        paragraphs: {
+          es: [
+            "Antes de medir, confirme que el material disponible corresponde al pedido: perfil, longitud, diseño, color, accesorios, cantidad y estado de terminación. Registre lotes o referencias para poder relacionar cualquier resultado con producto específico.",
+            "Seleccione muestras de diferentes cajas, posiciones y momentos de producción según el plan acordado. Elegir únicamente piezas presentadas por el proveedor puede ocultar variación. Mantenga trazabilidad entre cada muestra, medición, fotografía y caja de origen.",
+          ],
+          en: [
+            "Before measuring, confirm that the available material matches the order: profile, length, décor, colour, accessories, quantity and completion status. Record batches or references so every result can be linked to specific product.",
+            "Select samples from different cartons, positions and production periods according to the agreed plan. Checking only pieces presented by the supplier can hide variation. Maintain traceability between each sample, measurement, photograph and source carton.",
+          ],
+        },
+        bullets: {
+          es: ["Perfil y referencia correctos", "Diseño, color y longitud", "Cantidad terminada y pendiente", "Accesorios incluidos", "Selección distribuida de cajas", "Trazabilidad de cada muestra"],
+          en: ["Correct profile and reference", "Décor, colour and length", "Finished and outstanding quantity", "Included accessories", "Distributed carton selection", "Traceability for every sample"],
+        },
+      },
+      {
+        id: "dimensions-profile",
+        title: { es: "3. Revise dimensiones, sección y condición del perfil", en: "3. Check dimensions, section and profile condition" },
+        paragraphs: {
+          es: [
+            "Mida ancho, grosor, longitud y geometría relevante en los puntos definidos. Compruebe también cobertura útil cuando forme parte de la cotización. Utilice instrumentos adecuados, verifique su condición y registre valores reales en lugar de marcar solamente “aprobado”.",
+            "Revise sección hueca, bordes, cavidades, machihembrado o unión, rectitud y condición de corte. Compare con dibujo y muestra aprobada. El peso puede registrarse como dato de consistencia cuando exista un método acordado, pero no debe usarse solo como prueba de calidad.",
+          ],
+          en: [
+            "Measure width, thickness, length and relevant geometry at the defined points. Check usable coverage where it forms part of the quotation. Use suitable instruments, verify their condition and record actual values rather than marking only “pass.”",
+            "Review hollow section, edges, cavities, tongue-and-groove or joint, straightness and cut condition. Compare them with the drawing and approved sample. Weight may be recorded as a consistency indicator where a method is agreed, but should not be used alone as proof of quality.",
+          ],
+        },
+        bullets: {
+          es: ["Ancho, grosor y longitud", "Cobertura útil cuando corresponda", "Geometría de sección y cavidades", "Bordes, unión y condición de corte", "Rectitud según método acordado", "Valores registrados por muestra"],
+          en: ["Width, thickness and length", "Usable coverage where applicable", "Section and cavity geometry", "Edges, joint and cut condition", "Straightness under the agreed method", "Values recorded by sample"],
+        },
+      },
+      {
+        id: "surface-colour",
+        title: { es: "4. Compare superficie, diseño y color", en: "4. Compare surface, décor and colour" },
+        paragraphs: {
+          es: [
+            "Inspeccione bajo condiciones de iluminación definidas. Compare color, textura, brillo, relieve, repetición del diseño y apariencia de la unión con la muestra aprobada. Revise varias piezas juntas, porque una diferencia pequeña puede hacerse más visible en una pared extensa.",
+            "Busque rayas, manchas, burbujas, contaminación, película levantada, bordes dañados y otros defectos descritos en los criterios. Registre ubicación, frecuencia y severidad; una fotografía aislada sin referencia de escala o lote ofrece poca información para decidir.",
+          ],
+          en: [
+            "Inspect under defined lighting conditions. Compare colour, texture, gloss, relief, décor repeat and joint appearance with the approved sample. Review several pieces together because a small difference may become more visible across a large wall.",
+            "Look for scratches, stains, bubbles, contamination, lifted film, damaged edges and other defects described in the criteria. Record location, frequency and severity; an isolated photograph without scale or batch reference provides little decision value.",
+          ],
+        },
+        bullets: {
+          es: ["Color bajo iluminación definida", "Textura, brillo y relieve", "Repetición y variación del diseño", "Rayas, manchas o contaminación", "Adherencia y bordes de la superficie", "Frecuencia y ubicación registradas"],
+          en: ["Colour under defined lighting", "Texture, gloss and relief", "Décor repeat and variation", "Scratches, stains or contamination", "Surface adhesion and edges", "Recorded frequency and location"],
+        },
+      },
+      {
+        id: "joint-fit",
+        title: { es: "5. Haga un montaje de prueba de uniones y accesorios", en: "5. Trial-assemble joints and accessories" },
+        paragraphs: {
+          es: [
+            "Una revisión de piezas sueltas no muestra cómo se comporta el sistema instalado. Monte varias piezas del mismo lote y, cuando sea relevante, combine muestras de cajas diferentes. Compruebe facilidad de unión, cierre, alineación, ritmo visual y cualquier abertura visible.",
+            "Pruebe remates, esquinas y accesorios correspondientes al pedido. No fuerce una unión para ocultar una incompatibilidad. Si el montaje requiere una técnica específica, utilice las instrucciones confirmadas y registre las condiciones para que el resultado pueda reproducirse.",
+          ],
+          en: [
+            "Reviewing loose pieces does not show how the installed system behaves. Assemble several pieces from the same batch and, where relevant, combine samples from different cartons. Check ease of joining, closure, alignment, visual rhythm and any visible opening.",
+            "Trial-fit the trims, corners and accessories included in the order. Do not force a joint to hide incompatibility. If assembly requires a specific technique, use the confirmed instructions and record the conditions so the result can be repeated.",
+          ],
+        },
+        bullets: {
+          es: ["Ensamble sin fuerza excesiva", "Cierre y alineación de la unión", "Ritmo visual entre paneles", "Compatibilidad entre cajas o lotes", "Ajuste de remates y accesorios", "Resultado fotografiado y trazable"],
+          en: ["Assembly without excessive force", "Joint closure and alignment", "Visual rhythm between panels", "Compatibility across cartons or batches", "Fit of trims and accessories", "Photographed and traceable result"],
+        },
+      },
+      {
+        id: "packing-labels",
+        title: { es: "6. Inspeccione empaque, etiquetas y preparación logística", en: "6. Inspect packing, labels and logistics preparation" },
+        paragraphs: {
+          es: [
+            "Abra cajas seleccionadas para confirmar piezas, protección, orientación y estado del producto. Revise dimensiones y peso bruto del empaque terminado, protección de extremos y bordes, resistencia de caja, cierre, flejes y palés cuando correspondan.",
+            "Compare etiquetas y marcas con la aprobación del comprador. Perfil, diseño, color, longitud, cantidad y pedido deben poder identificarse sin abrir cada caja. Verifique que la lista de empaque y la estimación de carga utilicen los datos finales, no cifras preliminares.",
+          ],
+          en: [
+            "Open selected cartons to confirm pieces, protection, orientation and product condition. Review finished packing dimensions and gross weight, end and edge protection, carton strength, closure, straps and pallets where applicable.",
+            "Compare labels and marks with buyer approval. Profile, décor, colour, length, quantity and order should be identifiable without opening every carton. Verify that the packing list and loading estimate use final data rather than preliminary figures.",
+          ],
+        },
+        bullets: {
+          es: ["Piezas y cobertura por caja", "Protección de extremos y superficies", "Dimensiones y peso bruto", "Caja, cierre, flejes y palés", "Etiquetas y marcas correctas", "Lista de empaque actualizada"],
+          en: ["Pieces and coverage per carton", "End and surface protection", "Dimensions and gross weight", "Carton, closure, straps and pallets", "Correct labels and marks", "Updated packing list"],
+        },
+      },
+      {
+        id: "report-release",
+        title: { es: "7. Documente resultados y controle la liberación", en: "7. Document results and control shipment release" },
+        paragraphs: {
+          es: [
+            "El informe debe indicar pedido, fecha, ubicación, cantidad disponible, método de muestreo, instrumentos, resultados y evidencia. Distinga hechos medidos de opiniones y vincule cada desviación con lote, referencia y cantidad potencialmente afectada.",
+            "No convierta una desviación en aprobación automática. Defina contención, clasificación, corrección, reposición o reinspección y obtenga una decisión escrita del responsable acordado. El embarque debe liberarse solo cuando los puntos pendientes estén resueltos o aceptados formalmente.",
+          ],
+          en: [
+            "The report should identify order, date, location, available quantity, sampling method, instruments, results and evidence. Separate measured facts from opinions and link every deviation to the batch, reference and potentially affected quantity.",
+            "Do not turn a deviation into automatic approval. Define containment, sorting, correction, replacement or reinspection and obtain a written decision from the agreed authority. Shipment should be released only when open points are resolved or formally accepted.",
+          ],
+        },
+        bullets: {
+          es: ["Pedido, lote y cantidad identificados", "Método y muestra registrados", "Valores y fotografías trazables", "Desviaciones clasificadas", "Acción correctiva y reinspección", "Autorización escrita de embarque"],
+          en: ["Identified order, batch and quantity", "Recorded method and sample", "Traceable values and photographs", "Classified deviations", "Corrective action and reinspection", "Written shipment authorization"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
