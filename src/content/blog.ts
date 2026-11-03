@@ -3604,6 +3604,245 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "uv-marble-sheet-price-guide",
+    localizedSlug: { es: "guia-precios-laminas-marmol-uv" },
+    publishedAt: "2026-11-03",
+    category: { es: "Guía de precios", en: "Price guide" },
+    title: {
+      es: "Precio de láminas de mármol UV: cómo comparar cotizaciones FOB",
+      en: "UV Marble Sheet Price Guide: How to Compare FOB Quotations",
+    },
+    seoTitle: {
+      es: "Precio de láminas de mármol UV | SINOQI",
+      en: "UV Marble Sheet Price & FOB Quote Guide | SINOQI",
+    },
+    description: {
+      es: "Conozca qué cambia el precio FOB de las láminas de mármol UV y qué debe especificar para comparar formatos, superficies, empaque y cotizaciones.",
+      en: "Learn what changes UV marble sheet FOB prices and what importers should specify to compare formats, surfaces, packing and supplier quotations.",
+    },
+    introduction: {
+      es: "Dos láminas de mármol UV con un diseño parecido pueden utilizar sustratos, espesores, dimensiones, superficies y empaques diferentes. Comparar solamente el precio por lámina o por metro cuadrado puede ocultar esas diferencias. Esta guía ayuda a importadores, distribuidores y compradores de proyectos a solicitar cotizaciones comparables sin depender de un precio genérico.",
+      en: "Two UV marble sheets with a similar design can use different substrates, thicknesses, dimensions, surfaces and packing. Comparing only the price per sheet or square metre can hide those differences. This guide helps importers, distributors and project buyers request comparable quotations without relying on a generic price figure.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/uv-marble-price-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de láminas de mármol UV con diferentes diseños, película protectora y herramientas de especificación",
+      en: "Illustration of UV marble sheets with different designs, protective film and specification tools",
+    },
+    coverCaption: {
+      es: "Ilustración de configuraciones de láminas de mármol UV. La especificación, el empaque y el precio finales dependen de la cotización y la muestra aprobada.",
+      en: "UV marble sheet configuration illustration. Final specification, packing and price depend on the quotation and approved sample.",
+    },
+    scopeNote: {
+      es: "Los precios pueden cambiar con materias primas, tipo de cambio, sustrato, dimensiones, espesor, diseño, acabado, mezcla de referencias, cantidad, empaque y condiciones comerciales. Solicite siempre una cotización formal vigente y confirme el producto mediante muestra.",
+      en: "Prices can change with raw materials, exchange rates, substrate, dimensions, thickness, décor, finish, reference mix, quantity, packing and commercial terms. Always request a current formal quotation and confirm the product through a sample.",
+    },
+    images: [
+      {
+        src: "/assets/uv-marble-price-02-finishes.png",
+        afterSectionId: "decor-surface",
+        alt: {
+          es: "Ilustración comparativa de diseños, vetas y acabados brillantes de láminas de mármol UV",
+          en: "Illustration comparing UV marble sheet décors, vein patterns and glossy finishes",
+        },
+        caption: {
+          es: "Compare referencia, escala de veta, tono, brillo, repetición y muestra física antes de aprobar el diseño.",
+          en: "Compare reference, vein scale, tone, gloss, repeat and physical sample before approving the décor.",
+        },
+      },
+      {
+        src: "/assets/uv-marble-price-03-packing.png",
+        afterSectionId: "packing-logistics",
+        alt: {
+          es: "Ilustración de empaque de exportación para láminas de mármol UV con protección de caras, esquinas y estructura de madera",
+          en: "Illustration of UV marble sheet export packing with face, corner and timber-frame protection",
+        },
+        caption: {
+          es: "Confirme protección, estructura, peso bruto, acceso de montacargas y requisitos de madera antes de cerrar el plan logístico.",
+          en: "Confirm protection, structure, gross weight, forklift access and wood requirements before finalizing the logistics plan.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre el precio de láminas de mármol UV",
+      en: "UV marble sheet price FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Cotización de mármol UV", en: "UV marble quotation" },
+      title: { es: "Solicite una cotización comparable de láminas UV", en: "Request a Comparable UV Marble Sheet Quotation" },
+      body: {
+        es: "Envíenos el sustrato requerido, dimensiones, espesor, diseños, cantidad por referencia, empaque y destino. Prepararemos la cotización según la configuración confirmada.",
+        en: "Send us the required substrate, dimensions, thickness, décors, quantity per reference, packing and destination. We will prepare the quotation from the confirmed configuration.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Por qué varía tanto el precio de las láminas de mármol UV?", en: "Why do UV marble sheet prices vary so much?" },
+        answer: {
+          es: "El nombre comercial no define una configuración única. Sustrato, dimensiones, espesor, tolerancias, superficie, diseño, cantidad, empaque y condiciones comerciales pueden cambiar el costo. Compare cotizaciones basadas en la misma especificación.",
+          en: "The product name does not define one configuration. Substrate, dimensions, thickness, tolerances, surface, décor, quantity, packing and commercial terms can all change cost. Compare quotations based on the same specification.",
+        },
+      },
+      {
+        question: { es: "¿Qué información se necesita para cotizar láminas UV?", en: "What information is needed for a UV marble sheet quotation?" },
+        answer: {
+          es: "Indique sustrato o referencia de producto, dimensiones, espesor, diseños, acabado, cantidad por referencia, uso previsto, empaque, personalización, destino y condiciones comerciales solicitadas.",
+          en: "Provide the substrate or product reference, dimensions, thickness, décors, finish, quantity per reference, intended use, packing, customization, destination and requested commercial terms.",
+        },
+      },
+      {
+        question: { es: "¿Una lámina más gruesa siempre es de mejor calidad?", en: "Does a thicker UV marble sheet always mean better quality?" },
+        answer: {
+          es: "No. El espesor es solo una característica. También deben revisarse el sustrato, la estabilidad, las tolerancias, la superficie, el mecanizado, la muestra aprobada y los requisitos del proyecto. Compare el conjunto, no una sola cifra.",
+          en: "No. Thickness is only one characteristic. Substrate, stability, tolerances, surface, machining, the approved sample and project requirements must also be reviewed. Compare the complete specification, not one number.",
+        },
+      },
+      {
+        question: { es: "¿El diseño o acabado brillante cambia el precio?", en: "Can décor or gloss finish change the price?" },
+        answer: {
+          es: "Puede hacerlo según el material de superficie, el proceso, la referencia, la cantidad por diseño y los requisitos de aprobación. Confirme veta, color, brillo y repetición mediante una muestra física del producto cotizado.",
+          en: "It can, depending on surface material, process, reference, quantity per décor and approval requirements. Confirm vein pattern, colour, gloss and repeat through a physical sample of the quoted product.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se calcula la carga de láminas de mármol UV?", en: "How is UV marble sheet container loading calculated?" },
+        answer: {
+          es: "La estimación utiliza dimensiones y peso bruto del empaque terminado, orientación, protección, palés o estructuras, espacio de manipulación y payload permitido. También deben confirmarse naviera, ruta, descarga y reglas del destino.",
+          en: "The estimate uses finished packing dimensions and gross weight, orientation, protection, pallets or frames, handling clearance and permitted payload. Carrier, route, unloading and destination rules must also be confirmed.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "shared-specification",
+        title: { es: "1. Compare cotizaciones sobre una especificación común", en: "1. Compare quotations against one shared specification" },
+        paragraphs: {
+          es: [
+            "Una oferta descrita solamente como “lámina de mármol UV” no permite una comparación precisa. Dos proveedores pueden cotizar sustratos, formatos, espesores, acabados, diseños y empaques diferentes aunque las imágenes comerciales parezcan similares.",
+            "Antes de revisar el precio FOB, confirme moneda, puerto de embarque, vigencia, condiciones de pago y qué incluye la oferta. Pida que cualquier sustitución, exclusión o dato pendiente aparezca claramente por escrito.",
+          ],
+          en: [
+            "An offer described only as a “UV marble sheet” does not support an accurate comparison. Two suppliers can quote different substrates, formats, thicknesses, finishes, décors and packing even when commercial images look similar.",
+            "Before reviewing the FOB price, confirm currency, port of loading, validity, payment terms and what the offer includes. Ask suppliers to state every substitution, exclusion or pending detail clearly in writing.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia exacta del producto", "Sustrato, dimensiones y espesor", "Diseño y acabado", "Cantidad por referencia", "Empaque incluido", "Moneda, puerto FOB, pago y vigencia"],
+          en: ["Exact product reference", "Substrate, dimensions and thickness", "Décor and finish", "Quantity per reference", "Included packing", "Currency, FOB port, payment and validity"],
+        },
+      },
+      {
+        id: "substrate-thickness",
+        title: { es: "2. Confirme sustrato, espesor y tolerancias", en: "2. Confirm substrate, thickness and tolerances" },
+        paragraphs: {
+          es: [
+            "El aspecto de mármol describe la superficie, no toda la construcción. Confirme el material del sustrato, espesor nominal, dimensiones, peso cuando sea relevante y tolerancias acordadas. Una fotografía frontal no permite identificar estos datos.",
+            "Compare muestras y fichas del producto cotizado. Revise planitud, condición del borde, facilidad de corte o mecanizado y compatibilidad con el uso previsto. No utilice solamente grosor o color del núcleo como prueba de calidad.",
+          ],
+          en: [
+            "The marble look describes the surface, not the complete construction. Confirm substrate material, nominal thickness, dimensions, weight where relevant and agreed tolerances. A front-facing photograph cannot identify these details.",
+            "Compare samples and data for the quoted product. Review flatness, edge condition, cutting or machining behaviour and suitability for the intended use. Do not use thickness or core colour alone as proof of quality.",
+          ],
+        },
+        bullets: {
+          es: ["Material del sustrato", "Espesor y dimensiones nominales", "Tolerancias acordadas", "Planitud y condición del borde", "Peso y método de medición cuando aplique", "Muestra correspondiente a la cotización"],
+          en: ["Substrate material", "Nominal thickness and dimensions", "Agreed tolerances", "Flatness and edge condition", "Weight and measurement method where applicable", "Sample corresponding to the quotation"],
+        },
+      },
+      {
+        id: "decor-surface",
+        title: { es: "3. Revise diseño, superficie y aprobación de muestra", en: "3. Review décor, surface and sample approval" },
+        paragraphs: {
+          es: [
+            "Vetas finas, diseños continuos, tonos dorados y patrones oscuros pueden utilizar referencias y procesos diferentes. El costo también puede cambiar con la cantidad por diseño, la repetición visual, el brillo, la textura y cualquier requisito de personalización.",
+            "Seleccione referencias del catálogo vigente y apruebe una muestra física. Revise color, escala de veta, contraste, brillo, superficie, protección y apariencia de juntas bajo iluminación representativa. Las imágenes de pantalla ayudan a seleccionar, pero no sustituyen la muestra.",
+          ],
+          en: [
+            "Fine veins, continuous designs, gold-accent patterns and dark décors can use different references and processes. Cost can also change with quantity per décor, visual repeat, gloss, texture and customization requirements.",
+            "Select references from the current catalog and approve a physical sample. Review colour, vein scale, contrast, gloss, surface, protection and joint appearance under representative lighting. Screen images support selection but do not replace the sample.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia exacta del diseño", "Color y escala de veta", "Nivel de brillo y textura", "Repetición y continuidad visual", "Película protectora", "Muestra física aprobada"],
+          en: ["Exact décor reference", "Colour and vein scale", "Gloss level and texture", "Visual repeat and continuity", "Protective film", "Approved physical sample"],
+        },
+      },
+      {
+        id: "format-edges",
+        title: { es: "4. Formato, bordes, película y tolerancias de producción", en: "4. Format, edges, film and production tolerances" },
+        paragraphs: {
+          es: [
+            "El precio por lámina no es comparable si las dimensiones o la superficie útil cambian. Confirme largo, ancho, espesor, escuadra, acabado de bordes y cualquier corte o mecanizado solicitado. Defina cómo se medirán las tolerancias.",
+            "Revise también tipo y aplicación de la película protectora, identificación de cara y reverso y condición de superficie. Si el proyecto requiere corte a medida, perforaciones o preparación especial, detalle archivos, tolerancias, orientación del diseño y proceso de aprobación.",
+          ],
+          en: [
+            "Price per sheet is not comparable when dimensions or usable area differ. Confirm length, width, thickness, squareness, edge finish and any requested cutting or machining. Define how tolerances will be measured.",
+            "Also review protective-film type and application, identification of face and back, and surface condition. If the project needs cut-to-size pieces, holes or special preparation, define files, tolerances, décor orientation and approval process.",
+          ],
+        },
+        bullets: {
+          es: ["Largo, ancho y espesor", "Superficie útil por lámina", "Escuadra y condición de bordes", "Película protectora y orientación", "Corte o mecanizado requerido", "Método de medición y tolerancias"],
+          en: ["Length, width and thickness", "Usable area per sheet", "Squareness and edge condition", "Protective film and orientation", "Required cutting or machining", "Measurement method and tolerances"],
+        },
+      },
+      {
+        id: "quantity-customization",
+        title: { es: "5. Cantidad, mezcla de diseños y personalización", en: "5. Quantity, décor mix and customization" },
+        paragraphs: {
+          es: [
+            "La cantidad total no cuenta toda la historia. Un pedido repartido entre muchas referencias puede requerir más cambios, materiales de superficie, identificación y empaque que el mismo volumen concentrado en pocos diseños.",
+            "Separe la cantidad por referencia y confirme la cantidad mínima vigente en la cotización. Para marca privada, película impresa, etiquetas, caja o tamaño personalizado, detalle archivos, costos aplicables, muestra y aprobación antes de producir.",
+          ],
+          en: [
+            "Total quantity does not tell the complete story. An order divided among many references can require more changeovers, surface materials, identification and packing than the same volume concentrated in fewer décors.",
+            "Separate quantity by reference and confirm the current minimum in the quotation. For private label, printed film, labels, cartons or customized size, define artwork, applicable costs, sample and approval before production.",
+          ],
+        },
+        bullets: {
+          es: ["Cantidad total y por diseño", "Número de referencias mezcladas", "Cantidad mínima vigente", "Formato estándar o personalizado", "Marca, etiqueta y película", "Muestra y archivo aprobados"],
+          en: ["Total quantity and quantity per décor", "Number of mixed references", "Current minimum quantity", "Standard or customized format", "Brand, label and film", "Approved sample and artwork"],
+        },
+      },
+      {
+        id: "packing-logistics",
+        title: { es: "6. Empaque, manipulación y logística", en: "6. Packing, handling and logistics" },
+        paragraphs: {
+          es: [
+            "Las láminas grandes necesitan protección de caras, bordes y esquinas, además de apoyo que controle flexión y movimiento. Confirme cantidad por paquete, separadores, película, cartón protector, estructura, flejes, palé y método de carga.",
+            "Calcule el contenedor con dimensiones y peso bruto del empaque terminado. Incluya peso de palés o estructuras, acceso de montacargas, método de descarga y requisitos IPPC o de madera. El payload, la naviera, la ruta y las reglas del destino deben comprobarse por separado.",
+          ],
+          en: [
+            "Large sheets need face, edge and corner protection together with support that controls bending and movement. Confirm sheets per pack, dividers, film, protective board, frame, straps, pallet and loading method.",
+            "Calculate the container from finished packing dimensions and gross weight. Include pallet or frame weight, forklift access, unloading method and IPPC or wood requirements. Payload, carrier, route and destination rules must be checked separately.",
+          ],
+        },
+        bullets: {
+          es: ["Láminas por paquete", "Protección de caras, bordes y esquinas", "Dimensiones y peso bruto", "Palé o estructura de apoyo", "Acceso y método de descarga", "Estimación de carga confirmada"],
+          en: ["Sheets per pack", "Face, edge and corner protection", "Dimensions and gross weight", "Pallet or support frame", "Access and unloading method", "Confirmed loading estimate"],
+        },
+      },
+      {
+        id: "quotation-checklist",
+        title: { es: "7. Lista completa para solicitar una cotización UV", en: "7. Complete UV marble sheet quotation checklist" },
+        paragraphs: {
+          es: [
+            "Una solicitud completa permite que varios proveedores coticen la misma base. Distinga requisitos obligatorios de opciones abiertas y pida que la oferta identifique sustituciones, exclusiones y datos todavía pendientes.",
+            "Antes de comparar el precio final, revise muestra, ficha, diseño, empaque y condiciones comerciales en conjunto. El pedido debe seguir la especificación confirmada y no una fotografía o descripción genérica enviada al inicio.",
+          ],
+          en: [
+            "A complete request allows several suppliers to quote the same basis. Separate mandatory requirements from open options and ask the offer to identify substitutions, exclusions and data still awaiting confirmation.",
+            "Before comparing the final price, review the sample, specification, décor, packing and commercial terms together. The order should follow the confirmed specification rather than a generic photograph or description sent at the beginning.",
+          ],
+        },
+        bullets: {
+          es: ["Sustrato, dimensiones y espesor", "Diseño, veta, color y brillo", "Cantidad total y por referencia", "Tolerancias y mecanizado requerido", "Uso previsto y mercado de destino", "Película, protección, palé y estructura", "Personalización y marca privada", "Muestras e informes requeridos", "Puerto FOB, destino y estimación de carga", "Moneda, pago, plazo y vigencia"],
+          en: ["Substrate, dimensions and thickness", "Décor, vein pattern, colour and gloss", "Total quantity and quantity per reference", "Required tolerances and machining", "Intended use and destination market", "Film, protection, pallet and frame", "Customization and private label", "Required samples and reports", "FOB port, destination and loading estimate", "Currency, payment, lead time and validity"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
