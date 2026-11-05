@@ -3843,6 +3843,245 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "uv-marble-sheet-installation-guide",
+    localizedSlug: { es: "guia-instalacion-laminas-marmol-uv" },
+    publishedAt: "2026-11-05",
+    category: { es: "Guía de instalación", en: "Installation guide" },
+    title: {
+      es: "Guía de instalación de láminas de mármol UV para paredes interiores",
+      en: "UV Marble Sheet Installation Guide for Interior Walls",
+    },
+    seoTitle: {
+      es: "Instalación de láminas de mármol UV | SINOQI",
+      en: "UV Marble Sheet Installation Guide | SINOQI",
+    },
+    description: {
+      es: "Aprenda a revisar la pared, planificar vetas, manipular, cortar, fijar y rematar láminas de mármol UV en proyectos interiores.",
+      en: "Learn how to inspect walls, plan veins, handle, cut, fix and finish UV marble sheets for interior wall projects.",
+    },
+    introduction: {
+      es: "Una pared terminada con láminas de mármol UV depende tanto de la preparación como del material. El sustrato, el trazado, la orientación de las vetas, el método de fijación, las juntas y los remates deben revisarse como un solo sistema. Esta guía ayuda a distribuidores, instaladores y compradores de proyectos a coordinar el trabajo antes de colocar la primera lámina.",
+      en: "A finished UV marble sheet wall depends as much on preparation as on the material. Substrate, layout, vein direction, fixing method, joints and trims must be reviewed as one system. This guide helps distributors, installers and project buyers coordinate the work before the first sheet is positioned.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/uv-marble-installation-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de dos instaladores posicionando una lámina de mármol UV en una pared interior",
+      en: "Illustration of two installers positioning a UV marble sheet on an interior wall",
+    },
+    coverCaption: {
+      es: "Ilustración de instalación interior. El método de fijación y manipulación debe corresponder a la lámina, al sustrato y a las instrucciones aprobadas.",
+      en: "Interior installation illustration. Fixing and handling methods must match the sheet, substrate and approved instructions.",
+    },
+    scopeNote: {
+      es: "Esta guía corresponde a láminas decorativas UV para paredes interiores. No sustituye la ficha del producto, la evaluación del sustrato, las instrucciones del adhesivo o sistema de fijación, los códigos locales ni la especificación del proyecto. Confirme todos esos requisitos antes de instalar.",
+      en: "This guide covers decorative UV sheets for interior walls. It does not replace product data, substrate assessment, adhesive or fixing-system instructions, local codes or the project specification. Confirm those requirements before installation.",
+    },
+    images: [
+      {
+        src: "/assets/uv-marble-installation-02-layout.png",
+        afterSectionId: "inspect-plan",
+        alt: {
+          es: "Ilustración de revisión, medición y trazado de una pared antes de instalar láminas de mármol UV",
+          en: "Illustration of wall inspection, measurement and layout before UV marble sheet installation",
+        },
+        caption: {
+          es: "Verifique la base, las dimensiones, las líneas de referencia, los servicios y la orientación de vetas antes de cortar.",
+          en: "Verify the base, dimensions, reference lines, services and vein direction before cutting.",
+        },
+      },
+      {
+        src: "/assets/uv-marble-installation-03-finished.png",
+        afterSectionId: "joints-finishes",
+        alt: {
+          es: "Ilustración de una pared interior terminada con láminas de mármol UV, juntas, esquina y zócalo",
+          en: "Illustration of a finished UV marble sheet interior wall with joints, corner and base trim",
+        },
+        caption: {
+          es: "El control final debe incluir alineación, continuidad visual, juntas, esquinas, recortes, remates y limpieza.",
+          en: "Final inspection should include alignment, visual continuity, joints, corners, cut-outs, trims and cleaning.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre instalación de láminas UV",
+      en: "UV marble sheet installation FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Proyecto de láminas UV", en: "UV marble sheet project" },
+      title: { es: "Prepare su solicitud de láminas de mármol UV", en: "Prepare Your UV Marble Sheet Inquiry" },
+      body: {
+        es: "Envíenos dimensiones de pared, sustrato, formato, diseño, cantidad, remates y destino. Revisaremos la configuración y prepararemos una cotización según los datos confirmados.",
+        en: "Send us the wall dimensions, substrate, sheet format, décor, quantity, trims and destination. We will review the configuration and prepare a quotation from the confirmed information.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Se pueden instalar láminas UV directamente sobre una pared existente?", en: "Can UV marble sheets be installed directly over an existing wall?" },
+        answer: {
+          es: "Depende de la lámina, del sistema de fijación y del estado de la superficie. La base debe evaluarse para confirmar solidez, planeidad, limpieza y compatibilidad. Pintura suelta, humedad activa, contaminación o irregularidades deben corregirse antes de instalar.",
+          en: "It depends on the sheet, fixing system and condition of the surface. The base must be assessed for soundness, flatness, cleanliness and compatibility. Loose paint, active moisture, contamination or irregularities must be corrected before installation.",
+        },
+      },
+      {
+        question: { es: "¿Qué adhesivo debe utilizarse para láminas de mármol UV?", en: "Which adhesive should be used for UV marble sheets?" },
+        answer: {
+          es: "No existe una respuesta universal. Confirme compatibilidad con el reverso de la lámina, el sustrato, el tamaño, las condiciones ambientales y los requisitos del proyecto. Siga las instrucciones del fabricante del adhesivo y realice una prueba cuando corresponda.",
+          en: "There is no universal answer. Confirm compatibility with the sheet back, substrate, sheet size, environmental conditions and project requirements. Follow the adhesive manufacturer's instructions and complete a trial where appropriate.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se planifican las vetas entre láminas?", en: "How should vein direction be planned between sheets?" },
+        answer: {
+          es: "Presente las láminas en seco, identifique cara, orientación y referencia, y prepare un plano de colocación. Revise continuidad, contraste y posición de juntas bajo la iluminación del proyecto antes de cortar o fijar.",
+          en: "Dry-lay or stage the sheets, identify face, orientation and reference, and prepare a placement plan. Review continuity, contrast and joint positions under representative project lighting before cutting or fixing.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se deben resolver enchufes, esquinas y bordes?", en: "How should outlets, corners and exposed edges be finished?" },
+        answer: {
+          es: "Defina estos puntos durante el trazado. Mida los recortes en obra, coordine instalaciones eléctricas con personal autorizado y confirme perfiles, selladores o remates compatibles. No cubra puntos que deban permanecer accesibles.",
+          en: "Define these points during layout planning. Measure cut-outs on site, coordinate electrical work with authorized personnel and confirm compatible profiles, sealants or trims. Do not conceal points that must remain accessible.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe revisarse antes de entregar la pared terminada?", en: "What should be checked before handing over the finished wall?" },
+        answer: {
+          es: "Revise alineación, continuidad de vetas, juntas, esquinas, bordes, recortes, limpieza, daños y residuos. Registre las referencias instaladas, entregue indicaciones disponibles de limpieza y acuerde quién resolverá cualquier pendiente.",
+          en: "Review alignment, vein continuity, joints, corners, edges, cut-outs, cleanliness, damage and residue. Record installed references, provide available cleaning guidance and agree who will resolve any open item.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "confirm-system",
+        title: { es: "1. Confirme la lámina y el sistema de instalación", en: "1. Confirm the sheet and installation system" },
+        paragraphs: {
+          es: [
+            "Antes de movilizar al instalador, identifique sustrato de la lámina, dimensiones, espesor, cara decorativa, reverso, película protectora y referencia del diseño. Confirme también remates, perfiles, selladores y cualquier accesorio incluido.",
+            "Revise muestra, ficha del producto, plano y requisitos del proyecto como un conjunto. No seleccione adhesivo o fijación solo por costumbre: la compatibilidad depende de la lámina, la base, el tamaño, las condiciones de obra y las instrucciones aplicables.",
+          ],
+          en: [
+            "Before mobilizing installers, identify the sheet substrate, dimensions, thickness, decorative face, back, protective film and décor reference. Also confirm trims, profiles, sealants and any included accessories.",
+            "Review the sample, product data, drawings and project requirements as one package. Do not select adhesive or fixing by habit: compatibility depends on the sheet, base, size, site conditions and applicable instructions.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia y construcción de la lámina", "Dimensiones, espesor y orientación", "Cara, reverso y película protectora", "Diseño y muestra aprobada", "Remates y accesorios", "Método de fijación confirmado"],
+          en: ["Sheet reference and construction", "Dimensions, thickness and orientation", "Face, back and protective film", "Décor and approved sample", "Trims and accessories", "Confirmed fixing method"],
+        },
+      },
+      {
+        id: "inspect-plan",
+        title: { es: "2. Revise la pared y prepare el trazado", en: "2. Inspect the wall and prepare the layout" },
+        paragraphs: {
+          es: [
+            "Compruebe que la pared o soporte esté firme, suficientemente plano, limpio y compatible con el sistema. Identifique pintura suelta, polvo, grasa, salientes, huecos, filtraciones, humedad activa y servicios ocultos antes de aplicar adhesivo o perforar.",
+            "Mida la superficie real y marque líneas niveladas y aplomadas. Coordine puertas, cielos rasos, zócalos, muebles, enchufes, esquinas y transiciones. El trazado debe evitar franjas incómodas y situar juntas donde puedan ejecutarse y mantenerse correctamente.",
+          ],
+          en: [
+            "Check that the wall or support is sound, sufficiently flat, clean and compatible with the system. Identify loose paint, dust, grease, high spots, voids, leaks, active moisture and concealed services before applying adhesive or drilling.",
+            "Measure the actual surface and mark level and plumb reference lines. Coordinate doors, ceilings, skirtings, furniture, outlets, corners and transitions. The layout should avoid awkward strips and position joints where they can be executed and maintained correctly.",
+          ],
+        },
+        bullets: {
+          es: ["Solidez y planeidad de la base", "Superficie limpia y compatible", "Humedad o filtraciones resueltas", "Dimensiones verificadas en obra", "Servicios y obstáculos identificados", "Líneas y juntas planificadas"],
+          en: ["Base soundness and flatness", "Clean and compatible surface", "Moisture or leaks resolved", "Site dimensions verified", "Services and obstacles identified", "Reference lines and joints planned"],
+        },
+      },
+      {
+        id: "vein-dry-layout",
+        title: { es: "3. Planifique vetas, secuencia y presentación en seco", en: "3. Plan veins, sequence and dry layout" },
+        paragraphs: {
+          es: [
+            "Extienda o presente las láminas de forma segura antes de cortar. Identifique referencia, cara, orientación, lote y posición propuesta. Revise cómo continúa la veta entre piezas y si la variación de tono crea el efecto previsto.",
+            "Prepare un plano numerado y marque el reverso de forma que no afecte la superficie. Confirme la primera pieza, dirección de avance, juntas, esquinas y recortes. La aprobación en seco reduce decisiones improvisadas después de aplicar el adhesivo.",
+          ],
+          en: [
+            "Safely stage the sheets before cutting. Identify reference, face, orientation, batch and proposed position. Review how the vein continues between pieces and whether tone variation creates the intended effect.",
+            "Prepare a numbered layout and mark the back without affecting the surface. Confirm the first piece, installation direction, joints, corners and cut-outs. Dry approval reduces improvised decisions after adhesive has been applied.",
+          ],
+        },
+        bullets: {
+          es: ["Referencia y lote identificados", "Cara y orientación confirmadas", "Continuidad de veta revisada", "Posición de juntas y esquinas", "Plano y secuencia numerados", "Presentación aprobada antes de cortar"],
+          en: ["Reference and batch identified", "Face and orientation confirmed", "Vein continuity reviewed", "Joint and corner positions", "Numbered plan and sequence", "Layout approved before cutting"],
+        },
+      },
+      {
+        id: "handling-cutting",
+        title: { es: "4. Manipule, corte y prepare recortes con seguridad", en: "4. Handle, cut and prepare openings safely" },
+        paragraphs: {
+          es: [
+            "Las láminas grandes necesitan apoyo suficiente durante almacenamiento, movimiento y corte. Utilice el número de personas, ventosas, mesas y equipo de protección adecuados al tamaño y peso confirmados. Evite flexión, arrastre de caras y apoyo inestable.",
+            "Seleccione herramientas compatibles con el sustrato y haga una prueba de corte. Mida recortes en obra y prepare esquinas de aberturas según el detalle aprobado. Proteja la cara decorativa y confirme que bordes y polvo se controlen durante el proceso.",
+          ],
+          en: [
+            "Large sheets need sufficient support during storage, movement and cutting. Use the number of people, suction lifters, tables and protective equipment appropriate for the confirmed size and weight. Avoid bending, dragging faces and unstable support.",
+            "Select tools compatible with the substrate and make a trial cut. Measure openings on site and prepare opening corners according to the approved detail. Protect the decorative face and control edges and dust during the process.",
+          ],
+        },
+        bullets: {
+          es: ["Apoyo continuo durante manipulación", "Personal y ventosas adecuados", "Herramienta compatible con el sustrato", "Prueba de corte realizada", "Recortes medidos en obra", "Cara, bordes y polvo controlados"],
+          en: ["Continuous support during handling", "Suitable crew and suction lifters", "Tool compatible with the substrate", "Trial cut completed", "Openings measured on site", "Face, edges and dust controlled"],
+        },
+      },
+      {
+        id: "fix-align",
+        title: { es: "5. Fije y alinee cada lámina progresivamente", en: "5. Fix and align each sheet progressively" },
+        paragraphs: {
+          es: [
+            "Prepare una zona de prueba que incluya sustrato, fijación, junta y remate. Para adhesivos, respete compatibilidad, preparación, aplicación, tiempo abierto, presión y curado indicados por su fabricante. Cuando exista fijación mecánica, siga el detalle técnico aprobado.",
+            "Posicione la primera lámina con especial cuidado y compruebe nivel, aplome, contacto y orientación. Revise alineación y juntas a medida que avanza. No fuerce una lámina para compensar una base irregular ni retire apoyos antes de que el sistema pueda sostenerla.",
+          ],
+          en: [
+            "Prepare a trial area that includes the substrate, fixing, joint and trim. For adhesives, follow the manufacturer's compatibility, preparation, application, open-time, pressure and curing guidance. Where mechanical fixing is used, follow the approved technical detail.",
+            "Position the first sheet with particular care and check level, plumb, contact and orientation. Review alignment and joints as work progresses. Do not force a sheet to compensate for an irregular base or remove supports before the system can hold it.",
+          ],
+        },
+        bullets: {
+          es: ["Zona de prueba aprobada", "Compatibilidad del sistema confirmada", "Aplicación según instrucciones", "Primera lámina nivelada y aplomada", "Contacto y soporte verificados", "Alineación controlada durante el avance"],
+          en: ["Approved trial area", "System compatibility confirmed", "Application according to instructions", "First sheet level and plumb", "Contact and support verified", "Alignment controlled during progress"],
+        },
+      },
+      {
+        id: "joints-finishes",
+        title: { es: "6. Resuelva juntas, esquinas, bordes y remates", en: "6. Finish joints, corners, edges and transitions" },
+        paragraphs: {
+          es: [
+            "El detalle de junta debe corresponder al diseño, movimiento esperado, sistema de fijación y requisitos del proyecto. Confirme si la unión queda abierta, utiliza perfil, sellador u otra solución. No aplique un producto de acabado sin verificar compatibilidad con la superficie UV.",
+            "Presente en seco esquinas internas y externas, marcos, zócalos, cielos rasos y transiciones. Mida enchufes y servicios en obra, coordine aislamiento eléctrico con personal autorizado y mantenga acceso a los puntos que deben permanecer registrables.",
+          ],
+          en: [
+            "The joint detail must match the design, expected movement, fixing system and project requirements. Confirm whether the joint remains open or uses a profile, sealant or another solution. Do not apply a finishing product without checking compatibility with the UV surface.",
+            "Dry-fit internal and external corners, frames, skirtings, ceilings and transitions. Measure outlets and services on site, coordinate electrical isolation with authorized personnel and maintain access to points that must remain serviceable.",
+          ],
+        },
+        bullets: {
+          es: ["Detalle de junta confirmado", "Producto de acabado compatible", "Esquinas internas y externas", "Encuentros con techo y zócalo", "Recortes limpios y protegidos", "Acceso a servicios conservado"],
+          en: ["Confirmed joint detail", "Compatible finishing product", "Internal and external corners", "Ceiling and skirting junctions", "Clean and protected cut-outs", "Service access maintained"],
+        },
+      },
+      {
+        id: "inspect-handover",
+        title: { es: "7. Inspeccione, limpie y documente la entrega", en: "7. Inspect, clean and document the handover" },
+        paragraphs: {
+          es: [
+            "Revise la pared desde cerca y desde la distancia normal de uso. Compruebe alineación, continuidad de vetas, juntas, esquinas, remates, recortes, adherencia visible cuando corresponda, daños y residuos. Retire la película según la secuencia acordada.",
+            "Limpie con el método confirmado para la superficie; abrasivos o solventes no aprobados pueden afectar el acabado. Registre referencias y áreas instaladas, conserve material de reposición acordado y entregue las indicaciones disponibles de limpieza y mantenimiento.",
+          ],
+          en: [
+            "Inspect the wall close up and from its normal viewing distance. Check alignment, vein continuity, joints, corners, trims, cut-outs, visible bond where applicable, damage and residue. Remove protective film according to the agreed sequence.",
+            "Clean using the confirmed method for the surface; unapproved abrasives or solvents can affect the finish. Record installed references and areas, retain agreed spare material and provide available cleaning and maintenance guidance.",
+          ],
+        },
+        bullets: {
+          es: ["Alineación y continuidad visual", "Juntas, esquinas y remates", "Recortes y servicios accesibles", "Superficie sin daño ni residuos", "Película retirada correctamente", "Referencias, limpieza y pendientes entregados"],
+          en: ["Alignment and visual continuity", "Joints, corners and trims", "Cut-outs and accessible services", "Surface free of damage and residue", "Film removed correctly", "References, cleaning and open items handed over"],
+        },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
