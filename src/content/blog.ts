@@ -4082,6 +4082,182 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "uv-marble-sheet-packaging-container-loading-guide",
+    localizedSlug: { es: "guia-empaque-carga-contenedor-laminas-marmol-uv" },
+    publishedAt: "2026-11-10",
+    category: { es: "Guía de empaque", en: "Packing guide" },
+    title: {
+      es: "Guía de empaque y carga de contenedor para láminas de mármol UV",
+      en: "UV Marble Sheet Packaging and Container Loading Guide",
+    },
+    seoTitle: {
+      es: "Empaque y carga de láminas de mármol UV | SINOQI",
+      en: "UV Marble Sheet Packaging & Container Loading | SINOQI",
+    },
+    description: {
+      es: "Aprenda a confirmar protección, estructuras, peso bruto, manipulación y carga estimada antes de embarcar láminas de mármol UV.",
+      en: "Learn how to confirm protection, frames, gross weight, handling and loading estimates before shipping UV marble sheets.",
+    },
+    introduction: {
+      es: "Las láminas de mármol UV combinan gran formato, superficie decorativa y bordes sensibles. Por eso, un plan de empaque debe proteger caras, esquinas y cantos, controlar la flexión y permitir una manipulación segura. Esta guía ayuda a importadores y distribuidores a revisar el empaque terminado y a solicitar una estimación de carga basada en datos confirmados.",
+      en: "UV marble sheets combine large format, decorative surfaces and vulnerable edges. A packing plan must therefore protect faces, corners and edges, control bending and support safe handling. This guide helps importers and distributors review finished packing and request a loading estimate based on confirmed data.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/uv-marble-packing-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de láminas de mármol UV protegidas en una estructura de madera junto a un contenedor",
+      en: "Illustration of protected UV marble sheets in a timber frame beside a shipping container",
+    },
+    coverCaption: {
+      es: "Ilustración de planificación de empaque. La estructura, el peso y la carga final deben confirmarse con el producto y el empaque terminados.",
+      en: "Packing-planning illustration. Final structure, weight and loading must be confirmed from the finished product and packing.",
+    },
+    scopeNote: {
+      es: "Esta guía no establece una cantidad universal por contenedor. La carga depende del formato, espesor, cantidad, empaque terminado, estructura, payload del equipo, naviera, ruta, transporte terrestre y reglas del destino. Confirme esos datos antes de reservar.",
+      en: "This guide does not define a universal container quantity. Loading depends on format, thickness, quantity, finished packing, frame, equipment payload, carrier, route, inland transport and destination rules. Confirm those details before booking.",
+    },
+    images: [
+      {
+        src: "/assets/uv-marble-packing-02-protection.png",
+        afterSectionId: "protect-surfaces",
+        alt: {
+          es: "Ilustración de película, separadores, protección de caras, cantos y esquinas para láminas de mármol UV",
+          en: "Illustration of film, interleaving, face, edge and corner protection for UV marble sheets",
+        },
+        caption: {
+          es: "La protección debe corresponder al formato, al acabado, al método de carga y a las manipulaciones previstas.",
+          en: "Protection should match the format, finish, loading method and intended handling steps.",
+        },
+      },
+      {
+        src: "/assets/uv-marble-packing-03-loading.png",
+        afterSectionId: "container-plan",
+        alt: {
+          es: "Ilustración de estructuras con láminas de mármol UV organizadas para carga en contenedor",
+          en: "Illustration of framed UV marble sheet packs arranged for container loading",
+        },
+        caption: {
+          es: "La orientación, el apoyo y el acceso de descarga deben planificarse con dimensiones y peso bruto terminados.",
+          en: "Orientation, support and unloading access should be planned from finished dimensions and gross weight.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre empaque y carga de láminas UV",
+      en: "UV marble sheet packing and loading FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Plan de empaque UV", en: "UV marble packing plan" },
+      title: { es: "Solicite un plan de empaque para láminas UV", en: "Request a UV Marble Sheet Packing Plan" },
+      body: {
+        es: "Envíenos formato, espesor, diseños, cantidad, empaque solicitado y puerto de destino. Prepararemos la cotización y la estimación de carga con los datos confirmados.",
+        en: "Send us the format, thickness, décors, quantity, requested packing and destination port. We will prepare the quotation and loading estimate from the confirmed data.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Las láminas UV deben enviarse planas o verticales?", en: "Should UV marble sheets be shipped flat or upright?" },
+        answer: {
+          es: "No existe una orientación universal. La decisión depende del formato, sustrato, espesor, estructura, método de carga y descarga e instrucciones del producto. El sistema debe controlar flexión, movimiento y presión sobre superficies y bordes.",
+          en: "There is no universal orientation. The decision depends on format, substrate, thickness, frame, loading and unloading method and product instructions. The system must control bending, movement and pressure on surfaces and edges.",
+        },
+      },
+      {
+        question: { es: "¿Qué protección necesitan las láminas de mármol UV?", en: "What protection do UV marble sheets need?" },
+        answer: {
+          es: "La solución puede incluir película, separadores, protección de caras, cantoneras, protectores de cantos, tableros rígidos y una estructura adecuada. Debe revisarse con el producto real y las manipulaciones previstas.",
+          en: "The solution may include film, interleaving, face boards, corner guards, edge protectors and a suitable frame. It should be reviewed with the actual product and intended handling steps.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se calcula el peso bruto de un paquete?", en: "How is pack gross weight calculated?" },
+        answer: {
+          es: "Debe incluir láminas, película, separadores, protección, flejes, palé o estructura y accesorios empacados. Utilice el peso del paquete terminado para documentos, manipulación y cálculo de carga.",
+          en: "It should include sheets, film, interleaving, protection, straps, pallet or frame and packed accessories. Use finished-pack weight for documents, handling and loading calculations.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se estima la carga del contenedor?", en: "How is container loading estimated?" },
+        answer: {
+          es: "La estimación utiliza dimensiones y peso bruto terminados, orientación, apoyos, acceso operativo y payload permitido. También deben revisarse naviera, ruta, transporte terrestre, descarga y reglas del destino.",
+          en: "The estimate uses finished dimensions and gross weight, orientation, supports, operating access and permitted payload. Carrier, route, inland transport, unloading and destination rules must also be reviewed.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe aprobar el comprador antes del embarque?", en: "What should the buyer approve before shipment?" },
+        answer: {
+          es: "Revise referencias, cantidad por paquete, protección, dimensiones, peso bruto, etiquetas, estructura, secuencia de carga y estimación total. Fotografías y lista de empaque deben corresponder al pedido terminado.",
+          en: "Review references, quantity per pack, protection, dimensions, gross weight, labels, frame, loading sequence and total estimate. Photographs and packing list should correspond to the finished order.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "confirm-pack-data",
+        title: { es: "1. Confirme producto, formato y mezcla del pedido", en: "1. Confirm product, format and order mix" },
+        paragraphs: {
+          es: ["El plan comienza con la referencia exacta, sustrato, largo, ancho, espesor y peso de cada configuración. Diseños, formatos o accesorios diferentes pueden requerir identificación, separadores o paquetes distintos.", "Prepare una lista por referencia y cantidad. Confirme qué piezas viajan juntas y qué secuencia necesita el comprador para recibir. No calcule todo como si fuera un único paquete estándar."],
+          en: ["The plan starts with the exact reference, substrate, length, width, thickness and weight of each configuration. Different décors, formats or accessories may need separate identification, interleaving or packs.", "Prepare a list by reference and quantity. Confirm which items travel together and what receiving sequence the buyer needs. Do not calculate everything as one standard pack."],
+        },
+        bullets: { es: ["Referencia, sustrato y formato", "Espesor y peso por configuración", "Cantidad por diseño", "Accesorios incluidos", "Mezcla de tamaños", "Secuencia de recepción"], en: ["Reference, substrate and format", "Thickness and weight by configuration", "Quantity per décor", "Included accessories", "Mixed sizes", "Receiving sequence"] },
+      },
+      {
+        id: "protect-surfaces",
+        title: { es: "2. Proteja caras, cantos y esquinas", en: "2. Protect faces, edges and corners" },
+        paragraphs: {
+          es: ["La cara decorativa, la película, los cantos y las esquinas son puntos críticos. Combine separadores, protección rígida, cantoneras y relleno para evitar roce, presión localizada y movimiento sin deformar la lámina.", "Revise una muestra de empaque con el producto real. Compruebe cómo se coloca, levanta, fleja, abre y vuelve a cerrar. La protección debe funcionar durante todas las manipulaciones previstas, no solo verse ordenada."],
+          en: ["The decorative face, film, edges and corners are critical points. Combine interleaving, rigid protection, corner guards and cushioning to prevent abrasion, localized pressure and movement without distorting the sheet.", "Review a packing sample with the actual product. Check how it is placed, lifted, strapped, opened and closed again. Protection must work through all intended handling steps, not merely look orderly."],
+        },
+        bullets: { es: ["Película sin daño", "Separadores entre caras", "Tableros de protección", "Cantos y esquinas protegidos", "Flejes sin presión dañina", "Muestra de empaque revisada"], en: ["Undamaged film", "Interleaving between faces", "Protective face boards", "Protected edges and corners", "Straps without damaging pressure", "Reviewed packing sample"] },
+      },
+      {
+        id: "frame-support",
+        title: { es: "3. Diseñe una estructura y apoyo adecuados", en: "3. Define suitable frame and support" },
+        paragraphs: {
+          es: ["La estructura debe sostener el paquete durante movimiento, apilado permitido, tránsito y descarga. Confirme orientación, inclinación cuando corresponda, puntos de apoyo, arriostramiento y contacto entre la lámina y la estructura.", "Si utiliza madera, revise peso, dimensiones, acceso de horquillas y requisitos IPPC, tratamiento o marcado del destino. La parte técnica responsable debe aprobar la estabilidad del sistema de empaque."],
+          en: ["The frame must support the pack during movement, permitted stacking, transit and unloading. Confirm orientation, inclination where applicable, support points, bracing and contact between sheet and frame.", "Where wood is used, review weight, dimensions, fork access and destination IPPC, treatment or marking requirements. The responsible technical party should approve packing-system stability."],
+        },
+        bullets: { es: ["Orientación y apoyo definidos", "Estructura arriostrada", "Contacto protegido", "Acceso de montacargas", "Peso de estructura incluido", "Requisitos de madera confirmados"], en: ["Defined orientation and support", "Braced frame", "Protected contact points", "Forklift access", "Frame weight included", "Confirmed wood requirements"] },
+      },
+      {
+        id: "finished-pack-data",
+        title: { es: "4. Verifique dimensiones, peso y etiquetas terminados", en: "4. Verify finished dimensions, weight and labels" },
+        paragraphs: {
+          es: ["Registre cantidad por paquete, dimensiones exteriores, peso neto y peso bruto después de terminar el empaque. El peso bruto debe incluir producto, protección, estructura, palé, flejes y accesorios.", "Etiquetas y marcas deben identificar referencia, diseño, formato, cantidad, pedido y orientación de manipulación cuando corresponda. Actualice la lista de empaque con datos reales, no valores preliminares."],
+          en: ["Record quantity per pack, external dimensions, net weight and gross weight after packing is finished. Gross weight must include product, protection, frame, pallet, straps and accessories.", "Labels and marks should identify reference, décor, format, quantity, order and handling orientation where applicable. Update the packing list with actual data rather than preliminary figures."],
+        },
+        bullets: { es: ["Cantidad por paquete", "Dimensiones exteriores", "Peso neto y bruto", "Referencia y diseño", "Etiquetas aprobadas", "Lista de empaque actualizada"], en: ["Quantity per pack", "External dimensions", "Net and gross weight", "Reference and décor", "Approved labels", "Updated packing list"] },
+      },
+      {
+        id: "container-plan",
+        title: { es: "5. Calcule la carga con datos confirmados", en: "5. Calculate loading from confirmed data" },
+        paragraphs: {
+          es: ["Compruebe espacio y peso al mismo tiempo. Utilice dimensiones exteriores, peso bruto y orientación de cada estructura. Incluya apoyos, arriostramiento, separación y espacio de maniobra; el volumen interno teórico no equivale a espacio utilizable.", "Compare el peso total con el payload permitido y los límites de la ruta. Naviera, equipo, transporte terrestre y destino pueden imponer restricciones distintas. Mantenga la cifra como estimación hasta confirmar empaque y reserva."],
+          en: ["Check space and weight together. Use external dimensions, gross weight and orientation of every frame. Include supports, bracing, separation and handling clearance; theoretical internal volume does not equal usable space.", "Compare total weight with permitted payload and route limits. Carrier, equipment, inland transport and destination may impose different restrictions. Keep the figure as an estimate until packing and booking are confirmed."],
+        },
+        bullets: { es: ["Orientación y dimensiones", "Peso bruto total", "Apoyos y arriostramiento", "Espacio operativo", "Payload y límites de ruta", "Estimación actualizada"], en: ["Orientation and dimensions", "Total gross weight", "Supports and bracing", "Operating clearance", "Payload and route limits", "Updated estimate"] },
+      },
+      {
+        id: "loading-unloading",
+        title: { es: "6. Planifique carga, tránsito y descarga", en: "6. Plan loading, transit and unloading" },
+        paragraphs: {
+          es: ["Defina equipo, puntos de elevación, secuencia y responsables. Las estructuras deben moverse desde los puntos diseñados y mantenerse estables durante entrada, posicionamiento y sujeción dentro del contenedor.", "Comparta dimensiones y pesos con el comprador antes de la llegada. Confirme montacargas, capacidad, longitud de horquillas, espacio de maniobra, método de descarga y almacenamiento protegido en destino."],
+          en: ["Define equipment, lifting points, sequence and responsibilities. Frames should be moved from their designed points and remain stable during entry, positioning and securing inside the container.", "Share dimensions and weights with the buyer before arrival. Confirm forklift capacity, fork length, maneuvering space, unloading method and protected storage at destination."],
+        },
+        bullets: { es: ["Equipo y responsables", "Puntos de elevación", "Secuencia de carga", "Sujeción durante tránsito", "Descarga confirmada", "Almacenamiento protegido"], en: ["Equipment and responsibilities", "Lifting points", "Loading sequence", "Transit restraint", "Confirmed unloading", "Protected storage"] },
+      },
+      {
+        id: "approval-checklist",
+        title: { es: "7. Lista de aprobación antes del embarque", en: "7. Pre-shipment packing approval checklist" },
+        paragraphs: {
+          es: ["Alinee cotización, muestra, empaque, etiqueta y lista de empaque. Cualquier cambio de formato, cantidad, estructura o protección puede modificar dimensiones, peso y carga estimada.", "Solicite fotografías y registros del pedido terminado. Autorice el embarque solo después de resolver o aceptar formalmente diferencias en identificación, protección, peso, estructura o plan de carga."],
+          en: ["Align quotation, sample, packing, label and packing list. Any change in format, quantity, frame or protection can change dimensions, weight and estimated loading.", "Request photographs and records of the finished order. Authorize shipment only after differences in identity, protection, weight, frame or loading plan are resolved or formally accepted."],
+        },
+        bullets: { es: ["Producto y cantidad correctos", "Protección aprobada", "Estructura y madera conformes", "Dimensiones y peso terminados", "Etiquetas correctas", "Carga dentro de límites", "Descarga confirmada", "Fotos y documentos coincidentes"], en: ["Correct product and quantity", "Approved protection", "Compliant frame and wood", "Finished dimensions and weight", "Correct labels", "Loading within limits", "Confirmed unloading", "Matching photos and documents"] },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
