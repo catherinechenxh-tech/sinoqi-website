@@ -4258,6 +4258,182 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "uv-marble-sheet-quality-inspection-checklist",
+    localizedSlug: { es: "lista-inspeccion-calidad-laminas-marmol-uv" },
+    publishedAt: "2026-11-13",
+    category: { es: "Control de calidad", en: "Quality control" },
+    title: {
+      es: "Lista de inspección de calidad para láminas de mármol UV",
+      en: "UV Marble Sheet Quality Inspection Checklist Before Shipment",
+    },
+    seoTitle: {
+      es: "Inspección de calidad de láminas UV | SINOQI",
+      en: "UV Marble Sheet Quality Inspection Checklist | SINOQI",
+    },
+    description: {
+      es: "Revise muestras, dimensiones, superficie, diseño, película, empaque y registros antes de embarcar láminas de mármol UV.",
+      en: "Check samples, dimensions, surface, décor, protective film, packing and records before UV marble sheets are shipped.",
+    },
+    introduction: {
+      es: "Una inspección antes del embarque debe comprobar el pedido contra una referencia acordada, no contra una idea general de cómo debería verse una lámina. Para importadores y distribuidores, el objetivo es detectar diferencias mientras todavía pueden identificarse, documentarse y resolverse. Esta lista organiza la revisión desde la muestra aprobada hasta la liberación del embarque.",
+      en: "A pre-shipment inspection should check the order against an agreed reference, not a general idea of how a sheet should look. For importers and distributors, the purpose is to find differences while they can still be identified, documented and resolved. This checklist organizes the review from the approved sample through shipment release.",
+    },
+    readingTime: { es: "10 min", en: "10 min" },
+    cover: "/assets/uv-marble-inspection-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de inspección de una lámina de mármol UV con calibrador, regla y muestra de referencia",
+      en: "Illustration of a UV marble sheet inspection using a caliper, straightedge and reference sample",
+    },
+    coverCaption: {
+      es: "Ilustración de control previo al embarque. La inspección debe seguir la especificación, la muestra y los criterios acordados para el pedido.",
+      en: "Pre-shipment inspection illustration. The review should follow the specification, sample and criteria agreed for the order.",
+    },
+    scopeNote: {
+      es: "Esta guía no sustituye la especificación del pedido, el plan de muestreo acordado, los métodos de ensayo aplicables ni las reglas del mercado de destino. Las tolerancias y criterios de aceptación deben confirmarse por escrito. Cuando se requieran ensayos de laboratorio, utilice el método y el laboratorio aceptados para el proyecto.",
+      en: "This guide does not replace the order specification, agreed sampling plan, applicable test methods or destination-market rules. Tolerances and acceptance criteria must be confirmed in writing. Where laboratory testing is required, use the method and laboratory accepted for the project.",
+    },
+    images: [
+      {
+        src: "/assets/uv-marble-inspection-02-dimensions.png",
+        afterSectionId: "dimensions-edges",
+        alt: {
+          es: "Ilustración de medición del espesor, planeidad y estado de los cantos de una lámina de mármol UV",
+          en: "Illustration of UV marble sheet thickness, flatness and edge-condition checks",
+        },
+        caption: {
+          es: "Registre el instrumento, los puntos de medición y el resultado; compare cada dato con la tolerancia confirmada para el pedido.",
+          en: "Record the instrument, measurement points and result, then compare each value with the tolerance confirmed for the order.",
+        },
+      },
+      {
+        src: "/assets/uv-marble-inspection-03-surface.png",
+        afterSectionId: "decor-trial-layout",
+        alt: {
+          es: "Ilustración de varias láminas de mármol UV comparadas por color, brillo y continuidad de veta",
+          en: "Illustration of UV marble sheets compared for colour, gloss and vein continuity",
+        },
+        caption: {
+          es: "Compare las láminas bajo iluminación uniforme y conserve la referencia aprobada dentro del registro de inspección.",
+          en: "Compare sheets under consistent lighting and keep the approved reference within the inspection record.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre inspección de láminas UV",
+      en: "UV marble sheet inspection FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Especificación de láminas UV", en: "UV marble sheet specification" },
+      title: { es: "Prepare una especificación verificable de láminas UV", en: "Prepare a Verifiable UV Marble Sheet Specification" },
+      body: {
+        es: "Envíenos formato, espesor, diseño, acabado, cantidad, tolerancias, empaque y requisitos del mercado de destino. Prepararemos la cotización según los datos confirmados.",
+        en: "Send us the format, thickness, décor, finish, quantity, tolerances, packing and destination-market requirements. We will prepare the quotation from the confirmed information.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Qué documentos se necesitan para inspeccionar láminas de mármol UV?", en: "What documents are needed to inspect UV marble sheets?" },
+        answer: {
+          es: "Utilice el pedido o contrato, la especificación confirmada, la muestra aprobada, las referencias de diseño, el arte de etiquetas, el plan de empaque y los criterios de aceptación. También debe estar disponible el plan de muestreo acordado y cualquier informe exigido para el destino.",
+          en: "Use the order or contract, confirmed specification, approved sample, décor references, label artwork, packing plan and acceptance criteria. The agreed sampling plan and any reports required for the destination should also be available.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se verifican las dimensiones y la planeidad?", en: "How should dimensions and flatness be checked?" },
+        answer: {
+          es: "Defina instrumento, condición de apoyo, puntos de medición, tamaño de muestra y tolerancia antes de inspeccionar. Registre largo, ancho, espesor, escuadra o planeidad según la especificación, sin aplicar límites genéricos de otro producto.",
+          en: "Define the instrument, support condition, measurement points, sample size and tolerance before inspection. Record length, width, thickness, squareness or flatness as specified, without applying generic limits from another product.",
+        },
+      },
+      {
+        question: { es: "¿Una muestra aprobada es suficiente para aceptar todo el pedido?", en: "Is an approved sample enough to accept the complete order?" },
+        answer: {
+          es: "No por sí sola. La muestra ayuda a comparar diseño, color, brillo, textura y construcción, pero también deben revisarse cantidad, dimensiones, daños, película, empaque, etiquetas y cualquier criterio escrito del pedido.",
+          en: "Not by itself. The sample supports comparison of décor, colour, gloss, texture and construction, but quantity, dimensions, damage, film, packing, labels and all written order criteria must also be checked.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se revisan el color, la superficie y la película protectora?", en: "How should colour, surface and protective film be inspected?" },
+        answer: {
+          es: "Compare piezas identificadas con la referencia aprobada bajo iluminación uniforme y desde una distancia acordada. Revise contaminación, rayas, marcas, brillo, veta, bordes y película. Registre fotografías con referencia de lote o paquete.",
+          en: "Compare identified pieces with the approved reference under consistent lighting and from an agreed viewing distance. Check contamination, scratches, marks, gloss, veining, edges and film. Record photographs with the relevant lot or pack reference.",
+        },
+      },
+      {
+        question: { es: "¿Qué ocurre si la inspección encuentra una diferencia?", en: "What happens if an inspection finds a deviation?" },
+        answer: {
+          es: "Aísle e identifique el material afectado, describa el requisito y el resultado, y confirme el alcance mediante el muestreo acordado. El comprador y el proveedor deben documentar la corrección, reposición, aceptación o rechazo antes de autorizar el embarque.",
+          en: "Segregate and identify the affected material, describe the requirement and result, and confirm the extent under the agreed sampling plan. Buyer and supplier should document correction, replacement, acceptance or rejection before shipment is released.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "inspection-basis",
+        title: { es: "1. Defina la base de inspección antes de revisar", en: "1. Define the inspection basis before checking" },
+        paragraphs: {
+          es: ["Reúna pedido, especificación final, muestra aprobada, referencias de diseño, tolerancias, arte de etiquetas y plan de empaque. Si un requisito solo aparece en un correo o una fotografía, incorpórelo al documento de control antes de iniciar.", "Acordar el método es tan importante como acordar el valor. Defina tamaño y selección de la muestra, instrumentos, iluminación, distancia de observación y responsable de la decisión. Así, una diferencia puede evaluarse contra un criterio común."],
+          en: ["Gather the order, final specification, approved sample, décor references, tolerances, label artwork and packing plan. If a requirement appears only in an email or photograph, bring it into the control document before inspection begins.", "Agreeing the method is as important as agreeing the value. Define sample size and selection, instruments, lighting, viewing distance and decision owner. A difference can then be evaluated against a common criterion."],
+        },
+        bullets: { es: ["Pedido y especificación final", "Muestra y diseño aprobados", "Tolerancias escritas", "Plan de muestreo", "Instrumentos y condiciones", "Responsable de liberación"], en: ["Order and final specification", "Approved sample and décor", "Written tolerances", "Sampling plan", "Instruments and conditions", "Release authority"] },
+      },
+      {
+        id: "identity-traceability",
+        title: { es: "2. Confirme identidad, cantidad y trazabilidad", en: "2. Confirm identity, quantity and traceability" },
+        paragraphs: {
+          es: ["Separe el pedido por referencia, diseño, formato, espesor y acabado. Compare las cantidades disponibles con el pedido y la lista de empaque preliminar; una mezcla correcta en total puede seguir siendo incorrecta por referencia.", "Seleccione piezas de paquetes identificados y conserve el vínculo entre resultado, paquete y lote disponible. Registre qué se abrió, cuántas piezas se revisaron y cómo se devolvieron al empaque."],
+          en: ["Split the order by reference, décor, format, thickness and finish. Compare available quantities with the order and preliminary packing list; a correct total can still contain the wrong mix by reference.", "Select pieces from identified packs and preserve the link between result, pack and available lot. Record what was opened, how many pieces were checked and how they were returned to packing."],
+        },
+        bullets: { es: ["Referencia y diseño", "Formato, espesor y acabado", "Cantidad por referencia", "Paquete y lote identificados", "Muestra trazable", "Registro de apertura y cierre"], en: ["Reference and décor", "Format, thickness and finish", "Quantity by reference", "Identified pack and lot", "Traceable sample", "Opening and repacking record"] },
+      },
+      {
+        id: "dimensions-edges",
+        title: { es: "3. Revise dimensiones, planeidad y cantos", en: "3. Check dimensions, flatness and edges" },
+        paragraphs: {
+          es: ["Mida largo, ancho y espesor en los puntos definidos. Cuando el pedido lo requiera, revise escuadra, diagonales, planeidad, condición de los cantos y cualquier mecanizado. Apoye la lámina como indique el método para no confundir flexión de manipulación con una desviación del producto.", "No copie una tolerancia de otra ficha o proveedor. Registre instrumento, calibración cuando aplique, puntos medidos y resultados reales; compare únicamente con el límite confirmado para este pedido."],
+          en: ["Measure length, width and thickness at the defined points. Where required by the order, check squareness, diagonals, flatness, edge condition and any machining. Support the sheet as the method requires so handling deflection is not confused with a product deviation.", "Do not copy a tolerance from another data sheet or supplier. Record the instrument, calibration where applicable, measured points and actual results; compare only with the limit confirmed for this order."],
+        },
+        bullets: { es: ["Largo, ancho y espesor", "Escuadra o diagonales", "Planeidad con apoyo definido", "Cantos y esquinas", "Cortes o mecanizado", "Datos y equipo registrados"], en: ["Length, width and thickness", "Squareness or diagonals", "Flatness with defined support", "Edges and corners", "Cutting or machining", "Recorded data and equipment"] },
+      },
+      {
+        id: "surface-film",
+        title: { es: "4. Inspeccione superficie, brillo y película protectora", en: "4. Inspect surface, gloss and protective film" },
+        paragraphs: {
+          es: ["Observe la cara decorativa bajo iluminación uniforme. Revise rayas, contaminación, marcas de presión, puntos, variación de brillo y daños visibles según el criterio acordado. Incline la lámina cuando sea necesario para detectar cambios en el reflejo.", "Compruebe que la película protectora corresponda a lo aprobado, esté bien aplicada y pueda retirarse en una muestra sin dejar un resultado no aceptado. Revise también cara posterior, bordes y esquinas, porque los daños pueden quedar ocultos dentro del paquete."],
+          en: ["View the decorative face under consistent lighting. Check scratches, contamination, pressure marks, spots, gloss variation and visible damage against the agreed criterion. Tilt the sheet where needed to reveal changes in reflection.", "Confirm that the protective film matches the approval, is properly applied and can be removed from a sample without an unacceptable result. Also inspect the back, edges and corners because damage may be concealed inside the pack."],
+        },
+        bullets: { es: ["Cara decorativa limpia", "Brillo y textura comparados", "Rayas, marcas y puntos", "Película bien aplicada", "Prueba de retiro acordada", "Reverso, bordes y esquinas"], en: ["Clean decorative face", "Compared gloss and texture", "Scratches, marks and spots", "Properly applied film", "Agreed removal trial", "Back, edges and corners"] },
+      },
+      {
+        id: "decor-trial-layout",
+        title: { es: "5. Compare diseño, color y apariencia en conjunto", en: "5. Compare décor, colour and overall appearance" },
+        paragraphs: {
+          es: ["Compare las piezas con la muestra física y la referencia exacta, no únicamente con imágenes de pantalla. Utilice iluminación constante y registre cualquier diferencia de tono, contraste, escala de veta, dirección, repetición, brillo o textura.", "Cuando la continuidad visual sea importante, coloque varias láminas en la orientación prevista y simule juntas. Esta prueba ayuda a revisar la transición de vetas y la mezcla del pedido, pero no convierte un diseño aleatorio en un patrón continuo si eso no fue especificado."],
+          en: ["Compare pieces with the physical sample and exact reference, not only with screen images. Use consistent lighting and record any difference in tone, contrast, vein scale, direction, repeat, gloss or texture.", "Where visual continuity matters, stage several sheets in the intended orientation and simulate joints. This trial helps review vein transitions and the order mix, but it does not turn a random décor into a continuous pattern unless that was specified."],
+        },
+        bullets: { es: ["Muestra física presente", "Iluminación uniforme", "Tono y contraste", "Escala y dirección de veta", "Brillo y textura", "Prueba de juntas cuando aplique"], en: ["Physical sample present", "Consistent lighting", "Tone and contrast", "Vein scale and direction", "Gloss and texture", "Joint trial where applicable"] },
+      },
+      {
+        id: "packing-labels",
+        title: { es: "6. Verifique empaque, etiquetas y datos logísticos", en: "6. Verify packing, labels and logistics data" },
+        paragraphs: {
+          es: ["Revise cantidad por paquete, separadores, protección de caras, cantos y esquinas, flejes, estructura y acceso de montacargas. Abra y vuelva a cerrar un paquete según el procedimiento para comprobar que la protección funciona durante la manipulación prevista.", "Compare etiquetas con el arte aprobado y registre dimensiones, peso neto y peso bruto terminados. Confirme requisitos de madera o IPPC, marcas de manipulación, lista de empaque y estimación de carga con los datos reales del pedido."],
+          en: ["Check quantity per pack, interleaving, face, edge and corner protection, straps, frame and forklift access. Open and close a pack under the procedure to confirm that protection works through the intended handling steps.", "Compare labels with approved artwork and record finished dimensions, net weight and gross weight. Confirm wood or IPPC requirements, handling marks, packing list and loading estimate from the actual order data."],
+        },
+        bullets: { es: ["Cantidad por paquete", "Protección y estructura", "Etiquetas correctas", "Dimensiones terminadas", "Peso neto y bruto", "Lista y carga actualizadas"], en: ["Quantity per pack", "Protection and frame", "Correct labels", "Finished dimensions", "Net and gross weight", "Updated list and loading"] },
+      },
+      {
+        id: "deviation-release",
+        title: { es: "7. Documente diferencias y libere el embarque", en: "7. Document deviations and release shipment" },
+        paragraphs: {
+          es: ["Cada diferencia debe indicar requisito, resultado, referencia afectada, alcance conocido, fotografías y estado del material. Aísle piezas o paquetes cuando sea necesario y amplíe la revisión conforme al plan acordado; no oculte una diferencia dentro de un promedio general.", "Antes de embarcar, cierre cada punto mediante corrección verificada, reposición, aceptación escrita o rechazo. El informe final debe coincidir con la lista de empaque y mostrar quién inspeccionó, quién decidió y qué evidencia respalda la liberación."],
+          en: ["Every deviation should state the requirement, result, affected reference, known extent, photographs and material status. Segregate pieces or packs where necessary and extend the review under the agreed plan; do not hide a difference inside an overall average.", "Before shipment, close every item through verified correction, replacement, written acceptance or rejection. The final report should match the packing list and show who inspected, who decided and what evidence supports release."],
+        },
+        bullets: { es: ["Requisito y resultado claros", "Material afectado identificado", "Alcance confirmado", "Acción y responsable", "Cierre documentado", "Autorización antes de cargar"], en: ["Clear requirement and result", "Identified affected material", "Confirmed extent", "Action and owner", "Documented closure", "Authorization before loading"] },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
