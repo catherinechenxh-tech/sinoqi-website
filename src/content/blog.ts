@@ -4434,6 +4434,182 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "uv-marble-sheet-cleaning-maintenance-guide",
+    localizedSlug: { es: "guia-limpieza-mantenimiento-laminas-marmol-uv" },
+    publishedAt: "2026-11-16",
+    category: { es: "Guía de mantenimiento", en: "Maintenance guide" },
+    title: {
+      es: "Guía de limpieza y mantenimiento para láminas de mármol UV",
+      en: "UV Marble Sheet Cleaning and Maintenance Guide",
+    },
+    seoTitle: {
+      es: "Limpieza de láminas de mármol UV | SINOQI",
+      en: "UV Marble Sheet Cleaning & Maintenance Guide | SINOQI",
+    },
+    description: {
+      es: "Aprenda a limpiar, proteger e inspeccionar láminas de mármol UV instaladas sin aplicar métodos o productos no confirmados.",
+      en: "Learn how to clean, protect and inspect installed UV marble sheets without using unconfirmed products or methods.",
+    },
+    introduction: {
+      es: "El mantenimiento de una pared con láminas de mármol UV comienza antes de usar un limpiador. El equipo debe identificar el producto instalado, conservar las instrucciones disponibles y probar cualquier método en un área poco visible. Esta guía ayuda a distribuidores, contratistas y responsables de instalaciones a preparar una rutina práctica sin asumir que todos los acabados responden igual.",
+      en: "Maintaining a UV marble sheet wall starts before a cleaner is applied. The team should identify the installed product, retain available instructions and test any method in an inconspicuous area. This guide helps distributors, contractors and facility teams prepare a practical routine without assuming that every finish responds in the same way.",
+    },
+    readingTime: { es: "9 min", en: "9 min" },
+    cover: "/assets/uv-marble-maintenance-01-cover.png",
+    coverAlt: {
+      es: "Ilustración de limpieza de una pared interior revestida con láminas de mármol UV",
+      en: "Illustration of cleaning an interior wall finished with UV marble sheets",
+    },
+    coverCaption: {
+      es: "Ilustración de mantenimiento. Confirme el producto, el limpiador y el procedimiento antes de trabajar sobre toda la superficie.",
+      en: "Maintenance illustration. Confirm the product, cleaner and procedure before treating the complete surface.",
+    },
+    scopeNote: {
+      es: "Esta guía corresponde a láminas decorativas UV instaladas en paredes interiores. No sustituye la ficha del producto, las instrucciones del proveedor, la evaluación del lugar ni los requisitos del proyecto. Confirme compatibilidad y seguridad del limpiador, sellador, adhesivo, perfil y sustrato antes de intervenir.",
+      en: "This guide covers decorative UV sheets installed on interior walls. It does not replace product data, supplier instructions, site assessment or project requirements. Confirm compatibility and safety for the cleaner, sealant, adhesive, trim and substrate before intervention.",
+    },
+    images: [
+      {
+        src: "/assets/uv-marble-maintenance-02-cleaning.png",
+        afterSectionId: "routine-cleaning",
+        alt: {
+          es: "Ilustración de limpieza suave de una lámina de mármol UV con paño de microfibra y prueba previa",
+          en: "Illustration of gentle UV marble sheet cleaning with a microfiber cloth and prior spot test",
+        },
+        caption: {
+          es: "Pruebe primero en un área discreta y utilice únicamente el producto y el método confirmados para el acabado.",
+          en: "Test first in an inconspicuous area and use only the product and method confirmed for the finish.",
+        },
+      },
+      {
+        src: "/assets/uv-marble-maintenance-03-inspection.png",
+        afterSectionId: "joints-edges",
+        alt: {
+          es: "Ilustración de inspección de juntas, esquinas y zócalos en una pared con láminas de mármol UV",
+          en: "Illustration of UV marble sheet wall joint, corner and base inspection",
+        },
+        caption: {
+          es: "Incluya juntas, perfiles, esquinas, recortes y bordes inferiores dentro de la revisión periódica.",
+          en: "Include joints, trims, corners, cut-outs and lower edges in the periodic review.",
+        },
+      },
+    ],
+    faqTitle: {
+      es: "Preguntas frecuentes sobre limpieza de láminas UV",
+      en: "UV marble sheet cleaning FAQ",
+    },
+    cta: {
+      eyebrow: { es: "Proyecto de láminas UV", en: "UV marble sheet project" },
+      title: { es: "Solicite una especificación de láminas UV para su proyecto", en: "Request a UV Marble Sheet Specification for Your Project" },
+      body: {
+        es: "Envíenos el uso previsto, formato, diseño, cantidad, sustrato, condiciones del proyecto y destino. Prepararemos la cotización según la configuración confirmada.",
+        en: "Send us the intended use, format, décor, quantity, substrate, project conditions and destination. We will prepare the quotation from the confirmed configuration.",
+      },
+    },
+    faqs: [
+      {
+        question: { es: "¿Qué limpiador se puede usar sobre láminas de mármol UV?", en: "Which cleaner can be used on UV marble sheets?" },
+        answer: {
+          es: "Utilice únicamente un limpiador cuya compatibilidad esté confirmada para la lámina y el acabado instalados. Revise las instrucciones disponibles, prepare la dilución indicada cuando corresponda y pruebe en un área poco visible antes de ampliar el uso.",
+          en: "Use only a cleaner confirmed as compatible with the installed sheet and finish. Review available instructions, prepare the specified dilution where applicable and test an inconspicuous area before wider use.",
+        },
+      },
+      {
+        question: { es: "¿Se pueden utilizar esponjas abrasivas o solventes?", en: "Can abrasive pads or solvents be used?" },
+        answer: {
+          es: "No deben utilizarse sin aprobación específica. Los abrasivos, solventes fuertes y herramientas duras pueden cambiar el brillo, rayar la superficie o afectar otros componentes. Solicite un método confirmado para el producto y la mancha concreta.",
+          en: "They should not be used without specific approval. Abrasives, strong solvents and hard tools may alter gloss, scratch the surface or affect other components. Obtain a confirmed method for the particular product and stain.",
+        },
+      },
+      {
+        question: { es: "¿Cuándo debe retirarse la película protectora?", en: "When should the protective film be removed?" },
+        answer: {
+          es: "Siga la secuencia y el plazo confirmados para el producto y el proyecto. Antes de retirarla, complete los trabajos que puedan ensuciar o rayar la pared; después, retire una zona de prueba, revise la superficie y continúe sin usar herramientas que la dañen.",
+          en: "Follow the sequence and timing confirmed for the product and project. Complete work that may soil or scratch the wall first, then remove a trial area, inspect the surface and continue without tools that could cause damage.",
+        },
+      },
+      {
+        question: { es: "¿Cómo se deben limpiar las juntas y los perfiles?", en: "How should joints and trims be cleaned?" },
+        answer: {
+          es: "Trátelos como componentes distintos. Confirme compatibilidad con el sellador, perfil, adhesivo expuesto y superficies vecinas. Evite concentrar líquido en juntas o bordes y no raspe residuos sin conocer el método aprobado.",
+          en: "Treat them as separate components. Confirm compatibility with sealant, trim, exposed adhesive and adjacent surfaces. Avoid concentrating liquid at joints or edges and do not scrape residue without an approved method.",
+        },
+      },
+      {
+        question: { es: "¿Qué debe incluir un registro de mantenimiento?", en: "What should a maintenance record include?" },
+        answer: {
+          es: "Registre área, fecha, condición observada, producto utilizado, dilución si aplica, método, responsable y resultado. Añada fotografías y cualquier acción pendiente relacionada con juntas, perfiles, filtraciones, impactos o cambios de superficie.",
+          en: "Record the area, date, observed condition, product used, dilution where applicable, method, operator and result. Add photographs and any open action involving joints, trims, leaks, impact or surface changes.",
+        },
+      },
+    ],
+    sections: [
+      {
+        id: "identify-finish",
+        title: { es: "1. Identifique la lámina y el acabado instalados", en: "1. Identify the installed sheet and finish" },
+        paragraphs: {
+          es: ["Conserve referencia, diseño, acabado, lote disponible, ficha y muestra del material instalado. Registre también adhesivo, sellador, perfiles y sustrato, porque un método seguro para la cara decorativa puede no ser adecuado para una junta o un componente vecino.", "Si la instalación no cuenta con documentación completa, evite asumir la composición o resistencia de la superficie. Tome fotografías, seleccione un área discreta para pruebas y solicite información al proveedor antes de aplicar productos sobre toda la pared."],
+          en: ["Retain the reference, décor, finish, available lot information, data sheet and sample for the installed material. Also record adhesive, sealant, trims and substrate because a method suitable for the decorative face may not suit a joint or adjacent component.", "Where installation records are incomplete, do not assume the surface composition or resistance. Take photographs, select an inconspicuous test area and request supplier information before applying products to the full wall."],
+        },
+        bullets: { es: ["Referencia y diseño", "Acabado y muestra", "Ficha e instrucciones", "Adhesivo y sellador", "Perfiles y sustrato", "Área de prueba definida"], en: ["Reference and décor", "Finish and sample", "Data and instructions", "Adhesive and sealant", "Trims and substrate", "Defined test area"] },
+      },
+      {
+        id: "protective-film",
+        title: { es: "2. Coordine la protección y el retiro de la película", en: "2. Coordinate protection and film removal" },
+        paragraphs: {
+          es: ["Durante la obra, proteja la pared de polvo, pintura, adhesivo, golpes y equipos de otros oficios sin pegar materiales incompatibles sobre la cara decorativa. Defina quién retira la película y en qué etapa se hace la revisión final.", "Retire primero una zona de prueba conforme a las instrucciones disponibles. Observe la superficie y cualquier residuo antes de continuar. No deje la película más tiempo del confirmado ni use cuchillas o raspadores sobre la cara terminada sin aprobación."],
+          en: ["During construction, protect the wall from dust, paint, adhesive, impact and equipment used by other trades without attaching incompatible materials to the decorative face. Define who removes the film and when final inspection takes place.", "Remove a trial area first in line with available instructions. Inspect the surface and any residue before continuing. Do not leave film in place beyond the confirmed period or use blades or scrapers on the finished face without approval."],
+        },
+        bullets: { es: ["Protección de otros trabajos", "Responsable definido", "Secuencia de retiro", "Zona de prueba", "Superficie revisada", "Herramientas compatibles"], en: ["Protection from other work", "Defined responsibility", "Removal sequence", "Trial area", "Inspected surface", "Compatible tools"] },
+      },
+      {
+        id: "routine-cleaning",
+        title: { es: "3. Establezca una rutina de limpieza suave", en: "3. Establish a gentle routine-cleaning method" },
+        paragraphs: {
+          es: ["Retire polvo suelto con un paño limpio y suave antes de frotar. Cuando sea necesaria limpieza húmeda, aplique el producto confirmado de forma controlada, evite saturar juntas y seque la superficie según el procedimiento aprobado.", "Use paños separados para aplicar y secar, y cámbielos cuando acumulen partículas. La frecuencia debe responder al uso, nivel de suciedad y condiciones del lugar; no existe un intervalo universal que sirva para todos los proyectos."],
+          en: ["Remove loose dust with a clean, soft cloth before rubbing. Where damp cleaning is needed, apply the confirmed product in a controlled manner, avoid saturating joints and dry the surface under the approved procedure.", "Use separate cloths for application and drying, and replace them when particles accumulate. Frequency should respond to use, soil level and site conditions; there is no universal interval for every project."],
+        },
+        bullets: { es: ["Polvo retirado primero", "Paño suave y limpio", "Producto confirmado", "Líquido controlado", "Juntas sin saturación", "Secado y resultado revisados"], en: ["Dust removed first", "Clean soft cloth", "Confirmed product", "Controlled liquid", "No joint saturation", "Reviewed drying and result"] },
+      },
+      {
+        id: "stains-residue",
+        title: { es: "4. Trate manchas y residuos de forma controlada", en: "4. Treat stains and residue in a controlled way" },
+        paragraphs: {
+          es: ["Identifique primero el contaminante: polvo, grasa, tinta, adhesivo, sellador, pintura y residuos minerales pueden requerir enfoques distintos. Registre cuánto tiempo lleva en la superficie y qué productos se aplicaron previamente.", "Comience con el método compatible menos agresivo y aumente solo con aprobación. Pruebe producto, concentración, tiempo de contacto, paño y técnica en un área discreta. Deténgase si cambia el brillo, el color, la textura o la condición de la película y los bordes."],
+          en: ["Identify the contaminant first: dust, grease, ink, adhesive, sealant, paint and mineral residue may require different approaches. Record how long it has been present and what products were previously applied.", "Start with the least aggressive compatible method and escalate only with approval. Test the product, concentration, contact time, cloth and technique in an inconspicuous area. Stop if gloss, colour, texture, film or edge condition changes."],
+        },
+        bullets: { es: ["Contaminante identificado", "Historial registrado", "Método menos agresivo", "Prueba de compatibilidad", "Resultado observado", "Escalamiento aprobado"], en: ["Identified contaminant", "Recorded history", "Least aggressive method", "Compatibility test", "Observed result", "Approved escalation"] },
+      },
+      {
+        id: "joints-edges",
+        title: { es: "5. Revise juntas, perfiles, bordes y recortes", en: "5. Inspect joints, trims, edges and cut-outs" },
+        paragraphs: {
+          es: ["Una pared no es solo la cara de la lámina. Incluya juntas, esquinas, perfiles, zócalos, recortes y encuentros con muebles o instalaciones. Busque aperturas, piezas sueltas, sellador alterado, acumulación de suciedad o ingreso de líquido.", "No cubra una señal de movimiento, humedad o filtración con sellador sin investigar la causa. Cuando una reparación afecte fijación, adhesivo, electricidad o servicios ocultos, remítala a personal competente y documente la intervención."],
+          en: ["A wall is more than the sheet face. Include joints, corners, trims, bases, cut-outs and interfaces with furniture or services. Look for openings, loose components, altered sealant, soil accumulation or liquid entry.", "Do not cover a sign of movement, moisture or leakage with sealant before investigating the cause. Where repair affects fixing, adhesive, electricity or concealed services, refer it to competent personnel and document the intervention."],
+        },
+        bullets: { es: ["Juntas y esquinas", "Perfiles y zócalos", "Recortes y encuentros", "Sellador y fijación", "Señales de humedad", "Reparación documentada"], en: ["Joints and corners", "Trims and bases", "Cut-outs and interfaces", "Sealant and fixing", "Signs of moisture", "Documented repair"] },
+      },
+      {
+        id: "prevent-damage",
+        title: { es: "6. Reduzca riesgos durante el uso diario", en: "6. Reduce risks during daily use" },
+        paragraphs: {
+          es: ["Separe carros, muebles y equipos de la pared cuando puedan golpearla o rozarla. Mantenga objetos calientes, herramientas afiladas, cintas, tintes y productos químicos no aprobados lejos de la superficie. Coordine cualquier perforación con planos y servicios ocultos.", "En áreas de mayor tránsito, defina protecciones compatibles y revise primero su fijación. Una barrera mal colocada puede transferir presión, retener suciedad o marcar el acabado que pretende proteger."],
+          en: ["Keep carts, furniture and equipment clear where they may strike or rub the wall. Keep hot items, sharp tools, tapes, dyes and unapproved chemicals away from the surface. Coordinate any drilling with drawings and concealed services.", "In higher-traffic areas, define compatible protection and check its fixing first. A poorly placed barrier can transfer pressure, trap soil or mark the finish it is intended to protect."],
+        },
+        bullets: { es: ["Separación de equipos", "Control de golpes y roce", "Productos no aprobados alejados", "Perforación coordinada", "Protección compatible", "Fijación sin daño"], en: ["Equipment clearance", "Impact and rubbing control", "Unapproved products kept away", "Coordinated drilling", "Compatible protection", "Non-damaging fixing"] },
+      },
+      {
+        id: "maintenance-record",
+        title: { es: "7. Mantenga un registro y una ruta de respuesta", en: "7. Keep a record and response path" },
+        paragraphs: {
+          es: ["Prepare una hoja sencilla por zona con referencia instalada, fecha, condición, método, producto, responsable y resultado. Las fotografías tomadas con iluminación y encuadre consistentes ayudan a distinguir un cambio real de una diferencia visual.", "Defina a quién se informa una mancha persistente, junta abierta, impacto, filtración o cambio de brillo. Conserve muestras y material de repuesto identificados cuando estén disponibles, y no prometa una reparación antes de confirmar causa, alcance y método."],
+          en: ["Prepare a simple record by area with installed reference, date, condition, method, product, operator and result. Photographs taken with consistent lighting and framing help distinguish a real change from a visual difference.", "Define who receives reports of persistent staining, an open joint, impact, leakage or gloss change. Retain identified samples and spare material where available, and do not promise a repair before confirming cause, extent and method."],
+        },
+        bullets: { es: ["Área y referencia", "Fecha y condición", "Producto y método", "Fotografías comparables", "Responsable y resultado", "Ruta de respuesta"], en: ["Area and reference", "Date and condition", "Product and method", "Comparable photographs", "Operator and result", "Response path"] },
+      },
+    ],
+  },
 ];
 
 export const blogPostSlugs = (locale: Locale) =>
